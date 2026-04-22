@@ -39,7 +39,6 @@ Then fill `backend/.env`.
 
 Important fields for running the implementation:
 - `OPENAI_API_KEY`
-- `OPENAI_API_KEY_SUMMARY`
 - `RPC_HTTPS_URL`
 - `CHAIN_ID`
 - `PINATA_JWT`
@@ -47,8 +46,6 @@ Important fields for running the implementation:
 
 OpenAI key usage:
 - `OPENAI_API_KEY` is required. It is the primary key used by the backend LLM client for orchestration, report Q&A, explanation generation, and domain summaries.
-- `OPENAI_API_KEY_SUMMARY` is optional. It is only used for executive-summary generation and falls back to `OPENAI_API_KEY` if left empty.
-- If you do not need a separate key for executive summaries, set only `OPENAI_API_KEY` and leave `OPENAI_API_KEY_SUMMARY` blank.
 
 For `PINATA_GATEWAY`:
 - if you have your own dedicated Pinata gateway, use that
