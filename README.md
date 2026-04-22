@@ -26,8 +26,8 @@ For running the existing implementation, the backend env file should be filled w
 
 ## 1) Clone
 ```bash
-git clone <repository-url>
-cd automating-supplychain-aiagent
+git clone git@github.com:ladylyly/audit-aiagents.git
+cd audit-aiagents
 ```
 
 ## 2) Create the backend env file
