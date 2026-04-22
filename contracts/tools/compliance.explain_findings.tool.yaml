@@ -1,0 +1,54 @@
+version: 1
+tool_id: compliance.explain_findings@v1
+description: "LLM explanation tool for deterministic compliance findings (advisory only)."
+category: compliance
+entity: VerificationReport
+operation: explain_findings
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [rootCid, summary, rules]
+  properties:
+    rootCid:
+      type: string
+    summary:
+      type: object
+    rules:
+      type: array
+      items:
+        type: object
+    regulations:
+      type: array
+      items:
+        type: object
+    graphSummary:
+      type: object
+
+output_schema:
+  type: object
+  required: [rules]
+  properties:
+    rules:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+          llmExplanation:
+            type: string
+          missingEvidenceSummary:
+            type: [string, "null"]
+          recommendedNextEvidence:
+            type: array
+            items:
+              type: string
+          managementImpact:
+            type: [string, "null"]
+          confidence:
+            type: number

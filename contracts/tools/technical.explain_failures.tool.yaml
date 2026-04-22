@@ -1,0 +1,45 @@
+version: 1
+tool_id: technical.explain_failures@v1
+description: "LLM explanation tool for deterministic technical verification failures (advisory only)."
+category: diagnosis
+entity: VerificationReport
+operation: explain_failures
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [failures]
+  properties:
+    failures:
+      type: array
+      items:
+        type: object
+    context:
+      type: object
+
+output_schema:
+  type: object
+  required: [diagnoses]
+  properties:
+    diagnoses:
+      type: array
+      items:
+        type: object
+        properties:
+          failure_ref:
+            type: integer
+          severity:
+            type: string
+            enum: [CRITICAL, HIGH, MEDIUM, LOW]
+          explanation:
+            type: string
+          remediation:
+            type: array
+            items:
+              type: string
+          confidence:
+            type: number

@@ -1,0 +1,55 @@
+schemaVersion: "1.0"
+lookup:
+  id: "esg_country_risk_v1"
+  version: "1.0.0"
+defaults:
+  cahras:
+    - cd
+    - cg
+    - mm
+    - af
+    - sd
+    - ss
+    - ye
+    - ua
+  highRiskCountries:
+    - cd
+    - ru
+    - mm
+    - af
+    - sd
+    - ss
+    - ir
+    - iq
+    - sy
+countryRisk:
+  cd:
+    laborRisk: 0.85
+    communityRisk: 0.85
+  id:
+    laborRisk: 0.35
+    communityRisk: 0.35
+  cl:
+    laborRisk: 0.30
+    communityRisk: 0.25
+  au:
+    laborRisk: 0.10
+    communityRisk: 0.10
+  ca:
+    laborRisk: 0.10
+    communityRisk: 0.10
+  cn:
+    laborRisk: 0.55
+    communityRisk: 0.50
+  ar:
+    laborRisk: 0.30
+    communityRisk: 0.25
+  br:
+    laborRisk: 0.45
+    communityRisk: 0.40
+  ph:
+    laborRisk: 0.50
+    communityRisk: 0.45
+  za:
+    laborRisk: 0.45
+    communityRisk: 0.40

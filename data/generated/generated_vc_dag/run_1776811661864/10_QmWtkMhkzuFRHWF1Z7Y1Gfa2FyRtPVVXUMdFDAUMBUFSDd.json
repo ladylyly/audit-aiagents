@@ -1,0 +1,111 @@
+{
+  "id": "urn:uuid:real-vc-1776811671361-10",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x51afb160a878b759f7e0bafc24393ec4f99ca016",
+    "name": "RWI Tantalum Rwanda"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xdedaf8e44eb475b4ced74b85f490abcbd935f563",
+    "name": "Taniobis GmbH"
+  },
+  "issuanceDate": "2026-04-06T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xdedaf8e44eb475b4ced74b85f490abcbd935f563",
+    "productName": "Tantalum mine",
+    "batch": "REAL-BATCH-010",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-ta-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-ta-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "SA8000",
+        "issuer": "SAI",
+        "certificateCid": "bafy-cert-ta-mine-sa8000",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ta-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "tantalum"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "social_risk_heavy",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Rwanda",
+      "countryCode": "RW",
+      "latitude": -1.9,
+      "longitude": 29.9
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "ITRI-RMAP audited mine, scope-1 monitored",
+    "climateClaim": "Scope-1 tracking active",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x56fc4b64da845454482eb5ba744a223c58ed700383e2a1800210ca370cead244\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x56fc4b64da845454482eb5ba744a223c58ed700383e2a1800210ca370cead244",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "362",
+    "productContract": "0xE97D152d6de8cDEC5398C0e390f920bcD842B829",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "conflict_minerals": {
+        "origin_country": "RW",
+        "third_party_audit_exists": true,
+        "audit_scope_complete": true,
+        "audit_independence_confirmed": true,
+        "traceability_system_exists": true,
+        "chain_of_custody_records": true,
+        "risk_assessment_exists": true
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-06T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x51afb160a878b759f7e0bafc24393ec4f99ca016#controller",
+      "role": "seller",
+      "payloadHash": "0x4724b8d07c8cd4303efc54d933b1d4475056454fce425adc12c1cab8d4a817f2",
+      "jws": "0xae756e031269111503535ac36338e7efd39fbd51cb616df67d3452ccc225bd5848f0d1bd358ac76c20a3e59dc8a6acac399749694e515b3db9e507431c18f8541b"
+    }
+  ]
+}

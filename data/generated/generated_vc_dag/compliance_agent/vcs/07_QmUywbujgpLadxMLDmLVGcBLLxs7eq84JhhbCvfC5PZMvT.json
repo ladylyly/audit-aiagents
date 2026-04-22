@@ -1,0 +1,222 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517112033-07",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x1fcdf368ce0c53e94925b982a8aed526085f1f10",
+    "name": "Cabo Graphite Extractives Lda"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xd95570fcb37b1d053b301dde4d24ff5300e4694f",
+    "name": "Atlantic Graphite Processing S.A."
+  },
+  "issuanceDate": "2026-03-19T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xd95570fcb37b1d053b301dde4d24ff5300e4694f",
+    "productName": "Natural graphite concentrate lot CGE-2026-08",
+    "batch": "CGE-2026-08",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-case1-cert-graphite-mine-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-graphite-mine-iso14001"
+      }
+    ],
+    "location": {
+      "country": "Mozambique",
+      "countryCode": "MZ",
+      "latitude": -13.1,
+      "longitude": 39.2
+    },
+    "facilityRole": "mine",
+    "materialTags": [
+      "graphite"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "security_risk"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "raw_material_component",
+        "subcategory": "not_applicable",
+        "weight_kg": 0,
+        "capacity_kwh": 0,
+        "market_event": "internal_transfer",
+        "placed_on_union_market": false,
+        "exclusion_reason": "none",
+        "status": "intermediate_input",
+        "has_external_storage": false,
+        "operator_role": "upstream_supplier",
+        "is_rechargeable": false,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "not_applicable",
+        "is_sli_design": false
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x2a39af9385574c63e8b6f2f59f51ca4445a1821d5a7588df47b6642a32532964\",\"proof\":\"0x505983072f445a1fddfad98913d3bd6033c6c7dc241ec26ac97bd65f7e279b4bf2f6a4b9b70928657f565e7c65467eb5f9e58d9a6521867166d7c4259ecc5520ba6bae47fd7f08294676cb17bc4fc341e78f88a4fb33698306bce6e5ff8ae227d65536d1510646996bec0c9b2275525648e4ba5dd8bbcde30ac9c18a7238084cb7357de1fdf28543c7bcdf6f119c2a7c2cbd635d84ff5e528b2ca5e6da552b05a874c374b5bfb5f4672168a38c34661723bbf1a5870a92a788795d397136440e5ec862b987fccbeb3ec0c52cb4e2de92eaa543ff1867f21a737493bec399260de0b81f774fce93919b6e53bd756bd8a4cefe801cb49d69865cb956b8c442c13e60a139d205d73fcce6a3b10a5358d27cf2f47f2787b1d75cfb98b054d6cd1343baea89766f7d73462347a971d2af5754eb4ad85e673e659bc64384750dc51c530ab35b090ef6bf0071d9a693d9d1021d54400c481eab76641f290e2020822e344ae276abbd52a94b2d3d082241b02b1ccb0c13cca498672a52866bb41aea39086eff0393d679fd5a80fe18918d8e6f7201acfbec8a7ada135b58b40d881d2a004e4be46a76b5124196ff0ccf1610a3d5559d4525ba89edb28397c633855c5424d062794826788e11063b70010168c1ecf79634f3b5ef21c292cae65db2e0c21c762a9cdc811f0849685d7a7380845cf400fd069e88926b0ac764254b68c77f634ab6a60d8ef3e7e6f518e145502a9418f74f04f9e6582086285221227793a7581cd3006ab705b3482f7739e7b1e66a57d93e823d7729e8d5c6f815d40b71940324b744080fee3f8ebfaeec640a9e72d2926c0e1da9298d50449b1bf36162d458e4979376900d2c96cd3dae52755970db3227d836b9042ec6e366fdc136462a0c3e3465ca7bc9a1978d7e0f1f97340f29ec1a5bd96e6a18051ab694b3f817150b\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x53511a0fb797cc63f3ec71c08d462563c4a1b1f278b7851fdaac0a5870d54ffd\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x2a39af9385574c63e8b6f2f59f51ca4445a1821d5a7588df47b6642a32532964",
+      "proof": "0x505983072f445a1fddfad98913d3bd6033c6c7dc241ec26ac97bd65f7e279b4bf2f6a4b9b70928657f565e7c65467eb5f9e58d9a6521867166d7c4259ecc5520ba6bae47fd7f08294676cb17bc4fc341e78f88a4fb33698306bce6e5ff8ae227d65536d1510646996bec0c9b2275525648e4ba5dd8bbcde30ac9c18a7238084cb7357de1fdf28543c7bcdf6f119c2a7c2cbd635d84ff5e528b2ca5e6da552b05a874c374b5bfb5f4672168a38c34661723bbf1a5870a92a788795d397136440e5ec862b987fccbeb3ec0c52cb4e2de92eaa543ff1867f21a737493bec399260de0b81f774fce93919b6e53bd756bd8a4cefe801cb49d69865cb956b8c442c13e60a139d205d73fcce6a3b10a5358d27cf2f47f2787b1d75cfb98b054d6cd1343baea89766f7d73462347a971d2af5754eb4ad85e673e659bc64384750dc51c530ab35b090ef6bf0071d9a693d9d1021d54400c481eab76641f290e2020822e344ae276abbd52a94b2d3d082241b02b1ccb0c13cca498672a52866bb41aea39086eff0393d679fd5a80fe18918d8e6f7201acfbec8a7ada135b58b40d881d2a004e4be46a76b5124196ff0ccf1610a3d5559d4525ba89edb28397c633855c5424d062794826788e11063b70010168c1ecf79634f3b5ef21c292cae65db2e0c21c762a9cdc811f0849685d7a7380845cf400fd069e88926b0ac764254b68c77f634ab6a60d8ef3e7e6f518e145502a9418f74f04f9e6582086285221227793a7581cd3006ab705b3482f7739e7b1e66a57d93e823d7729e8d5c6f815d40b71940324b744080fee3f8ebfaeec640a9e72d2926c0e1da9298d50449b1bf36162d458e4979376900d2c96cd3dae52755970db3227d836b9042ec6e366fdc136462a0c3e3465ca7bc9a1978d7e0f1f97340f29ec1a5bd96e6a18051ab694b3f817150b",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x53511a0fb797cc63f3ec71c08d462563c4a1b1f278b7851fdaac0a5870d54ffd"
+    },
+    "productId": "193",
+    "productContract": "0x3394F8a5f869B625A59DBFb7e320f74a145e8203",
+    "chainId": "11155111",
+    "companyName": "Cabo Graphite Extractives Lda",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 60000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "MZ-CASE-0007",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 90000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "diesel_and_grid_mix",
+        "emissionsClaim": "Cabo Graphite Extractives Lda reports site-level emissions for Natural graphite concentrate lot CGE-2026-08.",
+        "climateClaim": "Cabo Graphite Extractives Lda maintains transition-planning and operational decarbonisation evidence for mine activities.",
+        "environmentalRiskSignals": [
+          "biodiversity_disturbance"
+        ],
+        "socialRiskSignals": [
+          "security_incident_exposure"
+        ],
+        "governanceRiskSignals": [
+          "contractor_oversight_variance"
+        ],
+        "countryOfOperation": "Mozambique",
+        "facilityRole": "mine",
+        "materialTags": [
+          "graphite"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "mine",
+        "componentType": "graphite",
+        "qualityStandards": [
+          "ISO 14001"
+        ],
+        "traceabilityArtifacts": [
+          "vc_07_graphite_mine_mozambique-material-balance-sheet",
+          "vc_07_graphite_mine_mozambique-shipment-record",
+          "vc_07_graphite_mine_mozambique-supplier-declaration"
+        ],
+        "serialisationScheme": "CGE-2026-08-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-graphite-mine-iso14001"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "bulk_freight",
+        "customsReference": "MZ-CGE-2026-08",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "raw material source only"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "graphite is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_risk_signal",
+        "reason": "security and labour-risk context for root due diligence"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-19T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x1fcdf368ce0c53e94925b982a8aed526085f1f10#controller",
+      "role": "issuer",
+      "payloadHash": "0x3ed11a16f613a01d2e67f44b29ffabee15f3e36493b976b8795821db51f5ea4b",
+      "jws": "0x55703671d67550ed7d4a7703e897b217ecd02b2317b4dc0e952210c5ced2933d7ef75a38dfc7f0ac696455488d32a19d6e46df65fbcd2b244391533afd97ce331b"
+    }
+  ]
+}

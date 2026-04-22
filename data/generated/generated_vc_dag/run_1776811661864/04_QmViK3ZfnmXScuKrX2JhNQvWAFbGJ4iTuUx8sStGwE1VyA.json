@@ -1,0 +1,101 @@
+{
+  "id": "urn:uuid:real-vc-1776811665898-4",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xc12221ee81b24d714b58b8fab18c0da81cbbe2d4",
+    "name": "Western Areas Nickel Ltd"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x673baa1a921c5e5178b5bf26cf978a3f0d8be87e",
+    "name": "Harjavalta Nickel Oy"
+  },
+  "issuanceDate": "2026-03-31T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x673baa1a921c5e5178b5bf26cf978a3f0d8be87e",
+    "productName": "Nickel mine",
+    "batch": "REAL-BATCH-004",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-ni-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-ni-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "The Nickel Mark",
+        "issuer": "Nickel Institute",
+        "certificateCid": "bafy-cert-ni-mine-nickmark",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ni-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "latitude": -31.5,
+      "longitude": 121.8
+    },
+    "energySource": "solar",
+    "emissionsClaim": "WA solar-hybrid mine, scope-1+2 disclosed",
+    "climateClaim": "Paris-aligned mine decarbonisation roadmap",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x362d0f7db0809acd0ff4d974bad5d074dad104f8829b5832854deee1ca524a60\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x362d0f7db0809acd0ff4d974bad5d074dad104f8829b5832854deee1ca524a60",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "356",
+    "productContract": "0x8403b6D564A37cF3be0528845066e68C14800BB6",
+    "chainId": "11155111",
+    "claims": {
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-31T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xc12221ee81b24d714b58b8fab18c0da81cbbe2d4#controller",
+      "role": "seller",
+      "payloadHash": "0x0d6fdbcbade4baa99e86c06f6ae28ffb655694c0a0826e7d0a5bec306dc82448",
+      "jws": "0x01d22bf5163d2da1eb318fb389d676ed5396fd466252e6b1461bcd506ae4be482167b4ead05f6f4fe92268b1f674d37017ddcdad00c4e72fce4fa857fe1dd2df1b"
+    }
+  ]
+}

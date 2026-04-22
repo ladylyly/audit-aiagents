@@ -1,0 +1,167 @@
+{
+  "id": "urn:uuid:thesis-batteryreg-1776210511273-04",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisBatteryRegulationCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xedc095611426cb8d80fb32f9bebc753fee033d98",
+    "name": "Baltic Nickel Sulfate Sp. z o.o."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x7a8a51224224085f79702e10bfc57cd70455c046",
+    "name": "Antwerp Precursor Materials NV"
+  },
+  "issuanceDate": "2026-03-29T23:48:28.121Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x7a8a51224224085f79702e10bfc57cd70455c046",
+    "productName": "Battery-grade nickel sulfate lot BNS-2026-07",
+    "batch": "BNS-2026-07",
+    "quantity": 1,
+    "previousCredential": "QmfJb4nYb8kbUCQvJpsLG8e8Qvz9zrokcbd2bPq1U4BhBS",
+    "componentCredentials": [
+      "QmfJb4nYb8kbUCQvJpsLG8e8Qvz9zrokcbd2bPq1U4BhBS"
+    ],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Poland",
+      "countryCode": "PL",
+      "latitude": 54.3,
+      "longitude": 18.7
+    },
+    "facilityRole": "refiner",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "chemical_processing"
+    ],
+    "claims": {
+      "battery": {
+        "operator_role": "manufacturer",
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": true,
+        "top_management_reporting_exists": true,
+        "third_party_verification_report_exists": true,
+        "approval_decision_exists": true,
+        "audit_report_exists": false,
+        "downstream_information_shared": true,
+        "public_due_diligence_report_exists": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x6263f17d04e38488edafd80f86749c438855b0e4a9ee450aff1eebc08c5db53e\",\"proof\":\"0x8c598fda0ffae6b39f88cf37a89eb7d8b23d3578a68ef747e7a6a0ad7445012a02d3617f360f6ed43eb8056b39e17b96bd4c5acce7d6320435b7abddf011c52160f41576515561c1f1dd0f02c83c7326afae096357b15d685cee64d5e4cda14866c6e599366d294cf72ee98b441d99fd7be2a1137cf3619893835267f1c0597e80e99c1e9426015b84b56953d5264706f876188f8a45d82a7ef64bbcc320e60b947b02dfedafe0100741ae6585ff7eb5dfe9c97364b842eca6b6c9125d7b010c364e1b62b673e438d2b8b07d9c70e4faf2ccd84c4aabc9a68d48f26ed28b4a044c7c3d6c5facaa01d867f98004c7e2f2adc81365beb3240cdc43c967cbcb7c1a7e4d50f73ff4de7a3aa69af4e270c38200a6667b2d5f583b818c34b85aeecb176c77fbb72b2294e42dd26c8a783138851fc8ef1bc2e237bfb2adf43c1039542c30f194133a2550260bdc82566a4ed2b165b97e93301aa4734e39424b6ca43e3436c42f07fdc2793fd9a3df640a9083ff0dea846edb53bfbe9b030cf29663280bbe18890fdd09c7dae3e25590752698fa032a5f42ca38c89c1cf44bb34223266c76228f723c51cbc4c5512635a6703d4f61ce4735033bc8e239140d4ebb0f6043a203998ae7689f58096b4de444c8140e282984dbdd6d4cdbbf2d5e8e690876203a3c0a7fb2d36d10852139e0bfcb0584c8fdba9be0bf956bdc78da3b988f362a1097463ae1952f4bb50404ff745a254d31334443b4a5402f426ca1c3294091387c58243ea77399dd9ad11d24f6cf23df18d9e3be4f172b5e916d6eadfbafe9349e8edc7a283e45c03bb6bdf8bc1d6c82162542ba911d2ad1e728ae4ee9d0347736b02703e245d53e8ee9c7826674147af51e12b6b0ac4e83d94b5c05e15a400717c0b297cc5982da1474b9e7a2757b47e6fd8377d9dddf80ac6b3ff3850a7500\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x9b82937987b33c21ac20d5277e6c0b42f68a2fd8d8c977b9ac88423d4fbbacfb\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x6263f17d04e38488edafd80f86749c438855b0e4a9ee450aff1eebc08c5db53e",
+      "proof": "0x8c598fda0ffae6b39f88cf37a89eb7d8b23d3578a68ef747e7a6a0ad7445012a02d3617f360f6ed43eb8056b39e17b96bd4c5acce7d6320435b7abddf011c52160f41576515561c1f1dd0f02c83c7326afae096357b15d685cee64d5e4cda14866c6e599366d294cf72ee98b441d99fd7be2a1137cf3619893835267f1c0597e80e99c1e9426015b84b56953d5264706f876188f8a45d82a7ef64bbcc320e60b947b02dfedafe0100741ae6585ff7eb5dfe9c97364b842eca6b6c9125d7b010c364e1b62b673e438d2b8b07d9c70e4faf2ccd84c4aabc9a68d48f26ed28b4a044c7c3d6c5facaa01d867f98004c7e2f2adc81365beb3240cdc43c967cbcb7c1a7e4d50f73ff4de7a3aa69af4e270c38200a6667b2d5f583b818c34b85aeecb176c77fbb72b2294e42dd26c8a783138851fc8ef1bc2e237bfb2adf43c1039542c30f194133a2550260bdc82566a4ed2b165b97e93301aa4734e39424b6ca43e3436c42f07fdc2793fd9a3df640a9083ff0dea846edb53bfbe9b030cf29663280bbe18890fdd09c7dae3e25590752698fa032a5f42ca38c89c1cf44bb34223266c76228f723c51cbc4c5512635a6703d4f61ce4735033bc8e239140d4ebb0f6043a203998ae7689f58096b4de444c8140e282984dbdd6d4cdbbf2d5e8e690876203a3c0a7fb2d36d10852139e0bfcb0584c8fdba9be0bf956bdc78da3b988f362a1097463ae1952f4bb50404ff745a254d31334443b4a5402f426ca1c3294091387c58243ea77399dd9ad11d24f6cf23df18d9e3be4f172b5e916d6eadfbafe9349e8edc7a283e45c03bb6bdf8bc1d6c82162542ba911d2ad1e728ae4ee9d0347736b02703e245d53e8ee9c7826674147af51e12b6b0ac4e83d94b5c05e15a400717c0b297cc5982da1474b9e7a2757b47e6fd8377d9dddf80ac6b3ff3850a7500",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x9b82937987b33c21ac20d5277e6c0b42f68a2fd8d8c977b9ac88423d4fbbacfb"
+    },
+    "productId": "330",
+    "productContract": "0x4Eea0886bCCfcE4D0015F9c4706722671dE58646",
+    "chainId": "11155111",
+    "companyName": "Baltic Nickel Sulfate Sp. z o.o.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 150000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "PL-BATREG-0004",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 220000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Baltic Nickel Sulfate Sp. z o.o. reports site-level emissions and energy-source disclosures for Battery-grade nickel sulfate lot BNS-2026-07.",
+        "climateClaim": "Baltic Nickel Sulfate Sp. z o.o. maintains climate transition and emissions reduction evidence for refiner operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Poland",
+        "facilityRole": "refiner",
+        "materialTags": [
+          "nickel"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "refiner",
+        "componentType": "nickel",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_04_nickel_refinery_poland-material-balance-sheet",
+          "vc_04_nickel_refinery_poland-shipment-record",
+          "vc_04_nickel_refinery_poland-supplier-declaration"
+        ],
+        "serialisationScheme": "BNS-2026-07-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "PL-BNS-2026-07",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "audit report intentionally missing on nickel refining branch"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "nickel is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "non-root due diligence evidence only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-29T23:48:28.121Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xedc095611426cb8d80fb32f9bebc753fee033d98#controller",
+      "role": "issuer",
+      "payloadHash": "0xdf0b88bdd469b8fae97a905e2257d05ab0f8d45a9ad8973fbc8f22a7cd7aa46a",
+      "jws": "0xd285598178b2b1981414555dff39fd5d25f2ae89f0490ff06a7daa89e432a1ca1cd37ec0f4d2868f343c867fe869a9230e3e7d4b376768163a505d81ec5208991b"
+    }
+  ]
+}

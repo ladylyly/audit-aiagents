@@ -1,0 +1,96 @@
+{
+  "id": "urn:uuid:real-vc-1776811675251-14",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-04-10T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "productName": "Cathode active material CAM",
+    "batch": "REAL-BATCH-014",
+    "quantity": 1,
+    "previousCredential": "QmNgm77iWQgNk8L9zwxV8L7MbWpGKqjr5uDZduwVFycKuK",
+    "componentCredentials": [
+      "QmNgm77iWQgNk8L9zwxV8L7MbWpGKqjr5uDZduwVFycKuK"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-cam-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-cam-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-cam-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_cathode"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.7,
+      "longitude": 27.5
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "NMC811 cathode sintering, renewable grid",
+    "climateClaim": "Carbon footprint per kWh disclosed",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xfeec824a015ed72e8885e42c216f8ed505c69ee86976fdd9b64e945a494e543c\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xfeec824a015ed72e8885e42c216f8ed505c69ee86976fdd9b64e945a494e543c",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "366",
+    "productContract": "0x7E7ce782bb3C5b4254244F88e63BAC161Baee88d",
+    "chainId": "11155111",
+    "claims": {
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-10T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2#controller",
+      "role": "seller",
+      "payloadHash": "0xcc29f51bc3afd6d7434722cc177da4ffb26cd7a0b014a0f8735338649e30dfc0",
+      "jws": "0x1436b9ef1eddcd63ca28dffe856b8201cb86a65e79ed0b19f2d701c2e74269cc1e0b9b2d49833f6477ae0efc06a2f5b238acc8e56ff8cbb16d3dcd9c1cd1afdb1c"
+    }
+  ]
+}

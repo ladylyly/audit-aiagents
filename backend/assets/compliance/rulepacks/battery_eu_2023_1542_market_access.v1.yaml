@@ -1,0 +1,451 @@
+schemaVersion: "1.1"
+regulation:
+  id: "eu.regulation.2023.1542"
+  shortName: "Battery Regulation"
+  citation: "Regulation (EU) 2023/1542"
+  sourcePdf: "thesis/sources/Regulation (EU) 2023:1542 (Battery Regulation) Official Journal text.pdf"
+  notes:
+    - "Phase 1 market-access, labeling, conformity, operator, and passport duties."
+    - "Delegated-act-dependent duties are gated through input.secondaryLegislationReady."
+
+rulepack:
+  id: "battery_eu_2023_1542_market_access_v1"
+  version: "0.1.0"
+  status: "draft"
+
+chapters:
+  - id: "battery.labels_information"
+    title: "Labelling and Information"
+    articleStart: 13
+    articleEnd: 14
+  - id: "battery.conformity"
+    title: "Conformity"
+    articleStart: 17
+    articleEnd: 20
+  - id: "battery.economic_operators"
+    title: "Economic Operators"
+    articleStart: 38
+    articleEnd: 46
+  - id: "battery.passport"
+    title: "Battery Passport"
+    articleStart: 77
+    articleEnd: 78
+
+rules:
+  - id: "battery.art13.1"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(1)"
+    title: "General battery label is present once label specifications apply"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-08-18"
+        - field: "input.secondaryLegislationReady.article_13_labels"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.label_present"
+
+  - id: "battery.art13.2"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(2)"
+    title: "Capacity label is present for rechargeable portable, LMT, and SLI batteries"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-08-18"
+        - field: "input.secondaryLegislationReady.article_13_labels"
+          op: "=="
+          value: true
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["portable", "lmt", "sli"]
+        - field: "claims.battery.is_rechargeable"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.capacity_label_present"
+
+  - id: "battery.art13.3"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(3)"
+    title: "Non-rechargeable portable battery label is present"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-08-18"
+        - field: "input.secondaryLegislationReady.article_13_labels"
+          op: "=="
+          value: true
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - field: "claims.battery.is_rechargeable"
+          op: "=="
+          value: false
+    evidenceRequired:
+      - "claims.battery.non_rechargeable_label_present"
+
+  - id: "battery.art13.4"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(4)"
+    title: "Separate collection symbol is present"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+    evidenceRequired:
+      - "claims.battery.separate_collection_symbol_present"
+
+  - id: "battery.art13.5"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(5)"
+    title: "Heavy-metal symbol is present when cadmium or lead thresholds are exceeded"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.contains_cadmium_above_threshold"
+          op: "=="
+          value: true
+        - field: "claims.battery.contains_lead_above_threshold"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.heavy_metal_symbol_present"
+
+  - id: "battery.art13.6"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(6)"
+    title: "QR code is present after the QR obligation takes effect"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2027-02-18"
+    evidenceRequired:
+      - "claims.battery.qr_code_present"
+
+  - id: "battery.art14.1"
+    articleRef: "Article 14"
+    paragraphRef: "Art 14(1)"
+    title: "Battery management system provides Annex VII state-of-health data"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2024-08-18"
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["electric_vehicle", "lmt", "industrial"]
+        - field: "claims.battery.subcategory"
+          op: "in"
+          value: ["stationary_storage", "traction", "general_industrial"]
+    evidenceRequired:
+      - "claims.battery.bms_annex_vii_access_enabled"
+
+  - id: "battery.art17.1"
+    articleRef: "Article 17"
+    paragraphRef: "Art 17(1)"
+    title: "Battery uses an allowed conformity assessment module for Phase 1 obligations"
+    obligationType: "conformity_assessment"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "manufacturer"
+    conditions:
+      all:
+        - field: "claims.battery.conformity_module"
+          op: "in"
+          value: ["module_a", "module_d1", "module_g"]
+    evidenceRequired:
+      - "claims.battery.conformity_module"
+
+  - id: "battery.art18.1"
+    articleRef: "Article 18"
+    paragraphRef: "Art 18(1)"
+    title: "EU declaration of conformity exists"
+    obligationType: "conformity_artifact"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer"]
+    evidenceRequired:
+      - "claims.battery.eu_declaration_of_conformity_exists"
+
+  - id: "battery.art20.1"
+    articleRef: "Article 20"
+    paragraphRef: "Art 20(1)"
+    title: "CE marking is affixed"
+    obligationType: "conformity_artifact"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer", "distributor"]
+    evidenceRequired:
+      - "claims.battery.ce_mark_present"
+
+  - id: "battery.art38.1"
+    articleRef: "Article 38"
+    paragraphRef: "Art 38(1)"
+    title: "Manufacturer provides instructions and safety information"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "manufacturer"
+    conditions:
+      all:
+        - field: "claims.battery.instructions_present"
+          op: "=="
+          value: true
+        - field: "claims.battery.safety_information_present"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.instructions_present"
+      - "claims.battery.safety_information_present"
+
+  - id: "battery.art38.2"
+    articleRef: "Article 38"
+    paragraphRef: "Art 38(2)"
+    title: "Manufacturer technical documentation exists"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "manufacturer"
+    evidenceRequired:
+      - "claims.battery.technical_documentation_exists"
+
+  - id: "battery.art38.6"
+    articleRef: "Article 38"
+    paragraphRef: "Art 38(6)"
+    title: "Manufacturer provides batch, serial, or product identifier"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "manufacturer"
+    evidenceRequired:
+      - "claims.battery.batch_or_serial_present"
+
+  - id: "battery.art38.7"
+    articleRef: "Article 38"
+    paragraphRef: "Art 38(7)"
+    title: "Manufacturer identity is indicated on the battery or accompanying material"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "manufacturer"
+    evidenceRequired:
+      - "claims.battery.manufacturer_identity_present"
+
+  - id: "battery.art41.3"
+    articleRef: "Article 41"
+    paragraphRef: "Art 41(3)"
+    title: "Importer identity is indicated"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "importer"
+    evidenceRequired:
+      - "claims.battery.importer_identity_present"
+
+  - id: "battery.art42.2.a"
+    articleRef: "Article 42"
+    paragraphRef: "Art 42(2)(a)"
+    title: "Distributor verifies that the producer is registered"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+    evidenceRequired:
+      - "claims.battery.producer_registered"
+
+  - id: "battery.art43"
+    articleRef: "Article 43"
+    paragraphRef: "Art 43"
+    title: "Fulfilment service provider preserves compliance during warehousing and dispatch"
+    obligationType: "economic_operator_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "fulfilment_service_provider"
+    evidenceRequired:
+      - "claims.battery.fulfilment_conditions_preserve_compliance"
+
+  - id: "battery.art46"
+    articleRef: "Article 46"
+    paragraphRef: "Art 46(1)"
+    title: "Economic operator can identify upstream and downstream battery operators"
+    obligationType: "traceability"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer", "distributor", "fulfilment_service_provider"]
+    conditions:
+      all:
+        - field: "claims.battery.upstream_operator_tracked"
+          op: "=="
+          value: true
+        - field: "claims.battery.downstream_operator_tracked"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.upstream_operator_tracked"
+      - "claims.battery.downstream_operator_tracked"
+
+  - id: "battery.art77.1"
+    articleRef: "Article 77"
+    paragraphRef: "Art 77(1)"
+    title: "Battery passport exists for LMT, EV, and industrial batteries above 2 kWh"
+    obligationType: "passport"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2027-02-18"
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+    evidenceRequired:
+      - "claims.battery.battery_passport_exists"
+
+  - id: "battery.art77.3"
+    articleRef: "Article 77"
+    paragraphRef: "Art 77(3)"
+    title: "Battery passport has a unique identifier linked through the QR code"
+    obligationType: "passport"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2027-02-18"
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+    conditions:
+      all:
+        - field: "claims.battery.qr_code_present"
+          op: "=="
+          value: true
+        - field: "claims.battery.battery_passport_identifier"
+          op: "exists"
+    evidenceRequired:
+      - "claims.battery.qr_code_present"
+      - "claims.battery.battery_passport_identifier"
+
+  - id: "battery.art78.a_b"
+    articleRef: "Article 78"
+    paragraphRef: "Art 78(a)-(b)"
+    title: "Battery passport exposes required public information"
+    obligationType: "passport"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2027-02-18"
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+    evidenceRequired:
+      - "claims.battery.battery_passport_public_fields_present"

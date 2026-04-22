@@ -1,0 +1,97 @@
+{
+  "id": "urn:uuid:real-vc-1776202353539-5",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x63929081e5b19d18289a520209c72ed349805406",
+    "name": "Harjavalta Nickel Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x6e64b10ccc84f9809e8ba494094f83e6f3473beb",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "issuanceDate": "2026-03-25T21:32:26.901Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x6e64b10ccc84f9809e8ba494094f83e6f3473beb",
+    "productName": "Nickel sulfate refinery",
+    "batch": "REAL-BATCH-005",
+    "quantity": 1,
+    "previousCredential": "QmYnZSnQ8fQpxcZV9ERqGF2XWUNE32J8kp9jurtgXGsXLG",
+    "componentCredentials": [
+      "QmYnZSnQ8fQpxcZV9ERqGF2XWUNE32J8kp9jurtgXGsXLG"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-ni-ref-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-ni-ref-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ni-ref-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.5,
+      "longitude": 25.3
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Nordic grid, <50g CO2/kWh",
+    "climateClaim": "Net-zero refinery 2035",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xae909ed19f42df221df6aa384042080c461464c756e73c863671d46c0aef860f\",\"proof\":\"0x464accb521dbd35941839e56925d564338bb8961a2984d99fa2ae10504d1f11db6e66299a598cb2ef02d7191b8d45e147813f4198c413eeba613dfe96d349714a24e88c9097db706bcb6c54b4316c6a96764fe4ed823ad958f46872fe33a293df2180b94136724ab8b053c292656ec626ac4511252c00dfff8de12640780aa38d0e5311fbaa799f3313f10b4fdcb46c7a7d10f9c6a4a21a696693da829f800006f0cb7996a2179694752be56cbd7994ee2c5d968cc03b67f3b1d5a04b556c104177a144f4ace75c7dcb44baa67f053a58a7e6dab81e63ab2aeb53a1db635cd086e192bdda3af4a134876f8e238c301a4a0d74bd305c78e19474cefb442b9fb3ff684c2dec7095e16e5918685c5d620f17d872ea46aee45d9790acb277e1bfb29f644559e6ac546f60c4c26129084f5ba4cf6d2018934a39996514bcb5f7ebf488a0fe7149f6f3c6415d415f1bfb0d78a3d291a233e0a26c541ae77b2846d455d329fc41a74ffd608f0a576e044d0233b2de099f26577a63afa096d30ed1e1b5678a810245f598c7b16c8e2aa1c951e20513129c2626e79f3e4c2d17026f74b5ce8c49410c3144c557ef75ef7a2a66c7a9a4b2e4a823c907c713569bd1c952e3f2a32357ee6a84767fb3bc7c61815fcb4b580a42982bcf6f6d97efeb8e1d964192c777b38105a88979a6f7310ce267ecf1469a8ac9908f72ea1994bd4ba5fdf39c25cd1b1cd09ba7bcfc7f64273ff711127b10edfe284f617d5f0350de2276544fe9af5d70d81971e7f5c332d5255f07c43069beb54a6455d2a13b514c06e8d5e7c698b77dff6f3adc2ba9061031eab2fc679995c105ba58d820b1dda0fec29657d0e18ec99650771dea85e4c0647a3a4c109a64ad73d3c75c60b0001bdd688094824c81f4f5c0a04488109fe00da81151aa62bd2b8a84b2e6a4eac8ff61ece0b\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x520fd149b564b3b933365e1ad2b22edf702bd9c010fc42c812f685be0e50d364\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xae909ed19f42df221df6aa384042080c461464c756e73c863671d46c0aef860f",
+      "proof": "0x464accb521dbd35941839e56925d564338bb8961a2984d99fa2ae10504d1f11db6e66299a598cb2ef02d7191b8d45e147813f4198c413eeba613dfe96d349714a24e88c9097db706bcb6c54b4316c6a96764fe4ed823ad958f46872fe33a293df2180b94136724ab8b053c292656ec626ac4511252c00dfff8de12640780aa38d0e5311fbaa799f3313f10b4fdcb46c7a7d10f9c6a4a21a696693da829f800006f0cb7996a2179694752be56cbd7994ee2c5d968cc03b67f3b1d5a04b556c104177a144f4ace75c7dcb44baa67f053a58a7e6dab81e63ab2aeb53a1db635cd086e192bdda3af4a134876f8e238c301a4a0d74bd305c78e19474cefb442b9fb3ff684c2dec7095e16e5918685c5d620f17d872ea46aee45d9790acb277e1bfb29f644559e6ac546f60c4c26129084f5ba4cf6d2018934a39996514bcb5f7ebf488a0fe7149f6f3c6415d415f1bfb0d78a3d291a233e0a26c541ae77b2846d455d329fc41a74ffd608f0a576e044d0233b2de099f26577a63afa096d30ed1e1b5678a810245f598c7b16c8e2aa1c951e20513129c2626e79f3e4c2d17026f74b5ce8c49410c3144c557ef75ef7a2a66c7a9a4b2e4a823c907c713569bd1c952e3f2a32357ee6a84767fb3bc7c61815fcb4b580a42982bcf6f6d97efeb8e1d964192c777b38105a88979a6f7310ce267ecf1469a8ac9908f72ea1994bd4ba5fdf39c25cd1b1cd09ba7bcfc7f64273ff711127b10edfe284f617d5f0350de2276544fe9af5d70d81971e7f5c332d5255f07c43069beb54a6455d2a13b514c06e8d5e7c698b77dff6f3adc2ba9061031eab2fc679995c105ba58d820b1dda0fec29657d0e18ec99650771dea85e4c0647a3a4c109a64ad73d3c75c60b0001bdd688094824c81f4f5c0a04488109fe00da81151aa62bd2b8a84b2e6a4eac8ff61ece0b",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x520fd149b564b3b933365e1ad2b22edf702bd9c010fc42c812f685be0e50d364"
+    },
+    "productId": "266",
+    "productContract": "0xf9765E56CeE8DDf5fAb147e1A555c5E9A06e5eb2",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-25T21:32:26.901Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x63929081e5b19d18289a520209c72ed349805406#controller",
+      "role": "seller",
+      "payloadHash": "0xb9bc9fea2d22727a00eec135a2a41d9c2dfa9c112d101eefd2af7b6a0d4b25bf",
+      "jws": "0x30c1c8272c8f27fb81931c6133706dc9d2a355ff537b6457fc51b48fe01456195d96e493ebb7e305ba6f9056794d718fb6a279d9be6de1ce784b48e1963a3f981b"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "urn:uuid:real-vc-1774876619023-4",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xfdadf9fc685e3f2a99b97fab043700c7887413d7",
+    "name": "Western Areas Nickel Ltd"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x25d010e9ea54f5887d7e0ec65df3d3e2cf7dc8d5",
+    "name": "Harjavalta Nickel Oy"
+  },
+  "issuanceDate": "2026-03-30T13:16:59.023Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x25d010e9ea54f5887d7e0ec65df3d3e2cf7dc8d5",
+    "productName": "Nickel mine",
+    "batch": "REAL-BATCH-004",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-ni-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-ni-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "The Nickel Mark",
+        "issuer": "Nickel Institute",
+        "certificateCid": "bafy-cert-ni-mine-nickmark",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ni-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction"
+    ],
+    "location": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "latitude": -31.5,
+      "longitude": 121.8
+    },
+    "energySource": "solar",
+    "emissionsClaim": "WA solar-hybrid mine, scope-1+2 disclosed",
+    "climateClaim": "Paris-aligned mine decarbonisation roadmap",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x82b15bc1b17a33fea49b0f489cb5ee72bc4a358e9cef0799880de5ccd9461e61\",\"proof\":\"0x280602307e16df336605b781f4a330a2005555bc46a371800705fb531f25e6404a35220a88822db5703db2a4c616f4dfb1307f87cc2923a218a1bdb1bf04e164524d4b76f990bce1341b4bd2a3152221c17fec015a5324c400a937c4865aa222a0a1a176f88c60a9e987e2fa847fd86ccd639c3e1bdc03962296699f27b2a226bce9c7e66a581d7de8ec11ba1280010fcb6f3232286b1e5adad451f6e1f4a307dd7fced243a75bd7b736ef4b2f6c8f97c24e0c78d1cdcd7c66b8ee60f5bfc300e9c9a32d739150643454d00fc33a16a0ead7ab898645dc9ed5b97211eca9c10dcea73dd0d412f286dc66d3d4a33beba70bfd415ae4de22842e3420d4449b0547e6878414cec445cff23ae833377a7868683c31859594d3b0813ef958a452cf20aa45e45eb8363d653d9465b29dd5a485ef095acdd301da3e835d3752ee282619461c846eef37ff761a05201562ad3c66cd4717ab7fb14151d173f8bd4ee2ef210464ca952377ff3b46c7f272eeefb076f853bcdf619d6eed89055ececae64616cc4067b0dccfbfbe53aca51b09767c85d6e196d079373ea5474378b8a6f8f467dc7ea6cecdbb79e59d5b960d1b9a7384bfb47c10b81d7570c8fedec1e1139950e4f85fe57c5ab3ddc5243b48b00fbec160e5b19417efd495f3989c4bcc72a27ec60384c5caf101abbdfffcebf4ab4dd36394e7f37b2308d29939aa04eb4f0f014cb0299bb711645d82bb0e7e2b53589c722fddc5f4fca4dd0537fed9f718f030fa50be6910f11b5019d1e08dd3b3838f4083fb362f76f532fbd62cde77e99956e64c88489cc6ce8b6e79edbf43836dbdf769db9a45d08c2152d01003e3a3b45bcf825acaba66b796a38975dc0aa3e15115b46e341f71d4921fdf4b14654a430b9fe31241c026d8692e49d01efef51d931f46929a9342d6dccdd968b56bd67f0f\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x65dd4a09dfa5a6c588a90967c693701a7ccb02324f5e1435d7025cb36c44edf0\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x82b15bc1b17a33fea49b0f489cb5ee72bc4a358e9cef0799880de5ccd9461e61",
+      "proof": "0x280602307e16df336605b781f4a330a2005555bc46a371800705fb531f25e6404a35220a88822db5703db2a4c616f4dfb1307f87cc2923a218a1bdb1bf04e164524d4b76f990bce1341b4bd2a3152221c17fec015a5324c400a937c4865aa222a0a1a176f88c60a9e987e2fa847fd86ccd639c3e1bdc03962296699f27b2a226bce9c7e66a581d7de8ec11ba1280010fcb6f3232286b1e5adad451f6e1f4a307dd7fced243a75bd7b736ef4b2f6c8f97c24e0c78d1cdcd7c66b8ee60f5bfc300e9c9a32d739150643454d00fc33a16a0ead7ab898645dc9ed5b97211eca9c10dcea73dd0d412f286dc66d3d4a33beba70bfd415ae4de22842e3420d4449b0547e6878414cec445cff23ae833377a7868683c31859594d3b0813ef958a452cf20aa45e45eb8363d653d9465b29dd5a485ef095acdd301da3e835d3752ee282619461c846eef37ff761a05201562ad3c66cd4717ab7fb14151d173f8bd4ee2ef210464ca952377ff3b46c7f272eeefb076f853bcdf619d6eed89055ececae64616cc4067b0dccfbfbe53aca51b09767c85d6e196d079373ea5474378b8a6f8f467dc7ea6cecdbb79e59d5b960d1b9a7384bfb47c10b81d7570c8fedec1e1139950e4f85fe57c5ab3ddc5243b48b00fbec160e5b19417efd495f3989c4bcc72a27ec60384c5caf101abbdfffcebf4ab4dd36394e7f37b2308d29939aa04eb4f0f014cb0299bb711645d82bb0e7e2b53589c722fddc5f4fca4dd0537fed9f718f030fa50be6910f11b5019d1e08dd3b3838f4083fb362f76f532fbd62cde77e99956e64c88489cc6ce8b6e79edbf43836dbdf769db9a45d08c2152d01003e3a3b45bcf825acaba66b796a38975dc0aa3e15115b46e341f71d4921fdf4b14654a430b9fe31241c026d8692e49d01efef51d931f46929a9342d6dccdd968b56bd67f0f",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x65dd4a09dfa5a6c588a90967c693701a7ccb02324f5e1435d7025cb36c44edf0"
+    },
+    "productId": "96",
+    "productContract": "0x7b28366b026eb6233E896C80079b739904355971",
+    "chainId": "11155111",
+    "claims": {
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-30T13:16:59.023Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xfdadf9fc685e3f2a99b97fab043700c7887413d7#controller",
+      "role": "seller",
+      "payloadHash": "0x18185ee1a635acae774ea6100d30a550f22ddae47fb58d8774be19120896ee0b",
+      "jws": "0xea885d7d453a6dac4feec4c8d9797f6a5ceda76a164c08c649a81499860ed6a42ff80e53d76eec16629883394da0f4a0f853c5d02c5b3cff1f9b11a55884e3401b"
+    }
+  ]
+}

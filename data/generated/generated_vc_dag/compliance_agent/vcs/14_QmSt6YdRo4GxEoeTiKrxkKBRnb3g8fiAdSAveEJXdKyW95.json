@@ -1,0 +1,253 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517120894-14",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x815c062f9f1e855ad8876830ce141db5e64e4e4d",
+    "name": "Wolfram Precision Terminals GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x94b3e18d584e3e8564daaae800aa860fdfca3086",
+    "name": "Torino Power Electronics S.p.A."
+  },
+  "issuanceDate": "2026-03-26T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x94b3e18d584e3e8564daaae800aa860fdfca3086",
+    "productName": "Tungsten-plated high-current terminals lot WPT-2026-12",
+    "batch": "WPT-2026-12",
+    "quantity": 1,
+    "previousCredential": "QmZVcY5vFVu7W8F2xdqrFiUHC98FKpQ3Hprz7ATrnJDH9x",
+    "componentCredentials": [
+      "QmZVcY5vFVu7W8F2xdqrFiUHC98FKpQ3Hprz7ATrnJDH9x",
+      "QmcYDa8hmkyJ48poejDJ3uejAKYzYP1QWjPhqPqwXkeCma",
+      "QmefPTMkqfLePCgwX6r1Nqfb7rjP6Ttv1xL8FpNjM6NabB"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-case1-cert-wpt-iso9001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-wpt-iso9001"
+      }
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 51.2,
+      "longitude": 10.5
+    },
+    "facilityRole": "component_manufacturer",
+    "materialTags": [
+      "tungsten",
+      "electrical_terminals"
+    ],
+    "operationTags": [
+      "midstream",
+      "component_manufacturing",
+      "3tg",
+      "union_importer"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "raw_material_component",
+        "subcategory": "not_applicable",
+        "weight_kg": 0,
+        "capacity_kwh": 0,
+        "market_event": "internal_transfer",
+        "placed_on_union_market": false,
+        "exclusion_reason": "none",
+        "status": "intermediate_input",
+        "has_external_storage": false,
+        "operator_role": "upstream_supplier",
+        "is_rechargeable": false,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "not_applicable",
+        "is_sli_design": false
+      },
+      "conflict_minerals": {
+        "union_importer": true,
+        "material_type": "tungsten",
+        "cn_code": "8101",
+        "annex_i_threshold_exceeded": true,
+        "material_form": "metal",
+        "origin_country": "Rwanda",
+        "compliance_documentation_exists": true,
+        "recognised_scheme_used": false,
+        "supply_chain_policy_exists": true,
+        "oecd_annex_ii_alignment": true,
+        "senior_management_responsibility_assigned": true,
+        "record_retention_years": 5,
+        "supplier_contract_policy_flowdown": true,
+        "grievance_mechanism_exists": false,
+        "traceability_system_exists": true,
+        "smelter_refiner_identified": false,
+        "third_party_audit_exists": false,
+        "risk_assessment_exists": true,
+        "risk_assessment_reported_to_senior_management": true,
+        "risk_response_strategy_defined": false,
+        "risk_management_plan_exists": false,
+        "risk_mitigation_tracking": false,
+        "stakeholder_consultation_for_mitigation": false,
+        "chain_of_custody_records": false,
+        "substantive_evidence_of_smelter_refiner_compliance": false,
+        "audit_scope_complete": false,
+        "audit_conformity_objective": false,
+        "audit_recommendations_provided": false,
+        "audit_independence_confirmed": false,
+        "audit_reports_shared_with_authorities": false,
+        "information_shared_with_downstream_purchasers": false,
+        "public_disclosure_exists": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xd475389ab870f012ea1d106ce46b2ab2f2c2374dd2e1ab2d62a459ab2a764647\",\"proof\":\"0xbedc047286d4a3a30d454fe4707919a3fe69e19ef126233bfb8b152cc32d981e3649966d6185dd50e1ce1b63fefebedb31753f6125f7d150bf7b0463c622dc71d473736717d4f7a14bc1203d81abe0ac71e90d7918d9428ce08d9fdc80e8534a60c2289abfe9f4a31f2604cac2c93e23cfe08d65c365aae263e050e7f1d9935761ffd92ed80d2303f4947ee878e4b16ef59b20fcbbbbacfcd0f86c4ea22ee6046bc5ecdc6f0a25d79d5e72fb66714a4c92cc47dd0e334321d2618bdf8e6d2b091037038a3c63e4802dee5ebf8cd96a8f84fb2b235345e11a5f4f04d73c54ad0ea8b3b8b07bef55e3f2d09db93155dfd3e2080a1c500ee9fbb108b795afc4163208cbd2d84c680e4c63be55d56932947c00dc1d799886b6597f2a2a9f1873fe4240a57f0e025ffc039f9d6fda7dd9e0ef5b70346381b05d2479023183a7b79e47f69e62c711e7e92501d5c297267a961b5e7e9fd1a2c8bd127314e9dcb342492fcef8f7bf276b0998293a26b138d572a8bce92dcfbbc7aef6c8c6c354dbc5e377ccd3ff6cf060967d028a016f89e37b74af3f71caeb214f420bdea2a626c776315edabcc2b2f623064cc5c154f2b9750d6e79470c3b2a017665590c2d99d9443086d9b003c528903dc18e87fc4d3fb61af7218474244d27323e51d8b5f18c3f5bc842395b9d9bab718c5cd045a186be068a9873b24f647b58086425c259ebc43c2c250cacd96c4562c962957f0d3e0cbe387493f720c8764f7c03263f8c5b26546a84325e69868bd5be34e898107f208b20f60b12d6e78601d2445ae15bccea0c36fc4cc8e61501d210a8ab3e367f7c0d2bf8ed0b2711aa32a73b3062814928006aefaeef496b5e75568e3233076410d615d61d27c195100935bf3c3f20d9570f91b2cdda216027e93eb9f660fa12bbe8261135ea107c5231b2e0f513c7fc2a0e\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xac5d29ed699ba07bafba0cf4a6ce8dfd408d5e47820c8f1d6ca712adc2922b8a\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xd475389ab870f012ea1d106ce46b2ab2f2c2374dd2e1ab2d62a459ab2a764647",
+      "proof": "0xbedc047286d4a3a30d454fe4707919a3fe69e19ef126233bfb8b152cc32d981e3649966d6185dd50e1ce1b63fefebedb31753f6125f7d150bf7b0463c622dc71d473736717d4f7a14bc1203d81abe0ac71e90d7918d9428ce08d9fdc80e8534a60c2289abfe9f4a31f2604cac2c93e23cfe08d65c365aae263e050e7f1d9935761ffd92ed80d2303f4947ee878e4b16ef59b20fcbbbbacfcd0f86c4ea22ee6046bc5ecdc6f0a25d79d5e72fb66714a4c92cc47dd0e334321d2618bdf8e6d2b091037038a3c63e4802dee5ebf8cd96a8f84fb2b235345e11a5f4f04d73c54ad0ea8b3b8b07bef55e3f2d09db93155dfd3e2080a1c500ee9fbb108b795afc4163208cbd2d84c680e4c63be55d56932947c00dc1d799886b6597f2a2a9f1873fe4240a57f0e025ffc039f9d6fda7dd9e0ef5b70346381b05d2479023183a7b79e47f69e62c711e7e92501d5c297267a961b5e7e9fd1a2c8bd127314e9dcb342492fcef8f7bf276b0998293a26b138d572a8bce92dcfbbc7aef6c8c6c354dbc5e377ccd3ff6cf060967d028a016f89e37b74af3f71caeb214f420bdea2a626c776315edabcc2b2f623064cc5c154f2b9750d6e79470c3b2a017665590c2d99d9443086d9b003c528903dc18e87fc4d3fb61af7218474244d27323e51d8b5f18c3f5bc842395b9d9bab718c5cd045a186be068a9873b24f647b58086425c259ebc43c2c250cacd96c4562c962957f0d3e0cbe387493f720c8764f7c03263f8c5b26546a84325e69868bd5be34e898107f208b20f60b12d6e78601d2445ae15bccea0c36fc4cc8e61501d210a8ab3e367f7c0d2bf8ed0b2711aa32a73b3062814928006aefaeef496b5e75568e3233076410d615d61d27c195100935bf3c3f20d9570f91b2cdda216027e93eb9f660fa12bbe8261135ea107c5231b2e0f513c7fc2a0e",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xac5d29ed699ba07bafba0cf4a6ce8dfd408d5e47820c8f1d6ca712adc2922b8a"
+    },
+    "productId": "200",
+    "productContract": "0xF985493C9B4e343D05FaBb1117874CD2C12aBF08",
+    "chainId": "11155111",
+    "companyName": "Wolfram Precision Terminals GmbH",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 140000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "DE-CASE-0014",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 200000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Wolfram Precision Terminals GmbH reports site-level emissions for Tungsten-plated high-current terminals lot WPT-2026-12.",
+        "climateClaim": "Wolfram Precision Terminals GmbH maintains transition-planning and operational decarbonisation evidence for component_manufacturer activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Germany",
+        "facilityRole": "component_manufacturer",
+        "materialTags": [
+          "tungsten",
+          "electrical_terminals"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "component_manufacturer",
+        "componentType": "tungsten",
+        "qualityStandards": [
+          "ISO 9001"
+        ],
+        "traceabilityArtifacts": [
+          "vc_14_tungsten_terminals_germany-material-balance-sheet",
+          "vc_14_tungsten_terminals_germany-shipment-record",
+          "vc_14_tungsten_terminals_germany-supplier-declaration"
+        ],
+        "serialisationScheme": "WPT-2026-12-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-wpt-iso9001"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "DE-WPT-2026-12",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "electronic component supplier, no battery market-placement role"
+      },
+      "conflict_minerals": {
+        "status": "fail",
+        "reason": "EU importer branch intentionally missing audit, disclosure, smelter identification, and grievance controls"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "3TG branch failure driver"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-26T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x815c062f9f1e855ad8876830ce141db5e64e4e4d#controller",
+      "role": "issuer",
+      "payloadHash": "0x8d57d28c753a7bcc45e7459fa8f2bb3dec2e31e3bbbe49a376727de1f7c458ee",
+      "jws": "0xaae7e02f2b0f03248a6e14a674208bef7c151deefdd4c9482fd622e045162f25734122f5ce5174f054799a3acd3b93835e8ce46656ca99d6df6cfafa8516d56b1b"
+    }
+  ]
+}

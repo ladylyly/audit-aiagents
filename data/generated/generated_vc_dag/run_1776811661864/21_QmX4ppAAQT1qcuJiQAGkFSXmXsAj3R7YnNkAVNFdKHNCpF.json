@@ -1,0 +1,88 @@
+{
+  "id": "urn:uuid:real-vc-1776811681333-21",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "issuanceDate": "2026-04-17T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "productName": "BMS electronics",
+    "batch": "REAL-BATCH-021",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-bms-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-bms-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_component",
+      "electronics"
+    ],
+    "operationTags": [
+      "downstream",
+      "manufacturing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 48.1,
+      "longitude": 11.6
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "RoHS+REACH-compliant BMS production",
+    "climateClaim": "German green energy tariff",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xf4ab4df32db87d9460b043e9d1509cbceb21368de3c99e43227d6a8c086b4247\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xf4ab4df32db87d9460b043e9d1509cbceb21368de3c99e43227d6a8c086b4247",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "373",
+    "productContract": "0x7AE78f4a51D7b79f18Cd9C996d486004b3F46782",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 6,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-17T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf#controller",
+      "role": "seller",
+      "payloadHash": "0x60c46e6250d026b5d4eb8f89c9dd96ef1e956f8064171a0d3bbf7f20309bc6bb",
+      "jws": "0x6313da33c2b205252a2429788a29f043d74a1d9b14c93163b79125f63473c45d63c7677cf3bb190601ee7560c64bec3e9f6626e510820b887c02827bce6000a31c"
+    }
+  ]
+}

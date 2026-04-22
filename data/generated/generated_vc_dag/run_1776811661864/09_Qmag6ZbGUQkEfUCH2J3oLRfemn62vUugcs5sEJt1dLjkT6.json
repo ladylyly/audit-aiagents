@@ -1,0 +1,96 @@
+{
+  "id": "urn:uuid:real-vc-1776811670406-9",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x00936c83717978fbd05f6671218240d9ae852d59",
+    "name": "Mason Graphite Canada Inc"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x4c67a6cf64232fa632386e6248b0885f19ee4648",
+    "name": "Nouveau Monde Anode Inc"
+  },
+  "issuanceDate": "2026-04-05T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x4c67a6cf64232fa632386e6248b0885f19ee4648",
+    "productName": "Graphite anode processing",
+    "batch": "REAL-BATCH-009",
+    "quantity": 1,
+    "previousCredential": "QmTRLNKfQhBhTUWcKAnBEptXLdWwuQE7a3mbd9D4ugdFDZ",
+    "componentCredentials": [
+      "QmTRLNKfQhBhTUWcKAnBEptXLdWwuQE7a3mbd9D4ugdFDZ"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-gr-proc-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-gr-proc-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-gr-proc-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "graphite"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Canada",
+      "countryCode": "CA",
+      "latitude": 46.8,
+      "longitude": -71.2
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Spherical graphite, scope-2 <20g CO2/kWh",
+    "climateClaim": "ISO 14064 certified",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x265e6fdaa8a4aaab3a7dd0b71ae0c4b570729659db0018514966209d225ebf18\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x265e6fdaa8a4aaab3a7dd0b71ae0c4b570729659db0018514966209d225ebf18",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "361",
+    "productContract": "0x5F1BcD25314d69E764864de017691895cBFFFd7E",
+    "chainId": "11155111",
+    "claims": {
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-05T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x00936c83717978fbd05f6671218240d9ae852d59#controller",
+      "role": "seller",
+      "payloadHash": "0x3563702eeeacf257196c28c1cc8d3db52714c2e1aa893d9cccb1d81f45f1e8ff",
+      "jws": "0x6a30106d4b57a9a369a44281da67ce6272ecdf8f5711ba4fd3d1bbbd82e4dd734e584acb5f4738b701508dc9b20c00675fe0c3f3dfd02f39bea4104f983b8dbe1c"
+    }
+  ]
+}

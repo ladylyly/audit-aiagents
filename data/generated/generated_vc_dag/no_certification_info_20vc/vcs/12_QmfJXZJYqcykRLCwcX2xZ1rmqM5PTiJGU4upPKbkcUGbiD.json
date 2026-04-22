@@ -1,0 +1,157 @@
+{
+  "id": "urn:uuid:thesis-dense20-1776205089475-12",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisDenseComplianceCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xfd26e3acbd82d172cc41e0848a99bce9fc1f5315",
+    "name": "Penang Tin Metals Berhad"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xc4cd0fc4c9b0f2aef2bdcbf05827f74e2e15d933",
+    "name": "Wolfram Precision Terminals GmbH"
+  },
+  "issuanceDate": "2026-04-06T22:17:51.791Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xc4cd0fc4c9b0f2aef2bdcbf05827f74e2e15d933",
+    "productName": "Refined tin solder feed lot PTM-2026-14",
+    "batch": "PTM-2026-14",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Malaysia",
+      "countryCode": "MY",
+      "latitude": 5.4,
+      "longitude": 100.3
+    },
+    "facilityRole": "smelter",
+    "materialTags": [
+      "tin"
+    ],
+    "operationTags": [
+      "midstream",
+      "smelting",
+      "3tg"
+    ],
+    "claims": {
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "tin",
+        "cn_code": "8001",
+        "annex_i_threshold_exceeded": true,
+        "material_form": "metal",
+        "origin_country": "Malaysia",
+        "compliance_documentation_exists": true,
+        "recognised_scheme_used": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xf0ac2a4c90a275ac4acc9124bded2cd460a63991c14cd57f453295b31cfabb07\",\"proof\":\"0x7cf69104257d483b74c6fae932c4e70f9df350f7c455ecb36cb72c184deead183a94284f32c1f680fae9033f7c84eaa8ac8f26635b6130199587100c60774b07f66233223bea22c558ed892c43f4eedd84d0a9aeeca4ce05da3aa34ec4e1d163947b98ad155d0009445b0e7f906aa1988761cb1e73d7ff272df3f96046c068049f91c919cd50ce054c6170c3244337cfb926be2f5e75571dc5a280448e1913073c3dc8a076dd2d63fec9d2ce58c834af1424fb28c54ee9d952ebfd29333e6e0cbf85b07881b012debd2b93cf6dded6b69cc83698d235fabd0b7c58a33d98f5092a864bf3c8fadcad8d66b1638082ea212e58cfc30e86b47698e213c9d66d9719a4394e1e46a95028823a11b5dbcfc795f78f79b4747043efe4c9afa0e7f03b316e3b125837be91885efde611ef2d2022927a7420f0800820a18dad3a1533eb3baad5c42a04b04e95595c52828bcf5c2b6d3985b1407a4ab2604999871543687116fb7c201bd170b33ce3452a52776998d0c973288e92ef19d2d4be32e371b057540b8630aed19b1abf2f904c696348cc8115449adc3830007f10475d237a743c2611bdc7e18eb14c7a88437ce0a7c11c178bb24a025927f25a4e030a8ab94230928adaf22cacdc25203d31adf9b45595da17441a7ec9c1876dd85f1462cace450a0207a57c32ddbae4642e7a827f2b82ba327e24d6838d37eb46b96e47f6fb6a82f69ef0a6fdeec2ba5c6a4a7929c86c27288e6fe73a3a22a247e3203063a453140ebfebc0232856f3b1abeb227612e129e4ee409e1e2917c323966c4866440196ad647e024c9cba5a4e8352fb5247b66355734b2f1449c2f2057b11567a765c87f232940d37c27ee49e590527f4240e0c1677f20dae0778c39c8933d91d240a7cfcccde51ccb941024459e80bcbdb4060dd1baac90e69c7ce9ffa243805b608\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x78d455168c79d3c6a01c4d106e7bade9461db93004e63e354bbe96918f829c3a\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xf0ac2a4c90a275ac4acc9124bded2cd460a63991c14cd57f453295b31cfabb07",
+      "proof": "0x7cf69104257d483b74c6fae932c4e70f9df350f7c455ecb36cb72c184deead183a94284f32c1f680fae9033f7c84eaa8ac8f26635b6130199587100c60774b07f66233223bea22c558ed892c43f4eedd84d0a9aeeca4ce05da3aa34ec4e1d163947b98ad155d0009445b0e7f906aa1988761cb1e73d7ff272df3f96046c068049f91c919cd50ce054c6170c3244337cfb926be2f5e75571dc5a280448e1913073c3dc8a076dd2d63fec9d2ce58c834af1424fb28c54ee9d952ebfd29333e6e0cbf85b07881b012debd2b93cf6dded6b69cc83698d235fabd0b7c58a33d98f5092a864bf3c8fadcad8d66b1638082ea212e58cfc30e86b47698e213c9d66d9719a4394e1e46a95028823a11b5dbcfc795f78f79b4747043efe4c9afa0e7f03b316e3b125837be91885efde611ef2d2022927a7420f0800820a18dad3a1533eb3baad5c42a04b04e95595c52828bcf5c2b6d3985b1407a4ab2604999871543687116fb7c201bd170b33ce3452a52776998d0c973288e92ef19d2d4be32e371b057540b8630aed19b1abf2f904c696348cc8115449adc3830007f10475d237a743c2611bdc7e18eb14c7a88437ce0a7c11c178bb24a025927f25a4e030a8ab94230928adaf22cacdc25203d31adf9b45595da17441a7ec9c1876dd85f1462cace450a0207a57c32ddbae4642e7a827f2b82ba327e24d6838d37eb46b96e47f6fb6a82f69ef0a6fdeec2ba5c6a4a7929c86c27288e6fe73a3a22a247e3203063a453140ebfebc0232856f3b1abeb227612e129e4ee409e1e2917c323966c4866440196ad647e024c9cba5a4e8352fb5247b66355734b2f1449c2f2057b11567a765c87f232940d37c27ee49e590527f4240e0c1677f20dae0778c39c8933d91d240a7cfcccde51ccb941024459e80bcbdb4060dd1baac90e69c7ce9ffa243805b608",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x78d455168c79d3c6a01c4d106e7bade9461db93004e63e354bbe96918f829c3a"
+    },
+    "productId": "298",
+    "productContract": "0x4Df245e5DE546df19031F76d1712F50564796d56",
+    "chainId": "11155111",
+    "companyName": "Penang Tin Metals Berhad",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 65000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "MY-DENSE20-0012",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 92000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "grid_and_fossil_mix",
+        "emissionsClaim": "Penang Tin Metals Berhad reports site-level emissions and energy-source disclosures for Refined tin solder feed lot PTM-2026-14.",
+        "climateClaim": "",
+        "environmentalRiskSignals": [
+          "smelter_energy_intensity"
+        ],
+        "socialRiskSignals": [
+          "migrant_workforce_exposure"
+        ],
+        "governanceRiskSignals": [
+          "audit_validity_dependency"
+        ],
+        "countryOfOperation": "Malaysia",
+        "facilityRole": "smelter",
+        "materialTags": [
+          "tin"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "smelter",
+        "componentType": "tin",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_12_tin_smelter_malaysia-material-balance-sheet",
+          "vc_12_tin_smelter_malaysia-shipment-record",
+          "vc_12_tin_smelter_malaysia-supplier-declaration"
+        ],
+        "serialisationScheme": "PTM-2026-14-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "road_and_container",
+        "customsReference": "MY-PTM-2026-14",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "electronics mineral supplier only"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "outside Union importer role"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "3TG provenance branch support only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-06T22:17:51.791Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xfd26e3acbd82d172cc41e0848a99bce9fc1f5315#controller",
+      "role": "issuer",
+      "payloadHash": "0xdd1a2b9873566132a0c1e242bb55f7ae04752037d66445ed728c80d8f88896bf",
+      "jws": "0x8081b2cd61aeec180a0b759361010150dfb39a590a533fb7acc22340f68edf145926d603ae67233e095b7ffc0d8a6d1122424f9a0340172756006cb31c83a2211b"
+    }
+  ]
+}

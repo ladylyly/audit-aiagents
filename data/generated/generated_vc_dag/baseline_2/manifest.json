@@ -1,0 +1,459 @@
+{
+  "runId": "run_1775161535384",
+  "rootCid": "QmShJsiprvZw6jbxJ7QZYAm8T79dkvuJpxA2uX1injMUR5",
+  "nodeCount": 25,
+  "wallets": {
+    "issuerAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+    "issuerName": "BMWi Battery OEM GmbH",
+    "deployerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+    "deployerName": "VARTA Battery Pack GmbH",
+    "ephemeralCount": 15,
+    "ephemeralFile": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/generated_vc_dag/run_1775161535384/ephemeral_wallets.json"
+  },
+  "chainId": 11155111,
+  "zkpCommitmentsFile": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/latest_zkp_commitments.json",
+  "createdAt": "2026-04-02T20:25:53.908Z",
+  "records": [
+    {
+      "index": 0,
+      "chunkName": "Lithium brine extraction",
+      "vcId": "urn:uuid:real-vc-1775161535398-1",
+      "cid": "Qmd4iCko2erDzbXi1LPsAwK7L9xtFBPn4ReyjABZNrsS4N",
+      "productContract": "0x8Dd16AF88AAcD7431C277a0F147662e5bD167211",
+      "productId": "91",
+      "priceCommitment": "0xa00676f8589a97b479eafd4b27a11ffc8a743f74e76ccd1befbc50c5a320a059",
+      "zkpCommitment": "0xa00676f8589a97b479eafd4b27a11ffc8a743f74e76ccd1befbc50c5a320a059",
+      "issuerAddress": "0x9e76CA9445C99e06D1C369634fa6B52C0522B45B",
+      "issuerName": "SQM Chile Lithium S.A.",
+      "holderAddress": "0x9e76CA9445C99e06D1C369634fa6B52C0522B45B",
+      "holderName": "SQM Chile Lithium S.A.",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-09T20:25:35.390Z"
+    },
+    {
+      "index": 1,
+      "chunkName": "Lithium carbonate processing",
+      "vcId": "urn:uuid:real-vc-1775161537146-2",
+      "cid": "QmREmYCGZUU5Etj8pue41tyddxBTR6JntQvUakwMFqUu59",
+      "productContract": "0x370aB9F54e321B51dCb36e11B95EC10dA6D09f9d",
+      "productId": "92",
+      "priceCommitment": "0x287d2cb571ee4b4223a06216defd345cfe95d704f08859a7935394cd135e011e",
+      "zkpCommitment": "0x287d2cb571ee4b4223a06216defd345cfe95d704f08859a7935394cd135e011e",
+      "issuerAddress": "0x9e76CA9445C99e06D1C369634fa6B52C0522B45B",
+      "issuerName": "SQM Chile Lithium S.A.",
+      "holderAddress": "0x3267E6B732Ba0d418F3d81a488Fe046D7809BBe8",
+      "holderName": "Kokkola Lithium Oy",
+      "componentCredentials": [
+        "Qmd4iCko2erDzbXi1LPsAwK7L9xtFBPn4ReyjABZNrsS4N"
+      ],
+      "uploadedAt": "2026-03-10T20:25:35.390Z"
+    },
+    {
+      "index": 2,
+      "chunkName": "Lithium hydroxide refinery",
+      "vcId": "urn:uuid:real-vc-1775161538060-3",
+      "cid": "QmSo8z2DEmikV9QuzFbCEyaux5opJ7mZ1tTPtHd7kZt4Bz",
+      "productContract": "0xd242E0AdA6593937df5DBdB6C56289B0516707dc",
+      "productId": "94",
+      "priceCommitment": "0xf63dc9555c81563d0c0af62f534560865fbe22b38ebb79a38dbcfbc97147421b",
+      "zkpCommitment": "0xf63dc9555c81563d0c0af62f534560865fbe22b38ebb79a38dbcfbc97147421b",
+      "issuerAddress": "0x3267E6B732Ba0d418F3d81a488Fe046D7809BBe8",
+      "issuerName": "Kokkola Lithium Oy",
+      "holderAddress": "0x1470D85d534cFC0e97DBa62aa3eFf8370a906355",
+      "holderName": "Umicore Battery Materials Oy",
+      "componentCredentials": [
+        "QmREmYCGZUU5Etj8pue41tyddxBTR6JntQvUakwMFqUu59"
+      ],
+      "uploadedAt": "2026-03-11T20:25:35.390Z"
+    },
+    {
+      "index": 3,
+      "chunkName": "Nickel mine",
+      "vcId": "urn:uuid:real-vc-1775161538847-4",
+      "cid": "QmcxZtViKsdqUeAvBsDsbBpH5WJFF7W1JtDwZ7cZ93m5po",
+      "productContract": "0x7b28366b026eb6233E896C80079b739904355971",
+      "productId": "96",
+      "priceCommitment": "0x82b15bc1b17a33fea49b0f489cb5ee72bc4a358e9cef0799880de5ccd9461e61",
+      "zkpCommitment": "0x82b15bc1b17a33fea49b0f489cb5ee72bc4a358e9cef0799880de5ccd9461e61",
+      "issuerAddress": "0xCC9AbA01B9B66ECD324297B4f187202059233ab3",
+      "issuerName": "Western Areas Nickel Ltd",
+      "holderAddress": "0xeA2929Ff3EB537A0f5C9d73563b8d0ed442c1F61",
+      "holderName": "Harjavalta Nickel Oy",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-12T20:25:35.390Z"
+    },
+    {
+      "index": 4,
+      "chunkName": "Nickel sulfate refinery",
+      "vcId": "urn:uuid:real-vc-1775161539565-5",
+      "cid": "QmRoRgnSrQbtrpsB2aBkpDoAa6aL8eJg71CVajXhamPh9J",
+      "productContract": "0x992c2378E6172EBD877E056AE2eE1E533F385285",
+      "productId": "99",
+      "priceCommitment": "0xcea59a76806fa1b16fe27cc3fe988baf6fc48ecb80e45b857be6f31f25ba6e1b",
+      "zkpCommitment": "0xcea59a76806fa1b16fe27cc3fe988baf6fc48ecb80e45b857be6f31f25ba6e1b",
+      "issuerAddress": "0xeA2929Ff3EB537A0f5C9d73563b8d0ed442c1F61",
+      "issuerName": "Harjavalta Nickel Oy",
+      "holderAddress": "0x1470D85d534cFC0e97DBa62aa3eFf8370a906355",
+      "holderName": "Umicore Battery Materials Oy",
+      "componentCredentials": [
+        "QmcxZtViKsdqUeAvBsDsbBpH5WJFF7W1JtDwZ7cZ93m5po"
+      ],
+      "uploadedAt": "2026-03-13T20:25:35.390Z"
+    },
+    {
+      "index": 5,
+      "chunkName": "Cobalt mine",
+      "vcId": "urn:uuid:real-vc-1775161540292-6",
+      "cid": "QmZ6wKYMDSwpxWaztmZfFjW2Lpqpa4K1dQfVRDzqVhg1eh",
+      "productContract": "0x52F3cADd447522f569B6E13E9a5395Fda59202f8",
+      "productId": "100",
+      "priceCommitment": "0x9e272ac372e930f00d447d3681edd5b920e9e945ffb39541325b291f6eda3211",
+      "zkpCommitment": "0x9e272ac372e930f00d447d3681edd5b920e9e945ffb39541325b291f6eda3211",
+      "issuerAddress": "0x5CFbfFd4bCe88d2a9402973204EbBbE372C0FFdb",
+      "issuerName": "Cobalt Blue Holdings AU",
+      "holderAddress": "0x7AA4D7fE901CE36146feE9d78e4AE7F7c54099C3",
+      "holderName": "Freeport Cobalt Oy",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-14T20:25:35.390Z"
+    },
+    {
+      "index": 6,
+      "chunkName": "Cobalt sulfate refinery",
+      "vcId": "urn:uuid:real-vc-1775161540978-7",
+      "cid": "QmRDzVmmvFkXfBXm9j9XcyUvywhnvXfmntT6VJZAyDi5LX",
+      "productContract": "0x9aF5005E5C4569aa755DaAF60c7889e9d83abcF8",
+      "productId": "101",
+      "priceCommitment": "0xd2f33567ff235c14d2531a4e93505c534b621b20dc7a39cf4b43fdfada61211c",
+      "zkpCommitment": "0xd2f33567ff235c14d2531a4e93505c534b621b20dc7a39cf4b43fdfada61211c",
+      "issuerAddress": "0x7AA4D7fE901CE36146feE9d78e4AE7F7c54099C3",
+      "issuerName": "Freeport Cobalt Oy",
+      "holderAddress": "0x1470D85d534cFC0e97DBa62aa3eFf8370a906355",
+      "holderName": "Umicore Battery Materials Oy",
+      "componentCredentials": [
+        "QmZ6wKYMDSwpxWaztmZfFjW2Lpqpa4K1dQfVRDzqVhg1eh"
+      ],
+      "uploadedAt": "2026-03-15T20:25:35.390Z"
+    },
+    {
+      "index": 7,
+      "chunkName": "Natural graphite mining",
+      "vcId": "urn:uuid:real-vc-1775161541717-8",
+      "cid": "QmYqpyJjMkVhafjSmW1odKLXAL8nUAm5Nj9Kpsy7mfQikz",
+      "productContract": "0x642537ae1b85F888309aC8E891d2d95d0f917E2c",
+      "productId": "104",
+      "priceCommitment": "0xc8da9197f88f2ba46300c1f06c74cd71d6a66412a6a55df748c4f200f08dc622",
+      "zkpCommitment": "0xc8da9197f88f2ba46300c1f06c74cd71d6a66412a6a55df748c4f200f08dc622",
+      "issuerAddress": "0xe8eb396005aDcF852E6fBb5E60b68939B9D84B3c",
+      "issuerName": "Mason Graphite Canada Inc",
+      "holderAddress": "0xe8eb396005aDcF852E6fBb5E60b68939B9D84B3c",
+      "holderName": "Mason Graphite Canada Inc",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-16T20:25:35.390Z"
+    },
+    {
+      "index": 8,
+      "chunkName": "Graphite anode processing",
+      "vcId": "urn:uuid:real-vc-1775161542436-9",
+      "cid": "QmUL9rpG1SgiGHsaHUXnHswxdDbbGTJSsnD2xkMKGzjiBQ",
+      "productContract": "0xd493180c0B88dedDCA449f5f1A9D4f9E8680373D",
+      "productId": "105",
+      "priceCommitment": "0x108c003342bd08468c43c90ff6d55ac3fcc48ec638c655fa9e6d7287a497af21",
+      "zkpCommitment": "0x108c003342bd08468c43c90ff6d55ac3fcc48ec638c655fa9e6d7287a497af21",
+      "issuerAddress": "0xe8eb396005aDcF852E6fBb5E60b68939B9D84B3c",
+      "issuerName": "Mason Graphite Canada Inc",
+      "holderAddress": "0x66769fe3d27c267724EdCc4EaF7Db3eF99eEDD90",
+      "holderName": "Nouveau Monde Anode Inc",
+      "componentCredentials": [
+        "QmYqpyJjMkVhafjSmW1odKLXAL8nUAm5Nj9Kpsy7mfQikz"
+      ],
+      "uploadedAt": "2026-03-17T20:25:35.390Z"
+    },
+    {
+      "index": 9,
+      "chunkName": "Tantalum mine",
+      "vcId": "urn:uuid:real-vc-1775161542996-10",
+      "cid": "QmP28B2CutKPxnqEH7sPvcmAD68hXBtBPLQ5d9WRfLUbkU",
+      "productContract": "0x7532833ba05b976a1cb169f0729879f24e4Dd8E2",
+      "productId": "106",
+      "priceCommitment": "0xe2c96cc41e424e78ec4d6464507a9b694e767e5ad216ed40b61da0c462642a7e",
+      "zkpCommitment": "0xe2c96cc41e424e78ec4d6464507a9b694e767e5ad216ed40b61da0c462642a7e",
+      "issuerAddress": "0x8D72b6cAc7cC1564b26cE05631F7d74f42c27Ba8",
+      "issuerName": "RWI Tantalum Rwanda",
+      "holderAddress": "0xBeA7f63f8E935834D18E01b605B041A5c501a83d",
+      "holderName": "Taniobis GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-18T20:25:35.390Z"
+    },
+    {
+      "index": 10,
+      "chunkName": "Tantalum smelter",
+      "vcId": "urn:uuid:real-vc-1775161543602-11",
+      "cid": "QmTXrmDwUnBczrrY3s136yC6Uyg4vnfssK7EkTEFtMhmYs",
+      "productContract": "0xCC684DB961107049F0Fa98EE06c0988497303e29",
+      "productId": "108",
+      "priceCommitment": "0x38dfb58f9d45d0e1efa76c56d1413da72f1009a61cfd7e4716aed9a1cb23d015",
+      "zkpCommitment": "0x38dfb58f9d45d0e1efa76c56d1413da72f1009a61cfd7e4716aed9a1cb23d015",
+      "issuerAddress": "0xBeA7f63f8E935834D18E01b605B041A5c501a83d",
+      "issuerName": "Taniobis GmbH",
+      "holderAddress": "0x4bADFdD31239Da874Cea33F4FA26e0DF835CF95F",
+      "holderName": "EPCOS Capacitors GmbH",
+      "componentCredentials": [
+        "QmP28B2CutKPxnqEH7sPvcmAD68hXBtBPLQ5d9WRfLUbkU"
+      ],
+      "uploadedAt": "2026-03-19T20:25:35.390Z"
+    },
+    {
+      "index": 11,
+      "chunkName": "Tantalum capacitor manufacturer",
+      "vcId": "urn:uuid:real-vc-1775161544315-12",
+      "cid": "QmTeC8nixGeaS8TM32hrcn7z4bdoQQr8EBFoAsUPDxi4W6",
+      "productContract": "0x998f67F9FD7716952DC31910B593A95cF081523a",
+      "productId": "109",
+      "priceCommitment": "0xd27ea348a42dc885feafef7e4569b91503a697290fc80c098971a834b403095a",
+      "zkpCommitment": "0xd27ea348a42dc885feafef7e4569b91503a697290fc80c098971a834b403095a",
+      "issuerAddress": "0x4bADFdD31239Da874Cea33F4FA26e0DF835CF95F",
+      "issuerName": "EPCOS Capacitors GmbH",
+      "holderAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "holderName": "ACC Cell GmbH",
+      "componentCredentials": [
+        "QmTXrmDwUnBczrrY3s136yC6Uyg4vnfssK7EkTEFtMhmYs"
+      ],
+      "uploadedAt": "2026-03-20T20:25:35.390Z"
+    },
+    {
+      "index": 12,
+      "chunkName": "Cathode precursor pCAM",
+      "vcId": "urn:uuid:real-vc-1775161544907-13",
+      "cid": "QmTQNtvyZsycbbQUU7DKkuMCY72uV61sGdvjEkFYMzzaqE",
+      "productContract": "0x399c0ee13F8462576584f2909E7a34bDeD32aB5D",
+      "productId": "110",
+      "priceCommitment": "0x24fdda4659c0eb219871cc731b8af5d8e9d890e78295723257bb8e8cf685344a",
+      "zkpCommitment": "0x24fdda4659c0eb219871cc731b8af5d8e9d890e78295723257bb8e8cf685344a",
+      "issuerAddress": "0x1470D85d534cFC0e97DBa62aa3eFf8370a906355",
+      "issuerName": "Umicore Battery Materials Oy",
+      "holderAddress": "0x1470D85d534cFC0e97DBa62aa3eFf8370a906355",
+      "holderName": "Umicore Battery Materials Oy",
+      "componentCredentials": [
+        "QmSo8z2DEmikV9QuzFbCEyaux5opJ7mZ1tTPtHd7kZt4Bz",
+        "QmRoRgnSrQbtrpsB2aBkpDoAa6aL8eJg71CVajXhamPh9J",
+        "QmRDzVmmvFkXfBXm9j9XcyUvywhnvXfmntT6VJZAyDi5LX"
+      ],
+      "uploadedAt": "2026-03-21T20:25:35.390Z"
+    },
+    {
+      "index": 13,
+      "chunkName": "Cathode active material CAM",
+      "vcId": "urn:uuid:real-vc-1775161545581-14",
+      "cid": "QmUEDTkp83CgcV4BzgkCkmtUgC3WDReUXyuGDvKfhzPDhf",
+      "productContract": "0xB1f5d5492877e26e9A1d42dC5f7cBE14cdf98615",
+      "productId": "111",
+      "priceCommitment": "0x7214a4a138c0b406a8cf27612cc12f34834e8a69bdd71f759790f84cdf71d22e",
+      "zkpCommitment": "0x7214a4a138c0b406a8cf27612cc12f34834e8a69bdd71f759790f84cdf71d22e",
+      "issuerAddress": "0x1470D85d534cFC0e97DBa62aa3eFf8370a906355",
+      "issuerName": "Umicore Battery Materials Oy",
+      "holderAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "holderName": "ACC Cell GmbH",
+      "componentCredentials": [
+        "QmTQNtvyZsycbbQUU7DKkuMCY72uV61sGdvjEkFYMzzaqE"
+      ],
+      "uploadedAt": "2026-03-22T20:25:35.390Z"
+    },
+    {
+      "index": 14,
+      "chunkName": "Anode active material AAM",
+      "vcId": "urn:uuid:real-vc-1775161546188-15",
+      "cid": "QmbtgQqAK22R9WL6FwkK4uBwTV6S4VtHMbWXPgV8zreZnf",
+      "productContract": "0x3ab9b95f4E9c669155e507d4Bbf4925F541B4B9e",
+      "productId": "112",
+      "priceCommitment": "0xf0fe4958d384b3e0832bdf25822dbc25914b387dfa16df29f838c02cea611959",
+      "zkpCommitment": "0xf0fe4958d384b3e0832bdf25822dbc25914b387dfa16df29f838c02cea611959",
+      "issuerAddress": "0x66769fe3d27c267724EdCc4EaF7Db3eF99eEDD90",
+      "issuerName": "Nouveau Monde Anode Inc",
+      "holderAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "holderName": "ACC Cell GmbH",
+      "componentCredentials": [
+        "QmUL9rpG1SgiGHsaHUXnHswxdDbbGTJSsnD2xkMKGzjiBQ"
+      ],
+      "uploadedAt": "2026-03-23T20:25:35.390Z"
+    },
+    {
+      "index": 15,
+      "chunkName": "Separator film supplier",
+      "vcId": "urn:uuid:real-vc-1775161546831-16",
+      "cid": "QmW1Bt48918KpTDjgZzbBQurFHStSeu7kbLk41EG42bxAE",
+      "productContract": "0x80f4c0e490f3682f37c5cA46ba4df69498eC2a94",
+      "productId": "113",
+      "priceCommitment": "0x4604c24e8c03f15c0dbc86003a95c6cdfc9f31270679ac606453185fc01fcb39",
+      "zkpCommitment": "0x4604c24e8c03f15c0dbc86003a95c6cdfc9f31270679ac606453185fc01fcb39",
+      "issuerAddress": "0x974fA40F2EA3b3F9Bb2936927635285EbB4C5ca3",
+      "issuerName": "Sumitomo Electric Separator",
+      "holderAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "holderName": "ACC Cell GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-24T20:25:35.390Z"
+    },
+    {
+      "index": 16,
+      "chunkName": "Cell electrolyte and LiPF6 salt",
+      "vcId": "urn:uuid:real-vc-1775161547638-17",
+      "cid": "QmbeagafQnu5jECeqo7L7mv1uv6QMpcdsGe8nVRQjw7LUS",
+      "productContract": "0x600d42E546d24bFA6fa86B50E30A1dAE4DB7445f",
+      "productId": "114",
+      "priceCommitment": "0x32edf27c13068dcff30de81e9dd5c7a4332c8c840d6ca281ce46b644dd819a7c",
+      "zkpCommitment": "0x32edf27c13068dcff30de81e9dd5c7a4332c8c840d6ca281ce46b644dd819a7c",
+      "issuerAddress": "0x3721A7d22eB24ac791eFE84b989284d4C4B5C2C3",
+      "issuerName": "Solvay Electrolyte DE GmbH",
+      "holderAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "holderName": "ACC Cell GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-25T20:25:35.390Z"
+    },
+    {
+      "index": 17,
+      "chunkName": "Cell manufacturing",
+      "vcId": "urn:uuid:real-vc-1775161548351-18",
+      "cid": "QmP8zAiPS6a7Nb5YnrLmNPhW6CvaGp5MX3e3Y2c2injTpg",
+      "productContract": "0x47376c31fcaa407782bA633f9f265E0c82FD644F",
+      "productId": "115",
+      "priceCommitment": "0xc4966e996e35777b57934be9846297f783f26c91aef7fb8ede71c0c43dceda77",
+      "zkpCommitment": "0xc4966e996e35777b57934be9846297f783f26c91aef7fb8ede71c0c43dceda77",
+      "issuerAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "issuerName": "ACC Cell GmbH",
+      "holderAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "holderName": "ACC Cell GmbH",
+      "componentCredentials": [
+        "QmUEDTkp83CgcV4BzgkCkmtUgC3WDReUXyuGDvKfhzPDhf",
+        "QmbtgQqAK22R9WL6FwkK4uBwTV6S4VtHMbWXPgV8zreZnf",
+        "QmTeC8nixGeaS8TM32hrcn7z4bdoQQr8EBFoAsUPDxi4W6",
+        "QmW1Bt48918KpTDjgZzbBQurFHStSeu7kbLk41EG42bxAE",
+        "QmbeagafQnu5jECeqo7L7mv1uv6QMpcdsGe8nVRQjw7LUS"
+      ],
+      "uploadedAt": "2026-03-26T20:25:35.390Z"
+    },
+    {
+      "index": 18,
+      "chunkName": "Cell QA and testing",
+      "vcId": "urn:uuid:real-vc-1775161548918-19",
+      "cid": "QmWnAZuxXGrw1hxWWfLRp24bQNHMA6byEdXjdk36zYedw1",
+      "productContract": "0x2277B178d6a7b7f3f1d90D17403d7c9F3c9ddB2C",
+      "productId": "116",
+      "priceCommitment": "0xf2a0b5c9f9fe539022bdc51aa3674d642b25e7b19297134fb2bc223a4fe3bc5e",
+      "zkpCommitment": "0xf2a0b5c9f9fe539022bdc51aa3674d642b25e7b19297134fb2bc223a4fe3bc5e",
+      "issuerAddress": "0x15Dc72F6A45dB73539CD6FB05269F25c2bBFF042",
+      "issuerName": "ACC Cell GmbH",
+      "holderAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "holderName": "VARTA Battery Pack GmbH",
+      "componentCredentials": [
+        "QmP8zAiPS6a7Nb5YnrLmNPhW6CvaGp5MX3e3Y2c2injTpg"
+      ],
+      "uploadedAt": "2026-03-27T20:25:35.390Z"
+    },
+    {
+      "index": 19,
+      "chunkName": "Module assembly",
+      "vcId": "urn:uuid:real-vc-1775161549774-20",
+      "cid": "QmNpdmArcqnzGcxRT7E2JzhTYZPXq8bFraP3CiypkdYd4c",
+      "productContract": "0xD56702A75e2216FF4D9A16eF18beE319B34bB320",
+      "productId": "117",
+      "priceCommitment": "0x2ac23293eada1f20077bf5cd4fdfabb062cdf548fb895d21b5b1694c42804852",
+      "zkpCommitment": "0x2ac23293eada1f20077bf5cd4fdfabb062cdf548fb895d21b5b1694c42804852",
+      "issuerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "issuerName": "VARTA Battery Pack GmbH",
+      "holderAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "holderName": "VARTA Battery Pack GmbH",
+      "componentCredentials": [
+        "QmWnAZuxXGrw1hxWWfLRp24bQNHMA6byEdXjdk36zYedw1"
+      ],
+      "uploadedAt": "2026-03-28T20:25:35.390Z"
+    },
+    {
+      "index": 20,
+      "chunkName": "BMS electronics",
+      "vcId": "urn:uuid:real-vc-1775161550336-21",
+      "cid": "QmSS6J7ENPEAHcaJA2ReAK2MbLQXfWNmCrB7jMZ2METANx",
+      "productContract": "0x0f6734951456c968Fe710D96EB01862293A9C4CC",
+      "productId": "118",
+      "priceCommitment": "0xa82ac605ee25e6ce73cc2a8fde850035d373236e2d2b33047d16dbad23bac540",
+      "zkpCommitment": "0xa82ac605ee25e6ce73cc2a8fde850035d373236e2d2b33047d16dbad23bac540",
+      "issuerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "issuerName": "VARTA Battery Pack GmbH",
+      "holderAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "holderName": "VARTA Battery Pack GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-29T20:25:35.390Z"
+    },
+    {
+      "index": 21,
+      "chunkName": "Pack assembly",
+      "vcId": "urn:uuid:real-vc-1775161551290-22",
+      "cid": "QmYGtv6RDfMpmXst6GbntVrviinmyUCNTUkU2Ghd1iPpfm",
+      "productContract": "0x2Ef2fCd9F31f1D4345EE6cb7aE963a210b9fD562",
+      "productId": "119",
+      "priceCommitment": "0xe66f367ce88399f3a8fca724e5f80f6cc67b304799c03fa1974fdf0828270d02",
+      "zkpCommitment": "0xe66f367ce88399f3a8fca724e5f80f6cc67b304799c03fa1974fdf0828270d02",
+      "issuerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "issuerName": "VARTA Battery Pack GmbH",
+      "holderAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "holderName": "VARTA Battery Pack GmbH",
+      "componentCredentials": [
+        "QmNpdmArcqnzGcxRT7E2JzhTYZPXq8bFraP3CiypkdYd4c",
+        "QmSS6J7ENPEAHcaJA2ReAK2MbLQXfWNmCrB7jMZ2METANx"
+      ],
+      "uploadedAt": "2026-03-30T20:25:35.390Z"
+    },
+    {
+      "index": 22,
+      "chunkName": "Pack ESG audit attestation",
+      "vcId": "urn:uuid:real-vc-1775161551923-23",
+      "cid": "QmdEMeJFnAygkzEd346CRdhE4iSQB8L37mV5iVyWFypTWr",
+      "productContract": "0x363F1e4860d068684792c8521E84441a832775D3",
+      "productId": "120",
+      "priceCommitment": "0x1ccf7d05111718a57c05c8ea130bd914b6879ff16eebfbf1ecce9252e7157332",
+      "zkpCommitment": "0x1ccf7d05111718a57c05c8ea130bd914b6879ff16eebfbf1ecce9252e7157332",
+      "issuerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+      "issuerName": "VARTA Battery Pack GmbH",
+      "holderAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+      "holderName": "BMWi Battery OEM GmbH",
+      "componentCredentials": [
+        "QmYGtv6RDfMpmXst6GbntVrviinmyUCNTUkU2Ghd1iPpfm"
+      ],
+      "uploadedAt": "2026-03-31T20:25:35.390Z"
+    },
+    {
+      "index": 23,
+      "chunkName": "Vehicle OEM integration",
+      "vcId": "urn:uuid:real-vc-1775161552610-24",
+      "cid": "QmYD5XizKw2hutP5pZuyJP2uUQKg6yydommLz8d8smo8ax",
+      "productContract": "0xe2d04F2a7c550A8A2D55cF55b784a2dFA41334CA",
+      "productId": "121",
+      "priceCommitment": "0x88dbe48881707890b23bfb8f1fb4ce4445161d8cf65dab8acafb2b199ee84369",
+      "zkpCommitment": "0x88dbe48881707890b23bfb8f1fb4ce4445161d8cf65dab8acafb2b199ee84369",
+      "issuerAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+      "issuerName": "BMWi Battery OEM GmbH",
+      "holderAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+      "holderName": "BMWi Battery OEM GmbH",
+      "componentCredentials": [
+        "QmdEMeJFnAygkzEd346CRdhE4iSQB8L37mV5iVyWFypTWr"
+      ],
+      "uploadedAt": "2026-04-01T20:25:35.390Z"
+    },
+    {
+      "index": 24,
+      "chunkName": "EU battery passport",
+      "vcId": "urn:uuid:real-vc-1775161553279-25",
+      "cid": "QmShJsiprvZw6jbxJ7QZYAm8T79dkvuJpxA2uX1injMUR5",
+      "productContract": "0x205D18743eD6D3681148bb91640bb49Ac0D24F04",
+      "productId": "122",
+      "priceCommitment": "0xa219487a9adb7fd4de49319ec43ee491b55894157f13e55407588a14a7252247",
+      "zkpCommitment": "0xa219487a9adb7fd4de49319ec43ee491b55894157f13e55407588a14a7252247",
+      "issuerAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+      "issuerName": "BMWi Battery OEM GmbH",
+      "holderAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+      "holderName": "BMWi Battery OEM GmbH",
+      "componentCredentials": [
+        "QmYD5XizKw2hutP5pZuyJP2uUQKg6yydommLz8d8smo8ax"
+      ],
+      "uploadedAt": "2026-04-02T20:25:35.390Z"
+    }
+  ]
+}

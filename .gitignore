@@ -1,0 +1,60 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# LaTeX build artifacts
+thesis/latex/build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Node/JS
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*
+*.env.local
+!.env.example
+!backend/.env.example
+
+# Artifacts and large data (keep placeholders)
+agent/data/*
+!agent/data/.gitkeep
+agent/models/*
+!agent/models/.gitkeep
+agent/experiments/*
+!agent/experiments/.gitkeep
+
+# Generated evaluation/report outputs
+data/reports/*.json
+benchmarks/evaluation/results/raw/dry_run/*.json

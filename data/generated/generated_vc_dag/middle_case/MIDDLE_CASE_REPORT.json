@@ -1,0 +1,64 @@
+{
+  "scenario": "middle_case",
+  "runId": "middle_case_1775170209430",
+  "generatedAt": "2026-04-02T22:50:27.755Z",
+  "totalAnomalies": 3,
+  "cleanNodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    21,
+    22,
+    23,
+    24
+  ],
+  "anomalyNodes": [
+    17,
+    19,
+    20
+  ],
+  "anomalies": [
+    {
+      "anomalyId": "M0",
+      "node": 17,
+      "category": "governance_transition",
+      "description": "Cell manufacturing VC retained by ACC transition-services affiliate after legal-entity carve-out.",
+      "transferDate": "2026-03-14",
+      "reviewEntity": "ACC Transition Services GmbH",
+      "expectedReaction": "Technical: provenance remains connected, but governance consistency should fail only on this custody transition."
+    },
+    {
+      "anomalyId": "M1",
+      "node": 19,
+      "category": "governance_transition",
+      "description": "Module assembly VC routed into OEM legal archive during post-close documentation review.",
+      "transferDate": "2026-03-16",
+      "reviewEntity": "BMWi Legal Archive GmbH",
+      "expectedReaction": "Technical: provenance remains connected, but governance consistency should fail only on this custody transition."
+    },
+    {
+      "anomalyId": "M2",
+      "node": 20,
+      "category": "governance_transition",
+      "description": "BMS electronics VC routed into OEM compliance archive rather than operational pack assembly custody.",
+      "transferDate": "2026-03-16",
+      "reviewEntity": "BMWi Compliance Archive GmbH",
+      "expectedReaction": "Technical: provenance remains connected, but governance consistency should fail only on this custody transition."
+    }
+  ]
+}

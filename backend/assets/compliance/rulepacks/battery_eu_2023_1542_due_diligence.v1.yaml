@@ -1,0 +1,455 @@
+schemaVersion: "1.1"
+regulation:
+  id: "eu.regulation.2023.1542"
+  shortName: "Battery Regulation"
+  citation: "Regulation (EU) 2023/1542"
+  sourcePdf: "thesis/sources/Regulation (EU) 2023:1542 (Battery Regulation) Official Journal text.pdf"
+  notes:
+    - "Phase 1 raw-material due diligence duties."
+    - "Article 47 threshold and Article 48-52 management, verification, and disclosure duties."
+
+rulepack:
+  id: "battery_eu_2023_1542_due_diligence_v1"
+  version: "0.1.0"
+  status: "draft"
+
+chapters:
+  - id: "battery.due_diligence"
+    title: "Battery Due Diligence"
+    articleStart: 47
+    articleEnd: 53
+
+rules:
+  - id: "battery.art47"
+    articleRef: "Article 47"
+    paragraphRef: "Art 47"
+    title: "Battery due diligence chapter applies only above the EUR 40 million threshold"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer"]
+        - field: "claims.battery.placed_on_union_market"
+          op: "=="
+          value: true
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    conditions:
+      any:
+        - field: "company.net_turnover_eur_last_financial_year"
+          op: ">="
+          value: 40000000
+        - field: "group.net_turnover_eur_consolidated_last_financial_year"
+          op: ">"
+          value: 40000000
+    evidenceRequired:
+      - "company.net_turnover_eur_last_financial_year"
+      - "group.net_turnover_eur_consolidated_last_financial_year"
+      - "claims.battery.operator_role"
+      - "claims.battery.placed_on_union_market"
+      - "claims.battery.status"
+
+  - id: "battery.art48.1"
+    articleRef: "Article 48"
+    paragraphRef: "Art 48(1)"
+    title: "In-scope operator has set up and implemented a battery due diligence policy"
+    obligationType: "due_diligence"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer"]
+        - field: "claims.battery.placed_on_union_market"
+          op: "=="
+          value: true
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+    evidenceRequired:
+      - "claims.battery.due_diligence_policy_exists"
+
+  - id: "battery.art48.2"
+    articleRef: "Article 48"
+    paragraphRef: "Art 48(2)"
+    title: "Battery due diligence policy is verified and audited by a notified body"
+    obligationType: "due_diligence"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer"]
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+    conditions:
+      all:
+        - field: "claims.battery.third_party_verification_report_exists"
+          op: "=="
+          value: true
+        - field: "claims.battery.audit_report_exists"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.third_party_verification_report_exists"
+      - "claims.battery.audit_report_exists"
+
+  - id: "battery.art48.3"
+    articleRef: "Article 48"
+    paragraphRef: "Art 48(3)"
+    title: "Due diligence records are retained for at least 10 years"
+    obligationType: "due_diligence"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["manufacturer", "importer"]
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+    conditions:
+      all:
+        - field: "claims.battery.approval_decision_exists"
+          op: "=="
+          value: true
+        - field: "claims.battery.record_retention_years"
+          op: ">="
+          value: 10
+    evidenceRequired:
+      - "claims.battery.approval_decision_exists"
+      - "claims.battery.record_retention_years"
+
+  - id: "battery.art49.1.a"
+    articleRef: "Article 49"
+    paragraphRef: "Art 49(1)(a)"
+    title: "Due diligence policy is adopted and communicated to suppliers and the public"
+    obligationType: "management_system"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    conditions:
+      all:
+        - field: "claims.battery.due_diligence_policy_exists"
+          op: "=="
+          value: true
+        - field: "claims.battery.due_diligence_policy_public"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.due_diligence_policy_exists"
+      - "claims.battery.due_diligence_policy_public"
+
+  - id: "battery.art49.1.b"
+    articleRef: "Article 49"
+    paragraphRef: "Art 49(1)(b)"
+    title: "Due diligence policy is aligned with Annex X instruments"
+    obligationType: "management_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.due_diligence_annex_x_aligned"
+
+  - id: "battery.art49.1.c"
+    articleRef: "Article 49"
+    paragraphRef: "Art 49(1)(c)"
+    title: "Top-management responsibility is assigned and records are maintained"
+    obligationType: "management_system"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    conditions:
+      all:
+        - field: "claims.battery.management_responsibility_assigned"
+          op: "=="
+          value: true
+        - field: "claims.battery.record_retention_years"
+          op: ">="
+          value: 10
+    evidenceRequired:
+      - "claims.battery.management_responsibility_assigned"
+      - "claims.battery.record_retention_years"
+
+  - id: "battery.art49.1.d"
+    articleRef: "Article 49"
+    paragraphRef: "Art 49(1)(d)"
+    title: "Supply-chain traceability system exists"
+    obligationType: "management_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.traceability_system_exists"
+
+  - id: "battery.art49.1.e"
+    articleRef: "Article 49"
+    paragraphRef: "Art 49(1)(e)"
+    title: "Supplier contracts incorporate due diligence and risk management measures"
+    obligationType: "management_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.supplier_contract_flowdown"
+
+  - id: "battery.art49.1.f"
+    articleRef: "Article 49"
+    paragraphRef: "Art 49(1)(f)"
+    title: "Grievance and remediation mechanism exists"
+    obligationType: "management_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.grievance_mechanism_exists"
+
+  - id: "battery.art50.1.a"
+    articleRef: "Article 50"
+    paragraphRef: "Art 50(1)(a)"
+    title: "Economic operator identifies and assesses adverse-impact risks"
+    obligationType: "risk_management"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.risk_assessment_exists"
+
+  - id: "battery.art50.1.b"
+    articleRef: "Article 50"
+    paragraphRef: "Art 50(1)(b)"
+    title: "Economic operator maintains a risk management plan"
+    obligationType: "risk_management"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.risk_management_plan_exists"
+
+  - id: "battery.art50.4"
+    articleRef: "Article 50"
+    paragraphRef: "Art 50(4)"
+    title: "Risk findings are reported to top management"
+    obligationType: "risk_management"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.top_management_reporting_exists"
+
+  - id: "battery.art52.2"
+    articleRef: "Article 52"
+    paragraphRef: "Art 52(2)"
+    title: "Relevant due diligence information is shared with immediate downstream purchasers"
+    obligationType: "disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.downstream_information_shared"
+
+  - id: "battery.art52.3"
+    articleRef: "Article 52"
+    paragraphRef: "Art 52(3)"
+    title: "Annual public due diligence report exists"
+    obligationType: "disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-08-18"
+        - any:
+            - field: "company.net_turnover_eur_last_financial_year"
+              op: ">="
+              value: 40000000
+            - field: "group.net_turnover_eur_consolidated_last_financial_year"
+              op: ">"
+              value: 40000000
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["new", "original"]
+    evidenceRequired:
+      - "claims.battery.public_due_diligence_report_exists"

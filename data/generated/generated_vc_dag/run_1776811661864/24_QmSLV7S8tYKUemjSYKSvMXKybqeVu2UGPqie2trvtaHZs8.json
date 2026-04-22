@@ -1,0 +1,91 @@
+{
+  "id": "urn:uuid:real-vc-1776811683852-24",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-04-20T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "Vehicle OEM integration",
+    "batch": "REAL-BATCH-024",
+    "quantity": 1,
+    "previousCredential": "QmTbFxJ2sC4iTurWiD7sK5n2WiefPf8JMNVCC3LtFkdMj2",
+    "componentCredentials": [
+      "QmTbFxJ2sC4iTurWiD7sK5n2WiefPf8JMNVCC3LtFkdMj2"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-oem-int-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-oem-int-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack",
+      "ev_vehicle"
+    ],
+    "operationTags": [
+      "downstream",
+      "oem_integration",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 48.3,
+      "longitude": 10.9
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "OEM assembly on 100% renewable, scope-1 disclosed",
+    "climateClaim": "EU Green Deal aligned",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x5c23655b1d4fb209c95258e67fe60e1b708ecd3a01cc70c281da308e66df5912\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x5c23655b1d4fb209c95258e67fe60e1b708ecd3a01cc70c281da308e66df5912",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "376",
+    "productContract": "0xAD27b5960CA63CAe14E06f0045b5879c9558432c",
+    "chainId": "11155111",
+    "claims": {
+      "prevention_action_plan": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-20T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5#controller",
+      "role": "seller",
+      "payloadHash": "0x3c78023b240b4ddec9e48fe425644da7328a2485ab757b2f444b07bf81de1e97",
+      "jws": "0x901e854a8d6c0625154d3265f7ed0648be6e307253881a41349d179c053d3840625818c020a41e0437ada865972c985918576505db5ea734966d4c68b3c1786b1c"
+    }
+  ]
+}

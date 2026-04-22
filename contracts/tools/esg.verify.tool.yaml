@@ -1,0 +1,61 @@
+version: 1
+tool_id: esg.verify@v1
+description: "Deterministic ESG assessment tool."
+category: esg
+entity: VerificationReport
+operation: verify
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [rootCid]
+  properties:
+    rootCid:
+      type: string
+    graph:
+      type: object
+    vcsByCid:
+      type: object
+    rulepackPath:
+      type: string
+    options:
+      type: object
+
+output_schema:
+  type: object
+  required: [status, success, message, scores, verdict, flags, findings, claims, meta]
+  properties:
+    status:
+      type: string
+      enum: [pending, running, done, error]
+    success:
+      type: [boolean, "null"]
+    message:
+      type: string
+    scores:
+      type: object
+    verdict:
+      type: string
+      enum: [COMPLIANT, REVIEW_REQUIRED, NON_COMPLIANT]
+    flags:
+      type: array
+      items:
+        type: string
+    findings:
+      type: array
+      items:
+        type: object
+    claims:
+      type: array
+      items:
+        type: object
+    narrativeSeed:
+      type: string
+    ui:
+      type: object
+    meta:
+      type: object

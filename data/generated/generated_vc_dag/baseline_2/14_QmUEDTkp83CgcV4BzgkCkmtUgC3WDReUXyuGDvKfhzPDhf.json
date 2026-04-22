@@ -1,0 +1,90 @@
+{
+  "id": "urn:uuid:real-vc-1775161545581-14",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x1470d85d534cfc0e97dba62aa3eff8370a906355",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x15dc72f6a45db73539cd6fb05269f25c2bbff042",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-03-22T20:25:35.390Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x15dc72f6a45db73539cd6fb05269f25c2bbff042",
+    "productName": "Cathode active material CAM",
+    "batch": "REAL-BATCH-014",
+    "quantity": 1,
+    "previousCredential": "QmTQNtvyZsycbbQUU7DKkuMCY72uV61sGdvjEkFYMzzaqE",
+    "componentCredentials": [
+      "QmTQNtvyZsycbbQUU7DKkuMCY72uV61sGdvjEkFYMzzaqE"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-cam-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-cam-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_cathode"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.7,
+      "longitude": 27.5
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "NMC811 cathode sintering, renewable grid",
+    "climateClaim": "Carbon footprint per kWh disclosed",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x7214a4a138c0b406a8cf27612cc12f34834e8a69bdd71f759790f84cdf71d22e\",\"proof\":\"0x92eed9f8a6db4a1c19b045b650179d730febe62a13b61713bebe67117208b85b38189a12a97f2a87e632c347253249820f08b922aba2d93900ddf96c2916bf1daa09e38edb28b115ca76653fd465ff6949cb076765c20e946e83888a2340ed5752066c6e36c3c35d392b7920e0949f1c9d27e84f8b3d4c6f3bbbd36efd97467692e00793ce13b9f7cd3ad2280b57d5b93e3c0583233f772a1e88c1c33cedda0b945f8134289cb01683f844d0547d83c23a46b1bf0b9223dc2ceec37ca000af09c763ab27de3f925ba877e2b3bb0790dcc40c22f4b35cc282799959c962549a02e82588e8b40b1e3fbd92f75d441d35937a589245903a6f8b0e0e62e2e5914e4c0447291cb09f58ece40c051ff6e2c545c8bfbe2c2b093fc7c56ba638d3cf3e491007d24e5c151b3434efa6e3799a3dfb297abf7ce3ba07a596521b31cc7efa1f7a44bac10cb90824738d0e61b4367716f2cc492d3842b7470d31b38d5f0fe0742079407704ccfab9a066c52eb7023e1903ac728aced671fb3d14dfaea0255f55e810ae5742a96195d4b7e5183d98ed10ab2862fbee7d4b30f8e33ab460d8e133ecb227092a2d908ececd7c82b32e39f9675a5f12756e875fe9919e886586b62bbca3a98b64737591330cc946d269a62e10c1a3afb49d9dc3199b3db4c12394139ace583f722ee60570fff920190ca78fe4b1aa109d9dd9e6f85236eda1f9512c101cdf596729238e40e9a881a2cee18f355ff4213a124f8e2fc1e2a086343545ee65f0a33bf3c4950d9175cb5b997da14ef5005caff9a5340e007517bb6938293ec5a7a59717c8683c0d6e60e66b9e2b5d27b840effc012a408355452617f24b8b6020f36f00a3c44538db9e271723b9b7e61a718f04293bb88ff184ee5ffe02e24b05dc09f9aba426380170b58f0bb80288fe725d6bdb41a5c28a2a4c40e704\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x4868501f0764c3c18d3de91765d3581460cf517eeeb4aad74a63c4f9f923bdb8\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x7214a4a138c0b406a8cf27612cc12f34834e8a69bdd71f759790f84cdf71d22e",
+      "proof": "0x92eed9f8a6db4a1c19b045b650179d730febe62a13b61713bebe67117208b85b38189a12a97f2a87e632c347253249820f08b922aba2d93900ddf96c2916bf1daa09e38edb28b115ca76653fd465ff6949cb076765c20e946e83888a2340ed5752066c6e36c3c35d392b7920e0949f1c9d27e84f8b3d4c6f3bbbd36efd97467692e00793ce13b9f7cd3ad2280b57d5b93e3c0583233f772a1e88c1c33cedda0b945f8134289cb01683f844d0547d83c23a46b1bf0b9223dc2ceec37ca000af09c763ab27de3f925ba877e2b3bb0790dcc40c22f4b35cc282799959c962549a02e82588e8b40b1e3fbd92f75d441d35937a589245903a6f8b0e0e62e2e5914e4c0447291cb09f58ece40c051ff6e2c545c8bfbe2c2b093fc7c56ba638d3cf3e491007d24e5c151b3434efa6e3799a3dfb297abf7ce3ba07a596521b31cc7efa1f7a44bac10cb90824738d0e61b4367716f2cc492d3842b7470d31b38d5f0fe0742079407704ccfab9a066c52eb7023e1903ac728aced671fb3d14dfaea0255f55e810ae5742a96195d4b7e5183d98ed10ab2862fbee7d4b30f8e33ab460d8e133ecb227092a2d908ececd7c82b32e39f9675a5f12756e875fe9919e886586b62bbca3a98b64737591330cc946d269a62e10c1a3afb49d9dc3199b3db4c12394139ace583f722ee60570fff920190ca78fe4b1aa109d9dd9e6f85236eda1f9512c101cdf596729238e40e9a881a2cee18f355ff4213a124f8e2fc1e2a086343545ee65f0a33bf3c4950d9175cb5b997da14ef5005caff9a5340e007517bb6938293ec5a7a59717c8683c0d6e60e66b9e2b5d27b840effc012a408355452617f24b8b6020f36f00a3c44538db9e271723b9b7e61a718f04293bb88ff184ee5ffe02e24b05dc09f9aba426380170b58f0bb80288fe725d6bdb41a5c28a2a4c40e704",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x4868501f0764c3c18d3de91765d3581460cf517eeeb4aad74a63c4f9f923bdb8"
+    },
+    "productId": "111",
+    "productContract": "0xB1f5d5492877e26e9A1d42dC5f7cBE14cdf98615",
+    "chainId": "11155111",
+    "claims": {
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-22T20:25:35.390Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x1470d85d534cfc0e97dba62aa3eff8370a906355#controller",
+      "role": "seller",
+      "payloadHash": "0x290afb7eaae9687b5a88d54e0bd2fbfdf60af786e788ce8c41d0340815aff7c6",
+      "jws": "0x387c74cf974c5ed71bb9865a4386f7aa9142d8bd1acdb4cd1f35b8fbe1081d5641e5bb813ebd028d32fc4801a18d1e2c06668663f47b79f8168665e4fc54e01c1b"
+    }
+  ]
+}

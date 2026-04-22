@@ -1,0 +1,1260 @@
+schemaVersion: "1.1"
+regulation:
+  id: "eu.directive.2024.1760"
+  shortName: "CSDDD"
+  citation: "Directive (EU) 2024/1760"
+  sourcePdf: "thesis/sources/European Parliament and Council, Directive (EU) 2024:1760 on corporate sustainability due diligence, Official Journal of the European Union, 2024.pdf"
+  notes:
+    - "Paragraph-level starter encoding for Articles 1-15."
+    - "External evidence deferred; VC claims + provenance only in v1."
+
+rulepack:
+  id: "csddd_eu_2024_1760_v1"
+  version: "0.3.0"
+  status: "draft"
+
+chapters:
+  - id: "csddd.scope_definitions"
+    title: "Scope and Definitions"
+    articleStart: 1
+    articleEnd: 4
+  - id: "csddd.governance_integration"
+    title: "Governance and Integration"
+    articleStart: 5
+    articleEnd: 7
+  - id: "csddd.due_diligence_process"
+    title: "Due Diligence Process"
+    articleStart: 8
+    articleEnd: 15
+  - id: "csddd.reporting_support"
+    title: "Reporting and Support Measures"
+    articleStart: 16
+    articleEnd: 21
+  - id: "csddd.climate_transition"
+    title: "Climate Transition"
+    articleStart: 22
+    articleEnd: 22
+  - id: "csddd.enforcement_liability"
+    title: "Enforcement and Liability"
+    articleStart: 23
+    articleEnd: 39
+
+rules:
+  # Article 1 — Subject matter
+  - id: "csddd.art1.1.a"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(1)(a)"
+    title: "Obligations regarding adverse human rights and environmental impacts"
+    obligationType: "statement_of_scope"
+    encodable: false
+    encodabilityReason: "statement of purpose; not a concrete compliance test"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art1.1.b"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(1)(b)"
+    title: "Liability for violations"
+    obligationType: "statement_of_scope"
+    encodable: false
+    encodabilityReason: "liability framing; enforcement handled elsewhere"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art1.1.c"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(1)(c)"
+    title: "Transition plan for climate change mitigation"
+    obligationType: "statement_of_scope"
+    encodable: false
+    encodabilityReason: "requires detailed plan quality assessment"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art1.2"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(2)"
+    title: "No reduction of protection level"
+    obligationType: "interpretive"
+    encodable: false
+    encodabilityReason: "legal interpretation of national protections"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art1.3"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(3)"
+    title: "Without prejudice to other Union obligations"
+    obligationType: "interpretive"
+    encodable: false
+    encodabilityReason: "cross-regime conflict analysis"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 2 — Scope
+  - id: "csddd.art2.1.a"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(1)(a)"
+    title: "EU company threshold: employees + worldwide turnover"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["eu_member_state"]
+    conditions:
+      all:
+        - field: "company.avg_employee_count"
+          op: ">"
+          value: 1000
+        - field: "company.net_turnover_eur_worldwide"
+          op: ">"
+          value: 450000000
+    evidenceRequired:
+      - "company.establishment"
+      - "company.avg_employee_count"
+      - "company.net_turnover_eur_worldwide"
+
+  - id: "csddd.art2.1.b"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(1)(b)"
+    title: "EU ultimate parent threshold: group employees + worldwide turnover"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["eu_member_state"]
+        - field: "company.is_ultimate_parent"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "group.avg_employee_count"
+          op: ">"
+          value: 1000
+        - field: "group.net_turnover_eur_worldwide"
+          op: ">"
+          value: 450000000
+    evidenceRequired:
+      - "company.establishment"
+      - "company.is_ultimate_parent"
+      - "group.avg_employee_count"
+      - "group.net_turnover_eur_worldwide"
+
+  - id: "csddd.art2.1.c"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(1)(c)"
+    title: "EU franchising/licensing threshold"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["eu_member_state"]
+    conditions:
+      all:
+        - field: "company.franchise_royalties_eur"
+          op: ">"
+          value: 22500000
+        - field: "company.net_turnover_eur_worldwide"
+          op: ">"
+          value: 80000000
+    evidenceRequired:
+      - "company.establishment"
+      - "company.franchise_royalties_eur"
+      - "company.net_turnover_eur_worldwide"
+
+  - id: "csddd.art2.2.a"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(2)(a)"
+    title: "Third-country company threshold: EU turnover"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+    conditions:
+      all:
+        - field: "company.net_turnover_eur_union"
+          op: ">"
+          value: 450000000
+    evidenceRequired:
+      - "company.establishment"
+      - "company.net_turnover_eur_union"
+
+  - id: "csddd.art2.2.b"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(2)(b)"
+    title: "Third-country ultimate parent threshold: EU turnover"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+        - field: "company.is_ultimate_parent"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "group.net_turnover_eur_union"
+          op: ">"
+          value: 450000000
+    evidenceRequired:
+      - "company.establishment"
+      - "company.is_ultimate_parent"
+      - "group.net_turnover_eur_union"
+
+  - id: "csddd.art2.2.c"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(2)(c)"
+    title: "Third-country franchising/licensing threshold"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+    conditions:
+      all:
+        - field: "company.franchise_royalties_eur_union"
+          op: ">"
+          value: 22500000
+        - field: "company.net_turnover_eur_union"
+          op: ">"
+          value: 80000000
+    evidenceRequired:
+      - "company.establishment"
+      - "company.franchise_royalties_eur_union"
+      - "company.net_turnover_eur_union"
+
+  - id: "csddd.art2.5"
+    articleRef: "Article 2"
+    paragraphRef: "Art 2(5)"
+    title: "Two consecutive financial years condition"
+    obligationType: "scope_gate"
+    encodable: false
+    encodabilityReason: "requires multi-year financial history"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 3 — Definitions
+  - id: "csddd.art3.1"
+    articleRef: "Article 3"
+    paragraphRef: "Art 3(1)"
+    title: "Definitions"
+    obligationType: "definition"
+    encodable: false
+    encodabilityReason: "definitions used for interpretation, not direct checks"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 4 — Level of harmonisation
+  - id: "csddd.art4.1"
+    articleRef: "Article 4"
+    paragraphRef: "Art 4(1)"
+    title: "No diverging national obligations for specified articles"
+    obligationType: "interpretive"
+    encodable: false
+    encodabilityReason: "requires national law comparison"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art4.2"
+    articleRef: "Article 4"
+    paragraphRef: "Art 4(2)"
+    title: "More stringent national provisions allowed for other articles"
+    obligationType: "interpretive"
+    encodable: false
+    encodabilityReason: "requires national law comparison"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 5 — Due diligence actions (a–h)
+  - id: "csddd.art5.1.a"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(a)"
+    title: "Integrate due diligence into policies and risk management"
+    obligationType: "policy_integration"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.due_diligence_integration"
+
+  - id: "csddd.art5.1.b"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(b)"
+    title: "Identify and assess adverse impacts"
+    obligationType: "impact_assessment"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.impact_identification_process"
+
+  - id: "csddd.art5.1.c"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(c)"
+    title: "Prevent and mitigate potential impacts; end actual impacts"
+    obligationType: "prevent_mitigate"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.prevention_action_plan"
+
+  - id: "csddd.art5.1.d"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(d)"
+    title: "Provide remediation for actual impacts"
+    obligationType: "remediation"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.remediation_process"
+
+  - id: "csddd.art5.1.e"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(e)"
+    title: "Meaningful engagement with stakeholders"
+    obligationType: "stakeholder_engagement"
+    encodable: false
+    encodabilityReason: "quality of engagement is not fully machine-checkable"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art5.1.f"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(f)"
+    title: "Notification mechanism and complaints procedure"
+    obligationType: "grievance_mechanism"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.complaint_channel_exists"
+      - "vc.claims.complaint_procedure_documented"
+
+  - id: "csddd.art5.1.g"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(g)"
+    title: "Monitoring effectiveness of due diligence"
+    obligationType: "monitoring"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.monitoring_frequency_months"
+
+  - id: "csddd.art5.1.h"
+    articleRef: "Article 5"
+    paragraphRef: "Art 5(1)(h)"
+    title: "Public communication on due diligence"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.public_due_diligence_statement"
+
+  # Article 6 — Group-level support
+  - id: "csddd.art6.1"
+    articleRef: "Article 6"
+    paragraphRef: "Art 6(1)"
+    title: "Parent company support at group level"
+    obligationType: "group_support"
+    encodable: false
+    encodabilityReason: "requires corporate governance context"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 7 — Due diligence policy
+  - id: "csddd.art7.1"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(1)"
+    title: "Due diligence policy exists and risk-based"
+    obligationType: "policy_presence"
+    encodable: true
+    checkType: "boolean"
+    evidenceRequired:
+      - "vc.claims.due_diligence_policy_exists"
+
+  - id: "csddd.art7.2.a"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(2)(a)"
+    title: "Policy includes description of approach"
+    obligationType: "policy_content"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.policy_due_diligence_approach"
+
+  - id: "csddd.art7.2.b"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(2)(b)"
+    title: "Code of conduct covering company and partners"
+    obligationType: "code_of_conduct"
+    encodable: true
+    checkType: "boolean"
+    evidenceRequired:
+      - "vc.claims.code_of_conduct_exists"
+
+  - id: "csddd.art7.2.c"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(2)(c)"
+    title: "Processes to integrate due diligence"
+    obligationType: "policy_process"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.due_diligence_integration_process"
+
+  - id: "csddd.art7.3"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(3)"
+    title: "Policy review/update at least every 24 months"
+    obligationType: "policy_review"
+    encodable: true
+    checkType: "threshold"
+    conditions:
+      all:
+        - field: "vc.claims.policy_review_interval_months"
+          op: "<="
+          value: 24
+    evidenceRequired:
+      - "vc.claims.policy_review_interval_months"
+
+  # Article 8 — Identification and assessment
+  - id: "csddd.art8.1"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(1)"
+    title: "Identify and assess actual and potential impacts"
+    obligationType: "impact_assessment"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.impact_identification_process"
+
+  - id: "csddd.art8.2.a"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(2)(a)"
+    title: "Mapping operations and business partners"
+    obligationType: "mapping"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.supply_chain_mapping_completed"
+
+  - id: "csddd.art8.2.b"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(2)(b)"
+    title: "In-depth assessment in high-risk areas"
+    obligationType: "impact_assessment"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.in_depth_assessment"
+
+  - id: "csddd.art8.3"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(3)"
+    title: "Use of appropriate resources and reports"
+    obligationType: "resources"
+    encodable: false
+    encodabilityReason: "resource suitability not fully machine-checkable"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art8.4"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(4)"
+    title: "Prioritise requests to business partners"
+    obligationType: "information_requests"
+    encodable: false
+    encodabilityReason: "requires contextual reasoning"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 9 — Prioritisation
+  - id: "csddd.art9.1"
+    articleRef: "Article 9"
+    paragraphRef: "Art 9(1)"
+    title: "Prioritise impacts when not feasible to address all"
+    obligationType: "prioritisation"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.prioritisation_methodology"
+
+  - id: "csddd.art9.2"
+    articleRef: "Article 9"
+    paragraphRef: "Art 9(2)"
+    title: "Prioritisation based on severity and likelihood"
+    obligationType: "prioritisation"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.prioritisation_severity_likelihood"
+
+  - id: "csddd.art9.3"
+    articleRef: "Article 9"
+    paragraphRef: "Art 9(3)"
+    title: "Address less severe impacts after most severe"
+    obligationType: "prioritisation"
+    encodable: false
+    encodabilityReason: "requires temporal sequencing evidence"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 10 — Preventing potential adverse impacts
+  - id: "csddd.art10.2.a"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)(a)"
+    title: "Prevention action plan with timelines and indicators"
+    obligationType: "prevention_action"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.prevention_action_plan"
+
+  - id: "csddd.art10.2.b"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)(b)"
+    title: "Contractual assurances from business partners"
+    obligationType: "contractual_assurances"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.contractual_assurances_obtained"
+
+  - id: "csddd.art10.2.c"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)(c)"
+    title: "Investments or upgrades to prevent impacts"
+    obligationType: "investments"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.preventive_investments"
+
+  - id: "csddd.art10.2.d"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)(d)"
+    title: "Modifications to business plan or practices"
+    obligationType: "business_plan_modifications"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.business_plan_modifications"
+
+  - id: "csddd.art10.2.e"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)(e)"
+    title: "Support to SME business partners"
+    obligationType: "sme_support"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.sme_support_measures"
+
+  - id: "csddd.art10.2.f"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)(f)"
+    title: "Collaboration to prevent or mitigate impacts"
+    obligationType: "collaboration"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.collaboration_measures"
+
+  # Article 11 — Bringing actual adverse impacts to an end
+  - id: "csddd.art11.1"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(1)"
+    title: "Measures to bring actual impacts to an end"
+    obligationType: "corrective_action"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.corrective_action_plan"
+
+  - id: "csddd.art11.2"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(2)"
+    title: "Minimise impacts when not immediately ended"
+    obligationType: "corrective_action"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.minimisation_measures"
+
+  - id: "csddd.art11.3.a"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(3)(a)"
+    title: "Neutralise or minimise impacts proportionately"
+    obligationType: "corrective_action"
+    encodable: false
+    encodabilityReason: "proportionality requires legal judgement"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art11.3.b"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(3)(b)"
+    title: "Corrective action plan with timelines and indicators"
+    obligationType: "corrective_action"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.corrective_action_plan"
+
+  # Article 12 — Remediation
+  - id: "csddd.art12.1"
+    articleRef: "Article 12"
+    paragraphRef: "Art 12(1)"
+    title: "Provide remediation when company caused impact"
+    obligationType: "remediation"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.remediation_process"
+
+  - id: "csddd.art12.2"
+    articleRef: "Article 12"
+    paragraphRef: "Art 12(2)"
+    title: "Voluntary remediation for partner-caused impact"
+    obligationType: "remediation"
+    encodable: false
+    encodabilityReason: "depends on discretionary business decisions"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 13 — Stakeholder engagement
+  - id: "csddd.art13.1"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(1)"
+    title: "Effective engagement with stakeholders"
+    obligationType: "stakeholder_engagement"
+    encodable: false
+    encodabilityReason: "requires qualitative assessment"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art13.3"
+    articleRef: "Article 13"
+    paragraphRef: "Art 13(3)"
+    title: "Consultation at due diligence stages"
+    obligationType: "stakeholder_engagement"
+    encodable: false
+    encodabilityReason: "requires qualitative assessment"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 14 — Notification mechanism and complaints
+  - id: "csddd.art14.1"
+    articleRef: "Article 14"
+    paragraphRef: "Art 14(1)"
+    title: "Enable complaints regarding adverse impacts"
+    obligationType: "grievance_mechanism"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.complaint_channel_exists"
+
+  - id: "csddd.art14.3"
+    articleRef: "Article 14"
+    paragraphRef: "Art 14(3)"
+    title: "Fair, accessible complaints procedure"
+    obligationType: "grievance_mechanism"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.complaint_procedure_documented"
+
+  # Article 15 — Monitoring
+  - id: "csddd.art15"
+    articleRef: "Article 15"
+    paragraphRef: "Art 15"
+    title: "Periodic monitoring at least every 12 months"
+    obligationType: "monitoring"
+    encodable: true
+    checkType: "threshold"
+    conditions:
+      all:
+        - field: "vc.claims.monitoring_frequency_months"
+          op: "<="
+          value: 12
+    evidenceRequired:
+      - "vc.claims.monitoring_frequency_months"
+
+  # Article 16 — Communicating
+  - id: "csddd.art16.1"
+    articleRef: "Article 16"
+    paragraphRef: "Art 16(1)"
+    title: "Annual statement is published on the company website"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.public_due_diligence_statement"
+
+  - id: "csddd.art16.1.b"
+    articleRef: "Article 16"
+    paragraphRef: "Art 16(1)(b)"
+    title: "Annual statement published no later than 12 months after balance sheet date"
+    obligationType: "reporting_timing"
+    encodable: true
+    checkType: "threshold"
+    conditions:
+      all:
+        - field: "vc.claims.public_statement_publication_delay_months"
+          op: "<="
+          value: 12
+    evidenceRequired:
+      - "vc.claims.public_statement_publication_delay_months"
+
+  - id: "csddd.art16.2"
+    articleRef: "Article 16"
+    paragraphRef: "Art 16(2)"
+    title: "CSRD reporting exemption"
+    obligationType: "reporting_exemption"
+    encodable: false
+    encodabilityReason: "requires careful coordination with external sustainability reporting obligations"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 17 — ESAP accessibility
+  - id: "csddd.art17.1"
+    articleRef: "Article 17"
+    paragraphRef: "Art 17(1)"
+    title: "Annual statement submitted to ESAP collection body"
+    obligationType: "esap_submission"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.esap_submission_completed"
+
+  - id: "csddd.art17.1.a"
+    articleRef: "Article 17"
+    paragraphRef: "Art 17(1)(a)"
+    title: "Statement submitted in extractable or machine-readable format"
+    obligationType: "esap_format"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.esap_machine_readable_format"
+
+  - id: "csddd.art17.1.b"
+    articleRef: "Article 17"
+    paragraphRef: "Art 17(1)(b)"
+    title: "Statement accompanied by required metadata"
+    obligationType: "esap_metadata"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.esap_metadata_complete"
+
+  - id: "csddd.art17.2"
+    articleRef: "Article 17"
+    paragraphRef: "Art 17(2)"
+    title: "Company obtains a legal entity identifier"
+    obligationType: "esap_identifier"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "company.legal_entity_identifier"
+
+  # Article 18 — Model contractual clauses
+  - id: "csddd.art18"
+    articleRef: "Article 18"
+    paragraphRef: "Art 18"
+    title: "Commission guidance on voluntary model contractual clauses"
+    obligationType: "support_measure"
+    encodable: false
+    encodabilityReason: "support measure issued by the Commission, not a direct company obligation"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 19 — Guidelines
+  - id: "csddd.art19"
+    articleRef: "Article 19"
+    paragraphRef: "Art 19"
+    title: "Commission guidelines"
+    obligationType: "support_measure"
+    encodable: false
+    encodabilityReason: "guidance provision, not a direct company-level compliance rule"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 20 — Accompanying measures
+  - id: "csddd.art20.4"
+    articleRef: "Article 20"
+    paragraphRef: "Art 20(4)"
+    title: "Participation in industry or multi-stakeholder initiatives"
+    obligationType: "support_measure"
+    encodable: false
+    encodabilityReason: "permissive support mechanism rather than mandatory company obligation"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art20.5"
+    articleRef: "Article 20"
+    paragraphRef: "Art 20(5)"
+    title: "Use of independent third-party verification"
+    obligationType: "support_measure"
+    encodable: false
+    encodabilityReason: "optional support mechanism and verifier fitness assessment require contextual review"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 21 — Single helpdesk
+  - id: "csddd.art21"
+    articleRef: "Article 21"
+    paragraphRef: "Art 21"
+    title: "Single helpdesk"
+    obligationType: "support_measure"
+    encodable: false
+    encodabilityReason: "institutional support obligation, not direct company-level compliance"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 22 — Climate transition plan
+  - id: "csddd.art22.1"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(1)"
+    title: "Transition plan for climate change mitigation exists"
+    obligationType: "climate_transition"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.climate_transition_plan_exists"
+
+  - id: "csddd.art22.1.a"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(1)(a)"
+    title: "Transition plan contains time-bound targets"
+    obligationType: "climate_transition"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.climate_transition_targets_defined"
+
+  - id: "csddd.art22.1.b"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(1)(b)"
+    title: "Transition plan contains decarbonisation levers and key actions"
+    obligationType: "climate_transition"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.climate_transition_actions_defined"
+
+  - id: "csddd.art22.1.c"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(1)(c)"
+    title: "Transition plan explains investments and funding"
+    obligationType: "climate_transition"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.climate_transition_investments_defined"
+
+  - id: "csddd.art22.1.d"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(1)(d)"
+    title: "Transition plan describes the role of administrative, management, and supervisory bodies"
+    obligationType: "climate_transition"
+    encodable: true
+    checkType: "presence"
+    evidenceRequired:
+      - "vc.claims.climate_transition_governance_defined"
+
+  - id: "csddd.art22.2"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(2)"
+    title: "Equivalent reporting may satisfy transition plan obligation"
+    obligationType: "climate_transition"
+    encodable: false
+    encodabilityReason: "depends on alignment with external reporting frameworks"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art22.3"
+    articleRef: "Article 22"
+    paragraphRef: "Art 22(3)"
+    title: "Transition plan updated every 12 months with progress description"
+    obligationType: "climate_transition"
+    encodable: true
+    checkType: "threshold"
+    conditions:
+      all:
+        - field: "vc.claims.climate_transition_review_interval_months"
+          op: "<="
+          value: 12
+    evidenceRequired:
+      - "vc.claims.climate_transition_review_interval_months"
+
+  # Article 23 — Authorised representative
+  - id: "csddd.art23.1"
+    articleRef: "Article 23"
+    paragraphRef: "Art 23(1)"
+    title: "Third-country company designates an authorised representative in a Member State"
+    obligationType: "authorised_representative"
+    encodable: true
+    checkType: "presence"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+    evidenceRequired:
+      - "vc.claims.authorised_representative_designated"
+
+  - id: "csddd.art23.2"
+    articleRef: "Article 23"
+    paragraphRef: "Art 23(2)"
+    title: "Authorised representative contact details notified to supervisory authority"
+    obligationType: "authorised_representative"
+    encodable: true
+    checkType: "presence"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+    evidenceRequired:
+      - "vc.claims.authorised_representative_contact_details"
+
+  - id: "csddd.art23.3"
+    articleRef: "Article 23"
+    paragraphRef: "Art 23(3)"
+    title: "Supervisory authority informed that the company falls under Article 2(2)"
+    obligationType: "authorised_representative"
+    encodable: true
+    checkType: "presence"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+    evidenceRequired:
+      - "vc.claims.authorised_representative_notification_completed"
+
+  - id: "csddd.art23.4"
+    articleRef: "Article 23"
+    paragraphRef: "Art 23(4)"
+    title: "Authorised representative empowered to receive supervisory authority communications"
+    obligationType: "authorised_representative"
+    encodable: true
+    checkType: "presence"
+    applicability:
+      all:
+        - field: "company.establishment"
+          op: "in"
+          value: ["third_country"]
+    evidenceRequired:
+      - "vc.claims.authorised_representative_mandate"
+
+  # Article 24 — Supervisory authorities
+  - id: "csddd.art24"
+    articleRef: "Article 24"
+    paragraphRef: "Art 24"
+    title: "Designation and functioning of supervisory authorities"
+    obligationType: "supervisory_architecture"
+    entityLevel: false
+    notApplicableReason: "Article 24 establishes Member State supervisory architecture, not a direct company compliance obligation."
+    encodable: false
+    encodabilityReason: "institutional provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 25 — Powers of supervisory authorities
+  - id: "csddd.art25"
+    articleRef: "Article 25"
+    paragraphRef: "Art 25"
+    title: "Powers of supervisory authorities"
+    obligationType: "supervisory_powers"
+    entityLevel: false
+    notApplicableReason: "Article 25 governs supervisory authority powers and procedures, not a direct entity-level compliance duty."
+    encodable: false
+    encodabilityReason: "institutional enforcement provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 26 — Substantiated concerns
+  - id: "csddd.art26"
+    articleRef: "Article 26"
+    paragraphRef: "Art 26"
+    title: "Submission and handling of substantiated concerns"
+    obligationType: "substantiated_concerns"
+    entityLevel: false
+    notApplicableReason: "Article 26 regulates supervisory complaint channels and review rights rather than direct company obligations."
+    encodable: false
+    encodabilityReason: "supervisory procedure provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 27 — Penalties
+  - id: "csddd.art27"
+    articleRef: "Article 27"
+    paragraphRef: "Art 27"
+    title: "Penalty framework"
+    obligationType: "penalties"
+    entityLevel: false
+    notApplicableReason: "Article 27 establishes Member State penalty rules and publication duties rather than a direct company obligation."
+    encodable: false
+    encodabilityReason: "sanctioning framework provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 28 — European Network of Supervisory Authorities
+  - id: "csddd.art28"
+    articleRef: "Article 28"
+    paragraphRef: "Art 28"
+    title: "European Network of Supervisory Authorities"
+    obligationType: "network_architecture"
+    entityLevel: false
+    notApplicableReason: "Article 28 concerns inter-authority coordination, not direct company compliance."
+    encodable: false
+    encodabilityReason: "institutional cooperation provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 29 — Civil liability
+  - id: "csddd.art29.1"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(1)"
+    title: "Company may incur civil liability for intentional or negligent failure to comply with Articles 10 and 11"
+    obligationType: "civil_liability"
+    encodable: false
+    encodabilityReason: "requires fact-specific causation, fault, and protected-interest analysis"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art29.2"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(2)"
+    title: "Right to full compensation without overcompensation"
+    obligationType: "civil_liability"
+    entityLevel: false
+    notApplicableReason: "Article 29(2) states remedial consequences under national liability law rather than an entity-level operational obligation."
+    encodable: false
+    encodabilityReason: "remedial liability rule"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art29.3"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(3)"
+    title: "Procedural safeguards for damages actions"
+    obligationType: "civil_liability"
+    entityLevel: false
+    notApplicableReason: "Article 29(3) governs national procedural safeguards for claimants and courts."
+    encodable: false
+    encodabilityReason: "procedural law provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art29.4"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(4)"
+    title: "Participation in initiatives or verification does not exclude liability"
+    obligationType: "civil_liability"
+    encodable: false
+    encodabilityReason: "liability determination remains fact-specific and cannot be encoded as a binary operational rule"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art29.5"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(5)"
+    title: "Joint and several liability where damage was caused jointly"
+    obligationType: "civil_liability"
+    entityLevel: false
+    notApplicableReason: "Article 29(5) defines consequences under liability law, not a standalone company operational obligation."
+    encodable: false
+    encodabilityReason: "liability allocation provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art29.6"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(6)"
+    title: "Directive does not limit stricter liability under Union or national law"
+    obligationType: "civil_liability"
+    entityLevel: false
+    notApplicableReason: "Article 29(6) is a legal non-preclusion clause."
+    encodable: false
+    encodabilityReason: "system-level legal interaction clause"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art29.7"
+    articleRef: "Article 29"
+    paragraphRef: "Art 29(7)"
+    title: "Overriding mandatory application of national transposition rules"
+    obligationType: "civil_liability"
+    entityLevel: false
+    notApplicableReason: "Article 29(7) addresses conflict-of-laws treatment, not operational compliance."
+    encodable: false
+    encodabilityReason: "private international law provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 30 — Reporting of breaches and protection of reporting persons
+  - id: "csddd.art30"
+    articleRef: "Article 30"
+    paragraphRef: "Art 30"
+    title: "Whistleblower protection applies to reporting breaches"
+    obligationType: "whistleblower_protection"
+    entityLevel: false
+    notApplicableReason: "Article 30 is a transposition link to Directive (EU) 2019/1937 rather than a direct supply-chain duty."
+    encodable: false
+    encodabilityReason: "cross-legislation transposition provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 31 — Public support, procurement and concessions
+  - id: "csddd.art31"
+    articleRef: "Article 31"
+    paragraphRef: "Art 31"
+    title: "Compliance may be taken into account in public procurement and concessions"
+    obligationType: "public_procurement"
+    entityLevel: false
+    notApplicableReason: "Article 31 regulates what contracting authorities may consider, not a direct company obligation."
+    encodable: false
+    encodabilityReason: "procurement-framework provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Articles 32-33 — Amendments to other Union acts
+  - id: "csddd.art32"
+    articleRef: "Article 32"
+    paragraphRef: "Art 32"
+    title: "Amendment to Directive (EU) 2019/1937"
+    obligationType: "legislative_amendment"
+    entityLevel: false
+    notApplicableReason: "Article 32 is a legislative amendment clause."
+    encodable: false
+    encodabilityReason: "legislative amendment provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art33"
+    articleRef: "Article 33"
+    paragraphRef: "Art 33"
+    title: "Amendment to Regulation (EU) 2023/2859"
+    obligationType: "legislative_amendment"
+    entityLevel: false
+    notApplicableReason: "Article 33 is a legislative amendment clause."
+    encodable: false
+    encodabilityReason: "legislative amendment provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 34 — Exercise of delegation
+  - id: "csddd.art34"
+    articleRef: "Article 34"
+    paragraphRef: "Art 34"
+    title: "Exercise of delegated powers"
+    obligationType: "delegated_acts"
+    entityLevel: false
+    notApplicableReason: "Article 34 concerns the Commission's delegated powers, not company conduct."
+    encodable: false
+    encodabilityReason: "institutional delegated powers provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 35 — Committee procedure
+  - id: "csddd.art35"
+    articleRef: "Article 35"
+    paragraphRef: "Art 35"
+    title: "Committee procedure"
+    obligationType: "committee_procedure"
+    entityLevel: false
+    notApplicableReason: "Article 35 is an institutional committee procedure clause."
+    encodable: false
+    encodabilityReason: "institutional procedure provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 36 — Review and reporting
+  - id: "csddd.art36"
+    articleRef: "Article 36"
+    paragraphRef: "Art 36"
+    title: "Commission review and reporting obligations"
+    obligationType: "review_reporting"
+    entityLevel: false
+    notApplicableReason: "Article 36 imposes review obligations on the Commission, not on companies."
+    encodable: false
+    encodabilityReason: "institutional review provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Article 37 — Transposition
+  - id: "csddd.art37"
+    articleRef: "Article 37"
+    paragraphRef: "Art 37"
+    title: "National transposition and phased application"
+    obligationType: "transposition"
+    entityLevel: false
+    notApplicableReason: "Article 37 governs Member State transposition and application dates rather than direct company conduct."
+    encodable: false
+    encodabilityReason: "transposition provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Articles 38-39 — Final provisions
+  - id: "csddd.art38"
+    articleRef: "Article 38"
+    paragraphRef: "Art 38"
+    title: "Entry into force"
+    obligationType: "final_provision"
+    entityLevel: false
+    notApplicableReason: "Article 38 is a final legislative provision."
+    encodable: false
+    encodabilityReason: "entry-into-force provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.art39"
+    articleRef: "Article 39"
+    paragraphRef: "Art 39"
+    title: "Addressees"
+    obligationType: "final_provision"
+    entityLevel: false
+    notApplicableReason: "Article 39 identifies the addressees of the Directive and is not an entity-level obligation."
+    encodable: false
+    encodabilityReason: "final legislative provision"
+    checkType: "presence"
+    evidenceRequired: []
+
+  # Annex — Rights, prohibitions, and environmental instruments
+  - id: "csddd.annex.part_i"
+    articleRef: "Annex"
+    paragraphRef: "Annex Part I"
+    title: "Human rights and fundamental freedoms listed in the Annex"
+    obligationType: "annex_dependency"
+    encodable: false
+    encodabilityReason: "annex provides protected rights and prohibitions used to interpret Articles 10, 11, and 29"
+    checkType: "presence"
+    evidenceRequired: []
+
+  - id: "csddd.annex.part_ii"
+    articleRef: "Annex"
+    paragraphRef: "Annex Part II"
+    title: "Environmental prohibitions and obligations listed in the Annex"
+    obligationType: "annex_dependency"
+    encodable: false
+    encodabilityReason: "annex provides environmental prohibitions and obligations used to interpret adverse impacts"
+    checkType: "presence"
+    evidenceRequired: []

@@ -1,0 +1,90 @@
+{
+  "id": "urn:uuid:real-vc-1775170220524-15",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x0f8c155a80542ffda56fa58bd79a9626931062f4",
+    "name": "Nouveau Monde Anode Inc"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xfcda2ee9fe5e7a21187970d77e656f01b96e9a22",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-03-23T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xfcda2ee9fe5e7a21187970d77e656f01b96e9a22",
+    "productName": "Anode active material AAM",
+    "batch": "REAL-BATCH-015",
+    "quantity": 1,
+    "previousCredential": "QmPCQ1P2RkHkKYFohgC8Xextvg4xmG5NeAQVYRnic39yWn",
+    "componentCredentials": [
+      "QmPCQ1P2RkHkKYFohgC8Xextvg4xmG5NeAQVYRnic39yWn"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-aam-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-aam-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_anode"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Canada",
+      "countryCode": "CA",
+      "latitude": 47,
+      "longitude": -71
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Spherical graphite anode coating, Quebec grid",
+    "climateClaim": "LCA-disclosed per kWh",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x626c7e4e54a06cb1d017e4e87faa9a7d57dc50eee75a551b494d1fb50add9575\",\"proof\":\"0x06f0de936e2f9b465d20005d467db6246c56e11ea3465482d5b29c9ffc956a1a8ef3749e18ffdadbe0fee77111d7c18293a1ccc0b396d600508aa50a0ad51f638eb3c2cdad12153a9f5875f70284bb8768ce21666f2f191ee3f5d3da51792c21423666561613d4fe71b916daf83bc80e87a6b3bb757e7e9da4d4fa25601fa102dced617bfa76140d6ec25eab578791512ee7974dd6831c65d5a586c90c0b3205daf13fef7c8b13d4285ad50103f4adfb6ab3fabb20d796fff204f2110c8b8e0bfc4b68f3553139adf01f3806b7307414ce6ff50917e447d530a7c8076d1a050cb871d891f89e4dcffa6c5beb35718fc4038d95e50d070ec0538bb8b2552bf24de6fca42ed3963600d3c764fe0a5a2467241be7208c59c7ae2756aa1c73ff164dcafee21b7d470d5516b14b197bd4d76107faed994183bc4eff9e79fad6e49a2b8e0dbffa690020fb63033f6abb131c705aad74ed2647f4fd668c2f7272753173f4a270f5e1afebea4baf1fb5ebd636e016df8d502726a4fbb3a9f81314929914806258b127c5882325f9a9ae75294a99c3bbbcc55615e3a23220014fa8b6a505365121ae348f92797032489cfc5d631ac4eba6f7ae854a797aad9d6ae2656147d8895c6745e4bee6205f24534a2e1f41d72c9ef8797708f05f4105663cc95541c26d5e981a627102788e29920fca1d8e1a885452a835a86c12ebbf476e86182694cbb511075b2be78b5c9077bd8fae97d871c85e846ab1ea71e91ef09074d45dc619da25f22a87583ac97ca005efc680f43c993f6217b9a87645a08a66dbe3047a70918b90afa859c58a1f23af5c864c51005688753a8d9d04635ba8743f46060467c3e60eabaa03df8716af835dd62db9a0316994566a60b7b81647b30c3d07253db8488886391c1014919ac0aaa3666c4c2f8b500a2ff89abbcc2d99964f0a\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x09b19fb8a4aa25f570800fd015b98654228d7dd15161219f3139588f98b17ba2\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x626c7e4e54a06cb1d017e4e87faa9a7d57dc50eee75a551b494d1fb50add9575",
+      "proof": "0x06f0de936e2f9b465d20005d467db6246c56e11ea3465482d5b29c9ffc956a1a8ef3749e18ffdadbe0fee77111d7c18293a1ccc0b396d600508aa50a0ad51f638eb3c2cdad12153a9f5875f70284bb8768ce21666f2f191ee3f5d3da51792c21423666561613d4fe71b916daf83bc80e87a6b3bb757e7e9da4d4fa25601fa102dced617bfa76140d6ec25eab578791512ee7974dd6831c65d5a586c90c0b3205daf13fef7c8b13d4285ad50103f4adfb6ab3fabb20d796fff204f2110c8b8e0bfc4b68f3553139adf01f3806b7307414ce6ff50917e447d530a7c8076d1a050cb871d891f89e4dcffa6c5beb35718fc4038d95e50d070ec0538bb8b2552bf24de6fca42ed3963600d3c764fe0a5a2467241be7208c59c7ae2756aa1c73ff164dcafee21b7d470d5516b14b197bd4d76107faed994183bc4eff9e79fad6e49a2b8e0dbffa690020fb63033f6abb131c705aad74ed2647f4fd668c2f7272753173f4a270f5e1afebea4baf1fb5ebd636e016df8d502726a4fbb3a9f81314929914806258b127c5882325f9a9ae75294a99c3bbbcc55615e3a23220014fa8b6a505365121ae348f92797032489cfc5d631ac4eba6f7ae854a797aad9d6ae2656147d8895c6745e4bee6205f24534a2e1f41d72c9ef8797708f05f4105663cc95541c26d5e981a627102788e29920fca1d8e1a885452a835a86c12ebbf476e86182694cbb511075b2be78b5c9077bd8fae97d871c85e846ab1ea71e91ef09074d45dc619da25f22a87583ac97ca005efc680f43c993f6217b9a87645a08a66dbe3047a70918b90afa859c58a1f23af5c864c51005688753a8d9d04635ba8743f46060467c3e60eabaa03df8716af835dd62db9a0316994566a60b7b81647b30c3d07253db8488886391c1014919ac0aaa3666c4c2f8b500a2ff89abbcc2d99964f0a",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x09b19fb8a4aa25f570800fd015b98654228d7dd15161219f3139588f98b17ba2"
+    },
+    "productId": "176",
+    "productContract": "0x290588490065EefdC870cF8852B2795157774D51",
+    "chainId": "11155111",
+    "claims": {
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-23T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x0f8c155a80542ffda56fa58bd79a9626931062f4#controller",
+      "role": "seller",
+      "payloadHash": "0x71e9e9cf576644c15c7f9c11406997261d7b5d725c16185a0725120136b919c8",
+      "jws": "0xba57068aae5c795d0589a5a280b688fa9690c4bc3cbe9aa80eae9b0329c4e6bf4e2d96bb2072ae6e4133f3bd44ec4ea79e2ca94dee24fbc9246c19844180d7561c"
+    }
+  ]
+}

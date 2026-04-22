@@ -1,0 +1,50 @@
+version: 1
+tool_id: certification.verify@v1
+description: "Deterministic certification verification tool."
+category: certification
+entity: VerificationReport
+operation: verify
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [rootCid]
+  properties:
+    rootCid:
+      type: string
+    graph:
+      type: object
+    vcsByCid:
+      type: object
+    technicalResult:
+      type: object
+    catalogPath:
+      type: string
+
+output_schema:
+  type: object
+  required: [status, success, message, summary, findings, claims, meta]
+  properties:
+    status:
+      type: string
+      enum: [pending, running, done, error]
+    success:
+      type: [boolean, "null"]
+    message:
+      type: string
+    summary:
+      type: object
+    findings:
+      type: array
+      items:
+        type: object
+    claims:
+      type: array
+      items:
+        type: object
+    meta:
+      type: object

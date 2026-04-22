@@ -1,0 +1,298 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517136651-25",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "name": "Autovolt Deutschland AG"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "name": "Autovolt Deutschland AG"
+  },
+  "issuanceDate": "2026-04-06T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "productName": "Autovolt Gen-4 EV Battery Passport and Compliance Dossier",
+    "batch": "AV-G4-COMPLIANCE-2026",
+    "quantity": 1,
+    "previousCredential": "QmP6y9tcXRnMTHNDq7dDRXihHrkceTBCD5fnFgtKXq649V",
+    "componentCredentials": [
+      "QmP6y9tcXRnMTHNDq7dDRXihHrkceTBCD5fnFgtKXq649V",
+      "Qmdco7DLdXpjuJMNVYBHtBBgejKo3woFFPrinUUFC6Rjk8",
+      "QmXca6g2Wuutwzn9c2Nn7qDvnpGCAcYbeSwaxnfSDB4pXZ"
+    ],
+    "certificateCredential": {
+      "name": "EU Battery Passport",
+      "cid": "bafy-case1-root-battery-passport"
+    },
+    "certifications": [
+      {
+        "name": "EU Battery Passport",
+        "issuer": "Autovolt Deutschland AG",
+        "certificateCid": "bafy-case1-root-battery-passport"
+      }
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 48.1,
+      "longitude": 11.6
+    },
+    "facilityRole": "oem",
+    "materialTags": [
+      "battery_passport",
+      "battery_pack",
+      "ev"
+    ],
+    "operationTags": [
+      "root",
+      "oem",
+      "union_market",
+      "battery_passport"
+    ],
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 5400,
+      "net_turnover_eur_worldwide": 1600000000,
+      "net_turnover_eur_union": 1200000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "529900CASEAUTOVOLT1",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 120000000
+    },
+    "group": {
+      "avg_employee_count": 18000,
+      "net_turnover_eur_worldwide": 5200000000,
+      "net_turnover_eur_union": 3900000000,
+      "net_turnover_eur_consolidated_last_financial_year": 450000000
+    },
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": false,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": false,
+      "remediation_process": false,
+      "stakeholder_engagement": false,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": false,
+      "monitoring_frequency_months": 24,
+      "public_due_diligence_statement": false,
+      "public_statement_publication_delay_months": 18,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": false,
+      "climate_transition_investments_defined": false,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 24,
+      "esap_submission_completed": false,
+      "esap_machine_readable_format": false,
+      "esap_metadata_complete": false,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": false,
+      "policy_review_interval_months": 24,
+      "sme_support_measures": false,
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "weight_kg": 430,
+        "capacity_kwh": 74,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "producer",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "label_present": true,
+        "separate_collection_symbol_present": true,
+        "qr_code_present": true,
+        "technical_documentation_exists": true,
+        "eu_declaration_of_conformity_exists": true,
+        "ce_mark_present": true,
+        "batch_or_serial_present": true,
+        "manufacturer_identity_present": true,
+        "importer_identity_present": true,
+        "battery_passport_exists": true,
+        "battery_passport_identifier": "autovolt-root-passport-001",
+        "battery_passport_public_fields_present": true,
+        "producer_registered": true,
+        "producer_registration_application_complete": true,
+        "producer_registration_number_present": true,
+        "producer_registration_changes_notified": true,
+        "extended_producer_responsibility_fulfilled": true,
+        "distance_seller_into_member_state": false,
+        "financial_contributions_cover_collection_treatment_costs": true,
+        "financial_contributions_cover_compositional_survey_costs": false,
+        "financial_contributions_cover_information_costs": true,
+        "financial_contributions_cover_reporting_costs": true,
+        "collective_epr_fulfilment": false,
+        "epr_fulfilment_mode": "individual",
+        "epr_authorisation_exists": true,
+        "epr_measures_sufficient": true,
+        "collection_arrangements_documented": true,
+        "collection_target_attainment_plan_exists": true,
+        "independent_verification_used": false,
+        "authorisation_changes_notified": true,
+        "self_control_report_exists": true,
+        "corrective_action_plan_exists": true,
+        "epr_guarantee_exists": true,
+        "takeback_free_of_charge": true,
+        "sli_industrial_ev_collection_system_exists": true,
+        "sli_industrial_ev_territorial_coverage_complete": true,
+        "sli_industrial_ev_collection_infrastructure_suitable": true,
+        "sli_industrial_ev_collection_frequency_proportionate": true,
+        "sli_industrial_ev_collected_waste_delivered_to_permitted_facility": true,
+        "waste_battery_prevention_management_information_complete": true,
+        "waste_battery_information_visible_at_point_of_sale": true,
+        "waste_battery_information_available_online": true,
+        "waste_battery_information_in_member_state_language": true,
+        "storage_collection_safety_information_shared": true,
+        "treatment_information_available_on_request": true,
+        "waste_management_costs_shown_separately": true,
+        "article_74_information_campaign_carried_out": true,
+        "waste_battery_information_published_publicly": true,
+        "public_information_confidentiality_preserved": true,
+        "sli_industrial_ev_reporting_complete": true,
+        "reports_submitted_within_six_months": true,
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "record_retention_years": 10,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": true,
+        "top_management_reporting_exists": true,
+        "third_party_verification_report_exists": true,
+        "approval_decision_exists": true,
+        "audit_report_exists": true,
+        "downstream_information_shared": true,
+        "public_due_diligence_report_exists": false
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x8e758fd3e44ce5d4fb34ff82bccb7db9d52196969ca379b3d04e7b414992be7d\",\"proof\":\"0x8a823515b0919a0a56f304fa3778297c40b106b6abb0c94f5b60216b318dff774c3b9ada6cb91fbbb675ae5470507a2cfa545f62f98eaa2e3a1a95163e8618166c72693c4ada01d947d645a39d34830676e7882f4e5fec9831bdca21f225e020404a60389ed48148fc7946a8cdfb26fd1c0b29a4c5683a84f3de54b2ce7c726548b165fd1bf6e6b32aca32f229ea2518f8cfb0edee4d111d4bb7188a2261040e3a1939ba22bb55e8edf1d94788f008df2f8da74013134d1d1e3ce018581ad2027ec9697d2a11947e67d2fcfe4df9ef6e50a6b8aec19da3f23b96c1efb869830a1485bce406240699c6e3239b6754ac9af1e5192a8da30c223171060b1bc664725ac763f270919d6ed3fb63a5966e5538c19da034d5d06cf5906e5f5106fbd34c3614e915fd217f150b77cab0d5184e99ed91ea37faa358d4a9480a3a62da4562bceab1f3220dab33f4ee4d49da7671eb6ee28d39e135249913a62c79d1abfe7716bfc813471a27e46a5a9d410fda63e225664ef44e1c2eacd6216df8adc5b1774252854b85af3197ae38c77549ceb1ec535827d5972f7b03a8a39994a4ca5e33a0e0067c7ca4fddbf0c9e771f527f99010e1ce1ec11cb80379cde75dd393fd1b36afa3f0632ee864845c32bebff2bd085dbf96e6db6c7b45146a65db0bc20a5d8e0a17d7a96b82817e1d12a39fad65b8b528f428953402400a1ae129199200630e3893ef891ffcf14a29be6f8dbb558c2f9409dc5c10f33caff95606c2f8d97c943b6f85a9fbe9d35b4aa9f476f96ac16e66bd930e008d057f363c8b13d20a2404889221e4f52ba370055a4f1243a0954b80fee9afbc02f557dc8a8f347006156cd0a6ec7509a93923159bc811b363fd3f359531d3a26859cdeb672ec1f1990f5364a855ece8acbdccc53cd7f2369327fc72295cda6f8a77293642dbef169006\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xdd808ad9bcf389a2674a5a39f78d39b7649663aeecbfce33650d2bcca4b1a195\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x8e758fd3e44ce5d4fb34ff82bccb7db9d52196969ca379b3d04e7b414992be7d",
+      "proof": "0x8a823515b0919a0a56f304fa3778297c40b106b6abb0c94f5b60216b318dff774c3b9ada6cb91fbbb675ae5470507a2cfa545f62f98eaa2e3a1a95163e8618166c72693c4ada01d947d645a39d34830676e7882f4e5fec9831bdca21f225e020404a60389ed48148fc7946a8cdfb26fd1c0b29a4c5683a84f3de54b2ce7c726548b165fd1bf6e6b32aca32f229ea2518f8cfb0edee4d111d4bb7188a2261040e3a1939ba22bb55e8edf1d94788f008df2f8da74013134d1d1e3ce018581ad2027ec9697d2a11947e67d2fcfe4df9ef6e50a6b8aec19da3f23b96c1efb869830a1485bce406240699c6e3239b6754ac9af1e5192a8da30c223171060b1bc664725ac763f270919d6ed3fb63a5966e5538c19da034d5d06cf5906e5f5106fbd34c3614e915fd217f150b77cab0d5184e99ed91ea37faa358d4a9480a3a62da4562bceab1f3220dab33f4ee4d49da7671eb6ee28d39e135249913a62c79d1abfe7716bfc813471a27e46a5a9d410fda63e225664ef44e1c2eacd6216df8adc5b1774252854b85af3197ae38c77549ceb1ec535827d5972f7b03a8a39994a4ca5e33a0e0067c7ca4fddbf0c9e771f527f99010e1ce1ec11cb80379cde75dd393fd1b36afa3f0632ee864845c32bebff2bd085dbf96e6db6c7b45146a65db0bc20a5d8e0a17d7a96b82817e1d12a39fad65b8b528f428953402400a1ae129199200630e3893ef891ffcf14a29be6f8dbb558c2f9409dc5c10f33caff95606c2f8d97c943b6f85a9fbe9d35b4aa9f476f96ac16e66bd930e008d057f363c8b13d20a2404889221e4f52ba370055a4f1243a0954b80fee9afbc02f557dc8a8f347006156cd0a6ec7509a93923159bc811b363fd3f359531d3a26859cdeb672ec1f1990f5364a855ece8acbdccc53cd7f2369327fc72295cda6f8a77293642dbef169006",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xdd808ad9bcf389a2674a5a39f78d39b7649663aeecbfce33650d2bcca4b1a195"
+    },
+    "productId": "211",
+    "productContract": "0x1b3060Da770b9d08f63B2B7B226B5f1F32281181",
+    "chainId": "11155111",
+    "companyName": "Autovolt Deutschland AG",
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Autovolt Deutschland AG reports site-level emissions for Autovolt Gen-4 EV Battery Passport and Compliance Dossier.",
+        "climateClaim": "Autovolt Deutschland AG maintains transition-planning and operational decarbonisation evidence for oem activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Germany",
+        "facilityRole": "oem",
+        "materialTags": [
+          "battery_passport",
+          "battery_pack",
+          "ev"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "oem",
+        "componentType": "battery_passport",
+        "qualityStandards": [
+          "EU Battery Passport"
+        ],
+        "traceabilityArtifacts": [
+          "vc_25_oem_battery_passport_germany_root-material-balance-sheet",
+          "vc_25_oem_battery_passport_germany_root-shipment-record",
+          "vc_25_oem_battery_passport_germany_root-supplier-declaration"
+        ],
+        "serialisationScheme": "AV-G4-COMPLIANCE-2026-SER",
+        "conformityReferences": [
+          "bafy-case1-root-battery-passport"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "DE-AV-G4-COMPLIANCE-2026",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "root producer should fail public due-diligence report and compositional-survey-cost coverage"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "root node is not a direct 3TG importer"
+      },
+      "csddd": {
+        "status": "fail",
+        "reason": "root should fail climate-action, remediation, complaint-procedure, ESAP, and disclosure-related graph-level checks"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-06T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748#controller",
+      "role": "issuer",
+      "payloadHash": "0x557d9cd0cd04fbe61959d6ed8cff4199accd3cf545932b9e0ad5c2ca9132ef5d",
+      "jws": "0x2064db95514e003303586d984cf3886971cda482202c4f9d858a3442d92a42b43ab91b3ab513d546b1c28300b69d6af8c6f564c674f196c7b45bab26ef6f99d31c"
+    }
+  ]
+}

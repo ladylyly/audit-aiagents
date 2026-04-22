@@ -1,0 +1,259 @@
+{
+  "anchoredAt": "2026-04-14T21:10:27.019Z",
+  "rootCid": "Qmde4spA2QghViUw6sxvEr9WWe6hx4bJddtHLDooxsN8H1",
+  "manifestPath": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/generated_vc_dag/middle_case_1775170209430/manifest.json",
+  "deployerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+  "issuerAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+  "entries": [
+    {
+      "cid": "QmYH7YnD6WxjYesV7qMPGwhYH6RdtY7yKi6ELcPohNcVu7",
+      "productContract": "0xF446D48aB4779A450c687697b792f082290650e4",
+      "productId": "162",
+      "expectedVcHash": "0xe97fc6f1d00760b14fa63655e5e69cb72d4d521dc284fbca7a309d49bc498a42",
+      "actualVcHash": "0xe97fc6f1d00760b14fa63655e5e69cb72d4d521dc284fbca7a309d49bc498a42",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmZ7F6R5uyQBpqF4yNTdSorXwkWRsmrrydF4p8m1xmuS6R",
+      "productContract": "0x80243d7C77d957B3E21534344b6986ab09EFa017",
+      "productId": "163",
+      "expectedVcHash": "0x5845a142cb8af54bdbe6350e3080b61c4423ca2793fa237ece8e3f884d31ff23",
+      "actualVcHash": "0x5845a142cb8af54bdbe6350e3080b61c4423ca2793fa237ece8e3f884d31ff23",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmX8pPxCyzZqAymHKiRYug57xTox4YQUeCWDzPLYs3T1N6",
+      "productContract": "0x18d3E68BD6449589464C6D8F6BA8297a278Ac9Df",
+      "productId": "164",
+      "expectedVcHash": "0x748cfdcb9318e41e838938f0351f59fd7f53c2590c7b431a88ddf8bef2536520",
+      "actualVcHash": "0x748cfdcb9318e41e838938f0351f59fd7f53c2590c7b431a88ddf8bef2536520",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmcKbwLF1qFgN8QuA3Ay9n6r7cbF7hNiHDFayiXA9kCgR8",
+      "productContract": "0x4fC3C5423EB13daf5Bf1C7EE907Db1F24475418D",
+      "productId": "165",
+      "expectedVcHash": "0xacff61bb6a1a691b7a054ce6aeb4d2711de2ba12adb97cfdd0ab399ba2f33f09",
+      "actualVcHash": "0xacff61bb6a1a691b7a054ce6aeb4d2711de2ba12adb97cfdd0ab399ba2f33f09",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmbbHJyNeEVxmVhZk12JPaK6726u4XnpVyVHNSWMNPmQ9V",
+      "productContract": "0x9Ca2d834793B8cE99Dd9C53ba842Cb2E06E344d5",
+      "productId": "166",
+      "expectedVcHash": "0x0a6acce281b88dcc35dc8b968697e0deadf5daa2d1ac0253c6eb3ce1f04ace57",
+      "actualVcHash": "0x0a6acce281b88dcc35dc8b968697e0deadf5daa2d1ac0253c6eb3ce1f04ace57",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmaPCNwAHP4jGSgZBPQe5Kdr1TCXXjbJQZWREPCt7HzqHQ",
+      "productContract": "0xDAe5ae108466Cc0dcafd73F13dc27B57aA551141",
+      "productId": "167",
+      "expectedVcHash": "0x92e0c98430499c37286095314cf4e6a814e07d607942004d8b0d71091842e18d",
+      "actualVcHash": "0x92e0c98430499c37286095314cf4e6a814e07d607942004d8b0d71091842e18d",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmNv57r5Sw9osoEwov5nKcQFS1yqjDvWBBnucAA3UMp3pn",
+      "productContract": "0x68502CEE017A41Fd95ca3C7A15377d76AeAB20E7",
+      "productId": "168",
+      "expectedVcHash": "0x56e83532bb85318b09f1b46785306e2a89d27a9dc3946fe8abf8d5392d1cd552",
+      "actualVcHash": "0x56e83532bb85318b09f1b46785306e2a89d27a9dc3946fe8abf8d5392d1cd552",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "Qmb6nEgVXkLpfmYKd9J854mDgPqDot9Tkb2KfYQfJZ3t2T",
+      "productContract": "0x23277F7D77b609a2f4f2A290543eB7EC665F46f7",
+      "productId": "169",
+      "expectedVcHash": "0x1de4311b6892c6b022679dc660a1dafde8641a87d97ab8aaa7f0e5d3aa18c505",
+      "actualVcHash": "0x1de4311b6892c6b022679dc660a1dafde8641a87d97ab8aaa7f0e5d3aa18c505",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmPCQ1P2RkHkKYFohgC8Xextvg4xmG5NeAQVYRnic39yWn",
+      "productContract": "0x5c2089E6d21C382e74FE122378b6371051d61C10",
+      "productId": "170",
+      "expectedVcHash": "0xdcf9eed490520cc9f2d798d0739f688584761a5c856253af23d30a1cd9bdeaca",
+      "actualVcHash": "0xdcf9eed490520cc9f2d798d0739f688584761a5c856253af23d30a1cd9bdeaca",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmbPNrYWELheZSuMx2BtB6A2XK3NQto8TyRbSBe3HsHfrm",
+      "productContract": "0x30786D39b70466cdAe2b6b201Cc16cc46f436376",
+      "productId": "171",
+      "expectedVcHash": "0x34b866c39525ff9b8845592b6a88c0e0c9b1e9d3aa6f9a01774d70a40b1a2ecb",
+      "actualVcHash": "0x34b866c39525ff9b8845592b6a88c0e0c9b1e9d3aa6f9a01774d70a40b1a2ecb",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "Qmb4fzYCymftXsJScHSi1ndKjKAB1w1exApBfKAZsmEhnL",
+      "productContract": "0x42a91B300bF388Dc8EC2c24840554aeB5eF2abb1",
+      "productId": "172",
+      "expectedVcHash": "0xd071ffd32e275497cff8f3e53b67b71df7dcd4c35515ef8b8c4adcfdc090621c",
+      "actualVcHash": "0xd071ffd32e275497cff8f3e53b67b71df7dcd4c35515ef8b8c4adcfdc090621c",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmYVuvddZ3EiJQ4z9c1za12xGTsKXyAcZFpqtnHTAURuh2",
+      "productContract": "0x15b39B33c68D2576FBF97b66c1D7dBF586995DF5",
+      "productId": "173",
+      "expectedVcHash": "0x1a82eaf20839f6b605f13a8c3da3a4d948b53faa34504bb055bc24fde5c8b8b8",
+      "actualVcHash": "0x1a82eaf20839f6b605f13a8c3da3a4d948b53faa34504bb055bc24fde5c8b8b8",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "Qmf8xaPEY1W2Dp3KofQVwcNvvf12SbZA2ormzgWzp8K8f3",
+      "productContract": "0x61b83FBEA86B64390bCbaa46DDeb42c5336d4958",
+      "productId": "174",
+      "expectedVcHash": "0x7e184d99a5f932ce37d9553c88050e1b4195b28165b4d2e985b66fbf384d8ef3",
+      "actualVcHash": "0x7e184d99a5f932ce37d9553c88050e1b4195b28165b4d2e985b66fbf384d8ef3",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmT7nYZRsN6UQwVuv9ddcr6jGHDUTtvZsZnX2AJAPoh5KJ",
+      "productContract": "0x4bF1E2d49a949D46158e42cFbBf379aC3fD98644",
+      "productId": "175",
+      "expectedVcHash": "0x20779a0284368e4bcc210f6add999345cbf86354089fc566b8605b766ff71880",
+      "actualVcHash": "0x20779a0284368e4bcc210f6add999345cbf86354089fc566b8605b766ff71880",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmciwScWaMLx7gh26VNW5Nv4fNqbnJ79SRYKS1Km3XLtXW",
+      "productContract": "0x290588490065EefdC870cF8852B2795157774D51",
+      "productId": "176",
+      "expectedVcHash": "0xe9ebb7f133e8906f8bfa08ab4430ca2f634b653a006faaff8a3ac4978a57de28",
+      "actualVcHash": "0xe9ebb7f133e8906f8bfa08ab4430ca2f634b653a006faaff8a3ac4978a57de28",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmSzPbt13c5GYeTttLYAPEK31LdziEpPPBGcAaaWJTzeuD",
+      "productContract": "0xB3498A3e1f57aD94f7FC4757ed13b997eD581d97",
+      "productId": "177",
+      "expectedVcHash": "0x55055eb30221fd3b6ed19ba4688f4bab2a8795e7778caf9cb9921b8a25294123",
+      "actualVcHash": "0x55055eb30221fd3b6ed19ba4688f4bab2a8795e7778caf9cb9921b8a25294123",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmcdPgdimKRqgnazXDVKJGKq9TLvjRQ1AWE35s9HzMKb7H",
+      "productContract": "0x585C3C38849d329faEe7ba85015172709d8360b7",
+      "productId": "178",
+      "expectedVcHash": "0xd07185519c0a210da647ab7b8c16098d451df26a4830510f381d1173fda25154",
+      "actualVcHash": "0xd07185519c0a210da647ab7b8c16098d451df26a4830510f381d1173fda25154",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmTbNjkoFuheNXn4WQ65eVW33StMRQrokbqvswCdnvrpTp",
+      "productContract": "0x7c7D84Ab1436202691dFe88505248876e4126E32",
+      "productId": "179",
+      "expectedVcHash": "0xeb89de68ca724ab550b22062baf93cbee3ce1325e6297e382c46c4b18d6124bb",
+      "actualVcHash": "0xeb89de68ca724ab550b22062baf93cbee3ce1325e6297e382c46c4b18d6124bb",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmbnrFgrWWMsWNeAr84szfisSiKj8zp8JMg2u8AuMMemxa",
+      "productContract": "0x3701FbB152db81363492432c11e88c0fAe07f023",
+      "productId": "180",
+      "expectedVcHash": "0x125a0e779531fbc0abca138e71713435672f3af3c6e23f67b7d91b4cda061c94",
+      "actualVcHash": "0x125a0e779531fbc0abca138e71713435672f3af3c6e23f67b7d91b4cda061c94",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmSsmJ5EER3SGPCTqev8gT13xb8xtcCpR9mkwQEse1E8to",
+      "productContract": "0x417d86C0f01A35F2f3CA12C4FDF04F2CE5BceB52",
+      "productId": "181",
+      "expectedVcHash": "0xab16809a4a472aa5eb63ce3c181c13dbc7b820cef9f4d9105f0de5b46295eeec",
+      "actualVcHash": "0xab16809a4a472aa5eb63ce3c181c13dbc7b820cef9f4d9105f0de5b46295eeec",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmbR5RfBR9F9cvt9SWmuf2eMnS43ENTYSm4uLXcTPqr9kt",
+      "productContract": "0xA3194A60e98d4c756F04e5F2e4d9C3aBF7B1e6bb",
+      "productId": "182",
+      "expectedVcHash": "0x62d6bb1a6df8ce9a201aec468f05d0100ab0ded2c10715bb63fec664b8a85e3b",
+      "actualVcHash": "0x62d6bb1a6df8ce9a201aec468f05d0100ab0ded2c10715bb63fec664b8a85e3b",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmXrq1yuZAHHjiYHD7h2DQ4jaSPc2iaRQgx3G6U6rkG1YL",
+      "productContract": "0x5354aecB1F5C8c7720BAD8d67637aB21Dc6b5213",
+      "productId": "183",
+      "expectedVcHash": "0xd48d8ee8e5cb251898b689f70d256fcc531db1a6217d2743cf24965817592d63",
+      "actualVcHash": "0xd48d8ee8e5cb251898b689f70d256fcc531db1a6217d2743cf24965817592d63",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmYmNSxUfNiWUEpB4ntDVi31u4op2a2n1xaDXpyJDqb1eq",
+      "productContract": "0x57708E73A513E8aFd5218BA654aF2602160e8A44",
+      "productId": "184",
+      "expectedVcHash": "0xc19559e8ea3822b349b0586f3c4e78c036691d10302884e56cd7b602e284733d",
+      "actualVcHash": "0xc19559e8ea3822b349b0586f3c4e78c036691d10302884e56cd7b602e284733d",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "QmSbZ9fMs2a8GWkpgbhwZib1dS6dwPERfNbRXSo8hEg7Qx",
+      "productContract": "0x4D514B09462084Fe7C1DEb66bb4C2B36277B5879",
+      "productId": "185",
+      "expectedVcHash": "0xbad7151cf79443610c7e5790b93bd473df26a29e925ae5a6d4c1040383b552b2",
+      "actualVcHash": "0xbad7151cf79443610c7e5790b93bd473df26a29e925ae5a6d4c1040383b552b2",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    },
+    {
+      "cid": "Qmde4spA2QghViUw6sxvEr9WWe6hx4bJddtHLDooxsN8H1",
+      "productContract": "0xA17eD2aBDBe71dAD122857de1be0917e03c1f49e",
+      "productId": "186",
+      "expectedVcHash": "0x65a7c9be33c1557d66637c6b0ffc838d9765b71f09df44ebe271a25cd505cbc8",
+      "actualVcHash": "0x65a7c9be33c1557d66637c6b0ffc838d9765b71f09df44ebe271a25cd505cbc8",
+      "anchored": true,
+      "paymentTxHash": null,
+      "confirmTxHash": null
+    }
+  ]
+}

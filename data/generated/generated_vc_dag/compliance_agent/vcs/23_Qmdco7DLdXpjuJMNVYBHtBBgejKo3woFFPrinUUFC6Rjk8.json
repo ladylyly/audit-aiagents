@@ -1,0 +1,264 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517134120-23",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xb61e3ed1d0b56c5595143270a9e94d6cb90a2ffc",
+    "name": "Circular Battery Responsibility Netherlands B.V."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "name": "Autovolt Deutschland AG"
+  },
+  "issuanceDate": "2026-04-04T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "productName": "Producer responsibility scheme dossier CBR-2026",
+    "batch": "CBR-2026",
+    "quantity": 1,
+    "previousCredential": "QmP6y9tcXRnMTHNDq7dDRXihHrkceTBCD5fnFgtKXq649V",
+    "componentCredentials": [
+      "QmP6y9tcXRnMTHNDq7dDRXihHrkceTBCD5fnFgtKXq649V"
+    ],
+    "certificateCredential": {
+      "name": "EPR Authorisation",
+      "cid": "bafy-case1-epr-authorisation"
+    },
+    "certifications": [
+      {
+        "name": "EPR Authorisation",
+        "issuer": "National Authority",
+        "certificateCid": "bafy-case1-epr-authorisation"
+      }
+    ],
+    "location": {
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "latitude": 52.4,
+      "longitude": 4.9
+    },
+    "facilityRole": "producer_responsibility_organisation",
+    "materialTags": [
+      "battery_compliance"
+    ],
+    "operationTags": [
+      "downstream",
+      "epr",
+      "collection_reporting"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "lmt",
+        "subcategory": "traction",
+        "weight_kg": 10,
+        "capacity_kwh": 5,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "producer_responsibility_organisation",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "producer_responsibility_organisation_authorized": true,
+        "pro_financial_contributions_modulated": true,
+        "pro_financial_contributions_revenue_adjusted": false,
+        "pro_territorial_coverage_complete": true,
+        "pro_confidentiality_controls_exist": true,
+        "pro_collection_rate_published": true,
+        "pro_recycling_efficiency_published": false,
+        "pro_material_recovery_published": false,
+        "pro_operator_selection_public": true,
+        "waste_management_operator_selection_nondiscriminatory": true,
+        "epr_authorisation_exists": true,
+        "epr_measures_sufficient": true,
+        "collection_arrangements_documented": true,
+        "collection_target_attainment_plan_exists": true,
+        "independent_verification_used": false,
+        "authorisation_changes_notified": true,
+        "self_control_report_exists": true,
+        "corrective_action_plan_exists": true,
+        "epr_guarantee_exists": true,
+        "lmt_takeback_system_exists": true,
+        "lmt_collection_offer_free": true,
+        "lmt_collection_containers_provided": true,
+        "lmt_collection_frequency_proportionate": true,
+        "lmt_weee_collection_supported": true,
+        "lmt_collected_waste_sent_to_treatment": true,
+        "lmt_collection_network_territorially_complete": true,
+        "lmt_collection_rate_numerator_kg": 54,
+        "lmt_collection_rate_denominator_kg": 100,
+        "lmt_collection_infrastructure_suitable": true,
+        "lmt_collection_costs_covered": true,
+        "lmt_collected_waste_delivered_to_permitted_facility": true,
+        "article_74_information_campaign_carried_out": false,
+        "waste_battery_prevention_management_information_complete": true,
+        "waste_battery_information_visible_at_point_of_sale": true,
+        "waste_battery_information_available_online": true,
+        "waste_battery_information_in_member_state_language": true,
+        "waste_battery_information_published_publicly": true,
+        "public_information_confidentiality_preserved": true,
+        "portable_lmt_reporting_complete": false,
+        "reports_submitted_within_six_months": true
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x0209ad777cd12f9871ce9aab440ae135dc99112ce89444b921b47d6373b8fa0d\",\"proof\":\"0x1ec3209cb428f2c711368344c4eb130a8336ae8437a21a397221277ec16f8c1f98a21facd836b28d143264e1684f7d385c003b456b37777810896956204d16667e523c2d81a8373dd5c48c358834078b2a249a3c71b6c0b215ded1f9781ab665a4aa6fd8e4d65d29246b139e27d4442d5d35e8b137b946d404d56ae5f66412449dff2542fbf0cbf8baed4fe38deb603c2994f35a9dac2825819e0e614e80360ddd18131e7582de57042b24b81e89240a847060887b67088d5d92a16aa4822c09ac6dbbcb640076c7c6d72d85b4ea6cb906fcc1b0f947556480339bb68cfdf80566935bd66f2ba92254c83fc71aed6fffbd3d34db0716656f91fd629854a45363f21c147fc9a053bbe97d680e63f766a5d8381564f93c130ff1c643758cbfd252cec59689dee840f501970d37c7c3158e3ac7683b1e015ab1a212f2625117af1b04e7185fd0fcc9f171b501953dee855ae63ece26b6362a216bd0cc7f4a9cae57e4cdcf65f63557fecb059bb05d08c3dacff4abce58fac300240cfe629b05b7031a8331d5fa42589f18deeaca9d30e9487154b3297a3dbdfb984a539592eed4205c327de2a3811c24969e9af698a08f24c028d8110011a24928a4d080e1b1616108665e4781ad8d23d26b580368e2ad63f917bf59e4904ede8ad0d0ba2fe855192a7d74c68660b49d33c97e3088b3c8421d3ba9b22833790162e54afb10404d1898c064da4666052fd3cca46efc44589ccdbec61db23405b1e51a76811e8d84340e165b9a2aaddb68cf80b652a01ce25dcf95d44d93877f60f9f82c2b8967980710760c428f27749e8d9aa5a79993c81fda32b68df7ace75498f9db49f1522560b50a4fa0bac4f4a8e6dc43368a428045c315b60bf3236386f73417e42e66be0e8bbb598a04850cc85761c5a381fcee1ab50e5de7dfe686955725ccea9e98860a\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xe42ee3d0c9de5546248de7df759a29d60aba59fabea4b8720ee8514c8537f528\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x0209ad777cd12f9871ce9aab440ae135dc99112ce89444b921b47d6373b8fa0d",
+      "proof": "0x1ec3209cb428f2c711368344c4eb130a8336ae8437a21a397221277ec16f8c1f98a21facd836b28d143264e1684f7d385c003b456b37777810896956204d16667e523c2d81a8373dd5c48c358834078b2a249a3c71b6c0b215ded1f9781ab665a4aa6fd8e4d65d29246b139e27d4442d5d35e8b137b946d404d56ae5f66412449dff2542fbf0cbf8baed4fe38deb603c2994f35a9dac2825819e0e614e80360ddd18131e7582de57042b24b81e89240a847060887b67088d5d92a16aa4822c09ac6dbbcb640076c7c6d72d85b4ea6cb906fcc1b0f947556480339bb68cfdf80566935bd66f2ba92254c83fc71aed6fffbd3d34db0716656f91fd629854a45363f21c147fc9a053bbe97d680e63f766a5d8381564f93c130ff1c643758cbfd252cec59689dee840f501970d37c7c3158e3ac7683b1e015ab1a212f2625117af1b04e7185fd0fcc9f171b501953dee855ae63ece26b6362a216bd0cc7f4a9cae57e4cdcf65f63557fecb059bb05d08c3dacff4abce58fac300240cfe629b05b7031a8331d5fa42589f18deeaca9d30e9487154b3297a3dbdfb984a539592eed4205c327de2a3811c24969e9af698a08f24c028d8110011a24928a4d080e1b1616108665e4781ad8d23d26b580368e2ad63f917bf59e4904ede8ad0d0ba2fe855192a7d74c68660b49d33c97e3088b3c8421d3ba9b22833790162e54afb10404d1898c064da4666052fd3cca46efc44589ccdbec61db23405b1e51a76811e8d84340e165b9a2aaddb68cf80b652a01ce25dcf95d44d93877f60f9f82c2b8967980710760c428f27749e8d9aa5a79993c81fda32b68df7ace75498f9db49f1522560b50a4fa0bac4f4a8e6dc43368a428045c315b60bf3236386f73417e42e66be0e8bbb598a04850cc85761c5a381fcee1ab50e5de7dfe686955725ccea9e98860a",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xe42ee3d0c9de5546248de7df759a29d60aba59fabea4b8720ee8514c8537f528"
+    },
+    "productId": "209",
+    "productContract": "0x5F9F780752ee91D389d406Dd87C5fE3735A6F5a8",
+    "chainId": "11155111",
+    "companyName": "Circular Battery Responsibility Netherlands B.V.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 2400,
+      "net_turnover_eur_worldwide": 900000000,
+      "net_turnover_eur_union": 700000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "NL-CASE-0023",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 180000000
+    },
+    "group": {
+      "avg_employee_count": 7000,
+      "net_turnover_eur_worldwide": 2400000000,
+      "net_turnover_eur_union": 1800000000,
+      "net_turnover_eur_consolidated_last_financial_year": 900000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Circular Battery Responsibility Netherlands B.V. reports site-level emissions for Producer responsibility scheme dossier CBR-2026.",
+        "climateClaim": "Circular Battery Responsibility Netherlands B.V. maintains transition-planning and operational decarbonisation evidence for producer_responsibility_organisation activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Netherlands",
+        "facilityRole": "producer_responsibility_organisation",
+        "materialTags": [
+          "battery_compliance"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "producer_responsibility_organisation",
+        "componentType": "battery_compliance",
+        "qualityStandards": [
+          "EPR Authorisation"
+        ],
+        "traceabilityArtifacts": [
+          "vc_23_producer_responsibility_org_netherlands-material-balance-sheet",
+          "vc_23_producer_responsibility_org_netherlands-shipment-record",
+          "vc_23_producer_responsibility_org_netherlands-supplier-declaration"
+        ],
+        "serialisationScheme": "CBR-2026-SER",
+        "conformityReferences": [
+          "bafy-case1-epr-authorisation"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "NL-CBR-2026",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "PRO should fail LMT collection target, publication duties, information-campaign, and reporting completeness"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "EPR operator, not 3TG importer"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "end-of-life support branch only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-04T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xb61e3ed1d0b56c5595143270a9e94d6cb90a2ffc#controller",
+      "role": "issuer",
+      "payloadHash": "0x7c7dbf7503a7007456890dfc84dd7ebdde92bb2d30c25fb393980ac3695bfd69",
+      "jws": "0x14f50977500631bf0fd2603d20052aa51f74bfb9c6ca95b4279aa927e86bfc096f066352eb145107dae2b05496202fdc34143e4a5a51419788ffeb1d5c50bef51c"
+    }
+  ]
+}

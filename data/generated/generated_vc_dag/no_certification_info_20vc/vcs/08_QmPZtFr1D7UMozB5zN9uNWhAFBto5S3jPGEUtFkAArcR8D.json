@@ -1,0 +1,158 @@
+{
+  "id": "urn:uuid:thesis-dense20-1776205083860-08",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisDenseComplianceCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xed3f852041d324db2b3eb78f2d27a04b2b8db23b",
+    "name": "Atlantic Graphite Processing S.A."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x1c2616c2313f74b66744f609ed2ac28a574e9e58",
+    "name": "Pannon Cell Systems Zrt."
+  },
+  "issuanceDate": "2026-04-02T22:17:51.791Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x1c2616c2313f74b66744f609ed2ac28a574e9e58",
+    "productName": "Purified spherical graphite lot AGP-2026-10",
+    "batch": "AGP-2026-10",
+    "quantity": 1,
+    "previousCredential": "QmVf8zvaEKCCnuqjt81VKyga97hohRTeYzqPjikFmzQnVP",
+    "componentCredentials": [
+      "QmVf8zvaEKCCnuqjt81VKyga97hohRTeYzqPjikFmzQnVP"
+    ],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Portugal",
+      "countryCode": "PT",
+      "latitude": 40.2,
+      "longitude": -8.4
+    },
+    "facilityRole": "processor",
+    "materialTags": [
+      "graphite",
+      "battery_anode"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "anode_material"
+    ],
+    "claims": {
+      "battery": {
+        "operator_role": "manufacturer",
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": false,
+        "due_diligence_annex_x_aligned": false,
+        "traceability_system_exists": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x02a7e50e19af6e8564a897f5afff8ec208efef73dff0fa51991b186bc404b61d\",\"proof\":\"0xc69e9795b6c75dfd82d58af92f818460d903693de9f1247387eb1ac34419b224a0d9af14a0a6d4653eccca06c7e212a0233c9f3c793cd5411ac0a8c4983c156d16ba8860786f2e338351fd1c5669bebfd9a46169b043dffa4f6dca523bb25275009d1bf4df2206dacc7490de1176e2d8725ae6b85d2ad8af78d40e0d3c90a244a7cd0ef7b95682020a39bbb1cd76469292294f682db99f53eb18a6e643e20d0bad6aae68e2f100ecb44d96c853edff15c856ba4cd543df680e91118a5dface03e9f93d2aeb9a21b23a0f3e02157bb9eddf133b4827c684d97360112a3324b308d2f7165c8c3b587ac2738fb58a56cd8b48ffbe3cf8fe4adf18567ce6f8936e27b21654b3bfb3735ccdb1cdff1f01028bcf494144cf02ef397d05e86c1df7d872469ced4525574265d0f98d768959d2732db23c654761686c54fc24dff9bbb6353874f9d82043393d8e50be01c6d34fb19c304374dd641cfd5cc1438a6d902217fac5061f7e69a817298b04f50bf52f208e31e7f0f85a27b284615709b1956529c882875472adaea90f80b99f0ff878633c840ffb8fbfac53da04b12615781649c6023382c34cb18d3f819e26f8a49b2241fa8d9631401785870b074f80dec4732e6515c14a1573ae6b664994d5facd244bcd3907203b40ea9cf61979e7c70f69d67696479b5045de32a176317c10276cc9363a500d759a1a9275ca1c347a8b084e47602761cd49881d19767e6b6cdda4b0ee6ff250193a2e0236f143db1d3224e29acd3c795e26215b685fbe681c930e92918e08d0647a7de5a539c73789131cb6c2fc32fe4f842047bd26679977a3d2ab8c14dbd4ac1381c3c69c6fb7a70e43aa554457600e70ae50ece700029c188a72059b8bd74a334e7ad6498bbe71710ba232a55f14b70324f12972206531176c63583ea8824f150ff0c6b8d5c87ddd03\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xdaa418094f73bd361fb325b3bd992d51b8c851878ab9b70fbc102cccf31fb8f1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x02a7e50e19af6e8564a897f5afff8ec208efef73dff0fa51991b186bc404b61d",
+      "proof": "0xc69e9795b6c75dfd82d58af92f818460d903693de9f1247387eb1ac34419b224a0d9af14a0a6d4653eccca06c7e212a0233c9f3c793cd5411ac0a8c4983c156d16ba8860786f2e338351fd1c5669bebfd9a46169b043dffa4f6dca523bb25275009d1bf4df2206dacc7490de1176e2d8725ae6b85d2ad8af78d40e0d3c90a244a7cd0ef7b95682020a39bbb1cd76469292294f682db99f53eb18a6e643e20d0bad6aae68e2f100ecb44d96c853edff15c856ba4cd543df680e91118a5dface03e9f93d2aeb9a21b23a0f3e02157bb9eddf133b4827c684d97360112a3324b308d2f7165c8c3b587ac2738fb58a56cd8b48ffbe3cf8fe4adf18567ce6f8936e27b21654b3bfb3735ccdb1cdff1f01028bcf494144cf02ef397d05e86c1df7d872469ced4525574265d0f98d768959d2732db23c654761686c54fc24dff9bbb6353874f9d82043393d8e50be01c6d34fb19c304374dd641cfd5cc1438a6d902217fac5061f7e69a817298b04f50bf52f208e31e7f0f85a27b284615709b1956529c882875472adaea90f80b99f0ff878633c840ffb8fbfac53da04b12615781649c6023382c34cb18d3f819e26f8a49b2241fa8d9631401785870b074f80dec4732e6515c14a1573ae6b664994d5facd244bcd3907203b40ea9cf61979e7c70f69d67696479b5045de32a176317c10276cc9363a500d759a1a9275ca1c347a8b084e47602761cd49881d19767e6b6cdda4b0ee6ff250193a2e0236f143db1d3224e29acd3c795e26215b685fbe681c930e92918e08d0647a7de5a539c73789131cb6c2fc32fe4f842047bd26679977a3d2ab8c14dbd4ac1381c3c69c6fb7a70e43aa554457600e70ae50ece700029c188a72059b8bd74a334e7ad6498bbe71710ba232a55f14b70324f12972206531176c63583ea8824f150ff0c6b8d5c87ddd03",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xdaa418094f73bd361fb325b3bd992d51b8c851878ab9b70fbc102cccf31fb8f1"
+    },
+    "productId": "294",
+    "productContract": "0xa1d3eccE0b2bF2472698c218f19DA5f43126a6EC",
+    "chainId": "11155111",
+    "companyName": "Atlantic Graphite Processing S.A.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 150000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "PT-DENSE20-0008",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 220000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "renewable_grid_mix",
+        "emissionsClaim": "Atlantic Graphite Processing S.A. reports site-level emissions and energy-source disclosures for Purified spherical graphite lot AGP-2026-10.",
+        "climateClaim": "Atlantic Graphite Processing S.A. maintains climate transition and emissions reduction evidence for processor operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Portugal",
+        "facilityRole": "processor",
+        "materialTags": [
+          "graphite",
+          "battery_anode"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "processor",
+        "componentType": "graphite",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_08_graphite_processor_portugal-material-balance-sheet",
+          "vc_08_graphite_processor_portugal-shipment-record",
+          "vc_08_graphite_processor_portugal-supplier-declaration"
+        ],
+        "serialisationScheme": "AGP-2026-10-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "PT-AGP-2026-10",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "annex-X alignment and public due-diligence disclosure intentionally missing"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "graphite is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "non-root evidence only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-02T22:17:51.791Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xed3f852041d324db2b3eb78f2d27a04b2b8db23b#controller",
+      "role": "issuer",
+      "payloadHash": "0x6760659821121e1e11ba8d119259ccbde744f57c1bc4181f068343bf88c99959",
+      "jws": "0xfaf167669b67d9d3351bed1199a621668d6f3c3a6c057f9b9cfd7fa577e49cb827897b40fbb2a6b62b5b2f1b0283fbb6a9e909e37e98b91daeb4c7e15ab203951c"
+    }
+  ]
+}

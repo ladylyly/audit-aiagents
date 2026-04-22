@@ -1,0 +1,137 @@
+{
+  "id": "urn:uuid:real-vc-1776811672306-11",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xdedaf8e44eb475b4ced74b85f490abcbd935f563",
+    "name": "Taniobis GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x87bd5e0dc1bdacc6b42391229fb549ae513c911c",
+    "name": "EPCOS Capacitors GmbH"
+  },
+  "issuanceDate": "2026-04-07T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x87bd5e0dc1bdacc6b42391229fb549ae513c911c",
+    "productName": "Tantalum smelter",
+    "batch": "REAL-BATCH-011",
+    "quantity": 1,
+    "previousCredential": "QmWtkMhkzuFRHWF1Z7Y1Gfa2FyRtPVVXUMdFDAUMBUFSDd",
+    "componentCredentials": [
+      "QmWtkMhkzuFRHWF1Z7Y1Gfa2FyRtPVVXUMdFDAUMBUFSDd"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-ta-smelt-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-ta-smelt-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ta-smelt-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "tantalum"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 51.2,
+      "longitude": 6.8
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Green-certified smelter, scope-1+2 verified",
+    "climateClaim": "ETS-compliant operations",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xc819982286467a2ffc7c614c75985370724d47750a6a283d9bae16626919646f\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xc819982286467a2ffc7c614c75985370724d47750a6a283d9bae16626919646f",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "363",
+    "productContract": "0xcbef2d4e845F9934e4aEb3992d171f1A34C40EeF",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "conflict_minerals": {
+        "union_importer": true,
+        "material_type": "tantalum",
+        "cn_code": "8103 20 00",
+        "annex_i_threshold_exceeded": true,
+        "material_form": "metal",
+        "recycled_metals": false,
+        "pre_2013_stock_verified": false,
+        "by_product": false,
+        "by_product_origin_documented": false,
+        "compliance_documentation_exists": true,
+        "recognised_scheme_used": true,
+        "supply_chain_policy_exists": true,
+        "oecd_annex_ii_alignment": true,
+        "senior_management_responsibility_assigned": true,
+        "record_retention_years": 5,
+        "supplier_contract_policy_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "smelter_refiner_identified": true,
+        "origin_country": "RW",
+        "third_party_audit_exists": true,
+        "risk_assessment_exists": true,
+        "risk_assessment_reported_to_senior_management": true,
+        "risk_response_strategy_defined": true,
+        "risk_management_plan_exists": true,
+        "risk_mitigation_tracking": true,
+        "additional_risk_assessments": true,
+        "stakeholder_consultation_for_mitigation": true,
+        "oecd_annex_iii_measures_used": true,
+        "audit_scope_complete": true,
+        "audit_conformity_objective": true,
+        "audit_recommendations_provided": true,
+        "audit_independence_confirmed": true,
+        "substantive_evidence_of_smelter_refiner_compliance": true,
+        "audit_reports_shared_with_authorities": true,
+        "information_shared_with_downstream_purchasers": true,
+        "public_disclosure_exists": true,
+        "recycled_source_conclusion_disclosed": true,
+        "traceability_system_exists": true,
+        "chain_of_custody_records": true
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-07T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xdedaf8e44eb475b4ced74b85f490abcbd935f563#controller",
+      "role": "seller",
+      "payloadHash": "0xf16b2299f7b8ef611f74a4246487b7c7222091b99c610fd60a408e8a7406ce9a",
+      "jws": "0x47d78e1bd5225d7b5b3d91e951b094312aafe04a62f4023efef6284a0ddca0264ad1ba428a47ca65c06c6d59dc17f66ab93e284c0e3622bee79a3aab89f6e73e1b"
+    }
+  ]
+}

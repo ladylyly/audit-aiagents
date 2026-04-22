@@ -1,0 +1,163 @@
+{
+  "id": "urn:uuid:thesis-batteryreg-1776210509569-02",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisBatteryRegulationCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xef66cc793573594220ddb5cd74cb5ecc9d33774f",
+    "name": "Baltic Cobalt Refining OÜ"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x7a8a51224224085f79702e10bfc57cd70455c046",
+    "name": "Antwerp Precursor Materials NV"
+  },
+  "issuanceDate": "2026-03-27T23:48:28.121Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x7a8a51224224085f79702e10bfc57cd70455c046",
+    "productName": "Battery-grade cobalt sulfate lot BCR-2026-04",
+    "batch": "BCR-2026-04",
+    "quantity": 1,
+    "previousCredential": "QmRdChpa82auk8cKQpxPhG2dVGgXwpELvcLRKJaZXPT5A5",
+    "componentCredentials": [
+      "QmRdChpa82auk8cKQpxPhG2dVGgXwpELvcLRKJaZXPT5A5"
+    ],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Estonia",
+      "countryCode": "EE",
+      "latitude": 59.4,
+      "longitude": 24.8
+    },
+    "facilityRole": "refiner",
+    "materialTags": [
+      "cobalt"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "chemical_processing"
+    ],
+    "claims": {
+      "battery": {
+        "operator_role": "manufacturer",
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": false,
+        "third_party_verification_report_exists": false,
+        "public_due_diligence_report_exists": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xaeb94ffcb0dfe28dc3d9de7a4c75a0a00720a2d29f15f8b2a1c15c792b514215\",\"proof\":\"0xeed29742a9c21613cb3ea93bdc10ea3f614f1f613d9173e48eb30ae4812da74544e35da1ac5030107d336fd9f33ccf1a737a29678f3642f645d3d9a03c110b793a4aa3ced7e451b9b382698ac00e8d6e3c5c1d7dffb0316c58f1cb13e020b256f0368ee164b73e278e56c3e27ca89fca5ea1c691d1df13185a9c78cf6add0215951fddf4fbccff674104cc4a3f861bef8a55bf9ffa02e4eed0dfcf494413dc0d694be665bf3e428052ca9995eb4931f45fb49b1c84bec8b80ae6b64c91a4ed0df91e6b624624014d9b259f82d425e004010ea9ad537d89d68ff4f41adbba2e0ef257ecd1ce77db658b1e04044255053b80b63be5a4f9fa7dd1dca43a5bbe7e01ec99157ee7185f83af65a0065a8f4c8d98c6f62b529bec6a31d0165921338a0592968e0c5365b31da4a72c04b2c3777f13ff154182bd32f73d4f68d442bcd2352e0e5e507ca5ee536b7fb0434cefe87f7e07a9e605f30bf8a8836d7aae49b75668e95123ab634fb8b70c65d25d01c54a7d4bf45a651bebc09546177f39baf116e63b74ebeb0e45eedd9f05d93501eb995291ffdbaeb2549de3fa6123e912357444bf683f5799cd382b190f46ec42340bf3565852d338a7e7fb1720f8a7c7b25c5ed4ae6cfa692a8d43ffa78f59fb1c5da2efa15514b3dd7a50de3f63b897aa1c20f43e99d9bbbad1fa516b998c6996fd366586e6863e5c219d047a01e8f9850814d396efb39d885e7dc48132208101848e80f43e1523390b6c4ddc82e7a14715e4f30d64d2e944ef0255f0374292424aa22b6305ec13f77a82da8980572abb1a6a8e20fe0455860e315f996811d121f4fba55d3503837dbb059949bc01d0c142d7bf69aa7b9ccb84b849622ad9612bb61bdc104be9bfbd50cfe7d92118a6870a2828bf84762eeec00e1a7a6e8a6ccd92c4351e2c37d0e4ae2d46866204751c03\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xf5e6a8e4a0a05be280f79aab2f5a870a6ff2de3f46f364764abfc570c55beed6\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xaeb94ffcb0dfe28dc3d9de7a4c75a0a00720a2d29f15f8b2a1c15c792b514215",
+      "proof": "0xeed29742a9c21613cb3ea93bdc10ea3f614f1f613d9173e48eb30ae4812da74544e35da1ac5030107d336fd9f33ccf1a737a29678f3642f645d3d9a03c110b793a4aa3ced7e451b9b382698ac00e8d6e3c5c1d7dffb0316c58f1cb13e020b256f0368ee164b73e278e56c3e27ca89fca5ea1c691d1df13185a9c78cf6add0215951fddf4fbccff674104cc4a3f861bef8a55bf9ffa02e4eed0dfcf494413dc0d694be665bf3e428052ca9995eb4931f45fb49b1c84bec8b80ae6b64c91a4ed0df91e6b624624014d9b259f82d425e004010ea9ad537d89d68ff4f41adbba2e0ef257ecd1ce77db658b1e04044255053b80b63be5a4f9fa7dd1dca43a5bbe7e01ec99157ee7185f83af65a0065a8f4c8d98c6f62b529bec6a31d0165921338a0592968e0c5365b31da4a72c04b2c3777f13ff154182bd32f73d4f68d442bcd2352e0e5e507ca5ee536b7fb0434cefe87f7e07a9e605f30bf8a8836d7aae49b75668e95123ab634fb8b70c65d25d01c54a7d4bf45a651bebc09546177f39baf116e63b74ebeb0e45eedd9f05d93501eb995291ffdbaeb2549de3fa6123e912357444bf683f5799cd382b190f46ec42340bf3565852d338a7e7fb1720f8a7c7b25c5ed4ae6cfa692a8d43ffa78f59fb1c5da2efa15514b3dd7a50de3f63b897aa1c20f43e99d9bbbad1fa516b998c6996fd366586e6863e5c219d047a01e8f9850814d396efb39d885e7dc48132208101848e80f43e1523390b6c4ddc82e7a14715e4f30d64d2e944ef0255f0374292424aa22b6305ec13f77a82da8980572abb1a6a8e20fe0455860e315f996811d121f4fba55d3503837dbb059949bc01d0c142d7bf69aa7b9ccb84b849622ad9612bb61bdc104be9bfbd50cfe7d92118a6870a2828bf84762eeec00e1a7a6e8a6ccd92c4351e2c37d0e4ae2d46866204751c03",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xf5e6a8e4a0a05be280f79aab2f5a870a6ff2de3f46f364764abfc570c55beed6"
+    },
+    "productId": "328",
+    "productContract": "0x1208baC85fF0d9A2aFe6bF07d662875C93ea700e",
+    "chainId": "11155111",
+    "companyName": "Baltic Cobalt Refining OÜ",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 150000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "EE-BATREG-0002",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 220000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "grid_mix",
+        "emissionsClaim": "Baltic Cobalt Refining OÜ reports site-level emissions and energy-source disclosures for Battery-grade cobalt sulfate lot BCR-2026-04.",
+        "climateClaim": "Baltic Cobalt Refining OÜ maintains climate transition and emissions reduction evidence for refiner operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Estonia",
+        "facilityRole": "refiner",
+        "materialTags": [
+          "cobalt"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "refiner",
+        "componentType": "cobalt",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_02_cobalt_refinery_estonia-material-balance-sheet",
+          "vc_02_cobalt_refinery_estonia-shipment-record",
+          "vc_02_cobalt_refinery_estonia-supplier-declaration"
+        ],
+        "serialisationScheme": "BCR-2026-04-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "EE-BCR-2026-04",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "battery due-diligence-style evidence intentionally incomplete on cobalt refining branch"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "cobalt is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "not intended to drive current graph-level CSDDD rule outcomes directly"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-27T23:48:28.121Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xef66cc793573594220ddb5cd74cb5ecc9d33774f#controller",
+      "role": "issuer",
+      "payloadHash": "0x3b8153d8413694f043bcae904384e5292c5926273d7766e0edddce5c07bcbb7a",
+      "jws": "0xe41ba4a061235ad617c15c48bd79842f964844f2e95a5340aa0f639def0b2778465373748434a5423692268b4450c7f9d240837fa92989c832480b7d247d54201b"
+    }
+  ]
+}

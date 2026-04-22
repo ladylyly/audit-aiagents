@@ -1,0 +1,244 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517126049-18",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xcdd2e7e61f072fd86ece61dfdb0ce027629facf4",
+    "name": "Nordic Cathode Active Materials Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x8bea6ec7f01e8c0ec912cc1032c8a3ca2c6a9728",
+    "name": "Pannon Cell Systems Zrt."
+  },
+  "issuanceDate": "2026-03-30T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x8bea6ec7f01e8c0ec912cc1032c8a3ca2c6a9728",
+    "productName": "NMC cathode active material lot NCAM-2026-22",
+    "batch": "NCAM-2026-22",
+    "quantity": 1,
+    "previousCredential": "Qmd37XFk9BfhagVKqsv1ZxwjkM9iHG3dXf9hUFehZ84aRx",
+    "componentCredentials": [
+      "Qmd37XFk9BfhagVKqsv1ZxwjkM9iHG3dXf9hUFehZ84aRx"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-case1-cert-cathode-iso9001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-cathode-iso9001"
+      }
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 61.5,
+      "longitude": 23.7
+    },
+    "facilityRole": "processor",
+    "materialTags": [
+      "cathode",
+      "cobalt",
+      "nickel",
+      "lithium"
+    ],
+    "operationTags": [
+      "midstream",
+      "cathode_manufacturing"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "weight_kg": 10,
+        "capacity_kwh": 5,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "manufacturer",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": true,
+        "top_management_reporting_exists": true,
+        "third_party_verification_report_exists": true,
+        "approval_decision_exists": true,
+        "audit_report_exists": true,
+        "downstream_information_shared": false,
+        "public_due_diligence_report_exists": true
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x989e8669a7f2bdc6c16c3b992bd4f01fd91074aa623d42bc6d9e6b394b76240a\",\"proof\":\"0xaee8f409ebcd4d614c53798be0ca3448511bb2b5d1c1aa8c1048c3a15d9cbb75a0bb402b31f0ca2e8ee7efdc4019feff09d9521494728a9eb85e74587bd6c1247635be6ca6a28fc377803e0534209462fc200b7dce67463ab04a0d81f8263805123e74a2bc3f0ec65a29713cace320ce5cdaef63e67082c6b4226f3f9faba15d20ef684057d37a028fa51d1655ae2bb2b7e20f1b09c7e97da4dfb58fd97f100f85cb60371695437a4ae6b4f9bd03a3b6c27ac32f7f874046627dc77a95f5550df2a2b0f6c7c07f713eca2c08581b2d4eb0cd20c20a7d9aab516122256bbdb602a46ad00e04fbf62f0fb5aa025d0ce2cbd89f12466cc66dc244e4f0c472e2726824404f6fa161d2d2daee37cf58d3a31221474b01c50a5012997551eb3ce2a912e66e94f25d3e7eecdf0efe1c8619c76148b4b8490cf91a0900c0bc12a138625b4a361b1d19b5cfbf8176cb4f87bb12909a7f78799f3873626fa3fc58e1033955b0999050fad0f35f16e7567099615259d8d8d5ae5bc54c385ac831404802756a52a24943f4bc5aaa4f982c88f13de52c97eaaf4f24e29690502c05b31b5a4b3dae267d32ecd5af591009f272163aabc0585bb81bf5ba987763e258466632ea0fb4aa350c24b7b839957c092b035192165ec81a90ec0108b1145ce0273b7dbb07b860311ae902ed23ace12213248bd4120bde7ab6cd5831473017b9b45977812b88fe0792db105d7796836acb6bb787a8adf8638fd071b4b5d4ed9a298750056dcc16343e550bf9487e4e82d658f8805d0fe7d163ff001dccdd3c3ec539801f3e7ee189032b1e5781285c46c4fb17d02596e14e537b5de25810b7e80b9e63d91b66df29d3da7953874e3f2041676291bd69f1afe98b63217ece709dd1c15cd50221dd0b611c920f67c81dd61dfcab1e87adf19e02f54c752e8bcd28b0e8cada0f\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xa20933ff890c8e4d9037fb0203fdcf70932c0dff69206cfc63108a4c57c17a53\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x989e8669a7f2bdc6c16c3b992bd4f01fd91074aa623d42bc6d9e6b394b76240a",
+      "proof": "0xaee8f409ebcd4d614c53798be0ca3448511bb2b5d1c1aa8c1048c3a15d9cbb75a0bb402b31f0ca2e8ee7efdc4019feff09d9521494728a9eb85e74587bd6c1247635be6ca6a28fc377803e0534209462fc200b7dce67463ab04a0d81f8263805123e74a2bc3f0ec65a29713cace320ce5cdaef63e67082c6b4226f3f9faba15d20ef684057d37a028fa51d1655ae2bb2b7e20f1b09c7e97da4dfb58fd97f100f85cb60371695437a4ae6b4f9bd03a3b6c27ac32f7f874046627dc77a95f5550df2a2b0f6c7c07f713eca2c08581b2d4eb0cd20c20a7d9aab516122256bbdb602a46ad00e04fbf62f0fb5aa025d0ce2cbd89f12466cc66dc244e4f0c472e2726824404f6fa161d2d2daee37cf58d3a31221474b01c50a5012997551eb3ce2a912e66e94f25d3e7eecdf0efe1c8619c76148b4b8490cf91a0900c0bc12a138625b4a361b1d19b5cfbf8176cb4f87bb12909a7f78799f3873626fa3fc58e1033955b0999050fad0f35f16e7567099615259d8d8d5ae5bc54c385ac831404802756a52a24943f4bc5aaa4f982c88f13de52c97eaaf4f24e29690502c05b31b5a4b3dae267d32ecd5af591009f272163aabc0585bb81bf5ba987763e258466632ea0fb4aa350c24b7b839957c092b035192165ec81a90ec0108b1145ce0273b7dbb07b860311ae902ed23ace12213248bd4120bde7ab6cd5831473017b9b45977812b88fe0792db105d7796836acb6bb787a8adf8638fd071b4b5d4ed9a298750056dcc16343e550bf9487e4e82d658f8805d0fe7d163ff001dccdd3c3ec539801f3e7ee189032b1e5781285c46c4fb17d02596e14e537b5de25810b7e80b9e63d91b66df29d3da7953874e3f2041676291bd69f1afe98b63217ece709dd1c15cd50221dd0b611c920f67c81dd61dfcab1e87adf19e02f54c752e8bcd28b0e8cada0f",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xa20933ff890c8e4d9037fb0203fdcf70932c0dff69206cfc63108a4c57c17a53"
+    },
+    "productId": "204",
+    "productContract": "0xeDa3dfbA2b5BcBFFBbe3288AbeB2473388523F48",
+    "chainId": "11155111",
+    "companyName": "Nordic Cathode Active Materials Oy",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 140000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "FI-CASE-0018",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 200000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "hydro_and_grid_mix",
+        "emissionsClaim": "Nordic Cathode Active Materials Oy reports site-level emissions for NMC cathode active material lot NCAM-2026-22.",
+        "climateClaim": "Nordic Cathode Active Materials Oy maintains transition-planning and operational decarbonisation evidence for processor activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Finland",
+        "facilityRole": "processor",
+        "materialTags": [
+          "cathode",
+          "cobalt",
+          "nickel",
+          "lithium"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "processor",
+        "componentType": "cathode",
+        "qualityStandards": [
+          "ISO 9001"
+        ],
+        "traceabilityArtifacts": [
+          "vc_18_cathode_plant_finland-material-balance-sheet",
+          "vc_18_cathode_plant_finland-shipment-record",
+          "vc_18_cathode_plant_finland-supplier-declaration"
+        ],
+        "serialisationScheme": "NCAM-2026-22-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-cathode-iso9001"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "FI-NCAM-2026-22",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "downstream due-diligence information sharing intentionally false"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "no 3TG importer role on cathode node"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "battery branch support only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-30T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xcdd2e7e61f072fd86ece61dfdb0ce027629facf4#controller",
+      "role": "issuer",
+      "payloadHash": "0x0e5a53e8ad73bad39802f391e6e765bb0cecce05833b55ce999fe0dc15b6bfb0",
+      "jws": "0xf1c8355f178c7781b2e14aa1395d98406a9fe8843ac8ccfe302a4432cb15f0446cd46a2f3ee602512545c805b6c38cd95974cb0e9c02cd123a7fb71b0e6f747d1c"
+    }
+  ]
+}

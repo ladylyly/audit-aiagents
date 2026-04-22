@@ -1,0 +1,157 @@
+{
+  "scenario": "worst_case",
+  "runId": "worst_case_1774876624646",
+  "generatedAt": "2026-03-30T13:17:22.486Z",
+  "totalFaults": 15,
+  "cleanNodes": [
+    1,
+    2,
+    4,
+    13,
+    14,
+    16,
+    18,
+    19,
+    21,
+    23,
+    24
+  ],
+  "faultedNodes": [
+    0,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    17,
+    20,
+    22
+  ],
+  "faults": [
+    {
+      "faultId": "F0",
+      "node": 8,
+      "category": "temporal_ordering",
+      "primaryAgent": "technical",
+      "description": "issuanceDate set 1 day before parent node [7]",
+      "expectedReaction": "Technical: flag issuanceDate[8] < issuanceDate[7]; continue processing other nodes"
+    },
+    {
+      "faultId": "F1",
+      "node": 0,
+      "category": "future_dated_vc",
+      "primaryAgent": "technical",
+      "description": "issuanceDate 2027-06-01 (future)",
+      "expectedReaction": "Technical: flag issuanceDate in the future (2027); VC not yet valid"
+    },
+    {
+      "faultId": "F2",
+      "node": 3,
+      "category": "wrong_cert_type",
+      "primaryAgent": "certification",
+      "description": "RMAP listed on facilityRole=mine (RMAP is for refiners)",
+      "expectedReaction": "Certification: FAIL — RMAP cert category wrong for facilityRole=mine; IRMA absent"
+    },
+    {
+      "faultId": "F3",
+      "node": 3,
+      "category": "explicit_false",
+      "primaryAgent": "compliance",
+      "description": "due_diligence_policy_exists: false (not missing — explicitly false)",
+      "expectedReaction": "Compliance (CSDDD): FAIL on Art 5.1.a — due_diligence_policy_exists explicitly false (not UNCERTAIN)"
+    },
+    {
+      "faultId": "F4",
+      "node": 5,
+      "category": "missing_cert",
+      "primaryAgent": "certification",
+      "description": "SA8000 absent on social_risk_heavy mine",
+      "expectedReaction": "Certification: FAIL/WARNING — SA8000 expected on social_risk_heavy node, not present"
+    },
+    {
+      "faultId": "F5",
+      "node": 6,
+      "category": "fossil_energy",
+      "primaryAgent": "esg",
+      "description": "energySource=coal contradicts green emissionsClaim",
+      "expectedReaction": "ESG: E1-001 WARNING — energySource=coal; contradiction with <30g CO2/kWh claim"
+    },
+    {
+      "faultId": "F6",
+      "node": 7,
+      "category": "swapped_proof_did",
+      "primaryAgent": "technical",
+      "description": "proof.verificationMethod replaced with ephRogue DID post-signing",
+      "expectedReaction": "Technical: FAIL — recovered signer=Eph7, verificationMethod claims ephRogue; DID mismatch + signer mismatch"
+    },
+    {
+      "faultId": "F7",
+      "node": 9,
+      "category": "cahra_origin",
+      "primaryAgent": "compliance+esg",
+      "description": "conflict_minerals.origin_country=CD (DRC, CAHRA)",
+      "expectedReaction": "Compliance: UNCERTAIN (CAHRA origin requires enhanced DD; not auto-fail if audit present). ESG: S3-001 high-risk flag for DRC"
+    },
+    {
+      "faultId": "F8",
+      "node": 10,
+      "category": "failed_art6_audit",
+      "primaryAgent": "compliance",
+      "description": "third_party_audit_exists/independence/scope set to false",
+      "expectedReaction": "Compliance: FAIL on Art 6 (third_party_audit_exists=false, audit_independence=false). Cert: IRMA wrong for refiner"
+    },
+    {
+      "faultId": "F9",
+      "node": 11,
+      "category": "empty_claims",
+      "primaryAgent": "compliance",
+      "description": "claims:{} — no CSDDD or conflict_minerals evidence",
+      "expectedReaction": "Compliance: UNCERTAIN (not FAIL) — missing evidence is absence-of-data, not denial. claims:{} has no fields to evaluate"
+    },
+    {
+      "faultId": "F10",
+      "node": 12,
+      "category": "mutated_vc",
+      "primaryAgent": "technical",
+      "description": "quantity changed 1→999 after signing; JWS will fail",
+      "expectedReaction": "Technical: FAIL — signature_verified=false; quantity=999 in pinned doc ≠ quantity=1 in signed payload hash"
+    },
+    {
+      "faultId": "F11",
+      "node": 15,
+      "category": "missing_coords",
+      "primaryAgent": "esg",
+      "description": "latitude/longitude null (data-migration loss)",
+      "expectedReaction": "ESG: G1-001 FAIL — latitude/longitude null; -0.5 governance penalty; S2-001 missing_location mode"
+    },
+    {
+      "faultId": "F12",
+      "node": 17,
+      "category": "anchor_mismatch",
+      "primaryAgent": "technical",
+      "description": "faulted_anchor_manifest.json has node-16 CID for node 17",
+      "expectedReaction": "Technical: FAIL — getVcHash() returns keccak256(cid_16) ≠ keccak256(cid_17); anchor mismatch on node 17"
+    },
+    {
+      "faultId": "F13",
+      "node": 20,
+      "category": "governance_break",
+      "primaryAgent": "technical",
+      "description": "holderKey=Eph15 breaks governance edge [20]→[21]",
+      "expectedReaction": "Technical: FAIL — governance edge [20]→[21] broken: [20].holder=Eph15 ≠ [21].issuer=WalletDeployer"
+    },
+    {
+      "faultId": "F14",
+      "node": 22,
+      "category": "rogue_signer",
+      "primaryAgent": "technical",
+      "description": "VC signed by ephRogue wallet, not WalletDeployer",
+      "expectedReaction": "Technical: FAIL — recovered signer=ephRogue ≠ expected WalletDeployer from verificationMethod; rogue signer"
+    }
+  ]
+}

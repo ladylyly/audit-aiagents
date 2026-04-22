@@ -1,0 +1,959 @@
+schemaVersion: "1.1"
+regulation:
+  id: "eu.regulation.2023.1542"
+  shortName: "Battery Regulation"
+  citation: "Regulation (EU) 2023/1542"
+  sourcePdf: "thesis/sources/Regulation (EU) 2023:1542 (Battery Regulation) Official Journal text.pdf"
+  notes:
+    - "Phase 2 sustainability and safety duties for Articles 6 to 12."
+    - "Delegated-act thresholds remain gated through input.secondaryLegislationReady."
+
+rulepack:
+  id: "battery_eu_2023_1542_sustainability_v1"
+  version: "0.1.0"
+  status: "draft"
+
+chapters:
+  - id: "battery.substances"
+    title: "Restrictions on Substances"
+    articleStart: 6
+    articleEnd: 6
+  - id: "battery.carbon_footprint"
+    title: "Carbon Footprint"
+    articleStart: 7
+    articleEnd: 7
+  - id: "battery.recycled_content"
+    title: "Recycled Content"
+    articleStart: 8
+    articleEnd: 8
+  - id: "battery.performance_durability"
+    title: "Performance and Durability"
+    articleStart: 9
+    articleEnd: 10
+  - id: "battery.removability"
+    title: "Removability and Replaceability"
+    articleStart: 11
+    articleEnd: 11
+  - id: "battery.stationary_safety"
+    title: "Safety of Stationary Battery Energy Storage Systems"
+    articleStart: 12
+    articleEnd: 12
+
+rules:
+  - id: "battery.art6.1"
+    articleRef: "Article 6"
+    paragraphRef: "Art 6(1)"
+    title: "Battery complies with Annex I substance restrictions"
+    obligationType: "product_requirement"
+    encodable: true
+    checkType: "boolean"
+    evidenceRequired:
+      - "claims.battery.annex_i_restrictions_compliant"
+
+  - id: "battery.art7.1.ev"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(1)(a)"
+    title: "Electric vehicle battery has a carbon footprint declaration"
+    obligationType: "sustainability_disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "electric_vehicle"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2025-02-18"
+        - field: "input.secondaryLegislationReady.article_7_methodology"
+          op: "=="
+          value: true
+        - field: "input.secondaryLegislationReady.article_7_declaration_format"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.carbon_footprint_declaration_exists"
+
+  - id: "battery.art7.1.industrial"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(1)(b)"
+    title: "Rechargeable industrial battery above 2 kWh has a carbon footprint declaration"
+    obligationType: "sustainability_disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+        - field: "claims.battery.capacity_kwh"
+          op: ">"
+          value: 2
+        - field: "claims.battery.has_external_storage"
+          op: "=="
+          value: false
+        - field: "claims.battery.is_rechargeable"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-02-18"
+        - field: "input.secondaryLegislationReady.article_7_methodology"
+          op: "=="
+          value: true
+        - field: "input.secondaryLegislationReady.article_7_declaration_format"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.carbon_footprint_declaration_exists"
+
+  - id: "battery.art7.1.lmt"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(1)(c)"
+    title: "LMT battery has a carbon footprint declaration"
+    obligationType: "sustainability_disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-08-18"
+        - field: "input.secondaryLegislationReady.article_7_methodology"
+          op: "=="
+          value: true
+        - field: "input.secondaryLegislationReady.article_7_declaration_format"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.carbon_footprint_declaration_exists"
+
+  - id: "battery.art7.2"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(2)"
+    title: "Battery bears carbon footprint and performance-class label"
+    obligationType: "sustainability_label"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "electric_vehicle"
+                - field: "input.assessmentDate"
+                  op: "date_on_or_after"
+                  value: "2026-08-18"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+                - field: "claims.battery.is_rechargeable"
+                  op: "=="
+                  value: true
+                - field: "input.assessmentDate"
+                  op: "date_on_or_after"
+                  value: "2027-08-18"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "lmt"
+                - field: "input.assessmentDate"
+                  op: "date_on_or_after"
+                  value: "2030-02-18"
+        - field: "input.secondaryLegislationReady.article_7_performance_classes"
+          op: "=="
+          value: true
+        - field: "input.secondaryLegislationReady.article_7_class_label_format"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.carbon_footprint_label_present"
+
+  - id: "battery.art7.3"
+    articleRef: "Article 7"
+    paragraphRef: "Art 7(3)"
+    title: "Declared life-cycle carbon footprint is below the maximum threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "electric_vehicle"
+                - field: "input.assessmentDate"
+                  op: "date_on_or_after"
+                  value: "2028-02-18"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+                - field: "claims.battery.is_rechargeable"
+                  op: "=="
+                  value: true
+                - field: "input.assessmentDate"
+                  op: "date_on_or_after"
+                  value: "2029-02-18"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "lmt"
+                - field: "input.assessmentDate"
+                  op: "date_on_or_after"
+                  value: "2031-08-18"
+        - field: "input.secondaryLegislationReady.article_7_max_threshold"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.carbon_footprint_within_max_threshold"
+
+  - id: "battery.art8.1.main"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(1)"
+    title: "Recycled content documentation exists for EV, industrial above 2 kWh, and SLI batteries"
+    obligationType: "sustainability_disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "sli"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "claims.battery.contains_recycled_content_regulated_materials"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.recycled_content_documentation_exists"
+
+  - id: "battery.art8.1.lmt"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(1), second subparagraph"
+    title: "Recycled content documentation exists for LMT batteries"
+    obligationType: "sustainability_disclosure"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - field: "claims.battery.contains_recycled_content_regulated_materials"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2033-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.recycled_content_documentation_exists"
+
+  - id: "battery.art8.2.a"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(2)(a)"
+    title: "Battery meets 2031 cobalt recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "sli"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "claims.battery.contains_cobalt"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_cobalt_pct"
+          op: ">="
+          value: 16
+    evidenceRequired:
+      - "claims.battery.recycled_content_cobalt_pct"
+
+  - id: "battery.art8.2.b"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(2)(b)"
+    title: "Battery meets 2031 lead recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "sli"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "claims.battery.contains_lead"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_lead_pct"
+          op: ">="
+          value: 85
+    evidenceRequired:
+      - "claims.battery.recycled_content_lead_pct"
+
+  - id: "battery.art8.2.c"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(2)(c)"
+    title: "Battery meets 2031 lithium recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "sli"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "claims.battery.contains_lithium"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_lithium_pct"
+          op: ">="
+          value: 6
+    evidenceRequired:
+      - "claims.battery.recycled_content_lithium_pct"
+
+  - id: "battery.art8.2.d"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(2)(d)"
+    title: "Battery meets 2031 nickel recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "sli"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "claims.battery.contains_nickel"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_nickel_pct"
+          op: ">="
+          value: 6
+    evidenceRequired:
+      - "claims.battery.recycled_content_nickel_pct"
+
+  - id: "battery.art8.3.a"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(3)(a)"
+    title: "Battery meets 2036 cobalt recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["electric_vehicle", "industrial", "lmt", "sli"]
+        - field: "claims.battery.contains_cobalt"
+          op: "=="
+          value: true
+        - any:
+            - field: "claims.battery.category"
+              op: "!="
+              value: "industrial"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2036-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_cobalt_pct"
+          op: ">="
+          value: 26
+    evidenceRequired:
+      - "claims.battery.recycled_content_cobalt_pct"
+
+  - id: "battery.art8.3.b"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(3)(b)"
+    title: "Battery meets 2036 lead recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["electric_vehicle", "industrial", "lmt", "sli"]
+        - field: "claims.battery.contains_lead"
+          op: "=="
+          value: true
+        - any:
+            - field: "claims.battery.category"
+              op: "!="
+              value: "industrial"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2036-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_lead_pct"
+          op: ">="
+          value: 85
+    evidenceRequired:
+      - "claims.battery.recycled_content_lead_pct"
+
+  - id: "battery.art8.3.c"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(3)(c)"
+    title: "Battery meets 2036 lithium recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["electric_vehicle", "industrial", "lmt", "sli"]
+        - field: "claims.battery.contains_lithium"
+          op: "=="
+          value: true
+        - any:
+            - field: "claims.battery.category"
+              op: "!="
+              value: "industrial"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2036-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_lithium_pct"
+          op: ">="
+          value: 12
+    evidenceRequired:
+      - "claims.battery.recycled_content_lithium_pct"
+
+  - id: "battery.art8.3.d"
+    articleRef: "Article 8"
+    paragraphRef: "Art 8(3)(d)"
+    title: "Battery meets 2036 nickel recycled-content threshold"
+    obligationType: "sustainability_threshold"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["electric_vehicle", "industrial", "lmt", "sli"]
+        - field: "claims.battery.contains_nickel"
+          op: "=="
+          value: true
+        - any:
+            - field: "claims.battery.category"
+              op: "!="
+              value: "industrial"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+                - field: "claims.battery.has_external_storage"
+                  op: "=="
+                  value: false
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2036-08-18"
+        - field: "input.secondaryLegislationReady.article_8_methodology"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.recycled_content_nickel_pct"
+          op: ">="
+          value: 15
+    evidenceRequired:
+      - "claims.battery.recycled_content_nickel_pct"
+
+  - id: "battery.art9.1"
+    articleRef: "Article 9"
+    paragraphRef: "Art 9(1)"
+    title: "Portable battery of general use meets minimum electrochemical performance and durability values"
+    obligationType: "performance_requirement"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - field: "claims.battery.portable_general_use"
+          op: "=="
+          value: true
+        - field: "claims.battery.is_button_cell"
+          op: "=="
+          value: false
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-08-18"
+        - field: "input.secondaryLegislationReady.article_9_thresholds"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.portable_general_use_performance_compliant"
+
+  - id: "battery.art10.1"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(1)"
+    title: "Rechargeable industrial, LMT, and EV batteries are accompanied by Annex IV performance documentation"
+    obligationType: "performance_disclosure"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "electric_vehicle"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+            - all:
+                - field: "claims.battery.category"
+                  op: "=="
+                  value: "industrial"
+                - field: "claims.battery.capacity_kwh"
+                  op: ">"
+                  value: 2
+        - field: "claims.battery.is_rechargeable"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2024-08-18"
+    conditions:
+      all:
+        - field: "claims.battery.performance_durability_document_exists"
+          op: "=="
+          value: true
+        - field: "claims.battery.technical_doc_annex_iv_explanation_exists"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.performance_durability_document_exists"
+      - "claims.battery.technical_doc_annex_iv_explanation_exists"
+
+  - id: "battery.art10.2"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(2)"
+    title: "Rechargeable industrial battery above 2 kWh meets minimum performance and durability values"
+    obligationType: "performance_requirement"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+        - field: "claims.battery.capacity_kwh"
+          op: ">"
+          value: 2
+        - field: "claims.battery.has_external_storage"
+          op: "=="
+          value: false
+        - field: "claims.battery.is_rechargeable"
+          op: "=="
+          value: true
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2027-08-18"
+        - field: "input.secondaryLegislationReady.article_10_industrial_thresholds"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.industrial_performance_minimum_compliant"
+
+  - id: "battery.art10.3"
+    articleRef: "Article 10"
+    paragraphRef: "Art 10(3)"
+    title: "LMT battery meets minimum performance and durability values"
+    obligationType: "performance_requirement"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-08-18"
+        - field: "input.secondaryLegislationReady.article_10_lmt_thresholds"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.lmt_performance_minimum_compliant"
+
+  - id: "battery.art11.1"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(1)"
+    title: "Portable batteries in products are removable and replaceable by the end-user with instructions online"
+    obligationType: "design_requirement"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.product_incorporates_portable_battery"
+          op: "=="
+          value: true
+        - field: "claims.battery.portable_battery_derogation_allowed"
+          op: "=="
+          value: false
+        - field: "claims.battery.continuity_power_supply_required"
+          op: "=="
+          value: false
+    conditions:
+      all:
+        - field: "claims.battery.portable_battery_removable_by_end_user"
+          op: "=="
+          value: true
+        - field: "claims.battery.portable_battery_replaceable_by_end_user"
+          op: "=="
+          value: true
+        - field: "claims.battery.battery_removal_instructions_online"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.portable_battery_removable_by_end_user"
+      - "claims.battery.portable_battery_replaceable_by_end_user"
+      - "claims.battery.battery_removal_instructions_online"
+
+  - id: "battery.art11.2"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(2)"
+    title: "Portable-battery derogation is limited to independent-professional removal cases"
+    obligationType: "design_requirement"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.product_incorporates_portable_battery"
+          op: "=="
+          value: true
+        - field: "claims.battery.portable_battery_derogation_allowed"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.portable_battery_removable_by_independent_professional"
+
+  - id: "battery.art11.5"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(5)"
+    title: "LMT batteries and cells are removable and replaceable by an independent professional"
+    obligationType: "design_requirement"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.product_incorporates_lmt_battery"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.lmt_battery_removable_by_independent_professional"
+          op: "=="
+          value: true
+        - field: "claims.battery.lmt_battery_replaceable_by_independent_professional"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.lmt_battery_removable_by_independent_professional"
+      - "claims.battery.lmt_battery_replaceable_by_independent_professional"
+
+  - id: "battery.art11.7"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(7)"
+    title: "Portable and LMT batteries remain available as spare parts for at least five years"
+    obligationType: "design_requirement"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      any:
+        - field: "claims.battery.product_incorporates_portable_battery"
+          op: "=="
+          value: true
+        - field: "claims.battery.product_incorporates_lmt_battery"
+          op: "=="
+          value: true
+    conditions:
+      all:
+        - field: "claims.battery.spare_parts_available_years"
+          op: ">="
+          value: 5
+    evidenceRequired:
+      - "claims.battery.spare_parts_available_years"
+
+  - id: "battery.art11.8"
+    articleRef: "Article 11"
+    paragraphRef: "Art 11(8)"
+    title: "Software does not impede battery replacement"
+    obligationType: "design_requirement"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.product_incorporates_portable_battery"
+          op: "=="
+          value: true
+        - field: "claims.battery.product_incorporates_lmt_battery"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.software_replacement_lock_absent"
+
+  - id: "battery.art12.1"
+    articleRef: "Article 12"
+    paragraphRef: "Art 12(1)"
+    title: "Stationary battery energy storage system is safe during normal operation and use"
+    obligationType: "safety_requirement"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+        - field: "claims.battery.subcategory"
+          op: "=="
+          value: "stationary_storage"
+    evidenceRequired:
+      - "claims.battery.stationary_storage_safe_for_normal_operation"
+
+  - id: "battery.art12.2.a"
+    articleRef: "Article 12"
+    paragraphRef: "Art 12(2)(a)"
+    title: "Stationary storage technical documentation includes safety test evidence"
+    obligationType: "safety_documentation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+        - field: "claims.battery.subcategory"
+          op: "=="
+          value: "stationary_storage"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2024-08-18"
+    evidenceRequired:
+      - "claims.battery.stationary_storage_safety_tests_passed"
+
+  - id: "battery.art12.2.b_c"
+    articleRef: "Article 12"
+    paragraphRef: "Art 12(2)(b)-(c)"
+    title: "Stationary storage technical documentation includes hazard assessment and mitigation testing"
+    obligationType: "safety_documentation"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+        - field: "claims.battery.subcategory"
+          op: "=="
+          value: "stationary_storage"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2024-08-18"
+    conditions:
+      all:
+        - field: "claims.battery.stationary_storage_hazard_assessment_complete"
+          op: "=="
+          value: true
+        - field: "claims.battery.stationary_storage_hazard_mitigation_tested"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.stationary_storage_hazard_assessment_complete"
+      - "claims.battery.stationary_storage_hazard_mitigation_tested"
+
+  - id: "battery.art12.2.d"
+    articleRef: "Article 12"
+    paragraphRef: "Art 12(2)(d)"
+    title: "Stationary storage technical documentation includes mitigation instructions"
+    obligationType: "safety_documentation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+        - field: "claims.battery.subcategory"
+          op: "=="
+          value: "stationary_storage"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2024-08-18"
+    evidenceRequired:
+      - "claims.battery.stationary_storage_mitigation_instructions_present"

@@ -1,0 +1,95 @@
+{
+  "id": "urn:uuid:real-vc-1775170209433-1",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xa860d759630824b00dad944131d1abcd9b47326b",
+    "name": "SQM Chile Lithium S.A."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xa860d759630824b00dad944131d1abcd9b47326b",
+    "name": "SQM Chile Lithium S.A."
+  },
+  "issuanceDate": "2026-03-09T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xa860d759630824b00dad944131d1abcd9b47326b",
+    "productName": "Lithium brine extraction",
+    "batch": "REAL-BATCH-001",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-li-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-li-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-li-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "lithium"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Chile",
+      "countryCode": "CL",
+      "latitude": -22.9,
+      "longitude": -68.2
+    },
+    "energySource": "solar",
+    "emissionsClaim": "Atacama solar-powered extraction, scope-1 monitored",
+    "climateClaim": "Net-zero extraction target 2030",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x0e52c68bdce186b3a02d9f68a33eeabbdf2b155f94810a433b7316e443028c70\",\"proof\":\"0x9cac5723d308d3dd2de93cb8b267389f0aabad97495163ae063ae56b3e86176fe8ac2b8fa11da58ab06b00db859ef3d0a0cd299fe9d154499bdfe50fcac84031f00d98ad767de595270100e6f77dc6525dcb4bfcc800c03159686c03a5e0d45502395ec8d85caa382ff14aaacb080c8de1293a068a6207d0c3071c669c9dc471d6dbd0032b3120a956378bfcf3085920cef7eb21333382d0729e67d4876396078647abfdf2c0ac9d20c26b04bffa4c962800d2c8d405390cd7e02ae1cd247d0c0fc3e56c7d94554eb7875bff503b5cc043cfe9e0208ca5e601f8e7638382de0248aa7c462a00bd3dc43e0aed7ff87ed5bfbbb2f3a2b84af98c36be3f3cadb818740dc93f03798a925c176e8ba3e815630afd02041c3cc3ff57ca68122c60807622d2df7af5489ebf22ee5b4ff4213923d4be608f7de063e8bd03f1423f412968c4bf75a6de400378b91b9cd4c681fa177fba195eb2ed16c8d89f4f1df9188d0ea2b4cb0966ba9fc8151ba0c57d3fc0636f37bd33774e0ea3616d58b228c1122300c566792b6f97272181349259a9a1f6a14e22ccde668e9ec54135906a60347eda1d31858a6a742437db6cb13a1479c66083ab769aeb98c9766c7179390cca20609824a139257c8873d39087ce60ab8313fe73397ad77b39d15f990b0aded6570a3c7718ac8fc465424ca6dfa6c6bef5cd7501496c00a814617ed4981ec3c701540ba48da0542308262bb1a379203dc68e324a7e41c0de706ff40d8d533574235e10693a7446afcd83d23c3fafebbae309303210e5fe1a46772ddcff3bf07c3ca22eec34894822d5f6045ce28327f2c390d963ca073a1afdfb172c04cbb211410297df97edbe880613aaf9a3e2fe3383fffc2bec62afd49bbc9798cd2f785f06c3096d06f450baf3966c7ec07ca96ba20e2845a41949e715841b9c1ba6073606\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x13b15a5798d8cff535561c18e9e4ef6707fdc47b23e8d69b61c6add411fa910e\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x0e52c68bdce186b3a02d9f68a33eeabbdf2b155f94810a433b7316e443028c70",
+      "proof": "0x9cac5723d308d3dd2de93cb8b267389f0aabad97495163ae063ae56b3e86176fe8ac2b8fa11da58ab06b00db859ef3d0a0cd299fe9d154499bdfe50fcac84031f00d98ad767de595270100e6f77dc6525dcb4bfcc800c03159686c03a5e0d45502395ec8d85caa382ff14aaacb080c8de1293a068a6207d0c3071c669c9dc471d6dbd0032b3120a956378bfcf3085920cef7eb21333382d0729e67d4876396078647abfdf2c0ac9d20c26b04bffa4c962800d2c8d405390cd7e02ae1cd247d0c0fc3e56c7d94554eb7875bff503b5cc043cfe9e0208ca5e601f8e7638382de0248aa7c462a00bd3dc43e0aed7ff87ed5bfbbb2f3a2b84af98c36be3f3cadb818740dc93f03798a925c176e8ba3e815630afd02041c3cc3ff57ca68122c60807622d2df7af5489ebf22ee5b4ff4213923d4be608f7de063e8bd03f1423f412968c4bf75a6de400378b91b9cd4c681fa177fba195eb2ed16c8d89f4f1df9188d0ea2b4cb0966ba9fc8151ba0c57d3fc0636f37bd33774e0ea3616d58b228c1122300c566792b6f97272181349259a9a1f6a14e22ccde668e9ec54135906a60347eda1d31858a6a742437db6cb13a1479c66083ab769aeb98c9766c7179390cca20609824a139257c8873d39087ce60ab8313fe73397ad77b39d15f990b0aded6570a3c7718ac8fc465424ca6dfa6c6bef5cd7501496c00a814617ed4981ec3c701540ba48da0542308262bb1a379203dc68e324a7e41c0de706ff40d8d533574235e10693a7446afcd83d23c3fafebbae309303210e5fe1a46772ddcff3bf07c3ca22eec34894822d5f6045ce28327f2c390d963ca073a1afdfb172c04cbb211410297df97edbe880613aaf9a3e2fe3383fffc2bec62afd49bbc9798cd2f785f06c3096d06f450baf3966c7ec07ca96ba20e2845a41949e715841b9c1ba6073606",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x13b15a5798d8cff535561c18e9e4ef6707fdc47b23e8d69b61c6add411fa910e"
+    },
+    "productId": "162",
+    "productContract": "0xF446D48aB4779A450c687697b792f082290650e4",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-09T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xa860d759630824b00dad944131d1abcd9b47326b#controller",
+      "role": "seller",
+      "payloadHash": "0x745762ad15ee7a930a86c349e9980e7857be6740b838768e72a6b31c7dbc702e",
+      "jws": "0x9894ba6be2cef87d80c9bd4f1a283c976ddfe6567f7a84122ee445a1b41c35d3012bf187d1dce5e67b834baf6b6605cf2f11e4bd5ca2df71a5ebb8bb4193e5761c"
+    }
+  ]
+}

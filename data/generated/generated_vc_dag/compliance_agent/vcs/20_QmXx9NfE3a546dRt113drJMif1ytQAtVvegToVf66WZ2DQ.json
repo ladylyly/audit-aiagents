@@ -1,0 +1,232 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517128430-20",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x4324f98070a2c335e19541d761e4a9a31255a250",
+    "name": "Bohemia Battery Modules a.s."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xc9e3fb106642ef439fa70b3295ff0d269f5296c4",
+    "name": "Vistula Traction Pack Systems Sp. z o.o."
+  },
+  "issuanceDate": "2026-04-01T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xc9e3fb106642ef439fa70b3295ff0d269f5296c4",
+    "productName": "EV battery modules lot BBM-2026-19",
+    "batch": "BBM-2026-19",
+    "quantity": 1,
+    "previousCredential": "QmcyoZqEMWvjo83gQ9pQmeHRBvcs8akoxQLZdE2viXzP71",
+    "componentCredentials": [
+      "QmcyoZqEMWvjo83gQ9pQmeHRBvcs8akoxQLZdE2viXzP71",
+      "QmaioRZg8GzSRcvtnbxdBYnzXkHD3MYt6cNKgAv7E8aikK"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-case1-cert-modules-iso9001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-modules-iso9001"
+      }
+    ],
+    "location": {
+      "country": "Czechia",
+      "countryCode": "CZ",
+      "latitude": 49.2,
+      "longitude": 16.6
+    },
+    "facilityRole": "module_assembler",
+    "materialTags": [
+      "battery_module",
+      "battery_cell",
+      "bms"
+    ],
+    "operationTags": [
+      "downstream",
+      "module_assembly"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "weight_kg": 10,
+        "capacity_kwh": 5,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": false,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "manufacturer",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "batch_or_serial_present": false,
+        "technical_documentation_exists": true,
+        "eu_declaration_of_conformity_exists": true,
+        "ce_mark_present": true
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xf6d50d437814512f45b148a8336267b3878b2963181d648514db84504d26fa5c\",\"proof\":\"0x963d49f9634521a2a58738911dade9ecd9ea5cb79bb28f239df4406d1f3d4e56faf533927bca244b29276e00b3cbe6a5d387df25f467d59e665e0c6593a9cd2c5871a13e3079be9d8b5906a01871490b6a2e9b8350fd52dbf2e8b921e2b6412d300329446215c31a2b08fcabb3bcb642ab13b57dd713941e45376e0e8186476ab7669b8fc9cdad60dd12785e898fe2424ecbf52f4c0fe299b699ca0fcd373c002af277f5338f23b8ec0f797e22adb1578b05ba651885aa4c123b413cb8e1e60ebf544fa54fa8b262b4fa32554f5ea1aa946fd4e1fbafd1e8ad5529897ed50f04de9ccc7abe676dd42c9c039338c78b0a6168295248ad7dc648a4505f677dbe2a1c213f10a87b4b3e4feb11e77ad63fb0e747b2db549e7a2ccb9ce1cdc5e29e5c9235d7e7a1af1b0f1b321b9925a6236afa140675d2b96d5d312048e3d2656a536cfd00cde21c99d59cdf8f7b56305f14b68c1c628a3580787690e04996fddc26508ee3fc8939f81861c0a225a64ea31ab5c7970ff984bd27a3e2dba40a02c853b8027d78eeed75ed00fed904f9070d5ca7d42d75759cb21e4db03b6fc3361e4d56bad5159d22528d1f4bada6cb4f611762336db951f318b9e9a02499e721bf670035c1a1f6d6b8ad094c4fc77620d1e49145f41d7e311c5e9f490aee7f37403e0e109c213df9825fd93ad3952eb6f3111d716a05407f8c9fe943487d268f17031eb3000aac5dc3e90b0238b8da52c990ba9efdbb8bab99fd26d8f98b15ad725a944997aae08c706b8d571849c741e93f643daa9aa043f487df8ef1c2203ce942de021195c7c317091ef7390885545ee408b51ff83722e7e7993d53a14c16b62f576c1fcfdd7b60c3a40b75ef2285d18a42cf9b2b406de9d929d06dfefdfd52049af3ed0d52587df8e2eba6ef5b26fe577895da0682a9454b57330f28c7262505\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xbdf23aa990bbe83acb7b93cecfcfabd78922c95f9b75ddfdc341b92d443ae3de\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xf6d50d437814512f45b148a8336267b3878b2963181d648514db84504d26fa5c",
+      "proof": "0x963d49f9634521a2a58738911dade9ecd9ea5cb79bb28f239df4406d1f3d4e56faf533927bca244b29276e00b3cbe6a5d387df25f467d59e665e0c6593a9cd2c5871a13e3079be9d8b5906a01871490b6a2e9b8350fd52dbf2e8b921e2b6412d300329446215c31a2b08fcabb3bcb642ab13b57dd713941e45376e0e8186476ab7669b8fc9cdad60dd12785e898fe2424ecbf52f4c0fe299b699ca0fcd373c002af277f5338f23b8ec0f797e22adb1578b05ba651885aa4c123b413cb8e1e60ebf544fa54fa8b262b4fa32554f5ea1aa946fd4e1fbafd1e8ad5529897ed50f04de9ccc7abe676dd42c9c039338c78b0a6168295248ad7dc648a4505f677dbe2a1c213f10a87b4b3e4feb11e77ad63fb0e747b2db549e7a2ccb9ce1cdc5e29e5c9235d7e7a1af1b0f1b321b9925a6236afa140675d2b96d5d312048e3d2656a536cfd00cde21c99d59cdf8f7b56305f14b68c1c628a3580787690e04996fddc26508ee3fc8939f81861c0a225a64ea31ab5c7970ff984bd27a3e2dba40a02c853b8027d78eeed75ed00fed904f9070d5ca7d42d75759cb21e4db03b6fc3361e4d56bad5159d22528d1f4bada6cb4f611762336db951f318b9e9a02499e721bf670035c1a1f6d6b8ad094c4fc77620d1e49145f41d7e311c5e9f490aee7f37403e0e109c213df9825fd93ad3952eb6f3111d716a05407f8c9fe943487d268f17031eb3000aac5dc3e90b0238b8da52c990ba9efdbb8bab99fd26d8f98b15ad725a944997aae08c706b8d571849c741e93f643daa9aa043f487df8ef1c2203ce942de021195c7c317091ef7390885545ee408b51ff83722e7e7993d53a14c16b62f576c1fcfdd7b60c3a40b75ef2285d18a42cf9b2b406de9d929d06dfefdfd52049af3ed0d52587df8e2eba6ef5b26fe577895da0682a9454b57330f28c7262505",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xbdf23aa990bbe83acb7b93cecfcfabd78922c95f9b75ddfdc341b92d443ae3de"
+    },
+    "productId": "206",
+    "productContract": "0xe01CF809265b619d05b87aCF41e3062f8704d7Ad",
+    "chainId": "11155111",
+    "companyName": "Bohemia Battery Modules a.s.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 140000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "CZ-CASE-0020",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 200000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Bohemia Battery Modules a.s. reports site-level emissions for EV battery modules lot BBM-2026-19.",
+        "climateClaim": "Bohemia Battery Modules a.s. maintains transition-planning and operational decarbonisation evidence for module_assembler activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Czechia",
+        "facilityRole": "module_assembler",
+        "materialTags": [
+          "battery_module",
+          "battery_cell",
+          "bms"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "module_assembler",
+        "componentType": "battery_module",
+        "qualityStandards": [
+          "ISO 9001"
+        ],
+        "traceabilityArtifacts": [
+          "vc_20_module_assembler_czechia-material-balance-sheet",
+          "vc_20_module_assembler_czechia-shipment-record",
+          "vc_20_module_assembler_czechia-supplier-declaration"
+        ],
+        "serialisationScheme": "BBM-2026-19-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-modules-iso9001"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "CZ-BBM-2026-19",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "batch-or-serial traceability intentionally missing"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "3TG checks already sit on importer nodes"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "module-stage contribution only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-01T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x4324f98070a2c335e19541d761e4a9a31255a250#controller",
+      "role": "issuer",
+      "payloadHash": "0x2c2b8e554ffeb3b448730b2b6937b8e444cfd39f038f6044d0c28a6b6bd7964f",
+      "jws": "0x2c4ba0d5d418ef9b9a09dab0d4d9585f0079976fc7febe1720f0ca5dd3ccc8344daf27174c77e6fb73d5924d0ae1c0fcab414f2b2f353964116301414f322d111b"
+    }
+  ]
+}

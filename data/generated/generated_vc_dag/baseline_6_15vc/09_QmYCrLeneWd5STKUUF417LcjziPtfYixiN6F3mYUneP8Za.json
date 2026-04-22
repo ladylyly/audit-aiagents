@@ -1,0 +1,121 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776223993435-9",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xe764545c422472c62e1cbc9b764be474a3d3f046",
+    "name": "RheinCath Active Materials GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xd62f05e95946c9db6b61adb5a120a1be9780decd",
+    "name": "NordCell Sweden AB"
+  },
+  "issuanceDate": "2026-04-09T03:33:05.379Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xd62f05e95946c9db6b61adb5a120a1be9780decd",
+    "productName": "NMC cathode active material production lot",
+    "batch": "BLUEPRINT-BATCH-009",
+    "quantity": 1,
+    "previousCredential": "QmQexA3mrDTfXF5kdJBDJ11MV77CK2ta1Z4rbvLMquZ9BN",
+    "componentCredentials": [
+      "QmQexA3mrDTfXF5kdJBDJ11MV77CK2ta1Z4rbvLMquZ9BN",
+      "QmQpHJh7nwoQN3HNt46gQQz1tNUdxShDQ2UYUVzFaVCY9j",
+      "QmYKeuLrFXfNu1eGCxt3J1ra8j9pmTTbTddhpqckXevNZg"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-cert-09-primary"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO 9001",
+        "certificateCid": "bafy-cert-09-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "IATF 16949",
+        "issuer": "IATF 16949",
+        "certificateCid": "bafy-cert-09-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "cathode_material",
+      "nickel",
+      "lithium",
+      "cobalt",
+      "battery_component"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "battery_component",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 51.1657,
+      "longitude": 10.4515
+    },
+    "energySource": "grid_renewable_mix",
+    "emissionsClaim": "NMC cathode active material production lot environmental record maintained by RheinCath Active Materials GmbH.",
+    "climateClaim": "NMC cathode active material production lot climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x84e7a0da0f4aed564445d87555b7c7d49ebe20750c3470d75462a6675ecefe48\",\"proof\":\"0x0825bbcafd2f99dfa16503fb6db56da5aaa2b808289a230362c2e5175e9e8f4db4a23b5041408a7b76df67896030c615fe2d269202e8cfbe1797b27115f7ea15563ddba86f2f71e10c753fe22626a59f3a0a018804811679dd103a0fd2548f5002e587187382b479df8fa7018c3d25992d666f617515c660575c81907735865fb3b32c9b5cb40d40ff7b6eb4ddf77f01dc22e11b87e463b5c025cb162658700f2705018a0efd411b7edb40ac5d47b30ca1bd16fd06703ebac323947386bdd80d12e8edaf34a3a08ea3f90d60ae30791e785c004df3401583f4687c79eda23800761addd0a25f5af8e4e08f01fddc51339a3330e678ace5b115ffc89225fe321d307cdf666ca0d5af6dc981ac7426cdc837b3e63757d4ad816fbc4947ba5e8d3b745183e99f0bf9d65cf3d5ee5d86b6d0e93974ab9d3a82e78f081284d445dc53384816c505d08be4d2ff880d3319e9baf4c18fa9280bf378ad9300a999733a05d0e01e7dee9f368f6c8fd1ff81a535b738cc57fb5c2034981c5a7a9731e25a3f26ac4cdcbf3460fff4dcc22c3a0e889a11ffbe382d9c52bac3048f709c58ef3c50eecf72e6f12460f622c28cd8508a463cea7662494adf848b6c1ba34ec7320ea830dc12f67242a499c2ef53810a73056fa20f3832242a703188a440540a490c3004b883ebe2f53d017fa92d9e963010e8da615127e02ccf49149780db6a8c1228cb2bbbadec32441d7fb56c982c85241dee9264ebc09bcac07cb3838545302d18a6cbaade7d3efd31e31d9a886d7db1acbec97472c801542855b44f4dbf5f231259430836f492e2d5284336dd5fcdedc82b56dd01a38515ce1095a2ca917a66577efa282c8b237939c4ed119e097652880741d3db332df0aa35a01fdb3bd90f954919f2162d634d91eeede362e843afa1fb60f1ab24ce9b277977a7bbb1a600\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x723ce42f3c949262cc441a9c06db5d432e520b3fdaabb11bbae213e1bf301582\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x84e7a0da0f4aed564445d87555b7c7d49ebe20750c3470d75462a6675ecefe48",
+      "proof": "0x0825bbcafd2f99dfa16503fb6db56da5aaa2b808289a230362c2e5175e9e8f4db4a23b5041408a7b76df67896030c615fe2d269202e8cfbe1797b27115f7ea15563ddba86f2f71e10c753fe22626a59f3a0a018804811679dd103a0fd2548f5002e587187382b479df8fa7018c3d25992d666f617515c660575c81907735865fb3b32c9b5cb40d40ff7b6eb4ddf77f01dc22e11b87e463b5c025cb162658700f2705018a0efd411b7edb40ac5d47b30ca1bd16fd06703ebac323947386bdd80d12e8edaf34a3a08ea3f90d60ae30791e785c004df3401583f4687c79eda23800761addd0a25f5af8e4e08f01fddc51339a3330e678ace5b115ffc89225fe321d307cdf666ca0d5af6dc981ac7426cdc837b3e63757d4ad816fbc4947ba5e8d3b745183e99f0bf9d65cf3d5ee5d86b6d0e93974ab9d3a82e78f081284d445dc53384816c505d08be4d2ff880d3319e9baf4c18fa9280bf378ad9300a999733a05d0e01e7dee9f368f6c8fd1ff81a535b738cc57fb5c2034981c5a7a9731e25a3f26ac4cdcbf3460fff4dcc22c3a0e889a11ffbe382d9c52bac3048f709c58ef3c50eecf72e6f12460f622c28cd8508a463cea7662494adf848b6c1ba34ec7320ea830dc12f67242a499c2ef53810a73056fa20f3832242a703188a440540a490c3004b883ebe2f53d017fa92d9e963010e8da615127e02ccf49149780db6a8c1228cb2bbbadec32441d7fb56c982c85241dee9264ebc09bcac07cb3838545302d18a6cbaade7d3efd31e31d9a886d7db1acbec97472c801542855b44f4dbf5f231259430836f492e2d5284336dd5fcdedc82b56dd01a38515ce1095a2ca917a66577efa282c8b237939c4ed119e097652880741d3db332df0aa35a01fdb3bd90f954919f2162d634d91eeede362e843afa1fb60f1ab24ce9b277977a7bbb1a600",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x723ce42f3c949262cc441a9c06db5d432e520b3fdaabb11bbae213e1bf301582"
+    },
+    "productId": "371",
+    "productContract": "0x14EEC305DCa5Cd55bE54d23bae14229AB4e6920B",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "line_clearance_completed": true,
+      "lot_traceability_complete": true,
+      "quality_release_approved": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-09T03:33:05.379Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xe764545c422472c62e1cbc9b764be474a3d3f046#controller",
+      "role": "seller",
+      "payloadHash": "0x89c3b17e4b1976e24848cdc6adecfab6a86def95eebc0b9031631a131a5016b5",
+      "jws": "0xb8b6c81f9c1a0b6c1bc04448c09f015048390058e81455cf6cd78f55619c8054514adcff2d4b8b595e97bee84402ded930b7fed3974b7e3fabede37d8fa4f3c81b"
+    }
+  ]
+}

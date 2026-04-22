@@ -1,0 +1,94 @@
+{
+  "id": "urn:uuid:wc-vc-1774876636896-18",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xd55425d32c953254102f28709257c7ccaf153eb2",
+    "name": "ACC Cell GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xd55425d32c953254102f28709257c7ccaf153eb2",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-03-30T13:17:16.896Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xd55425d32c953254102f28709257c7ccaf153eb2",
+    "productName": "Cell manufacturing",
+    "batch": "WC-BATCH-018",
+    "quantity": 1,
+    "previousCredential": "QmUszKgnJ5vRPxwiZ2iMBK3TQBDW18PNL4ts74nPQaBuDY",
+    "componentCredentials": [
+      "QmUszKgnJ5vRPxwiZ2iMBK3TQBDW18PNL4ts74nPQaBuDY",
+      "QmNmCPe2qGcAWSBNyH2s6PBfpcFJYj1bTTPP2dhafxVfki",
+      "QmXFh9JQAmstkPmEDT6WPBZVrXoowH196ktBLqJysWnH4H",
+      "QmWhAue2W8dNNwBsBNWfazjMNRHucGsL8w9vS5AoUoV6F3",
+      "Qma3ReT3ogGPwDCCFBhCpPA34iwLrG4YuUKE7LhiibyGJ2"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-cell-mfg-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-cell-mfg-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_cell",
+      "lithium_ion"
+    ],
+    "operationTags": [
+      "downstream",
+      "manufacturing"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 52.4,
+      "longitude": 13.4
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Gigafactory on renewable PPA, scope-1+2 disclosed",
+    "climateClaim": "EU Battery Regulation DPP-ready",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xc4966e996e35777b57934be9846297f783f26c91aef7fb8ede71c0c43dceda77\",\"proof\":\"0x8a3c5c8c404f24cf2c7023b01af158dafa731150c515a4148c6176d7331cca5cf0ceec305bedd8c9d709999ce15dcd98fd2b7c5ed9669738c77f9243b01d826eb6cfd851dda2dad87ed1e11c2678627be8e152d190caa55ccb7869001938ed65f21c03d9e22368a136c93e023aff0942b70970bc03225435f5a44405d214f9088204d9c8e850874fbbdccf94f5aabc00d740470c3b0be5f412480eafd002c801efc3227ab97822ed541333b91243d893b56aac3a0f5ad32d65e731f5746c160509aa55d20f2058c47237c88f65325dbdd13d891cb1d952aa9eb2ce068083c903ce4db33ddd06ea3801533e1aaadddcd2ae0bf198764251c1f6e81ce062151224be556d5a8073830d63a3cf456c48ea7339cbfe3aae829d2ab8a3f90829ef1d1d9e40cc853e160af9b841548be70613590d9777575fb0610cd7f04d1a6201535d4ab3df58625a9c2ea313227b80d3b607379e39ad11a36d594d6e2ce6350fbe3a0ed44aa296115c445bd2fdfe978d4023db13de701fbffa95dd85c15da6094f0b7e151731be4b8c907ae7255711cbfe6b4b9727332baaeab1f2019e520191782c14d29194ea94166d8e55be3651a6a04208826682ba8bcf85980f186cb637bb1ed0947c2baaa31281e7855e951380d58f8d7b082cf27dc2b1e3274cef55a68910f08dc264da40d405007e7a0f35f2a6ea53c9386f590b9ce2bea0ec68ca70643eb8068ef314722dc3e6604570da5112cd306e08a30892aff927ee497135b91402d8420c1b906d228fca5790fc6ac40eb9cf948b1c41293b7706a1149ed332824048a5fbbf147c9663a62f728c70a774534a248202af048b7212709f24e7d18968b4cc38f3762abde08ef300a3b30bc5227d4fa657fe70b84d7ce4a0bebdbf3c0c182bf08f5580c02105fd9c575e525608f6c675e4ca6215c86ddd1b7f8ca37f0c\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x598e581f9860dc55a9c08ece79b19d5d4ab3d9a81cbd8cd0f18b74d9e2a20218\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xc4966e996e35777b57934be9846297f783f26c91aef7fb8ede71c0c43dceda77",
+      "proof": "0x8a3c5c8c404f24cf2c7023b01af158dafa731150c515a4148c6176d7331cca5cf0ceec305bedd8c9d709999ce15dcd98fd2b7c5ed9669738c77f9243b01d826eb6cfd851dda2dad87ed1e11c2678627be8e152d190caa55ccb7869001938ed65f21c03d9e22368a136c93e023aff0942b70970bc03225435f5a44405d214f9088204d9c8e850874fbbdccf94f5aabc00d740470c3b0be5f412480eafd002c801efc3227ab97822ed541333b91243d893b56aac3a0f5ad32d65e731f5746c160509aa55d20f2058c47237c88f65325dbdd13d891cb1d952aa9eb2ce068083c903ce4db33ddd06ea3801533e1aaadddcd2ae0bf198764251c1f6e81ce062151224be556d5a8073830d63a3cf456c48ea7339cbfe3aae829d2ab8a3f90829ef1d1d9e40cc853e160af9b841548be70613590d9777575fb0610cd7f04d1a6201535d4ab3df58625a9c2ea313227b80d3b607379e39ad11a36d594d6e2ce6350fbe3a0ed44aa296115c445bd2fdfe978d4023db13de701fbffa95dd85c15da6094f0b7e151731be4b8c907ae7255711cbfe6b4b9727332baaeab1f2019e520191782c14d29194ea94166d8e55be3651a6a04208826682ba8bcf85980f186cb637bb1ed0947c2baaa31281e7855e951380d58f8d7b082cf27dc2b1e3274cef55a68910f08dc264da40d405007e7a0f35f2a6ea53c9386f590b9ce2bea0ec68ca70643eb8068ef314722dc3e6604570da5112cd306e08a30892aff927ee497135b91402d8420c1b906d228fca5790fc6ac40eb9cf948b1c41293b7706a1149ed332824048a5fbbf147c9663a62f728c70a774534a248202af048b7212709f24e7d18968b4cc38f3762abde08ef300a3b30bc5227d4fa657fe70b84d7ce4a0bebdbf3c0c182bf08f5580c02105fd9c575e525608f6c675e4ca6215c86ddd1b7f8ca37f0c",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x598e581f9860dc55a9c08ece79b19d5d4ab3d9a81cbd8cd0f18b74d9e2a20218"
+    },
+    "productId": "115",
+    "productContract": "0x47376c31fcaa407782bA633f9f265E0c82FD644F",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-30T13:17:16.896Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xd55425d32c953254102f28709257c7ccaf153eb2#controller",
+      "role": "seller",
+      "payloadHash": "0xb6d9a4bde9ecf2a6cc6f8ebc41fbf5847511e62dcc1969241c72c7d0888fd109",
+      "jws": "0xd0acab0baa7864c2d43954baca305ced84a131b69c870603e0e6000c38f528f273986bf2a6bbdc580e93f0cc57ddcb139d451db13a9312fde7b1b33f1cc5f0791c"
+    }
+  ]
+}

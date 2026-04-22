@@ -1,0 +1,50 @@
+version: 1
+tool_id: certification.explain_findings@v1
+description: "LLM explanation tool for deterministic certification findings (advisory only)."
+category: certification
+entity: VerificationReport
+operation: explain_findings
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [rootCid, summary, findings]
+  properties:
+    rootCid:
+      type: string
+    summary:
+      type: object
+    findings:
+      type: array
+      items:
+        type: object
+
+output_schema:
+  type: object
+  required: [findings]
+  properties:
+    findings:
+      type: array
+      items:
+        type: object
+        properties:
+          cid:
+            type: string
+          certificationId:
+            type: string
+          llmExplanation:
+            type: string
+          recommendedEvidence:
+            type: array
+            items:
+              type: string
+          recommendedActions:
+            type: array
+            items:
+              type: string
+          confidence:
+            type: number

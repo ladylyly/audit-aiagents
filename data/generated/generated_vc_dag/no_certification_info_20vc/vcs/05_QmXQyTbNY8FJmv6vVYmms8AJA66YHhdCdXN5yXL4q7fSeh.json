@@ -1,0 +1,146 @@
+{
+  "id": "urn:uuid:thesis-dense20-1776205079037-05",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisDenseComplianceCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xcb564eaa5b1ded444befe7c11213265bb402e59c",
+    "name": "Salar Verde Lithium S.A."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xe8729c6e1f60ed45e479b1923988909b330fc919",
+    "name": "Iberia Lithium Hydroxide S.L."
+  },
+  "issuanceDate": "2026-03-30T22:17:51.791Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xe8729c6e1f60ed45e479b1923988909b330fc919",
+    "productName": "Lithium carbonate precursor brine lot SVL-2026-03",
+    "batch": "SVL-2026-03",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Chile",
+      "countryCode": "CL",
+      "latitude": -23.2,
+      "longitude": -68.1
+    },
+    "facilityRole": "mine",
+    "materialTags": [
+      "lithium"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "water_stress"
+    ],
+    "claims": {},
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xae909ed19f42df221df6aa384042080c461464c756e73c863671d46c0aef860f\",\"proof\":\"0x464accb521dbd35941839e56925d564338bb8961a2984d99fa2ae10504d1f11db6e66299a598cb2ef02d7191b8d45e147813f4198c413eeba613dfe96d349714a24e88c9097db706bcb6c54b4316c6a96764fe4ed823ad958f46872fe33a293df2180b94136724ab8b053c292656ec626ac4511252c00dfff8de12640780aa38d0e5311fbaa799f3313f10b4fdcb46c7a7d10f9c6a4a21a696693da829f800006f0cb7996a2179694752be56cbd7994ee2c5d968cc03b67f3b1d5a04b556c104177a144f4ace75c7dcb44baa67f053a58a7e6dab81e63ab2aeb53a1db635cd086e192bdda3af4a134876f8e238c301a4a0d74bd305c78e19474cefb442b9fb3ff684c2dec7095e16e5918685c5d620f17d872ea46aee45d9790acb277e1bfb29f644559e6ac546f60c4c26129084f5ba4cf6d2018934a39996514bcb5f7ebf488a0fe7149f6f3c6415d415f1bfb0d78a3d291a233e0a26c541ae77b2846d455d329fc41a74ffd608f0a576e044d0233b2de099f26577a63afa096d30ed1e1b5678a810245f598c7b16c8e2aa1c951e20513129c2626e79f3e4c2d17026f74b5ce8c49410c3144c557ef75ef7a2a66c7a9a4b2e4a823c907c713569bd1c952e3f2a32357ee6a84767fb3bc7c61815fcb4b580a42982bcf6f6d97efeb8e1d964192c777b38105a88979a6f7310ce267ecf1469a8ac9908f72ea1994bd4ba5fdf39c25cd1b1cd09ba7bcfc7f64273ff711127b10edfe284f617d5f0350de2276544fe9af5d70d81971e7f5c332d5255f07c43069beb54a6455d2a13b514c06e8d5e7c698b77dff6f3adc2ba9061031eab2fc679995c105ba58d820b1dda0fec29657d0e18ec99650771dea85e4c0647a3a4c109a64ad73d3c75c60b0001bdd688094824c81f4f5c0a04488109fe00da81151aa62bd2b8a84b2e6a4eac8ff61ece0b\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x520fd149b564b3b933365e1ad2b22edf702bd9c010fc42c812f685be0e50d364\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xae909ed19f42df221df6aa384042080c461464c756e73c863671d46c0aef860f",
+      "proof": "0x464accb521dbd35941839e56925d564338bb8961a2984d99fa2ae10504d1f11db6e66299a598cb2ef02d7191b8d45e147813f4198c413eeba613dfe96d349714a24e88c9097db706bcb6c54b4316c6a96764fe4ed823ad958f46872fe33a293df2180b94136724ab8b053c292656ec626ac4511252c00dfff8de12640780aa38d0e5311fbaa799f3313f10b4fdcb46c7a7d10f9c6a4a21a696693da829f800006f0cb7996a2179694752be56cbd7994ee2c5d968cc03b67f3b1d5a04b556c104177a144f4ace75c7dcb44baa67f053a58a7e6dab81e63ab2aeb53a1db635cd086e192bdda3af4a134876f8e238c301a4a0d74bd305c78e19474cefb442b9fb3ff684c2dec7095e16e5918685c5d620f17d872ea46aee45d9790acb277e1bfb29f644559e6ac546f60c4c26129084f5ba4cf6d2018934a39996514bcb5f7ebf488a0fe7149f6f3c6415d415f1bfb0d78a3d291a233e0a26c541ae77b2846d455d329fc41a74ffd608f0a576e044d0233b2de099f26577a63afa096d30ed1e1b5678a810245f598c7b16c8e2aa1c951e20513129c2626e79f3e4c2d17026f74b5ce8c49410c3144c557ef75ef7a2a66c7a9a4b2e4a823c907c713569bd1c952e3f2a32357ee6a84767fb3bc7c61815fcb4b580a42982bcf6f6d97efeb8e1d964192c777b38105a88979a6f7310ce267ecf1469a8ac9908f72ea1994bd4ba5fdf39c25cd1b1cd09ba7bcfc7f64273ff711127b10edfe284f617d5f0350de2276544fe9af5d70d81971e7f5c332d5255f07c43069beb54a6455d2a13b514c06e8d5e7c698b77dff6f3adc2ba9061031eab2fc679995c105ba58d820b1dda0fec29657d0e18ec99650771dea85e4c0647a3a4c109a64ad73d3c75c60b0001bdd688094824c81f4f5c0a04488109fe00da81151aa62bd2b8a84b2e6a4eac8ff61ece0b",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x520fd149b564b3b933365e1ad2b22edf702bd9c010fc42c812f685be0e50d364"
+    },
+    "productId": "291",
+    "productContract": "0xadf985986450ee9A16425ec1d4a6B875B9f5eBe7",
+    "chainId": "11155111",
+    "companyName": "Salar Verde Lithium S.A.",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 65000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "CL-DENSE20-0005",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 92000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "solar_and_grid_mix",
+        "emissionsClaim": "Salar Verde Lithium S.A. reports site-level emissions and energy-source disclosures for Lithium carbonate precursor brine lot SVL-2026-03.",
+        "climateClaim": "Salar Verde Lithium S.A. maintains climate transition and emissions reduction evidence for mine operations.",
+        "environmentalRiskSignals": [
+          "water_stress"
+        ],
+        "socialRiskSignals": [
+          "indigenous_consultation_pressure"
+        ],
+        "governanceRiskSignals": [
+          "water_rights_scrutiny"
+        ],
+        "countryOfOperation": "Chile",
+        "facilityRole": "mine",
+        "materialTags": [
+          "lithium"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "mine",
+        "componentType": "lithium",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_05_lithium_brine_chile-material-balance-sheet",
+          "vc_05_lithium_brine_chile-shipment-record",
+          "vc_05_lithium_brine_chile-supplier-declaration"
+        ],
+        "serialisationScheme": "SVL-2026-03-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "bulk_freight",
+        "customsReference": "CL-SVL-2026-03",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "raw material source only"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "lithium is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_risk_signal",
+        "reason": "water-use controversy should enrich narrative evidence"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-30T22:17:51.791Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xcb564eaa5b1ded444befe7c11213265bb402e59c#controller",
+      "role": "issuer",
+      "payloadHash": "0x5d24f541910bfb6ed33eccef1b87f1665d0d0a92f32c036263ba7ca745453f5a",
+      "jws": "0x83deeb30e83b8dc90e35d813f644588f330e4d4c500626959a01f565c4cb769457dfcc04ff1fa94aee42262fcb28593debba4e6ba5f45cf4718fe262c67f03631c"
+    }
+  ]
+}

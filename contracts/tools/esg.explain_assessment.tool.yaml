@@ -1,0 +1,50 @@
+version: 1
+tool_id: esg.explain_assessment@v1
+description: "LLM explanation tool for deterministic ESG assessment outputs (advisory only)."
+category: esg
+entity: VerificationReport
+operation: explain_assessment
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [rootCid, scores, verdict, flags, findings]
+  properties:
+    rootCid:
+      type: string
+    scores:
+      type: object
+    verdict:
+      type: string
+    flags:
+      type: array
+      items:
+        type: string
+    findings:
+      type: array
+      items:
+        type: object
+    narrativeSeed:
+      type: string
+    coverage:
+      type: object
+
+output_schema:
+  type: object
+  properties:
+    llmExplanation:
+      type: [string, "null"]
+    primaryDrivers:
+      type: array
+      items:
+        type: string
+    recommendedActions:
+      type: array
+      items:
+        type: string
+    confidence:
+      type: number

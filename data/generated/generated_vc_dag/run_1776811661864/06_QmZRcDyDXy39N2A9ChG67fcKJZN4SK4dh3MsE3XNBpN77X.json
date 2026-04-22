@@ -1,0 +1,102 @@
+{
+  "id": "urn:uuid:real-vc-1776811667672-6",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xe964edb7a43e93728897d38e4950cad2f2ccd86d",
+    "name": "Cobalt Blue Holdings AU"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xb21071eec12257c3a33f168d657bb6bc4dfe0e10",
+    "name": "Freeport Cobalt Oy"
+  },
+  "issuanceDate": "2026-04-02T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xb21071eec12257c3a33f168d657bb6bc4dfe0e10",
+    "productName": "Cobalt mine",
+    "batch": "REAL-BATCH-006",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-co-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-co-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "SA8000",
+        "issuer": "SAI",
+        "certificateCid": "bafy-cert-co-mine-sa8000",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-co-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "cobalt"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "social_risk_heavy",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "latitude": -28.4,
+      "longitude": 120.5
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Renewable-powered cobalt extraction, zero PFAS",
+    "climateClaim": "Scope-3 mapping in progress",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xf227826b7db21a358f9ae22152bb675e8ecf99df9334fac4835e3bdefcb3131d\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xf227826b7db21a358f9ae22152bb675e8ecf99df9334fac4835e3bdefcb3131d",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "358",
+    "productContract": "0x80b731180E5E474D8c75a6BD0c49bcEC622E32e5",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-02T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xe964edb7a43e93728897d38e4950cad2f2ccd86d#controller",
+      "role": "seller",
+      "payloadHash": "0x074b4645e3d249f5b61e3c9e821fac0cad343a54550a0c9831d2e73b42d89ebc",
+      "jws": "0x50e9204311cfab8f588de944e9c0cfbb6d63e5bb2b2ebbe9125dcf47f9d4c5e056b921d53efbf948595411feb7abcb9c395e121eddeec775530ae6c680f836961c"
+    }
+  ]
+}

@@ -1,0 +1,2143 @@
+schemaVersion: "1.1"
+regulation:
+  id: "eu.regulation.2023.1542"
+  shortName: "Battery Regulation"
+  citation: "Regulation (EU) 2023/1542"
+  sourcePdf: "thesis/sources/Regulation (EU) 2023:1542 (Battery Regulation) Official Journal text.pdf"
+  notes:
+    - "Phase 3 waste-management, collection, treatment, re-use, shipment, and reporting duties for Articles 54 to 75."
+    - "Article 71 recycling and recovery thresholds are encoded with deterministic ratio calculations."
+    - "Commission- and Member-State-only provisions are preserved as entity-level exclusions to keep the chapter structurally complete."
+
+rulepack:
+  id: "battery_eu_2023_1542_end_of_life_v1"
+  version: "0.1.0"
+  status: "draft"
+
+chapters:
+  - id: "battery.epr"
+    title: "Extended Producer Responsibility and Registration"
+    articleStart: 54
+    articleEnd: 58
+  - id: "battery.collection"
+    title: "Collection, Take-Back, and Waste Management Chain"
+    articleStart: 59
+    articleEnd: 69
+  - id: "battery.treatment_reporting"
+    title: "Treatment, Recycling, Re-use, Information, and Reporting"
+    articleStart: 70
+    articleEnd: 75
+
+rules:
+  - id: "battery.art54"
+    articleRef: "Article 54"
+    title: "Competent authorities are designated by Member States"
+    obligationType: "competent_authority"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 54 addresses Member State designation and supervision of competent authorities."
+
+  - id: "battery.art55.2"
+    articleRef: "Article 55"
+    paragraphRef: "Art 55(2)"
+    title: "Producer is registered before making batteries available on the market"
+    obligationType: "registration"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.producer_registered"
+
+  - id: "battery.art55.3"
+    articleRef: "Article 55"
+    paragraphRef: "Art 55(3)"
+    title: "Producer registration application contains the required information"
+    obligationType: "registration_data"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.producer_registration_application_complete"
+
+  - id: "battery.art55.9"
+    articleRef: "Article 55"
+    paragraphRef: "Art 55(9)"
+    title: "Producer registration number has been issued"
+    obligationType: "registration_number"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.producer_registration_number_present"
+
+  - id: "battery.art55.12"
+    articleRef: "Article 55"
+    paragraphRef: "Art 55(12)"
+    title: "Changes to producer registration are notified without undue delay"
+    obligationType: "registration_update"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.producer_registration_changes_notified"
+
+  - id: "battery.art55.13"
+    articleRef: "Article 55"
+    paragraphRef: "Art 55(13)"
+    title: "Online platform access to producer register information"
+    obligationType: "register_access"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 55(13) imposes an access obligation on Member States where the register is not public."
+
+  - id: "battery.art56.1"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(1)"
+    title: "Producer fulfils extended producer responsibility"
+    obligationType: "extended_producer_responsibility"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.extended_producer_responsibility_fulfilled"
+
+  - id: "battery.art56.2"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(2)"
+    title: "Operator placing repurposed or remanufactured battery on the market fulfils producer responsibility"
+    obligationType: "extended_producer_responsibility"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["repurposed", "remanufactured", "prepared_for_reuse", "prepared_for_repurposing"]
+    evidenceRequired:
+      - "claims.battery.extended_producer_responsibility_fulfilled"
+
+  - id: "battery.art56.3"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(3)"
+    title: "Distance seller appoints an authorised representative for extended producer responsibility"
+    obligationType: "authorised_representative"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.distance_seller_into_member_state"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.authorised_representative_for_epr_appointed"
+
+  - id: "battery.art56.4.a"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(4)(a)"
+    title: "Financial contributions cover collection, transport, and treatment costs"
+    obligationType: "financial_contribution"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.financial_contributions_cover_collection_treatment_costs"
+
+  - id: "battery.art56.4.b"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(4)(b)"
+    title: "Financial contributions cover compositional survey costs"
+    obligationType: "financial_contribution"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "portable"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.financial_contributions_cover_compositional_survey_costs"
+
+  - id: "battery.art56.4.c"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(4)(c)"
+    title: "Financial contributions cover waste-battery information costs"
+    obligationType: "financial_contribution"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.financial_contributions_cover_information_costs"
+
+  - id: "battery.art56.4.d"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(4)(d)"
+    title: "Financial contributions cover reporting costs"
+    obligationType: "financial_contribution"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.financial_contributions_cover_reporting_costs"
+
+  - id: "battery.art56.5"
+    articleRef: "Article 56"
+    paragraphRef: "Art 56(5)"
+    title: "Repurposed or remanufactured battery cost-sharing mechanism is documented where used"
+    obligationType: "cost_sharing"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.status"
+          op: "in"
+          value: ["repurposed", "remanufactured"]
+        - field: "claims.battery.cost_sharing_mechanism_used"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.cost_sharing_mechanism_documented"
+
+  - id: "battery.art57.1"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(1)"
+    title: "Appointed producer responsibility organisation is authorised"
+    obligationType: "producer_responsibility_organisation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.collective_epr_fulfilment"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.producer_responsibility_organisation_authorized"
+
+  - id: "battery.art57.2.a"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(2)(a)"
+    title: "PRO financial contributions are modulated by category and chemistry"
+    obligationType: "producer_responsibility_organisation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.pro_financial_contributions_modulated"
+
+  - id: "battery.art57.2.b"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(2)(b)"
+    title: "PRO financial contributions are adjusted for re-use, repurposing, and secondary raw material revenues"
+    obligationType: "producer_responsibility_organisation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.pro_financial_contributions_revenue_adjusted"
+
+  - id: "battery.art57.3"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(3)"
+    title: "PRO ensures coordinated territorial coverage across the Member State"
+    obligationType: "producer_responsibility_organisation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.pro_territorial_coverage_complete"
+
+  - id: "battery.art57.4"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(4)"
+    title: "PRO preserves confidentiality of proprietary producer data"
+    obligationType: "confidentiality"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.pro_confidentiality_controls_exist"
+
+  - id: "battery.art57.5"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(5)"
+    title: "PRO publishes collection, recycling-efficiency, and recovery results annually"
+    obligationType: "public_reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.pro_collection_rate_published"
+      - "claims.battery.pro_recycling_efficiency_published"
+      - "claims.battery.pro_material_recovery_published"
+
+  - id: "battery.art57.6"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(6)"
+    title: "PRO publishes information on waste-operator selection procedure"
+    obligationType: "public_reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.pro_operator_selection_public"
+
+  - id: "battery.art57.8"
+    articleRef: "Article 57"
+    paragraphRef: "Art 57(8)"
+    title: "Waste-management operator selection is non-discriminatory and transparent"
+    obligationType: "operator_selection"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.waste_management_operator_selection_nondiscriminatory"
+
+  - id: "battery.art58.1"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(1)"
+    title: "Required EPR authorisation has been obtained"
+    obligationType: "authorisation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - all:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.epr_fulfilment_mode"
+              op: "=="
+              value: "individual"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.epr_authorisation_exists"
+
+  - id: "battery.art58.2.a"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(2)(a)"
+    title: "EPR measures are sufficient to fulfil Chapter VIII obligations"
+    obligationType: "authorisation_evidence"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - all:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.epr_fulfilment_mode"
+              op: "=="
+              value: "individual"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.epr_measures_sufficient"
+
+  - id: "battery.art58.2.b"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(2)(b)"
+    title: "Portable and LMT collection arrangements are documented to meet collection targets"
+    obligationType: "authorisation_evidence"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "portable"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+    evidenceRequired:
+      - "claims.battery.collection_arrangements_documented"
+      - "claims.battery.collection_target_attainment_plan_exists"
+
+  - id: "battery.art58.3"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(3)"
+    title: "Independent verification report supports EPR authorisation dossier where used"
+    obligationType: "verification"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "claims.battery.independent_verification_used"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.independent_verification_report_exists"
+
+  - id: "battery.art58.4"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(4)"
+    title: "Changes to authorisation terms are notified without undue delay"
+    obligationType: "authorisation_update"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.authorisation_changes_notified"
+
+  - id: "battery.art58.5"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(5)"
+    title: "Self-control reporting and corrective planning are maintained"
+    obligationType: "self_control"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.self_control_report_exists"
+      - "claims.battery.corrective_action_plan_exists"
+
+  - id: "battery.art58.6"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(6)"
+    title: "Revocation of authorisation is a competent-authority enforcement power"
+    obligationType: "enforcement"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 58(6) describes revocation powers of competent authorities."
+
+  - id: "battery.art58.7"
+    articleRef: "Article 58"
+    paragraphRef: "Art 58(7)"
+    title: "Guarantee exists to cover waste-management costs in case of non-compliance or insolvency"
+    obligationType: "financial_guarantee"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - all:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.epr_fulfilment_mode"
+              op: "=="
+              value: "individual"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.epr_guarantee_exists"
+
+  - id: "battery.art59.1"
+    articleRef: "Article 59"
+    paragraphRef: "Art 59(1)"
+    title: "Producer or PRO operates a free take-back and collection system for portable batteries"
+    obligationType: "collection_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.portable_takeback_system_exists"
+      - "claims.battery.portable_collection_offer_free"
+      - "claims.battery.portable_collection_containers_provided"
+      - "claims.battery.portable_collection_frequency_proportionate"
+      - "claims.battery.portable_weee_collection_supported"
+      - "claims.battery.portable_collected_waste_sent_to_treatment"
+
+  - id: "battery.art59.2"
+    articleRef: "Article 59"
+    paragraphRef: "Art 59(2)"
+    title: "Portable collection network covers the whole territory of the Member State"
+    obligationType: "collection_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.portable_collection_network_territorially_complete"
+
+  - id: "battery.art59.3.2023"
+    articleRef: "Article 59"
+    paragraphRef: "Art 59(3)(a)"
+    title: "Portable collection rate is at least 45 percent"
+    obligationType: "collection_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2024-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.portable_collection_rate_numerator_kg"
+          denominatorField: "claims.battery.portable_collection_rate_denominator_kg"
+          multiplier: 100
+          op: ">="
+          value: 45
+    evidenceRequired:
+      - "claims.battery.portable_collection_rate_numerator_kg"
+      - "claims.battery.portable_collection_rate_denominator_kg"
+
+  - id: "battery.art59.3.2027"
+    articleRef: "Article 59"
+    paragraphRef: "Art 59(3)(b)"
+    title: "Portable collection rate is at least 63 percent"
+    obligationType: "collection_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.portable_collection_rate_numerator_kg"
+          denominatorField: "claims.battery.portable_collection_rate_denominator_kg"
+          multiplier: 100
+          op: ">="
+          value: 63
+    evidenceRequired:
+      - "claims.battery.portable_collection_rate_numerator_kg"
+      - "claims.battery.portable_collection_rate_denominator_kg"
+
+  - id: "battery.art59.3.2030"
+    articleRef: "Article 59"
+    paragraphRef: "Art 59(3)(c)"
+    title: "Portable collection rate is at least 73 percent"
+    obligationType: "collection_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.portable_collection_rate_numerator_kg"
+          denominatorField: "claims.battery.portable_collection_rate_denominator_kg"
+          multiplier: 100
+          op: ">="
+          value: 73
+    evidenceRequired:
+      - "claims.battery.portable_collection_rate_numerator_kg"
+      - "claims.battery.portable_collection_rate_denominator_kg"
+
+  - id: "battery.art60.1"
+    articleRef: "Article 60"
+    paragraphRef: "Art 60(1)"
+    title: "Producer or PRO operates a free take-back and collection system for LMT batteries"
+    obligationType: "collection_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.lmt_takeback_system_exists"
+      - "claims.battery.lmt_collection_offer_free"
+      - "claims.battery.lmt_collection_containers_provided"
+      - "claims.battery.lmt_collection_frequency_proportionate"
+      - "claims.battery.lmt_weee_collection_supported"
+      - "claims.battery.lmt_collected_waste_sent_to_treatment"
+
+  - id: "battery.art60.2"
+    articleRef: "Article 60"
+    paragraphRef: "Art 60(2)"
+    title: "LMT collection network covers the whole territory of the Member State"
+    obligationType: "collection_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.lmt_collection_network_territorially_complete"
+
+  - id: "battery.art60.3.2028"
+    articleRef: "Article 60"
+    paragraphRef: "Art 60(3)(a)"
+    title: "LMT collection rate is at least 51 percent"
+    obligationType: "collection_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2029-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.lmt_collection_rate_numerator_kg"
+          denominatorField: "claims.battery.lmt_collection_rate_denominator_kg"
+          multiplier: 100
+          op: ">="
+          value: 51
+    evidenceRequired:
+      - "claims.battery.lmt_collection_rate_numerator_kg"
+      - "claims.battery.lmt_collection_rate_denominator_kg"
+
+  - id: "battery.art60.3.2031"
+    articleRef: "Article 60"
+    paragraphRef: "Art 60(3)(b)"
+    title: "LMT collection rate is at least 61 percent"
+    obligationType: "collection_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2032-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.lmt_collection_rate_numerator_kg"
+          denominatorField: "claims.battery.lmt_collection_rate_denominator_kg"
+          multiplier: 100
+          op: ">="
+          value: 61
+    evidenceRequired:
+      - "claims.battery.lmt_collection_rate_numerator_kg"
+      - "claims.battery.lmt_collection_rate_denominator_kg"
+
+  - id: "battery.art60.4"
+    articleRef: "Article 60"
+    paragraphRef: "Art 60(4)"
+    title: "LMT collection infrastructure and treatment delivery arrangements are in place"
+    obligationType: "collection_system"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.lmt_collection_infrastructure_suitable"
+      - "claims.battery.lmt_collection_costs_covered"
+      - "claims.battery.lmt_collection_frequency_proportionate"
+      - "claims.battery.lmt_collected_waste_delivered_to_permitted_facility"
+
+  - id: "battery.art61.1"
+    articleRef: "Article 61"
+    paragraphRef: "Art 61(1)"
+    title: "Producer or PRO takes back SLI, industrial, and EV waste batteries free of charge"
+    obligationType: "take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["sli", "industrial", "electric_vehicle"]
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.takeback_free_of_charge"
+      - "claims.battery.sli_industrial_ev_collection_system_exists"
+
+  - id: "battery.art61.2"
+    articleRef: "Article 61"
+    paragraphRef: "Art 61(2)"
+    title: "Take-back arrangements for SLI, industrial, and EV batteries cover the whole territory"
+    obligationType: "take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["sli", "industrial", "electric_vehicle"]
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.sli_industrial_ev_territorial_coverage_complete"
+
+  - id: "battery.art61.3"
+    articleRef: "Article 61"
+    paragraphRef: "Art 61(3)"
+    title: "Infrastructure, collection frequency, and delivery to treatment are in place for SLI, industrial, and EV batteries"
+    obligationType: "take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["sli", "industrial", "electric_vehicle"]
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.sli_industrial_ev_collection_infrastructure_suitable"
+      - "claims.battery.sli_industrial_ev_collection_frequency_proportionate"
+      - "claims.battery.sli_industrial_ev_collected_waste_delivered_to_permitted_facility"
+
+  - id: "battery.art62.1.portable"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(1)(a)"
+    title: "Distributor takes back waste portable batteries free of charge at or near the retail outlet"
+    obligationType: "distributor_take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+    evidenceRequired:
+      - "claims.battery.distributor_takes_back_waste_portable_at_point_of_sale"
+
+  - id: "battery.art62.1.other"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(1)(b)"
+    title: "Distributor takes back waste LMT, SLI, industrial, or EV batteries free of charge at or near the retail outlet"
+    obligationType: "distributor_take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["lmt", "sli", "industrial", "electric_vehicle"]
+    evidenceRequired:
+      - "claims.battery.distributor_takes_back_waste_nonportable_at_point_of_sale"
+
+  - id: "battery.art62.2"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(2)"
+    title: "Distributor take-back is limited to relevant battery categories and not to products containing batteries"
+    obligationType: "distributor_take_back_scope"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+    evidenceRequired:
+      - "claims.battery.distributor_takeback_category_limited_to_offered_categories"
+
+  - id: "battery.art62.3"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(3)"
+    title: "Distributor hands back collected waste batteries to authorised collector or treatment operator"
+    obligationType: "handover"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+    evidenceRequired:
+      - "claims.battery.distributor_handover_to_authorized_operator"
+
+  - id: "battery.art62.4"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(4)"
+    title: "Distance-selling distributor provides sufficient collection points"
+    obligationType: "distance_selling_take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+        - field: "claims.battery.selling_by_distance_contract"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.distance_seller_collection_network_exists"
+
+  - id: "battery.art62.5"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(5)"
+    title: "Distributor offering delivery also offers free take-back or a local collection point and informs the end-user"
+    obligationType: "distance_selling_take_back"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+        - field: "claims.battery.sales_with_delivery"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.delivery_takeback_or_local_collection_point_offered"
+      - "claims.battery.battery_takeback_information_provided_at_order"
+
+  - id: "battery.art62.6.a"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(6)(a)"
+    title: "Online platform obtains producer registration details before allowing distance sales"
+    obligationType: "online_platform_due_diligence"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "online_platform_provider"
+    evidenceRequired:
+      - "claims.battery.online_platform_producer_registration_verified"
+
+  - id: "battery.art62.6.b"
+    articleRef: "Article 62"
+    paragraphRef: "Art 62(6)(b)"
+    title: "Online platform obtains producer self-certification for EPR compliance"
+    obligationType: "online_platform_due_diligence"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "online_platform_provider"
+    evidenceRequired:
+      - "claims.battery.online_platform_epr_self_certification_obtained"
+
+  - id: "battery.art63"
+    articleRef: "Article 63"
+    title: "Deposit return systems feasibility assessment by the Commission"
+    obligationType: "commission_review"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 63 is a Commission assessment and reporting obligation."
+
+  - id: "battery.art64"
+    articleRef: "Article 64"
+    title: "End-user separate-discard obligations"
+    obligationType: "end_user_duty"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 64 addresses end-user disposal behaviour rather than company-level compliance duties."
+
+  - id: "battery.art65.1"
+    articleRef: "Article 65"
+    paragraphRef: "Art 65(1)"
+    title: "Treatment-facility operator hands over recovered waste batteries to authorised actors for treatment"
+    obligationType: "handover"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "treatment_facility_operator"
+    evidenceRequired:
+      - "claims.battery.treatment_facility_handover_to_authorized_operator"
+
+  - id: "battery.art65.2"
+    articleRef: "Article 65"
+    paragraphRef: "Art 65(2)"
+    title: "Treatment-facility operator keeps records of waste-battery handovers"
+    obligationType: "recordkeeping"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "treatment_facility_operator"
+    evidenceRequired:
+      - "claims.battery.treatment_facility_handover_records_kept"
+
+  - id: "battery.art66.2"
+    articleRef: "Article 66"
+    paragraphRef: "Art 66(2)"
+    title: "Public waste-management authority ensures treatment through authorised handover or compliant treatment"
+    obligationType: "public_waste_management"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "public_waste_management_authority"
+    evidenceRequired:
+      - "claims.battery.public_waste_authority_treatment_arranged"
+
+  - id: "battery.art67.1"
+    articleRef: "Article 67"
+    paragraphRef: "Art 67(1)"
+    title: "Voluntary collection point hands over portable batteries to authorised collector or treatment operator"
+    obligationType: "handover"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "voluntary_collection_point"
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+    evidenceRequired:
+      - "claims.battery.voluntary_collection_point_handover_compliant"
+
+  - id: "battery.art67.2"
+    articleRef: "Article 67"
+    paragraphRef: "Art 67(2)"
+    title: "Voluntary collection point hands over LMT batteries to authorised collector or treatment operator"
+    obligationType: "handover"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "voluntary_collection_point"
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+    evidenceRequired:
+      - "claims.battery.voluntary_collection_point_handover_compliant"
+
+  - id: "battery.art68"
+    articleRef: "Article 68"
+    title: "Restrictions on handover by Member States"
+    obligationType: "member_state_measure"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 68 concerns Member State powers to restrict handover routes."
+
+  - id: "battery.art69.1"
+    articleRef: "Article 69"
+    paragraphRef: "Art 69(1)"
+    title: "Member State adopts measures for collection-target achievement"
+    obligationType: "member_state_measure"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 69(1) is a Member State obligation."
+
+  - id: "battery.art69.4"
+    articleRef: "Article 69"
+    paragraphRef: "Art 69(4)"
+    title: "Producer or PRO submits and implements a corrective action plan when requested for collection-target shortfall"
+    obligationType: "corrective_action"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "claims.battery.collection_target_corrective_action_requested"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.corrective_action_plan_exists"
+      - "claims.battery.corrective_action_plan_implemented"
+
+  - id: "battery.art69.5"
+    articleRef: "Article 69"
+    paragraphRef: "Art 69(5)"
+    title: "Producer or PRO increases collection-point network and information campaigns when required after compositional survey"
+    obligationType: "corrective_action"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "claims.battery.compositional_survey_follow_up_required"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.collection_point_network_expanded"
+      - "claims.battery.article_74_information_campaign_carried_out"
+
+  - id: "battery.art70.1"
+    articleRef: "Article 70"
+    paragraphRef: "Art 70(1)"
+    title: "Collected waste batteries are not disposed of or subjected to energy recovery"
+    obligationType: "treatment"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "permitted_facility"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+    evidenceRequired:
+      - "claims.battery.waste_batteries_not_disposed_or_energy_recovered"
+
+  - id: "battery.art70.2"
+    articleRef: "Article 70"
+    paragraphRef: "Art 70(2)"
+    title: "Permitted facility treatment complies with Annex XII Part A and best available techniques"
+    obligationType: "treatment"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "permitted_facility"
+    evidenceRequired:
+      - "claims.battery.treatment_annex_xii_part_a_compliant"
+      - "claims.battery.best_available_techniques_applied"
+
+  - id: "battery.art70.3"
+    articleRef: "Article 70"
+    paragraphRef: "Art 70(3)"
+    title: "Batteries incorporated in appliances, LMTs, or vehicles are removed before treatment"
+    obligationType: "treatment"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "permitted_facility"
+        - field: "claims.battery.treats_incorporated_batteries"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.incorporated_batteries_removed_before_treatment"
+
+  - id: "battery.art70.4"
+    articleRef: "Article 70"
+    paragraphRef: "Art 70(4)"
+    title: "Commission delegated power to amend Annex XII Part A"
+    obligationType: "commission_power"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 70(4) is a Commission delegated-power provision."
+
+  - id: "battery.art71.1"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(1)"
+    title: "Permitted facility accepts all waste batteries and sends them to re-use, repurposing, or recycling"
+    obligationType: "recycling_process"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "permitted_facility"
+    evidenceRequired:
+      - "claims.battery.all_received_waste_batteries_accepted"
+      - "claims.battery.all_received_waste_batteries_sent_to_reuse_repurpose_or_recycling"
+
+  - id: "battery.art71.2.lead_acid.2025"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part B(1)(a)"
+    title: "Lead-acid recycling efficiency is at least 75 percent"
+    obligationType: "recycling_efficiency_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recycling_chemistry"
+          op: "=="
+          value: "lead_acid"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recycling_efficiency_output_mass_kg"
+          denominatorField: "claims.battery.recycling_efficiency_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 75
+    evidenceRequired:
+      - "claims.battery.recycling_efficiency_output_mass_kg"
+      - "claims.battery.recycling_efficiency_input_mass_kg"
+
+  - id: "battery.art71.2.lead_acid.2030"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part B(2)(a)"
+    title: "Lead-acid recycling efficiency is at least 80 percent"
+    obligationType: "recycling_efficiency_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recycling_chemistry"
+          op: "=="
+          value: "lead_acid"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recycling_efficiency_output_mass_kg"
+          denominatorField: "claims.battery.recycling_efficiency_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 80
+    evidenceRequired:
+      - "claims.battery.recycling_efficiency_output_mass_kg"
+      - "claims.battery.recycling_efficiency_input_mass_kg"
+
+  - id: "battery.art71.2.lithium.2025"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part B(1)(b)"
+    title: "Lithium-based recycling efficiency is at least 65 percent"
+    obligationType: "recycling_efficiency_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recycling_chemistry"
+          op: "=="
+          value: "lithium_based"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recycling_efficiency_output_mass_kg"
+          denominatorField: "claims.battery.recycling_efficiency_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 65
+    evidenceRequired:
+      - "claims.battery.recycling_efficiency_output_mass_kg"
+      - "claims.battery.recycling_efficiency_input_mass_kg"
+
+  - id: "battery.art71.2.lithium.2030"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part B(2)(b)"
+    title: "Lithium-based recycling efficiency is at least 70 percent"
+    obligationType: "recycling_efficiency_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recycling_chemistry"
+          op: "=="
+          value: "lithium_based"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2031-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recycling_efficiency_output_mass_kg"
+          denominatorField: "claims.battery.recycling_efficiency_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 70
+    evidenceRequired:
+      - "claims.battery.recycling_efficiency_output_mass_kg"
+      - "claims.battery.recycling_efficiency_input_mass_kg"
+
+  - id: "battery.art71.2.nickel_cadmium"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part B(1)(c)"
+    title: "Nickel-cadmium recycling efficiency is at least 80 percent"
+    obligationType: "recycling_efficiency_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recycling_chemistry"
+          op: "=="
+          value: "nickel_cadmium"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recycling_efficiency_output_mass_kg"
+          denominatorField: "claims.battery.recycling_efficiency_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 80
+    evidenceRequired:
+      - "claims.battery.recycling_efficiency_output_mass_kg"
+      - "claims.battery.recycling_efficiency_input_mass_kg"
+
+  - id: "battery.art71.2.other"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part B(1)(d)"
+    title: "Other battery recycling efficiency is at least 50 percent"
+    obligationType: "recycling_efficiency_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recycling_chemistry"
+          op: "=="
+          value: "other"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2026-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recycling_efficiency_output_mass_kg"
+          denominatorField: "claims.battery.recycling_efficiency_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 50
+    evidenceRequired:
+      - "claims.battery.recycling_efficiency_output_mass_kg"
+      - "claims.battery.recycling_efficiency_input_mass_kg"
+
+  - id: "battery.art71.2.cobalt.2027"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(1)(a)"
+    title: "Cobalt recovery is at least 90 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "cobalt"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 90
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.cobalt.2031"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(2)(a)"
+    title: "Cobalt recovery is at least 95 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "cobalt"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2032-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 95
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.copper.2027"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(1)(b)"
+    title: "Copper recovery is at least 90 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "copper"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 90
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.copper.2031"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(2)(b)"
+    title: "Copper recovery is at least 95 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "copper"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2032-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 95
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.lead.2027"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(1)(c)"
+    title: "Lead recovery is at least 90 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "lead"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 90
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.lead.2031"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(2)(c)"
+    title: "Lead recovery is at least 95 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "lead"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2032-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 95
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.lithium_recovery.2027"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(1)(d)"
+    title: "Lithium recovery is at least 50 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "lithium"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 50
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.lithium_recovery.2031"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(2)(d)"
+    title: "Lithium recovery is at least 80 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "lithium"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2032-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 80
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.nickel.2027"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(1)(e)"
+    title: "Nickel recovery is at least 90 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "nickel"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2028-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 90
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.2.nickel.2031"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(2), Annex XII Part C(2)(e)"
+    title: "Nickel recovery is at least 95 percent"
+    obligationType: "material_recovery_target"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.recovery_target_material"
+          op: "=="
+          value: "nickel"
+        - field: "input.assessmentDate"
+          op: "date_on_or_after"
+          value: "2032-01-01"
+    conditions:
+      all:
+        - metric: "ratio"
+          numeratorField: "claims.battery.recovered_material_output_mass_kg"
+          denominatorField: "claims.battery.recovered_material_input_mass_kg"
+          multiplier: 100
+          op: ">="
+          value: 95
+    evidenceRequired:
+      - "claims.battery.recovered_material_output_mass_kg"
+      - "claims.battery.recovered_material_input_mass_kg"
+
+  - id: "battery.art71.4"
+    articleRef: "Article 71"
+    paragraphRef: "Art 71(4)"
+    title: "Methodology and documentation format for recycling efficiency and material recovery have been established"
+    obligationType: "delegated_legislation"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 71(4) is a Commission delegated-act obligation; the evaluator uses deterministic ratio calculations directly."
+
+  - id: "battery.art72.1"
+    articleRef: "Article 72"
+    paragraphRef: "Art 72(1)"
+    title: "Shipment of waste batteries complies with shipment regulations"
+    obligationType: "shipment"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["waste_holder", "exporter", "recycler", "permitted_facility"]
+        - field: "claims.battery.exports_waste_batteries"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.waste_battery_shipment_compliant"
+
+  - id: "battery.art72.2"
+    articleRef: "Article 72"
+    paragraphRef: "Art 72(2)"
+    title: "Shipment of used batteries meets Annex XIV distinction requirements where relevant"
+    obligationType: "shipment"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["waste_holder", "exporter"]
+        - field: "claims.battery.ships_used_batteries"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.annex_xiv_used_battery_shipment_compliant"
+
+  - id: "battery.art72.3"
+    articleRef: "Article 72"
+    paragraphRef: "Art 72(3)"
+    title: "Exporter has documentary evidence of equivalent treatment conditions for exported waste batteries"
+    obligationType: "shipment"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "in"
+          value: ["waste_holder", "exporter", "recycler", "permitted_facility"]
+        - field: "claims.battery.exports_waste_batteries"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.export_treatment_equivalent_conditions_evidence"
+
+  - id: "battery.art73.1"
+    articleRef: "Article 73"
+    paragraphRef: "Art 73(1)"
+    title: "Battery holder documents state of health, transfer, and transport protection for re-use or repurposing"
+    obligationType: "preparation_for_reuse"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "battery_holder"
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["lmt", "industrial", "electric_vehicle"]
+        - field: "claims.battery.prepared_for_reuse_or_repurposing"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.state_of_health_evaluation_record_exists"
+      - "claims.battery.reuse_repurposing_sale_or_transfer_documented"
+      - "claims.battery.transport_damage_protection_evidence"
+
+  - id: "battery.art73.2"
+    articleRef: "Article 73"
+    paragraphRef: "Art 73(2)"
+    title: "State-of-health information accompanies the re-used or repurposed battery"
+    obligationType: "preparation_for_reuse"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "battery_holder"
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["lmt", "industrial", "electric_vehicle"]
+        - field: "claims.battery.prepared_for_reuse_or_repurposing"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.state_of_health_information_shared_with_end_user"
+
+  - id: "battery.art73.4"
+    articleRef: "Article 73"
+    paragraphRef: "Art 73(4)"
+    title: "Detailed end-of-waste technical and verification requirements are met once the implementing act applies"
+    obligationType: "implementing_legislation"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "battery_holder"
+        - field: "claims.battery.prepared_for_reuse_or_repurposing"
+          op: "=="
+          value: true
+        - field: "input.secondaryLegislationReady.article_73_end_of_waste_requirements"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.end_of_waste_technical_requirements_met"
+
+  - id: "battery.art74.1"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(1)"
+    title: "Producer or PRO provides complete waste-battery prevention and management information to end-users and distributors"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.waste_battery_prevention_management_information_complete"
+      - "claims.battery.waste_battery_information_visible_at_point_of_sale"
+      - "claims.battery.waste_battery_information_available_online"
+      - "claims.battery.waste_battery_information_in_member_state_language"
+
+  - id: "battery.art74.2"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(2)"
+    title: "Producer provides safety and protective measures information to distributors and relevant operators"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.storage_collection_safety_information_shared"
+
+  - id: "battery.art74.3"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(3)"
+    title: "Producer provides battery-model treatment information electronically and free of charge on request"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.treatment_information_available_on_request"
+
+  - id: "battery.art74.4"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(4)"
+    title: "Distributor displays return and waste-battery information in-store and online"
+    obligationType: "information_duty"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "distributor"
+    evidenceRequired:
+      - "claims.battery.distributor_waste_battery_information_displayed"
+
+  - id: "battery.art74.5"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(5)"
+    title: "Waste-management costs are shown separately to the end-user at the point of sale"
+    obligationType: "cost_transparency"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+    evidenceRequired:
+      - "claims.battery.waste_management_costs_shown_separately"
+
+  - id: "battery.art74.6"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(6)"
+    title: "Producer or PRO conducts awareness campaigns and incentives for proper waste-battery return"
+    obligationType: "awareness_campaign"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.article_74_information_campaign_carried_out"
+
+  - id: "battery.art74.7"
+    articleRef: "Article 74"
+    paragraphRef: "Art 74(7)"
+    title: "Publicly provided waste-battery information preserves commercial confidentiality"
+    obligationType: "confidentiality"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+        - field: "claims.battery.waste_battery_information_published_publicly"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.public_information_confidentiality_preserved"
+
+  - id: "battery.art75.1"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(1)"
+    title: "Portable and LMT producer or PRO annual reporting is complete"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - any:
+            - field: "claims.battery.category"
+              op: "=="
+              value: "portable"
+            - field: "claims.battery.category"
+              op: "=="
+              value: "lmt"
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.portable_lmt_reporting_complete"
+
+  - id: "battery.art75.2"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(2)"
+    title: "SLI, industrial, and EV producer or PRO annual reporting is complete"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["sli", "industrial", "electric_vehicle"]
+        - any:
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer"
+            - field: "claims.battery.operator_role"
+              op: "=="
+              value: "producer_responsibility_organisation"
+    evidenceRequired:
+      - "claims.battery.sli_industrial_ev_reporting_complete"
+
+  - id: "battery.art75.3"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(3)"
+    title: "Waste-management operator annual collection reporting is complete"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "waste_management_operator"
+    evidenceRequired:
+      - "claims.battery.waste_management_operator_reporting_complete"
+
+  - id: "battery.art75.5"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(5)"
+    title: "Treatment operator or recycler reports treatment, recycling efficiency, recovery, and destination data"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "permitted_facility"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+    evidenceRequired:
+      - "claims.battery.treatment_recycler_reporting_complete"
+
+  - id: "battery.art75.6"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(6)"
+    title: "Exporting waste holder reports exported-treatment data to competent authorities"
+    obligationType: "reporting"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "waste_holder"
+        - field: "claims.battery.exports_waste_batteries"
+          op: "=="
+          value: true
+    evidenceRequired:
+      - "claims.battery.exporter_reporting_complete"
+
+  - id: "battery.art75.7"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(7)"
+    title: "Reports are submitted within six months of the end of the reporting year"
+    obligationType: "reporting_deadline"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      any:
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "producer_responsibility_organisation"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "waste_management_operator"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "permitted_facility"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "recycler"
+        - field: "claims.battery.operator_role"
+          op: "=="
+          value: "waste_holder"
+    evidenceRequired:
+      - "claims.battery.reports_submitted_within_six_months"
+
+  - id: "battery.art75.8"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(8)"
+    title: "Electronic reporting systems are established by competent authorities"
+    obligationType: "competent_authority"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 75(8) addresses competent-authority reporting systems."
+
+  - id: "battery.art75.9"
+    articleRef: "Article 75"
+    paragraphRef: "Art 75(9)"
+    title: "Competent authorities may request additional reliability information"
+    obligationType: "competent_authority"
+    encodable: true
+    entityLevel: false
+    notApplicableReason: "Article 75(9) confers powers on competent authorities."

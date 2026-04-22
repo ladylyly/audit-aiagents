@@ -1,0 +1,103 @@
+{
+  "id": "urn:uuid:real-vc-1776202354968-6",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xcc8fe492a66f9cced4c4fba806c93f2f05896a22",
+    "name": "Cobalt Blue Holdings AU"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x4f2390094ce2c2a167eabbf07550570332c2bc90",
+    "name": "Freeport Cobalt Oy"
+  },
+  "issuanceDate": "2026-03-26T21:32:26.901Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x4f2390094ce2c2a167eabbf07550570332c2bc90",
+    "productName": "Cobalt mine",
+    "batch": "REAL-BATCH-006",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-co-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-co-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "SA8000",
+        "issuer": "SAI",
+        "certificateCid": "bafy-cert-co-mine-sa8000",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-co-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "cobalt"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "social_risk_heavy",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "latitude": -28.4,
+      "longitude": 120.5
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Renewable-powered cobalt extraction, zero PFAS",
+    "climateClaim": "Scope-3 mapping in progress",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xea990d65b33e804ca1af554659ea7a06fa1ddffdb802a2906fdf3f65d66b1f05\",\"proof\":\"0xca87713fdbd138ebb67d4331397a962c244885627c9eb6da8b721a5de488a06c9cb6cfb33a55dc5350b8b5f8183eaa5f67b4624d326d0fe919146cbe0d103f7e3efc65fd9eae6aca13c5b9200068d491270e931ac07fb9b31b6be909bb806927d8b46b94f5a52d44c61a7e900e0c7a4b532d02340e6ef5a791df9a1ca150f5699e77f81e47499265f22811080d1b660c5e5afa5863ff30c673fcefa76a541804b5b2f8ca189dd530bea9c820b62c2e49f571b497bea938b3fae9edd664b9190181f98faef03abcb25cf1c5f51b1a03aac704cfe6816882c24d6e914f9abcc106d08c5685c830417aa10646bf268d2080e75c956c4d0bdaa4872f8cf6acc4017d4c26d818cb106430f2a65c8e892e5779481f1dfc04d5068a58b08e8ab36a4b781a39de80ad04e6a6f3dfe4899e0dafdf6ce6095d8aeb90a36edd939193f27a15ec83d088fef7a45309acc56c74553693c0a76726d915941a294da8cbde930211363f7658c20ded66301c1be8db5e0ec4136af66cbf698becc22fefd9490dae3e26ff800f600ed965a171e21f127c682a01525e3722baad510b12ffc84d9814047877603d1a985ca6cdd7ea2e393427002f00665832493eb2708406f69ba0062986def8cd288511ce22fd9c4729717c2ccf6e8e3326d3c6f2b84de80f00f5781868406d7f95075a347caeeaf611c2ed258c10fc3b9875f5190f3f322d2446d11318f637bfa1dde76a84777af47020191ad8c4c409a7921e3aa0c34ab5d563be0264dce1fb62914f46d5db6a5b33d14873783baf5ca5f0167ec13c2d41daa9007724abe8f59cdb7b8c82f9634c6ecc4c83a82553a4b6fbe094256407ff6b260110b896d371c3ecb659f8ab12b11f98c72d3000a2909f116ecceab6ad0f079af30612a6d85037a0416f700b4a50940227117deda7fa4872db3fbd66ab455564a200\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x401036eee78ff108e5127070aef6bfdecfb89052df47d2622cabf760537dcce4\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xea990d65b33e804ca1af554659ea7a06fa1ddffdb802a2906fdf3f65d66b1f05",
+      "proof": "0xca87713fdbd138ebb67d4331397a962c244885627c9eb6da8b721a5de488a06c9cb6cfb33a55dc5350b8b5f8183eaa5f67b4624d326d0fe919146cbe0d103f7e3efc65fd9eae6aca13c5b9200068d491270e931ac07fb9b31b6be909bb806927d8b46b94f5a52d44c61a7e900e0c7a4b532d02340e6ef5a791df9a1ca150f5699e77f81e47499265f22811080d1b660c5e5afa5863ff30c673fcefa76a541804b5b2f8ca189dd530bea9c820b62c2e49f571b497bea938b3fae9edd664b9190181f98faef03abcb25cf1c5f51b1a03aac704cfe6816882c24d6e914f9abcc106d08c5685c830417aa10646bf268d2080e75c956c4d0bdaa4872f8cf6acc4017d4c26d818cb106430f2a65c8e892e5779481f1dfc04d5068a58b08e8ab36a4b781a39de80ad04e6a6f3dfe4899e0dafdf6ce6095d8aeb90a36edd939193f27a15ec83d088fef7a45309acc56c74553693c0a76726d915941a294da8cbde930211363f7658c20ded66301c1be8db5e0ec4136af66cbf698becc22fefd9490dae3e26ff800f600ed965a171e21f127c682a01525e3722baad510b12ffc84d9814047877603d1a985ca6cdd7ea2e393427002f00665832493eb2708406f69ba0062986def8cd288511ce22fd9c4729717c2ccf6e8e3326d3c6f2b84de80f00f5781868406d7f95075a347caeeaf611c2ed258c10fc3b9875f5190f3f322d2446d11318f637bfa1dde76a84777af47020191ad8c4c409a7921e3aa0c34ab5d563be0264dce1fb62914f46d5db6a5b33d14873783baf5ca5f0167ec13c2d41daa9007724abe8f59cdb7b8c82f9634c6ecc4c83a82553a4b6fbe094256407ff6b260110b896d371c3ecb659f8ab12b11f98c72d3000a2909f116ecceab6ad0f079af30612a6d85037a0416f700b4a50940227117deda7fa4872db3fbd66ab455564a200",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x401036eee78ff108e5127070aef6bfdecfb89052df47d2622cabf760537dcce4"
+    },
+    "productId": "267",
+    "productContract": "0x8D1190dD88731c4d8EDE85e067617f12bF76dcd3",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-26T21:32:26.901Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xcc8fe492a66f9cced4c4fba806c93f2f05896a22#controller",
+      "role": "seller",
+      "payloadHash": "0xce00d7086ac0102bc014e74751867cb90f11858beb9dbe253662ba17f35d9254",
+      "jws": "0x81fe479bc2d87f58db03fd117aed4cfc04f0c25a544fe41f28f25bba76533ef5275b551ee3acc25b9bd846b8a265feb825f59a83426af8ddcd931f4171f8cafa1c"
+    }
+  ]
+}

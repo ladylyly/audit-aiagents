@@ -1,0 +1,95 @@
+{
+  "id": "urn:uuid:real-vc-1776811677808-17",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x29dbab32feac3369ae30b850b2bd1c1ac24df892",
+    "name": "Solvay Electrolyte DE GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-04-13T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "productName": "Cell electrolyte and LiPF6 salt",
+    "batch": "REAL-BATCH-017",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-elec-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-elec-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-elec-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_component",
+      "electrolyte"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 50.9,
+      "longitude": 6.9
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "EU-manufactured electrolyte, REACH-compliant",
+    "climateClaim": "ETS-covered facility",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x448cdba9b719105898134cd553adda87ee933ba3739d6e8b767e6efbbca5571c\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x448cdba9b719105898134cd553adda87ee933ba3739d6e8b767e6efbbca5571c",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "369",
+    "productContract": "0x0b3478F5FF82CAA6AD7Ff7aF7eEbB3A205f03ee6",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-13T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x29dbab32feac3369ae30b850b2bd1c1ac24df892#controller",
+      "role": "seller",
+      "payloadHash": "0x12cbe7fc6d592a1f8d497cf35b26055e7fbe820a39456d0fc46550f6ce863ba9",
+      "jws": "0x57de8eb7caf250bd84e16a044c4ca9fa98f694480b0805ac2f56b6e9b41b4488433457e6fed74262655d345be14eb821ac5a56231288f201368092358b2720ab1b"
+    }
+  ]
+}

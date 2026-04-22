@@ -1,0 +1,116 @@
+{
+  "runId": "blueprint_case_1776211870822",
+  "scenario": "blueprint_case",
+  "blueprintPath": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/sepolia_5vc_blueprint_2026-04-14.json",
+  "rootIndex": 5,
+  "rootCid": "QmTzUsrV1djigGovmQNRjvic4ABqhHBiYV4TPTJMgxN4ah",
+  "nodeCount": 5,
+  "wallets": {
+    "issuerAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+    "deployerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+    "ephemeralCount": 15,
+    "ephemeralFile": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/generated_vc_dag/blueprint_case_1776211870822/ephemeral_wallets.json"
+  },
+  "chainId": 11155111,
+  "zkpCommitmentsFile": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/latest_zkp_commitments.json",
+  "createdAt": "2026-04-15T00:11:15.941Z",
+  "records": [
+    {
+      "index": 0,
+      "blueprintIndex": 1,
+      "chunkName": "Battery-grade lithium hydroxide refining batch",
+      "vcId": "urn:uuid:blueprint-vc-1776211870835-1",
+      "cid": "QmeFh4Bi2wHUCMbitPUzXDResX34f7pJJc67yEUcLmfn9u",
+      "productContract": "0x605aaBfCA317f4d63542b4715f26c19bb42DDdEB",
+      "productId": "347",
+      "priceCommitment": "0xfac499e9b53e106d4d051cb65a18a02acb9f2c992f5c641793b510b6ba9aa972",
+      "zkpCommitment": "0xfac499e9b53e106d4d051cb65a18a02acb9f2c992f5c641793b510b6ba9aa972",
+      "issuerAddress": "0xb9B46be71bb7f18401B3d9813cDcd5B53dd8948F",
+      "issuerName": "NordLith Refining Finland Oy",
+      "holderAddress": "0xb9B46be71bb7f18401B3d9813cDcd5B53dd8948F",
+      "holderName": "RheinCath Active Materials GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-11T00:11:10.823Z",
+      "signaturePlan": "pass"
+    },
+    {
+      "index": 1,
+      "blueprintIndex": 2,
+      "chunkName": "Battery-grade nickel sulfate refining batch",
+      "vcId": "urn:uuid:blueprint-vc-1776211872865-2",
+      "cid": "QmVL1LKNqyA9tyygsmzRvUvRBJEyFDoSLvCug2uNaU9B1a",
+      "productContract": "0xFC0AD4bc24ebab7cD2787D691F9519b2074E8fe4",
+      "productId": "348",
+      "priceCommitment": "0x009a8516367976ebae9d656cf960355d8c6cef2c87a57184c571187de2592b6f",
+      "zkpCommitment": "0x009a8516367976ebae9d656cf960355d8c6cef2c87a57184c571187de2592b6f",
+      "issuerAddress": "0xb9B46be71bb7f18401B3d9813cDcd5B53dd8948F",
+      "issuerName": "BelNickel Chemicals Belgium NV",
+      "holderAddress": "0x9Bbb47752b5165697A3c0db0139C58A595Fe8aF1",
+      "holderName": "RheinCath Active Materials GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-12T00:11:10.823Z",
+      "signaturePlan": "pass"
+    },
+    {
+      "index": 2,
+      "blueprintIndex": 3,
+      "chunkName": "NMC cathode active material production lot",
+      "vcId": "urn:uuid:blueprint-vc-1776211873864-3",
+      "cid": "QmcF1sskdM7m3r7pSmG3GH3bZa3HsrqfRPku4b9NoSv8mt",
+      "productContract": "0x51f4108F51Dc58F65E1b402Cce1b09b119980cCe",
+      "productId": "349",
+      "priceCommitment": "0xe44f9704028c976c0c05d7289c5d2d5c6fe259e3c471d50b0d3aff26f25dd478",
+      "zkpCommitment": "0xe44f9704028c976c0c05d7289c5d2d5c6fe259e3c471d50b0d3aff26f25dd478",
+      "issuerAddress": "0xA977D88bba72b191848089a0c126Ca9Fb38fBA93",
+      "issuerName": "RheinCath Active Materials GmbH",
+      "holderAddress": "0x1489b08D9f56058DE41A10Ca30D113301473dEf6",
+      "holderName": "NordCell Sweden AB",
+      "componentCredentials": [
+        "QmeFh4Bi2wHUCMbitPUzXDResX34f7pJJc67yEUcLmfn9u",
+        "QmVL1LKNqyA9tyygsmzRvUvRBJEyFDoSLvCug2uNaU9B1a"
+      ],
+      "uploadedAt": "2026-04-13T00:11:10.823Z",
+      "signaturePlan": "pass"
+    },
+    {
+      "index": 3,
+      "blueprintIndex": 4,
+      "chunkName": "Prismatic battery cell manufacturing batch",
+      "vcId": "urn:uuid:blueprint-vc-1776211874624-4",
+      "cid": "QmavdSo7eaE7W9ipSg2oboGiLm5QsvK85k446gXkrjx6yX",
+      "productContract": "0x330fC149D64996ce206B9Cbe999715d8D3B6E6F2",
+      "productId": "350",
+      "priceCommitment": "0x9c48aee997c54139751df952a3d1bd98defb490405f5a063b099422de0ac2358",
+      "zkpCommitment": "0x9c48aee997c54139751df952a3d1bd98defb490405f5a063b099422de0ac2358",
+      "issuerAddress": "0x1489b08D9f56058DE41A10Ca30D113301473dEf6",
+      "issuerName": "NordCell Sweden AB",
+      "holderAddress": "0x9Bbb47752b5165697A3c0db0139C58A595Fe8aF1",
+      "holderName": "HexaPack Mobility France SAS",
+      "componentCredentials": [
+        "QmcF1sskdM7m3r7pSmG3GH3bZa3HsrqfRPku4b9NoSv8mt"
+      ],
+      "uploadedAt": "2026-04-14T00:11:10.823Z",
+      "signaturePlan": "pass"
+    },
+    {
+      "index": 4,
+      "blueprintIndex": 5,
+      "chunkName": "EV battery pack assembly and battery passport dossier",
+      "vcId": "urn:uuid:blueprint-vc-1776211875195-5",
+      "cid": "QmTzUsrV1djigGovmQNRjvic4ABqhHBiYV4TPTJMgxN4ah",
+      "productContract": "0x1dd845944e0E72438c4B337cE5E7F745E2aA0BfE",
+      "productId": "351",
+      "priceCommitment": "0x64f637e2532fdfa87dd92073ac77f0b66947520db0926b47ed8518b41a517c1b",
+      "zkpCommitment": "0x64f637e2532fdfa87dd92073ac77f0b66947520db0926b47ed8518b41a517c1b",
+      "issuerAddress": "0xfa572a8c3c949cdD5fDD03D85269f23935B90164",
+      "issuerName": "HexaPack Mobility France SAS",
+      "holderAddress": "0x69ee130E5874983E3e376335648bBE6ceE200310",
+      "holderName": "EuroCell Mobility Battery Systems GmbH",
+      "componentCredentials": [
+        "QmavdSo7eaE7W9ipSg2oboGiLm5QsvK85k446gXkrjx6yX"
+      ],
+      "uploadedAt": "2026-04-15T00:11:10.823Z",
+      "signaturePlan": "pass"
+    }
+  ]
+}

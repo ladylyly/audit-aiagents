@@ -1,0 +1,95 @@
+{
+  "id": "urn:uuid:real-vc-1776811663966-2",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x32d34b89010840e3701b550051aa152c791e454e",
+    "name": "SQM Chile Lithium S.A."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xf1bb14512818f8e94482c76d097d46b73a0a8820",
+    "name": "Kokkola Lithium Oy"
+  },
+  "issuanceDate": "2026-03-29T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xf1bb14512818f8e94482c76d097d46b73a0a8820",
+    "productName": "Lithium carbonate processing",
+    "batch": "REAL-BATCH-002",
+    "quantity": 1,
+    "previousCredential": "QmRwCVKWKCYBUFvnTXLSpSX9P2jXHuNmLUswKpLGSdvuRw",
+    "componentCredentials": [
+      "QmRwCVKWKCYBUFvnTXLSpSX9P2jXHuNmLUswKpLGSdvuRw"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-li-carb-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-li-carb-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-li-carb-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "lithium"
+    ],
+    "operationTags": [
+      "upstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Chile",
+      "countryCode": "CL",
+      "latitude": -23.1,
+      "longitude": -68
+    },
+    "energySource": "solar",
+    "emissionsClaim": "Battery-grade Li2CO3, scope-2 tracking active",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x06735f25ebc5ae32c651f53e549fccf51b1652bcbb98a8fd294daafcd650991d\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x06735f25ebc5ae32c651f53e549fccf51b1652bcbb98a8fd294daafcd650991d",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "353",
+    "productContract": "0x9A3A35f324703dDE37673131E72c83eB1Ff2B68E",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-29T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x32d34b89010840e3701b550051aa152c791e454e#controller",
+      "role": "seller",
+      "payloadHash": "0x5192f05d3dfdacab4d49dc6cd94097098c8e31a1a129df6ff7eb7d9b8962a4db",
+      "jws": "0x2f77e9c6fe76bc1f2302d6a4ecebc29ce516efc0b36076ca05240fc2b093901b76b510c85873e84549fd6484ce9f40e47d4a70cc11f297327d130521596285981b"
+    }
+  ]
+}

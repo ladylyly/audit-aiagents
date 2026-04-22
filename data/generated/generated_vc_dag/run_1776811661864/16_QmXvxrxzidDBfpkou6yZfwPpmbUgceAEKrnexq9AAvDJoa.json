@@ -1,0 +1,94 @@
+{
+  "id": "urn:uuid:real-vc-1776811676989-16",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x631832b839c8df6a0e3f1d903541fa3a2a376574",
+    "name": "Sumitomo Electric Separator"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-04-12T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "productName": "Separator film supplier",
+    "batch": "REAL-BATCH-016",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-sep-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-sep-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-sep-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_component"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Japan",
+      "countryCode": "JP",
+      "latitude": 34.7,
+      "longitude": 135.5
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Ceramic-coated separator, scope-2 tracked",
+    "climateClaim": "J-Credit participating",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xc2051e0cf7331e18d515994f7e4bc7cb518b4f746ee32e7f6d0e3126de26ea79\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xc2051e0cf7331e18d515994f7e4bc7cb518b4f746ee32e7f6d0e3126de26ea79",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "368",
+    "productContract": "0x60Aed76f5D1B899d3BA06D883DC1C654F8678Bae",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-12T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x631832b839c8df6a0e3f1d903541fa3a2a376574#controller",
+      "role": "seller",
+      "payloadHash": "0xe16cf79db1ac6525d0d75be1b039c30a37309caecd2ee76485533ecd4b193f34",
+      "jws": "0x5ad4504ed519ca807ff42d4af6e74ed6be8fa0085da6e7c2173429e63e797bf557ba8e2eb05bf9e6c8b2363fd9be351a31e5cdf3c283a8abeda42131fb3f8b9f1b"
+    }
+  ]
+}

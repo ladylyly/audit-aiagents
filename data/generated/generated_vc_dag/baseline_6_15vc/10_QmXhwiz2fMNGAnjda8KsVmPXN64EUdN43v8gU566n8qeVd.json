@@ -1,0 +1,116 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776223994064-10",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xe764545c422472c62e1cbc9b764be474a3d3f046",
+    "name": "PolGraph Processing Sp. z o.o."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xaffdbcfd6240db1e298a76a67ab99333e7255aee",
+    "name": "NordCell Sweden AB"
+  },
+  "issuanceDate": "2026-04-10T03:33:05.379Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xaffdbcfd6240db1e298a76a67ab99333e7255aee",
+    "productName": "Graphite anode active material production lot",
+    "batch": "BLUEPRINT-BATCH-010",
+    "quantity": 1,
+    "previousCredential": "QmTgbmCTC7zaRZGooW2orsaMiFw6N2u4LrpdgUpyndtJ9s",
+    "componentCredentials": [
+      "QmTgbmCTC7zaRZGooW2orsaMiFw6N2u4LrpdgUpyndtJ9s"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-cert-10-primary"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO 9001",
+        "certificateCid": "bafy-cert-10-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO 14001",
+        "certificateCid": "bafy-cert-10-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "anode_material",
+      "graphite",
+      "battery_component"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "battery_component",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Poland",
+      "countryCode": "PL",
+      "latitude": 51.7592,
+      "longitude": 19.456
+    },
+    "energySource": "wind",
+    "emissionsClaim": "Graphite anode active material production lot environmental record maintained by PolGraph Processing Sp. z o.o..",
+    "climateClaim": "Graphite anode active material production lot climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x740ea726bd6ec66e1530d7f52b0e15296effd8cc5e021ec99c67bb1d02f6ad4d\",\"proof\":\"0xd47ca1e93d4be6c60d93168ad146bc33b4b8782ded59d537c548977cf8f315008aced4fcdae94b71be3733f10dfc7325e32605c7b7c3724dc9e90d16581a4a4e789a36d87e95930f3d9b294e9354fe4e53ebd49f22f12c0214a5fa2135bc5a0dce4aa79908ee708acfde81655f51d89a0c32866adf275b370d4a81c768a6d4362fc0113c88bfb38817357f0853f19077ecd17968f197117fcf260fa0169a5c0b31fe884df327d92b70f1ce66ea0d1d4368d285a81097a21c776c2cccb110db0453a9c596a5b4b30eead7798dfe61e128bb0c3114a40cb0c69f84eb75e3c4730bc400337b487d5f3d3a5655d233e27455989cf6922ea3ade02939b1c75954fe5ae8dcfb828a78c16a9ca4508c1d5d5787cdc4c665dbde6294b6d62af0b9ec6e5ec2706f5babcb2f974fddedff795adb2035bc2b372e4bcfd4106c99213f43f87be60f43fe7e0ad93f5ae16f39424f6d3343c1a3a7dd3400d8b3aa91be2125391300204b6e3dba7e98f92e796295914f2e7740d6e6059873f97b3f2efa5df4e6546689ea3e790943d43c6fa4d189bb5741cad721363e0b0aee59720e474d83877286aa49c0069414256550fed546f9824291e229c8f7934758090e324f4b53a529aeedf67f75263fcd1751ea82794e05b05c8c024aae2a6961307f4c69f81450474885b911095ee4187500f8da8385b5462d3079b0a2ae65b44a98aee6c057ce3eea6620b9bdd5cb7c73b04a28a7f100ab8ba93ee2f66df9e1487744bda5e5000e364fbae50816157f7073bd6a059e7dc4bc71313eb184a563b22460d7b104ac025a76bc027188a05e2b95677e9c0c287e3b48cb8b298ddf18ff4134096a09923fed4b7e5837fbbc18da29209410fb739090004ecf3d8a59545dd3d3349efdbf0e64360fe5792eadb24ef26aeb568a36026b1e823549fd8cb72b19949839688100\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x4f08ceec2b21b86f1ab81e966ed0176375731291023730933c5d1d65cac39c8b\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x740ea726bd6ec66e1530d7f52b0e15296effd8cc5e021ec99c67bb1d02f6ad4d",
+      "proof": "0xd47ca1e93d4be6c60d93168ad146bc33b4b8782ded59d537c548977cf8f315008aced4fcdae94b71be3733f10dfc7325e32605c7b7c3724dc9e90d16581a4a4e789a36d87e95930f3d9b294e9354fe4e53ebd49f22f12c0214a5fa2135bc5a0dce4aa79908ee708acfde81655f51d89a0c32866adf275b370d4a81c768a6d4362fc0113c88bfb38817357f0853f19077ecd17968f197117fcf260fa0169a5c0b31fe884df327d92b70f1ce66ea0d1d4368d285a81097a21c776c2cccb110db0453a9c596a5b4b30eead7798dfe61e128bb0c3114a40cb0c69f84eb75e3c4730bc400337b487d5f3d3a5655d233e27455989cf6922ea3ade02939b1c75954fe5ae8dcfb828a78c16a9ca4508c1d5d5787cdc4c665dbde6294b6d62af0b9ec6e5ec2706f5babcb2f974fddedff795adb2035bc2b372e4bcfd4106c99213f43f87be60f43fe7e0ad93f5ae16f39424f6d3343c1a3a7dd3400d8b3aa91be2125391300204b6e3dba7e98f92e796295914f2e7740d6e6059873f97b3f2efa5df4e6546689ea3e790943d43c6fa4d189bb5741cad721363e0b0aee59720e474d83877286aa49c0069414256550fed546f9824291e229c8f7934758090e324f4b53a529aeedf67f75263fcd1751ea82794e05b05c8c024aae2a6961307f4c69f81450474885b911095ee4187500f8da8385b5462d3079b0a2ae65b44a98aee6c057ce3eea6620b9bdd5cb7c73b04a28a7f100ab8ba93ee2f66df9e1487744bda5e5000e364fbae50816157f7073bd6a059e7dc4bc71313eb184a563b22460d7b104ac025a76bc027188a05e2b95677e9c0c287e3b48cb8b298ddf18ff4134096a09923fed4b7e5837fbbc18da29209410fb739090004ecf3d8a59545dd3d3349efdbf0e64360fe5792eadb24ef26aeb568a36026b1e823549fd8cb72b19949839688100",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x4f08ceec2b21b86f1ab81e966ed0176375731291023730933c5d1d65cac39c8b"
+    },
+    "productId": "372",
+    "productContract": "0x7bCdaEbEFF2CBB1B6327cE7884225e841411F3Ff",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "coating_uniformity_verified": true,
+      "lot_traceability_complete": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-10T03:33:05.379Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xe764545c422472c62e1cbc9b764be474a3d3f046#controller",
+      "role": "seller",
+      "payloadHash": "0xd84200070efcb1a67aa5f77c5e83cc68e6f9616912e2362d7fcc867af4f5052b",
+      "jws": "0xc373c46217136fc989868b5dd993ea8d83eb3092b190ccb103d442b44c0919271a138c850afd3a8db2da0c6f19ceb863d809f03c0535c6769ada4da23cd41fbd1b"
+    }
+  ]
+}

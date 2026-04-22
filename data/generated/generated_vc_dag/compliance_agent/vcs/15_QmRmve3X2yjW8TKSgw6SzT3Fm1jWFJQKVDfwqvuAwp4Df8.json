@@ -1,0 +1,264 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517122444-15",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x94b3e18d584e3e8564daaae800aa860fdfca3086",
+    "name": "Torino Power Electronics S.p.A."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x8431b358b85557785bfe493cc23986c7ec511b31",
+    "name": "Lyon Battery Controls SAS"
+  },
+  "issuanceDate": "2026-03-27T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x8431b358b85557785bfe493cc23986c7ec511b31",
+    "productName": "Battery control board assemblies lot TPE-2026-16",
+    "batch": "TPE-2026-16",
+    "quantity": 1,
+    "previousCredential": "QmSt6YdRo4GxEoeTiKrxkKBRnb3g8fiAdSAveEJXdKyW95",
+    "componentCredentials": [
+      "QmSt6YdRo4GxEoeTiKrxkKBRnb3g8fiAdSAveEJXdKyW95"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-case1-cert-tpe-iso9001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-tpe-iso9001"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-tpe-iso14001"
+      }
+    ],
+    "location": {
+      "country": "Italy",
+      "countryCode": "IT",
+      "latitude": 45.1,
+      "longitude": 7.7
+    },
+    "facilityRole": "electronics_assembler",
+    "materialTags": [
+      "electronics",
+      "tin",
+      "gold",
+      "tantalum",
+      "tungsten"
+    ],
+    "operationTags": [
+      "midstream",
+      "electronics_assembly",
+      "3tg",
+      "union_importer"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "raw_material_component",
+        "subcategory": "not_applicable",
+        "weight_kg": 0,
+        "capacity_kwh": 0,
+        "market_event": "internal_transfer",
+        "placed_on_union_market": false,
+        "exclusion_reason": "none",
+        "status": "intermediate_input",
+        "has_external_storage": false,
+        "operator_role": "upstream_supplier",
+        "is_rechargeable": false,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "not_applicable",
+        "is_sli_design": false
+      },
+      "conflict_minerals": {
+        "union_importer": true,
+        "material_type": "tin",
+        "cn_code": "8001",
+        "annex_i_threshold_exceeded": true,
+        "material_form": "metal",
+        "origin_country": "Malaysia",
+        "compliance_documentation_exists": true,
+        "recognised_scheme_used": true,
+        "supply_chain_policy_exists": true,
+        "oecd_annex_ii_alignment": true,
+        "senior_management_responsibility_assigned": true,
+        "record_retention_years": 5,
+        "supplier_contract_policy_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "traceability_system_exists": true,
+        "smelter_refiner_identified": true,
+        "third_party_audit_exists": true,
+        "risk_assessment_exists": true,
+        "risk_assessment_reported_to_senior_management": true,
+        "risk_response_strategy_defined": true,
+        "risk_management_plan_exists": true,
+        "risk_mitigation_tracking": true,
+        "stakeholder_consultation_for_mitigation": true,
+        "chain_of_custody_records": true,
+        "substantive_evidence_of_smelter_refiner_compliance": true,
+        "audit_scope_complete": true,
+        "audit_conformity_objective": true,
+        "audit_recommendations_provided": true,
+        "audit_independence_confirmed": true,
+        "audit_reports_shared_with_authorities": true,
+        "information_shared_with_downstream_purchasers": true,
+        "public_disclosure_exists": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x70862d7b8a4f0544183a443ea9378576aff6775705dde86ebfafe8d88c7c3f44\",\"proof\":\"0x905c29fb6fdc030af1b701a20dbac26905f734d9e4d688baa17a9896f133ae57fab44b64531af89dbc6477e5f33c6e463439316e92a4e726a51f8f958861c440e067f956c5568e034929d9de7011ce766ba4010124170d61dbd90698d4aece414036183c7c095db9a350c888dec77c61ca378efd68b86792298c447ce1665e67043da2b490090382dc301ec7c319505d9eecfa29e05a6f4c4c936cd267b0dc04766c625f58f1619089f2229f3710c13e0ca89e7593f345dd45f29cc79c516b0902c6d417cc2fdc5c65a04bcfd960f6ce9f898fb14b10e90e4bb75f400d05cd0dee213a2ce53365e300bac1c2fb295ffba998bc7a91836cff5d5736fc2d9530282a4f3b9a5e5838b813f681937baf5adc0f82162e7c7dee0ebeae88e4e1671b250e621442f267436f7cdd936fa5df9c87a04fbb65276d40c94b115c7a4403a35eda630cacade7d548eee97bf216ebf2b2f871e68671aafec3752d871e267b697f2a920b804596bd8d4837874594a77f92bac58301e3d9f6296f773d2e45c46d4156e9b4a91c2c22e39a00981d193f76682e5a43d2a6d9a410979b3c9ae3badf56c82283f3dfdb35c9c42853a84fa2258d26f9bea1c2eb7cc4025869db2d73244cc0946a8290be488a4b6a452705cd93c2206627c796190ae12464825b7bb84d760a1e37ee60d77052bb21400327e713327aa139af7f47ba3a667a0e8ec48c2b49425c3f5f40b8f2778c9573a6d3e357de8cc2004cbd5a625b4e9099275777216fce8640034af8cf96d29888d3e2dc04248ccc9692070ff9fcff61060b06f28532d8e25a30c6f19303496adb0ab23769b5de58be45b51641770cd25d5ffa56a423472113d88c0fdd3e5822d050538a912611ba8f07d084edb4a750c3491c021b0e6ea9ecc678f57765c2832192dbc445e2c2103a642ea70d40bb5abf780414dd07\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x9e02c76feeee9de864fc3d58210a0f65ac077ecbbaf6027edbe87efc045bf9c6\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x70862d7b8a4f0544183a443ea9378576aff6775705dde86ebfafe8d88c7c3f44",
+      "proof": "0x905c29fb6fdc030af1b701a20dbac26905f734d9e4d688baa17a9896f133ae57fab44b64531af89dbc6477e5f33c6e463439316e92a4e726a51f8f958861c440e067f956c5568e034929d9de7011ce766ba4010124170d61dbd90698d4aece414036183c7c095db9a350c888dec77c61ca378efd68b86792298c447ce1665e67043da2b490090382dc301ec7c319505d9eecfa29e05a6f4c4c936cd267b0dc04766c625f58f1619089f2229f3710c13e0ca89e7593f345dd45f29cc79c516b0902c6d417cc2fdc5c65a04bcfd960f6ce9f898fb14b10e90e4bb75f400d05cd0dee213a2ce53365e300bac1c2fb295ffba998bc7a91836cff5d5736fc2d9530282a4f3b9a5e5838b813f681937baf5adc0f82162e7c7dee0ebeae88e4e1671b250e621442f267436f7cdd936fa5df9c87a04fbb65276d40c94b115c7a4403a35eda630cacade7d548eee97bf216ebf2b2f871e68671aafec3752d871e267b697f2a920b804596bd8d4837874594a77f92bac58301e3d9f6296f773d2e45c46d4156e9b4a91c2c22e39a00981d193f76682e5a43d2a6d9a410979b3c9ae3badf56c82283f3dfdb35c9c42853a84fa2258d26f9bea1c2eb7cc4025869db2d73244cc0946a8290be488a4b6a452705cd93c2206627c796190ae12464825b7bb84d760a1e37ee60d77052bb21400327e713327aa139af7f47ba3a667a0e8ec48c2b49425c3f5f40b8f2778c9573a6d3e357de8cc2004cbd5a625b4e9099275777216fce8640034af8cf96d29888d3e2dc04248ccc9692070ff9fcff61060b06f28532d8e25a30c6f19303496adb0ab23769b5de58be45b51641770cd25d5ffa56a423472113d88c0fdd3e5822d050538a912611ba8f07d084edb4a750c3491c021b0e6ea9ecc678f57765c2832192dbc445e2c2103a642ea70d40bb5abf780414dd07",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x9e02c76feeee9de864fc3d58210a0f65ac077ecbbaf6027edbe87efc045bf9c6"
+    },
+    "productId": "201",
+    "productContract": "0xd53bB2337B4C361eE00C9ECb32350EBa16d7A5a1",
+    "chainId": "11155111",
+    "companyName": "Torino Power Electronics S.p.A.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 140000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "IT-CASE-0015",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 200000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "renewable_grid_mix",
+        "emissionsClaim": "Torino Power Electronics S.p.A. reports site-level emissions for Battery control board assemblies lot TPE-2026-16.",
+        "climateClaim": "Torino Power Electronics S.p.A. maintains transition-planning and operational decarbonisation evidence for electronics_assembler activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Italy",
+        "facilityRole": "electronics_assembler",
+        "materialTags": [
+          "electronics",
+          "tin",
+          "gold",
+          "tantalum",
+          "tungsten"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "electronics_assembler",
+        "componentType": "electronics",
+        "qualityStandards": [
+          "ISO 9001",
+          "ISO 14001"
+        ],
+        "traceabilityArtifacts": [
+          "vc_15_electronics_board_italy-material-balance-sheet",
+          "vc_15_electronics_board_italy-shipment-record",
+          "vc_15_electronics_board_italy-supplier-declaration"
+        ],
+        "serialisationScheme": "TPE-2026-16-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-tpe-iso9001",
+          "bafy-case1-cert-tpe-iso14001"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "IT-TPE-2026-16",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "electronics subassembly only"
+      },
+      "conflict_minerals": {
+        "status": "pass",
+        "reason": "EU tin importer branch intentionally well-documented"
+      },
+      "csddd": {
+        "status": "supporting_control_node",
+        "reason": "clean 3TG comparison branch"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-27T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x94b3e18d584e3e8564daaae800aa860fdfca3086#controller",
+      "role": "issuer",
+      "payloadHash": "0xaaa4959795886bde521039f2bf34a5311c12f1d814e7b7aa0ff42925d08d5a59",
+      "jws": "0xcdc3158b94d55f9f89b3fe3380a9bc4ef7b17c7ea1e9f625180c35d348d416f8318600e1eb6f7811b1405e505db4edeca5696e87e30203a3baa538e7353ac25f1b"
+    }
+  ]
+}

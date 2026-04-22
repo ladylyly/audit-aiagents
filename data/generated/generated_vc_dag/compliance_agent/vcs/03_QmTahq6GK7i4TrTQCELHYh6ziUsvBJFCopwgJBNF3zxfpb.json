@@ -1,0 +1,224 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517107118-03",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xb12aaa09108fc0f6ece0d59aa6905e9fa67ef59d",
+    "name": "Sulawesi Nickel Resources Tbk"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x907da4d390bd8abd107f00eac6223cb17d55f850",
+    "name": "Baltic Nickel Sulfate Sp. z o.o."
+  },
+  "issuanceDate": "2026-03-15T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x907da4d390bd8abd107f00eac6223cb17d55f850",
+    "productName": "Nickel mixed hydroxide precipitate feed lot SNR-2026-02",
+    "batch": "SNR-2026-02",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "Nickel Mark",
+      "cid": "bafy-case1-cert-nickel-mine-nickelmark"
+    },
+    "certifications": [
+      {
+        "name": "Nickel Mark",
+        "issuer": "Nickel Institute",
+        "certificateCid": "bafy-case1-cert-nickel-mine-nickelmark"
+      }
+    ],
+    "location": {
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "latitude": -2.4,
+      "longitude": 121.3
+    },
+    "facilityRole": "mine",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "deforestation_risk",
+      "water_stress"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "raw_material_component",
+        "subcategory": "not_applicable",
+        "weight_kg": 0,
+        "capacity_kwh": 0,
+        "market_event": "internal_transfer",
+        "placed_on_union_market": false,
+        "exclusion_reason": "none",
+        "status": "intermediate_input",
+        "has_external_storage": false,
+        "operator_role": "upstream_supplier",
+        "is_rechargeable": false,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "not_applicable",
+        "is_sli_design": false
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x488b8b05038ffdf0d9139e922ff6bba23c65871323a4bf52cdfc4074bc42b971\",\"proof\":\"0x9670e00bb97bdee87d1fa7295069fabe1ffac711043d595e2e57b4d252540f7e8602961eeb60d0a44e9b90fc26471c53b64967afc634774f98ebab55e424a76d903136104ebea515a6c4350bd8195ea883588463f7608ce4d9246a95448243329af47a79cd19a9fad06ec298a5356480b6735c3c700322d3007c6b0a62490d39c7d98793ae6de89a6136e5281759a0cc7dfb81e2795f356e859e75e16558eb0bcea3b289956fc591b8340f8c923a092ac811ba344cf8c11b5f82fd0bad1740046bacc02c12413d6619a558a46acc8fe2a82d2cbdab2ced668bba146015b20204920aec431eb0b6a60e46cadc12307746d424541f01102d9f4af5373365bb4f5ad050ba46cb40e99e050c9cba9258d1962de664bbcd2803dd3f05c50e7619863eacdf2f4c9a596ab6edadb2fcf50bd20f93fea600519594195adabebe33639e617024f5c70660bd0ddb96328e01d16289add66b91c30bd5820f9781d02fdb08080c6cc087a095c3b4d93147c2b4b32512bc5e571c335549ea492ce5a9aa108c36f8814257e6e23014b85d6a7bffd2aff1fd9ab37bd01514d98827ec185b1d02649ce67a2dd672548770170185acdc753299e9cdea37d5619800e2a82c84cf8c0bb80a2caca5fc24fda4b5ffc7742f369fe8a362ceab659f8e596b1e952c6694652a232fa9a3563b2d0f91674561d75e591e7b3c6cc38571fc9c0f840e17fe23235a72d2d685ab826a0494a22389eadff5421e54fd9b51dd43595c2ff4e48e7f34be0a3a780a46d52727ca46d5dab1be678a2c0e54b57f88a98b2d0a8e53a6c63256299ce8d962171a87bbcf42f89a18b6f4e1e93f927f2926d6cd863beca14053d686d8ebc07071a24e110755916fa46e86e4c8e39ea6ebaad4f99cd6a9018c0d0355d128d8e451296b496ed1fab635aec05545f0d7f594e73bcb88a25a69c004\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x23338b2e976aa2c34fe319b1baa386dd8eb9b088e5fe1bea7fd4c7ad5ee3eb64\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x488b8b05038ffdf0d9139e922ff6bba23c65871323a4bf52cdfc4074bc42b971",
+      "proof": "0x9670e00bb97bdee87d1fa7295069fabe1ffac711043d595e2e57b4d252540f7e8602961eeb60d0a44e9b90fc26471c53b64967afc634774f98ebab55e424a76d903136104ebea515a6c4350bd8195ea883588463f7608ce4d9246a95448243329af47a79cd19a9fad06ec298a5356480b6735c3c700322d3007c6b0a62490d39c7d98793ae6de89a6136e5281759a0cc7dfb81e2795f356e859e75e16558eb0bcea3b289956fc591b8340f8c923a092ac811ba344cf8c11b5f82fd0bad1740046bacc02c12413d6619a558a46acc8fe2a82d2cbdab2ced668bba146015b20204920aec431eb0b6a60e46cadc12307746d424541f01102d9f4af5373365bb4f5ad050ba46cb40e99e050c9cba9258d1962de664bbcd2803dd3f05c50e7619863eacdf2f4c9a596ab6edadb2fcf50bd20f93fea600519594195adabebe33639e617024f5c70660bd0ddb96328e01d16289add66b91c30bd5820f9781d02fdb08080c6cc087a095c3b4d93147c2b4b32512bc5e571c335549ea492ce5a9aa108c36f8814257e6e23014b85d6a7bffd2aff1fd9ab37bd01514d98827ec185b1d02649ce67a2dd672548770170185acdc753299e9cdea37d5619800e2a82c84cf8c0bb80a2caca5fc24fda4b5ffc7742f369fe8a362ceab659f8e596b1e952c6694652a232fa9a3563b2d0f91674561d75e591e7b3c6cc38571fc9c0f840e17fe23235a72d2d685ab826a0494a22389eadff5421e54fd9b51dd43595c2ff4e48e7f34be0a3a780a46d52727ca46d5dab1be678a2c0e54b57f88a98b2d0a8e53a6c63256299ce8d962171a87bbcf42f89a18b6f4e1e93f927f2926d6cd863beca14053d686d8ebc07071a24e110755916fa46e86e4c8e39ea6ebaad4f99cd6a9018c0d0355d128d8e451296b496ed1fab635aec05545f0d7f594e73bcb88a25a69c004",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x23338b2e976aa2c34fe319b1baa386dd8eb9b088e5fe1bea7fd4c7ad5ee3eb64"
+    },
+    "productId": "189",
+    "productContract": "0x762eEBF5403f313a12ef90d07bEC2eB701C0dA3f",
+    "chainId": "11155111",
+    "companyName": "Sulawesi Nickel Resources Tbk",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 60000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "ID-CASE-0003",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 90000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "grid_and_fossil_mix",
+        "emissionsClaim": "Sulawesi Nickel Resources Tbk reports site-level emissions for Nickel mixed hydroxide precipitate feed lot SNR-2026-02.",
+        "climateClaim": "Sulawesi Nickel Resources Tbk maintains transition-planning and operational decarbonisation evidence for mine activities.",
+        "environmentalRiskSignals": [
+          "deforestation_pressure",
+          "tailings_runoff_risk"
+        ],
+        "socialRiskSignals": [
+          "community_land_dispute"
+        ],
+        "governanceRiskSignals": [
+          "permit_enforcement_variance"
+        ],
+        "countryOfOperation": "Indonesia",
+        "facilityRole": "mine",
+        "materialTags": [
+          "nickel"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "mine",
+        "componentType": "nickel",
+        "qualityStandards": [
+          "Nickel Mark"
+        ],
+        "traceabilityArtifacts": [
+          "vc_03_nickel_mine_indonesia-material-balance-sheet",
+          "vc_03_nickel_mine_indonesia-shipment-record",
+          "vc_03_nickel_mine_indonesia-supplier-declaration"
+        ],
+        "serialisationScheme": "SNR-2026-02-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-nickel-mine-nickelmark"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "bulk_freight",
+        "customsReference": "ID-SNR-2026-02",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "raw material source only"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "nickel is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_risk_signal",
+        "reason": "environmental and community risk context for root due diligence"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-15T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xb12aaa09108fc0f6ece0d59aa6905e9fa67ef59d#controller",
+      "role": "issuer",
+      "payloadHash": "0xde936ffa511464262d1b45491ecddfc3f5f5610750f7331d333b0fbbd3257863",
+      "jws": "0xcc4712c4956313d6d3c85defc3af67beef732c6ff99ee1379986b7a8a74d831447a0258476d65e055b5566ea7b5a4aa1856f8ec7f91396e4fc04ca0c4d92e3841b"
+    }
+  ]
+}

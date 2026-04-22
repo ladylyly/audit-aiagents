@@ -1,0 +1,88 @@
+{
+  "id": "urn:uuid:real-vc-1775170221111-16",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x59bfe0e31b07895759508a2dbbfb4672e6f225de",
+    "name": "Sumitomo Electric Separator"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xfcda2ee9fe5e7a21187970d77e656f01b96e9a22",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-03-24T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xfcda2ee9fe5e7a21187970d77e656f01b96e9a22",
+    "productName": "Separator film supplier",
+    "batch": "REAL-BATCH-016",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-sep-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-sep-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_component"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Japan",
+      "countryCode": "JP",
+      "latitude": 34.7,
+      "longitude": 135.5
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Ceramic-coated separator, scope-2 tracked",
+    "climateClaim": "J-Credit participating",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xec7e88297b1d277de44394027716a4e26f1c5ade7c207b01641ae2668718f56e\",\"proof\":\"0xd0c7089354c808c4b3a41fe5139e9052b7390d877c56d043184cd05ad249cf29467703288094b9e72520fdbad144209e275556016d1d58c1e662d2266aef6b175a8021aae1df88362fe3a9d26bdae9d8a6d53d447a552c1e0e5656fa86de51697a1894dc064b60d4ecbd80549b6cb40ad416add58850200f50e7c958c87b5d7b7f7872895a7e473bf6f88ae91d256c66b7bfc986c3cc33c1ac458eefb1d08105c3f427c7cbbd1b7aff21ee002a6b925cc094a4203500200a6fbbb4b9395a9b0614179772fdabfe2edc00a372d58a98214f6b478875a51e82b5cdf3d2f62fa008427cf64406f36b2d241ff39fbb326fcfc69eb103d30223fc3f95af3470151a163a9cfa2e0b106807fd0fbe54c43223c6dd8908c89e5e6cd066a97c96f0ce0f33e029b8252975036a55dd479026a6b676baa41326b555e9a95197d69437be33074c60b87c970c31bc644cc2c79253b2fafdcd57c828b8769857c30a18776f930e04d286d05d3ada90f6d37c6b3261b81f2f5495fce554d99d117b8f7d80d04a1bdc05e068598373fbcaea414ff96a262a6f733e0ebbfa5a179f4e045df2e05608f04a41e6099e80848c880c49caf67dea101a0ae30159c0969ec285e8b1253c13dc772e70b8290acc155cb97db213d60318b18752d21ed9d35ebc00f31226987340c60ae8dc523e82fa8f8a093154c25ad582bc456557730344b7bcd4b74ede6c3e55dd7f483cef20f93cb8e806034730b9db308ce5856058c12cb3a30d8c982158758d263411dcfb0868b725c8368d20535aceda81f5bfccb16d7b9ec4af69029ed67b35100306c9baf6c2909bd03e868f2bdd9f3ad07ee03790f1174c8b7b64b79ae43d2ee48004385c9a2fa458f29d1d790a47e60b6e34aeea7fa19356f500c8f6db62be0a1ece08bdccb9fe73778ed93f62e673128f380bf2ff4e3ee41303\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x77ad0b698e64898a217683a5a4bfeaa3f8144bcd1f48eceaeecf77b0664f9600\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xec7e88297b1d277de44394027716a4e26f1c5ade7c207b01641ae2668718f56e",
+      "proof": "0xd0c7089354c808c4b3a41fe5139e9052b7390d877c56d043184cd05ad249cf29467703288094b9e72520fdbad144209e275556016d1d58c1e662d2266aef6b175a8021aae1df88362fe3a9d26bdae9d8a6d53d447a552c1e0e5656fa86de51697a1894dc064b60d4ecbd80549b6cb40ad416add58850200f50e7c958c87b5d7b7f7872895a7e473bf6f88ae91d256c66b7bfc986c3cc33c1ac458eefb1d08105c3f427c7cbbd1b7aff21ee002a6b925cc094a4203500200a6fbbb4b9395a9b0614179772fdabfe2edc00a372d58a98214f6b478875a51e82b5cdf3d2f62fa008427cf64406f36b2d241ff39fbb326fcfc69eb103d30223fc3f95af3470151a163a9cfa2e0b106807fd0fbe54c43223c6dd8908c89e5e6cd066a97c96f0ce0f33e029b8252975036a55dd479026a6b676baa41326b555e9a95197d69437be33074c60b87c970c31bc644cc2c79253b2fafdcd57c828b8769857c30a18776f930e04d286d05d3ada90f6d37c6b3261b81f2f5495fce554d99d117b8f7d80d04a1bdc05e068598373fbcaea414ff96a262a6f733e0ebbfa5a179f4e045df2e05608f04a41e6099e80848c880c49caf67dea101a0ae30159c0969ec285e8b1253c13dc772e70b8290acc155cb97db213d60318b18752d21ed9d35ebc00f31226987340c60ae8dc523e82fa8f8a093154c25ad582bc456557730344b7bcd4b74ede6c3e55dd7f483cef20f93cb8e806034730b9db308ce5856058c12cb3a30d8c982158758d263411dcfb0868b725c8368d20535aceda81f5bfccb16d7b9ec4af69029ed67b35100306c9baf6c2909bd03e868f2bdd9f3ad07ee03790f1174c8b7b64b79ae43d2ee48004385c9a2fa458f29d1d790a47e60b6e34aeea7fa19356f500c8f6db62be0a1ece08bdccb9fe73778ed93f62e673128f380bf2ff4e3ee41303",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x77ad0b698e64898a217683a5a4bfeaa3f8144bcd1f48eceaeecf77b0664f9600"
+    },
+    "productId": "177",
+    "productContract": "0xB3498A3e1f57aD94f7FC4757ed13b997eD581d97",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-24T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x59bfe0e31b07895759508a2dbbfb4672e6f225de#controller",
+      "role": "seller",
+      "payloadHash": "0xf21b460345d6344170220ae50c8ed8948f361ea40bac08669cc591cda3992d81",
+      "jws": "0xdba8a6d398daf8286736f61a02da645b8e6aab2ff0c71c8f858b09c3d214a9f1679d269aae9f78a00082eadc028d0d0d6fefc660713b8ec695efc30882e9d64f1c"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+version: 1
+
+rulepacks:
+  - id: "csddd_eu_2024_1760_v1"
+    regulationId: "eu.directive.2024.1760"
+    shortName: "CSDDD"
+    path: "csddd_eu_2024_1760.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "company"
+      - "group"
+      - "vc.claims"
+
+  - id: "conflict_minerals_eu_2017_821_v1"
+    regulationId: "eu.regulation.2017.821"
+    shortName: "Conflict Minerals Regulation"
+    path: "conflict_minerals_eu_2017_821.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "claims.conflict_minerals"
+
+  - id: "battery_eu_2023_1542_scope_v1"
+    regulationId: "eu.regulation.2023.1542"
+    shortName: "Battery Regulation"
+    path: "battery_eu_2023_1542_scope.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "claims.battery"
+
+  - id: "battery_eu_2023_1542_market_access_v1"
+    regulationId: "eu.regulation.2023.1542"
+    shortName: "Battery Regulation"
+    path: "battery_eu_2023_1542_market_access.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "claims.battery"
+      - "input.assessmentDate"
+      - "input.secondaryLegislationReady"
+
+  - id: "battery_eu_2023_1542_due_diligence_v1"
+    regulationId: "eu.regulation.2023.1542"
+    shortName: "Battery Regulation"
+    path: "battery_eu_2023_1542_due_diligence.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "claims.battery"
+      - "company"
+      - "group"
+      - "input.assessmentDate"
+
+  - id: "battery_eu_2023_1542_sustainability_v1"
+    regulationId: "eu.regulation.2023.1542"
+    shortName: "Battery Regulation"
+    path: "battery_eu_2023_1542_sustainability.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "claims.battery"
+      - "input.assessmentDate"
+      - "input.secondaryLegislationReady"
+
+  - id: "battery_eu_2023_1542_end_of_life_v1"
+    regulationId: "eu.regulation.2023.1542"
+    shortName: "Battery Regulation"
+    path: "battery_eu_2023_1542_end_of_life.v1.yaml"
+    enabled: true
+    status: "draft"
+    evidenceNamespaces:
+      - "claims.battery"
+      - "input.assessmentDate"
+      - "input.secondaryLegislationReady"

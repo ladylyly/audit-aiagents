@@ -1,0 +1,149 @@
+{
+  "id": "urn:uuid:thesis-dense20-1776205075801-03",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisDenseComplianceCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x2261f371f07114d599bd18d7bc3560ff423077c5",
+    "name": "Sulawesi Nickel Resources Tbk"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xe521a40a9f4919d6cd946da1485dc3bdf9c41b3c",
+    "name": "Baltic Nickel Sulfate Sp. z o.o."
+  },
+  "issuanceDate": "2026-03-28T22:17:51.791Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xe521a40a9f4919d6cd946da1485dc3bdf9c41b3c",
+    "productName": "Nickel mixed hydroxide precipitate feed lot SNR-2026-02",
+    "batch": "SNR-2026-02",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "latitude": -2.4,
+      "longitude": 121.3
+    },
+    "facilityRole": "mine",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "deforestation_risk",
+      "water_stress"
+    ],
+    "claims": {},
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x488b8b05038ffdf0d9139e922ff6bba23c65871323a4bf52cdfc4074bc42b971\",\"proof\":\"0x9670e00bb97bdee87d1fa7295069fabe1ffac711043d595e2e57b4d252540f7e8602961eeb60d0a44e9b90fc26471c53b64967afc634774f98ebab55e424a76d903136104ebea515a6c4350bd8195ea883588463f7608ce4d9246a95448243329af47a79cd19a9fad06ec298a5356480b6735c3c700322d3007c6b0a62490d39c7d98793ae6de89a6136e5281759a0cc7dfb81e2795f356e859e75e16558eb0bcea3b289956fc591b8340f8c923a092ac811ba344cf8c11b5f82fd0bad1740046bacc02c12413d6619a558a46acc8fe2a82d2cbdab2ced668bba146015b20204920aec431eb0b6a60e46cadc12307746d424541f01102d9f4af5373365bb4f5ad050ba46cb40e99e050c9cba9258d1962de664bbcd2803dd3f05c50e7619863eacdf2f4c9a596ab6edadb2fcf50bd20f93fea600519594195adabebe33639e617024f5c70660bd0ddb96328e01d16289add66b91c30bd5820f9781d02fdb08080c6cc087a095c3b4d93147c2b4b32512bc5e571c335549ea492ce5a9aa108c36f8814257e6e23014b85d6a7bffd2aff1fd9ab37bd01514d98827ec185b1d02649ce67a2dd672548770170185acdc753299e9cdea37d5619800e2a82c84cf8c0bb80a2caca5fc24fda4b5ffc7742f369fe8a362ceab659f8e596b1e952c6694652a232fa9a3563b2d0f91674561d75e591e7b3c6cc38571fc9c0f840e17fe23235a72d2d685ab826a0494a22389eadff5421e54fd9b51dd43595c2ff4e48e7f34be0a3a780a46d52727ca46d5dab1be678a2c0e54b57f88a98b2d0a8e53a6c63256299ce8d962171a87bbcf42f89a18b6f4e1e93f927f2926d6cd863beca14053d686d8ebc07071a24e110755916fa46e86e4c8e39ea6ebaad4f99cd6a9018c0d0355d128d8e451296b496ed1fab635aec05545f0d7f594e73bcb88a25a69c004\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x23338b2e976aa2c34fe319b1baa386dd8eb9b088e5fe1bea7fd4c7ad5ee3eb64\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x488b8b05038ffdf0d9139e922ff6bba23c65871323a4bf52cdfc4074bc42b971",
+      "proof": "0x9670e00bb97bdee87d1fa7295069fabe1ffac711043d595e2e57b4d252540f7e8602961eeb60d0a44e9b90fc26471c53b64967afc634774f98ebab55e424a76d903136104ebea515a6c4350bd8195ea883588463f7608ce4d9246a95448243329af47a79cd19a9fad06ec298a5356480b6735c3c700322d3007c6b0a62490d39c7d98793ae6de89a6136e5281759a0cc7dfb81e2795f356e859e75e16558eb0bcea3b289956fc591b8340f8c923a092ac811ba344cf8c11b5f82fd0bad1740046bacc02c12413d6619a558a46acc8fe2a82d2cbdab2ced668bba146015b20204920aec431eb0b6a60e46cadc12307746d424541f01102d9f4af5373365bb4f5ad050ba46cb40e99e050c9cba9258d1962de664bbcd2803dd3f05c50e7619863eacdf2f4c9a596ab6edadb2fcf50bd20f93fea600519594195adabebe33639e617024f5c70660bd0ddb96328e01d16289add66b91c30bd5820f9781d02fdb08080c6cc087a095c3b4d93147c2b4b32512bc5e571c335549ea492ce5a9aa108c36f8814257e6e23014b85d6a7bffd2aff1fd9ab37bd01514d98827ec185b1d02649ce67a2dd672548770170185acdc753299e9cdea37d5619800e2a82c84cf8c0bb80a2caca5fc24fda4b5ffc7742f369fe8a362ceab659f8e596b1e952c6694652a232fa9a3563b2d0f91674561d75e591e7b3c6cc38571fc9c0f840e17fe23235a72d2d685ab826a0494a22389eadff5421e54fd9b51dd43595c2ff4e48e7f34be0a3a780a46d52727ca46d5dab1be678a2c0e54b57f88a98b2d0a8e53a6c63256299ce8d962171a87bbcf42f89a18b6f4e1e93f927f2926d6cd863beca14053d686d8ebc07071a24e110755916fa46e86e4c8e39ea6ebaad4f99cd6a9018c0d0355d128d8e451296b496ed1fab635aec05545f0d7f594e73bcb88a25a69c004",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x23338b2e976aa2c34fe319b1baa386dd8eb9b088e5fe1bea7fd4c7ad5ee3eb64"
+    },
+    "productId": "289",
+    "productContract": "0xe76a438E42a768f737a4309546B4e2b277c62DA8",
+    "chainId": "11155111",
+    "companyName": "Sulawesi Nickel Resources Tbk",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 65000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "ID-DENSE20-0003",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 92000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "coal",
+        "emissionsClaim": "",
+        "climateClaim": "Sulawesi Nickel Resources Tbk maintains climate transition and emissions reduction evidence for mine operations.",
+        "environmentalRiskSignals": [
+          "deforestation_pressure",
+          "tailings_runoff_risk",
+          "protected_area_risk"
+        ],
+        "socialRiskSignals": [
+          "community_land_dispute"
+        ],
+        "governanceRiskSignals": [
+          "permit_enforcement_variance"
+        ],
+        "countryOfOperation": "Indonesia",
+        "facilityRole": "mine",
+        "materialTags": [
+          "nickel"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "mine",
+        "componentType": "nickel",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_03_nickel_mine_indonesia-material-balance-sheet",
+          "vc_03_nickel_mine_indonesia-shipment-record",
+          "vc_03_nickel_mine_indonesia-supplier-declaration"
+        ],
+        "serialisationScheme": "SNR-2026-02-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "bulk_freight",
+        "customsReference": "ID-SNR-2026-02",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "raw material source only"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "nickel is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_risk_signal",
+        "reason": "environmental and community risk context for root due diligence"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-28T22:17:51.791Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x2261f371f07114d599bd18d7bc3560ff423077c5#controller",
+      "role": "issuer",
+      "payloadHash": "0x2a036a1845aaf17b7caacf9d8666f2140881faef864acfdf0f6f1ef1068f072d",
+      "jws": "0x2cb60233bdb3ea168538c9d12d9ef26351d44a23d8907d4fe0695f06f7ec82a54171d6300cb1986ffbbc50930204a2195f6b45117b1e4c73d58fc1454b15ee2e1b"
+    }
+  ]
+}

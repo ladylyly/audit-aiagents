@@ -1,0 +1,138 @@
+{
+  "id": "urn:uuid:real-vc-1775161543602-11",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xbea7f63f8e935834d18e01b605b041a5c501a83d",
+    "name": "Taniobis GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x4badfdd31239da874cea33f4fa26e0df835cf95f",
+    "name": "EPCOS Capacitors GmbH"
+  },
+  "issuanceDate": "2026-03-19T20:25:35.390Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x4badfdd31239da874cea33f4fa26e0df835cf95f",
+    "productName": "Tantalum smelter",
+    "batch": "REAL-BATCH-011",
+    "quantity": 1,
+    "previousCredential": "QmP28B2CutKPxnqEH7sPvcmAD68hXBtBPLQ5d9WRfLUbkU",
+    "componentCredentials": [
+      "QmP28B2CutKPxnqEH7sPvcmAD68hXBtBPLQ5d9WRfLUbkU"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-ta-smelt-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-ta-smelt-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ta-smelt-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "tantalum"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 51.2,
+      "longitude": 6.8
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Green-certified smelter, scope-1+2 verified",
+    "climateClaim": "ETS-compliant operations",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x38dfb58f9d45d0e1efa76c56d1413da72f1009a61cfd7e4716aed9a1cb23d015\",\"proof\":\"0x2c6147f0283f54e696b22a45273ef5fee1767f36ff981d7efbf39fd3aca4b0386ce8bbf7f7cf6faa864837f0070d9b8ae72587ce6f98cad833316edec3973b367672dbc8da4ad749a375327548ec588f6272a2411bb27163944ca1e52d621555aeac03c5e35b34210b1d7ec11a7b3f99d78af8d83136d319db5b83d254b81612b0d1a86fdff2bc72b987e538fa76589dc61ea1a1264114d2e069e8a502bcd00931f48f6a0c5af3fee051058b5196f57e1c2fcbcbfd67b9e9580a6ac924b3e30faa4f0081467c349ac7a453396d96644ed497a77860b347873bf70f1541eb130c1c758c49025c1f6c7c840306d3da22d2ef7cddcdea8fa8d5e167bac9ce1acc4f8883a79a29dea5e35908f4173c4f4a9107a1892241cd2caf7b3667c044cb7349fcb21d2aa16be2746715d6c2ffd78c3ee865ff0d1005e3bef9c1952b081ef64e74030e4d970b58b62786e760c0a227fb4ddc88bf22ce4be34a7077ebc923db0114f50d86020df09e113fcac2b997a4e49474fdeec80da37a82bc58090b0ab64f38d2db068e08e4b75dabc76f890b517eaeaf0bf42c82403c8eac70c349e27e21b8fb03b2a732db7a6160f538a486652906f9c8886b2f6cd27611bce45fe9597abc77c3f0765e3408d80f8988c009a210f03da4945cc415ed81694df8d7c5b92acaaf52ac384af02f3728f019c68bc5b8716587c78c09619e15d5400826dff22764b7af0c8d61328f9d1e60c823099f4799702cfeed39b803c2f546e0fbc16e30acd94bcd95d8fa8218d078d2e726a6eaef34fa58ed65820e888ffe9dd195d9425aee6af8bcd92fcec92678737ed5e0b9e48b20d50f0d4263157f3996e394090788b06de3bea5ccef1a00b860111a9223af5fe866fd5ef242fffaeeb63d795a0654f821ef7064bb6fc8bea857f7aac046504804a1a12ecebf80c257fcddef350c\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x8dca045cddb5736e217595417bca0e31fd764435874b656e580bd7c07bd9cf9a\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x38dfb58f9d45d0e1efa76c56d1413da72f1009a61cfd7e4716aed9a1cb23d015",
+      "proof": "0x2c6147f0283f54e696b22a45273ef5fee1767f36ff981d7efbf39fd3aca4b0386ce8bbf7f7cf6faa864837f0070d9b8ae72587ce6f98cad833316edec3973b367672dbc8da4ad749a375327548ec588f6272a2411bb27163944ca1e52d621555aeac03c5e35b34210b1d7ec11a7b3f99d78af8d83136d319db5b83d254b81612b0d1a86fdff2bc72b987e538fa76589dc61ea1a1264114d2e069e8a502bcd00931f48f6a0c5af3fee051058b5196f57e1c2fcbcbfd67b9e9580a6ac924b3e30faa4f0081467c349ac7a453396d96644ed497a77860b347873bf70f1541eb130c1c758c49025c1f6c7c840306d3da22d2ef7cddcdea8fa8d5e167bac9ce1acc4f8883a79a29dea5e35908f4173c4f4a9107a1892241cd2caf7b3667c044cb7349fcb21d2aa16be2746715d6c2ffd78c3ee865ff0d1005e3bef9c1952b081ef64e74030e4d970b58b62786e760c0a227fb4ddc88bf22ce4be34a7077ebc923db0114f50d86020df09e113fcac2b997a4e49474fdeec80da37a82bc58090b0ab64f38d2db068e08e4b75dabc76f890b517eaeaf0bf42c82403c8eac70c349e27e21b8fb03b2a732db7a6160f538a486652906f9c8886b2f6cd27611bce45fe9597abc77c3f0765e3408d80f8988c009a210f03da4945cc415ed81694df8d7c5b92acaaf52ac384af02f3728f019c68bc5b8716587c78c09619e15d5400826dff22764b7af0c8d61328f9d1e60c823099f4799702cfeed39b803c2f546e0fbc16e30acd94bcd95d8fa8218d078d2e726a6eaef34fa58ed65820e888ffe9dd195d9425aee6af8bcd92fcec92678737ed5e0b9e48b20d50f0d4263157f3996e394090788b06de3bea5ccef1a00b860111a9223af5fe866fd5ef242fffaeeb63d795a0654f821ef7064bb6fc8bea857f7aac046504804a1a12ecebf80c257fcddef350c",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x8dca045cddb5736e217595417bca0e31fd764435874b656e580bd7c07bd9cf9a"
+    },
+    "productId": "108",
+    "productContract": "0xCC684DB961107049F0Fa98EE06c0988497303e29",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "conflict_minerals": {
+        "union_importer": true,
+        "material_type": "tantalum",
+        "cn_code": "8103 20 00",
+        "annex_i_threshold_exceeded": true,
+        "material_form": "metal",
+        "recycled_metals": false,
+        "pre_2013_stock_verified": false,
+        "by_product": false,
+        "by_product_origin_documented": false,
+        "compliance_documentation_exists": true,
+        "recognised_scheme_used": true,
+        "supply_chain_policy_exists": true,
+        "oecd_annex_ii_alignment": true,
+        "senior_management_responsibility_assigned": true,
+        "record_retention_years": 5,
+        "supplier_contract_policy_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "smelter_refiner_identified": true,
+        "origin_country": "RW",
+        "third_party_audit_exists": true,
+        "risk_assessment_exists": true,
+        "risk_assessment_reported_to_senior_management": true,
+        "risk_response_strategy_defined": true,
+        "risk_management_plan_exists": true,
+        "risk_mitigation_tracking": true,
+        "additional_risk_assessments": true,
+        "stakeholder_consultation_for_mitigation": true,
+        "oecd_annex_iii_measures_used": true,
+        "audit_scope_complete": true,
+        "audit_conformity_objective": true,
+        "audit_recommendations_provided": true,
+        "audit_independence_confirmed": true,
+        "substantive_evidence_of_smelter_refiner_compliance": true,
+        "audit_reports_shared_with_authorities": true,
+        "information_shared_with_downstream_purchasers": true,
+        "public_disclosure_exists": true,
+        "recycled_source_conclusion_disclosed": true,
+        "traceability_system_exists": true,
+        "chain_of_custody_records": true
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-19T20:25:35.390Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xbea7f63f8e935834d18e01b605b041a5c501a83d#controller",
+      "role": "seller",
+      "payloadHash": "0x0be54d6a90f26506a503b4b5ac7c6289d5864e0ea0c2d72925365d323d49c981",
+      "jws": "0x0bb5437012805f6a2d27f50bc8b269caa5e1256ff949d84795275beabe19dec635f95ede1d5ed895c8ec02b6f427459cb2acbe34adc94d0338ee5c426c5ab2ce1c"
+    }
+  ]
+}

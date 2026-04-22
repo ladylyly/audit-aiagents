@@ -1,0 +1,92 @@
+[
+  {
+    "ephIndex": 0,
+    "companyName": "SQM Chile Lithium S.A.",
+    "address": "0x32d34B89010840E3701B550051Aa152c791E454e",
+    "privateKey": "0xedc9d95e1248ade78421db5873211e01971e5b6dc122464aedba7c4ca966c86b"
+  },
+  {
+    "ephIndex": 1,
+    "companyName": "Kokkola Lithium Oy",
+    "address": "0xF1bb14512818F8e94482c76d097d46b73a0A8820",
+    "privateKey": "0x72177b8bbd9f02bdbeb7d7e9f32e063a854cdc80679b5a68bccb2e64d7eea107"
+  },
+  {
+    "ephIndex": 2,
+    "companyName": "Western Areas Nickel Ltd",
+    "address": "0xC12221EE81B24d714b58b8FAB18C0da81Cbbe2d4",
+    "privateKey": "0x675b16870f72d5a5feb19348187ea2e3b9c8ad258cd7293c9321c8fb8db9fd85"
+  },
+  {
+    "ephIndex": 3,
+    "companyName": "Harjavalta Nickel Oy",
+    "address": "0x673bAa1a921c5e5178b5Bf26Cf978A3f0d8bE87e",
+    "privateKey": "0x3e1eee4795e59e985fe711d88c48e8b84a0b2922e853eb9c08055e961e065cc6"
+  },
+  {
+    "ephIndex": 4,
+    "companyName": "Cobalt Blue Holdings AU",
+    "address": "0xe964edb7A43e93728897D38E4950CAd2F2CcD86D",
+    "privateKey": "0xc12600d018b3b9c61c1dcdad6f33f38a3f2ae5e111aa3b715cfb73db15e80fdf"
+  },
+  {
+    "ephIndex": 5,
+    "companyName": "Freeport Cobalt Oy",
+    "address": "0xb21071eEc12257C3a33f168d657Bb6BC4dFe0E10",
+    "privateKey": "0x29891609312f85ddbf4107cd47c252a6563935c04b21e7b4d9f321ba11867e48"
+  },
+  {
+    "ephIndex": 6,
+    "companyName": "Mason Graphite Canada Inc",
+    "address": "0x00936c83717978FBd05f6671218240d9ae852D59",
+    "privateKey": "0x9a147ed7795e89e76fed4d1f653b36cbff69070e41c3eb0d4ecdb8ba90e9aa3e"
+  },
+  {
+    "ephIndex": 7,
+    "companyName": "RWI Tantalum Rwanda",
+    "address": "0x51aFb160a878b759f7e0bafc24393eC4F99cA016",
+    "privateKey": "0x9e34185b209f557a80a0cc12e3c58aeb99281d0b19142ae6dc433f135d060ee3"
+  },
+  {
+    "ephIndex": 8,
+    "companyName": "Taniobis GmbH",
+    "address": "0xDedAf8e44Eb475B4CeD74b85F490aBCbD935f563",
+    "privateKey": "0xa570ac9693b4e31e7730e1e62bfcd44be5e8fe376bb2cea7dd75e14fb4c64668"
+  },
+  {
+    "ephIndex": 9,
+    "companyName": "EPCOS Capacitors GmbH",
+    "address": "0x87BD5e0DC1BDACC6b42391229Fb549aE513C911C",
+    "privateKey": "0x0fbda0fe3a8c3332c4b7229666e24554d18e8e17ac54ab51ed8a589566468ce6"
+  },
+  {
+    "ephIndex": 10,
+    "companyName": "Umicore Battery Materials Oy",
+    "address": "0x230b448A27d5D3C480997325168fe680eF5e1df2",
+    "privateKey": "0xc9b08db76257f9a248c11257c118b511b16e17c94c2f4b55a6abd7293b02a6a9"
+  },
+  {
+    "ephIndex": 11,
+    "companyName": "Nouveau Monde Anode Inc",
+    "address": "0x4c67a6Cf64232Fa632386E6248B0885F19eE4648",
+    "privateKey": "0xa1499d85ee795ce1e624715de8edade714126ef64abe67d25b819b3ee8fa4afc"
+  },
+  {
+    "ephIndex": 12,
+    "companyName": "Sumitomo Electric Separator",
+    "address": "0x631832b839c8DF6a0e3F1d903541fa3a2A376574",
+    "privateKey": "0x14a84adfbd14c54ee8fcfc93920c663cc69a7a900d55fc54ae419b90cc376f10"
+  },
+  {
+    "ephIndex": 13,
+    "companyName": "Solvay Electrolyte DE GmbH",
+    "address": "0x29dbab32feaC3369Ae30b850b2bd1C1AC24df892",
+    "privateKey": "0x0a9a7096e084533eca460f71d371ac34701ac1d06ffbcac41f68005971cdcfe7"
+  },
+  {
+    "ephIndex": 14,
+    "companyName": "ACC Cell GmbH",
+    "address": "0x9A71bCEcCcF9B26757B6CDd3DB2312FCaEB2FE29",
+    "privateKey": "0x36c0e21b08bca88de0d3b4fa7679f5c83da5b7fc972901b02b82312f1b9aef4b"
+  }
+]

@@ -1,0 +1,238 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517132903-22",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x625d8e01ed2ffa38a0bfea53e57bfa6e3ddcf8fb",
+    "name": "Iberia Battery Imports S.L."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x625d8e01ed2ffa38a0bfea53e57bfa6e3ddcf8fb",
+    "name": "Iberia Battery Imports S.L."
+  },
+  "issuanceDate": "2026-04-03T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x625d8e01ed2ffa38a0bfea53e57bfa6e3ddcf8fb",
+    "productName": "Imported EV traction battery packs lot IBI-2026-09",
+    "batch": "IBI-2026-09",
+    "quantity": 1,
+    "previousCredential": "QmRucZsYUJMgK1aqeqVUm92vUT1DMxpHv3VRc47PArZ6WB",
+    "componentCredentials": [
+      "QmRucZsYUJMgK1aqeqVUm92vUT1DMxpHv3VRc47PArZ6WB"
+    ],
+    "certificateCredential": {
+      "name": "Importer Declaration",
+      "cid": "bafy-case1-importer-declaration"
+    },
+    "certifications": [
+      {
+        "name": "Importer Declaration",
+        "issuer": "Internal",
+        "certificateCid": "bafy-case1-importer-declaration"
+      }
+    ],
+    "location": {
+      "country": "Spain",
+      "countryCode": "ES",
+      "latitude": 40.4,
+      "longitude": -3.7
+    },
+    "facilityRole": "importer",
+    "materialTags": [
+      "battery_pack"
+    ],
+    "operationTags": [
+      "downstream",
+      "union_import",
+      "market_access"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "weight_kg": 10,
+        "capacity_kwh": 74,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "importer",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "label_present": true,
+        "separate_collection_symbol_present": true,
+        "qr_code_present": true,
+        "technical_documentation_exists": true,
+        "eu_declaration_of_conformity_exists": true,
+        "ce_mark_present": true,
+        "batch_or_serial_present": true,
+        "manufacturer_identity_present": true,
+        "importer_identity_present": false,
+        "battery_passport_exists": true,
+        "battery_passport_identifier": "case1-pack-passport-001",
+        "battery_passport_public_fields_present": true,
+        "bms_annex_vii_access_enabled": true,
+        "producer_registered": false
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xd216c498960869f080f104610d4f3cd5ee367d5b524a8922199cc3fc1c4d4056\",\"proof\":\"0x4011329812cdaf190972c7a9e664db769ad8ebed0faf6da60257f78637a3d2219eff1a5827ccce898031b7930c7b28dbbea0806a96ebc8b5b756bdf8cf23f177be947be09c91f78a8a8880cebdc0cf4f38ad805de3be2b83fd9cf505fe072e616ec8bea0c5445c602f61f2440dabfe517e180e7bfa06c7324367cf02d3e1db49512de0c5772313236583c51d047b0c5fbfdb268129d69108ea98a2da170017025214e86c89356c50a996d645e363a189d27676b4e3e744d79dc022cecb75de0c460197324214cd873e78b91df8a9ba63a4bb2d5799e0edfc2b539c099294d90930893d1c6a24e2a9c3574285843e19af9fcc2e1df61e607b0b97b698452161179210adf8aa9552f4b7a4eaa1efe641d6cb11926fc65f536be4a542ed405ce638503dd621cfbb7e0c4ce127c6ca7f68cf6c08075496ee5e41e59e3825d6e4f10d661f16077fc96af369ca6ce2ac55ad2b83d360d187e77b66578f3e961cf5c22a367b5d7b948715b5447bfe3fa355227411f79e6e5967da201e727d227a9904200ab77d6945be12092f859938e1e26231293f141c168aa838b206824e8e5c36100c4b0c50541bdd70d02ecb3e89c90feffce6363196a6ea4cf274f2de834a3673409ea80a436575972a0a2af52b8274ea4d4bab9a84856e86a71c9511ae310976dab1e49162abf05f449e27dad14159c1b0fc88a55e5b86d01404bae357d2e3682a87b80cfec2fef17fe1b1e0ee6f8e9c867eb8f841c87eb95e670ef8b144a448ae7dcd060bcfe580930236e5e4cce7f4e0574a16c5cc73a062525394be99a76240d33e63105bb9c1198d8ea179f856a31b87392a5657877397940b4b073e2619a300783c12116582053662c21c0edd3eb470f12efa2ace4172bfca4921684800c1f8123bcd4cdc0926c45596ccd03c1cd849093c535aeee24cc8028152195301\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xb55937016c0869568ca9b73ab64b4450bec6d0b73172e0262f851d6a748d70a0\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xd216c498960869f080f104610d4f3cd5ee367d5b524a8922199cc3fc1c4d4056",
+      "proof": "0x4011329812cdaf190972c7a9e664db769ad8ebed0faf6da60257f78637a3d2219eff1a5827ccce898031b7930c7b28dbbea0806a96ebc8b5b756bdf8cf23f177be947be09c91f78a8a8880cebdc0cf4f38ad805de3be2b83fd9cf505fe072e616ec8bea0c5445c602f61f2440dabfe517e180e7bfa06c7324367cf02d3e1db49512de0c5772313236583c51d047b0c5fbfdb268129d69108ea98a2da170017025214e86c89356c50a996d645e363a189d27676b4e3e744d79dc022cecb75de0c460197324214cd873e78b91df8a9ba63a4bb2d5799e0edfc2b539c099294d90930893d1c6a24e2a9c3574285843e19af9fcc2e1df61e607b0b97b698452161179210adf8aa9552f4b7a4eaa1efe641d6cb11926fc65f536be4a542ed405ce638503dd621cfbb7e0c4ce127c6ca7f68cf6c08075496ee5e41e59e3825d6e4f10d661f16077fc96af369ca6ce2ac55ad2b83d360d187e77b66578f3e961cf5c22a367b5d7b948715b5447bfe3fa355227411f79e6e5967da201e727d227a9904200ab77d6945be12092f859938e1e26231293f141c168aa838b206824e8e5c36100c4b0c50541bdd70d02ecb3e89c90feffce6363196a6ea4cf274f2de834a3673409ea80a436575972a0a2af52b8274ea4d4bab9a84856e86a71c9511ae310976dab1e49162abf05f449e27dad14159c1b0fc88a55e5b86d01404bae357d2e3682a87b80cfec2fef17fe1b1e0ee6f8e9c867eb8f841c87eb95e670ef8b144a448ae7dcd060bcfe580930236e5e4cce7f4e0574a16c5cc73a062525394be99a76240d33e63105bb9c1198d8ea179f856a31b87392a5657877397940b4b073e2619a300783c12116582053662c21c0edd3eb470f12efa2ace4172bfca4921684800c1f8123bcd4cdc0926c45596ccd03c1cd849093c535aeee24cc8028152195301",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xb55937016c0869568ca9b73ab64b4450bec6d0b73172e0262f851d6a748d70a0"
+    },
+    "productId": "208",
+    "productContract": "0xf250445E4C6F029e3A2323D6363D83EEaD5c470a",
+    "chainId": "11155111",
+    "companyName": "Iberia Battery Imports S.L.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 2400,
+      "net_turnover_eur_worldwide": 900000000,
+      "net_turnover_eur_union": 700000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "ES-CASE-0022",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 180000000
+    },
+    "group": {
+      "avg_employee_count": 7000,
+      "net_turnover_eur_worldwide": 2400000000,
+      "net_turnover_eur_union": 1800000000,
+      "net_turnover_eur_consolidated_last_financial_year": 900000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "renewable_grid_mix",
+        "emissionsClaim": "Iberia Battery Imports S.L. reports site-level emissions for Imported EV traction battery packs lot IBI-2026-09.",
+        "climateClaim": "Iberia Battery Imports S.L. maintains transition-planning and operational decarbonisation evidence for importer activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Spain",
+        "facilityRole": "importer",
+        "materialTags": [
+          "battery_pack"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "importer",
+        "componentType": "battery_pack",
+        "qualityStandards": [
+          "Importer Declaration"
+        ],
+        "traceabilityArtifacts": [
+          "vc_22_battery_importer_spain-material-balance-sheet",
+          "vc_22_battery_importer_spain-shipment-record",
+          "vc_22_battery_importer_spain-supplier-declaration"
+        ],
+        "serialisationScheme": "IBI-2026-09-SER",
+        "conformityReferences": [
+          "bafy-case1-importer-declaration"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "ES-IBI-2026-09",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "importer identity marking intentionally missing; producer registration also false"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "3TG checks attached to upstream importer nodes"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "import branch context only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-03T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x625d8e01ed2ffa38a0bfea53e57bfa6e3ddcf8fb#controller",
+      "role": "issuer",
+      "payloadHash": "0x7aa4393cbbfa02948cb57656b3645dfadba73e3d519510485894d6089694ddd7",
+      "jws": "0x1a817fd007432723b3780baf2c016acbd7529fc9ffbdf8d0baadc3243b00d8595b57fc36174e041af78b9c3dfdd670c4a74bcc4e23d47bbcbea8e0119b5677ab1b"
+    }
+  ]
+}

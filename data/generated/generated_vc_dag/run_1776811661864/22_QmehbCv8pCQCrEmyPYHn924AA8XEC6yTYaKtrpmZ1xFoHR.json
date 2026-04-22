@@ -1,0 +1,90 @@
+{
+  "id": "urn:uuid:real-vc-1776811682113-22",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "issuanceDate": "2026-04-18T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "productName": "Pack assembly",
+    "batch": "REAL-BATCH-022",
+    "quantity": 1,
+    "previousCredential": "QmNh4FycAUQgYTxyFKpPeh6BjPqmfShpBs6AWRSoiewJ8B",
+    "componentCredentials": [
+      "QmNh4FycAUQgYTxyFKpPeh6BjPqmfShpBs6AWRSoiewJ8B",
+      "QmX4ppAAQT1qcuJiQAGkFSXmXsAj3R7YnNkAVNFdKHNCpF"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-pack-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-pack-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack"
+    ],
+    "operationTags": [
+      "downstream",
+      "assembly",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 48.2,
+      "longitude": 11.7
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Pack-level LCA disclosed per kWh capacity",
+    "climateClaim": "Net-zero assembly hall 2028",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xca49f56943f9ef325569e326111e89a183d68bb9980033287e99dda83068d229\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xca49f56943f9ef325569e326111e89a183d68bb9980033287e99dda83068d229",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "374",
+    "productContract": "0x116d417D64afaE00B17f821d90d306E698BdCc84",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-18T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf#controller",
+      "role": "seller",
+      "payloadHash": "0xec8dea00a41154bb0175a65d3398a35e5067e06b42f93668607b9d8527d036b9",
+      "jws": "0x113f87c173533cf6624f6ef8c1025f13be7ec2837591c6a14851a592b31543c15456239942941e9a85ae94ddcb427b39daddefcacfe2a91b7a572e05cf8ccbfb1b"
+    }
+  ]
+}

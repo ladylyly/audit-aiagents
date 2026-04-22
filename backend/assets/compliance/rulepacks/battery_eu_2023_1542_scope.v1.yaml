@@ -1,0 +1,171 @@
+schemaVersion: "1.1"
+regulation:
+  id: "eu.regulation.2023.1542"
+  shortName: "Battery Regulation"
+  citation: "Regulation (EU) 2023/1542"
+  sourcePdf: "thesis/sources/Regulation (EU) 2023:1542 (Battery Regulation) Official Journal text.pdf"
+  notes:
+    - "Phase 1 scope and category encoding."
+    - "Focuses on Articles 1 and 3 for applicability and category consistency."
+
+rulepack:
+  id: "battery_eu_2023_1542_scope_v1"
+  version: "0.1.0"
+  status: "draft"
+
+chapters:
+  - id: "battery.general_scope"
+    title: "Scope and Definitions"
+    articleStart: 1
+    articleEnd: 3
+
+rules:
+  - id: "battery.art1.3"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(3)"
+    title: "Battery is within a regulated category and placed on the Union market"
+    obligationType: "scope_gate"
+    encodable: true
+    checkType: "boolean"
+    conditions:
+      all:
+        - field: "claims.battery.placed_on_union_market"
+          op: "=="
+          value: true
+        - field: "claims.battery.category"
+          op: "in"
+          value: ["portable", "sli", "lmt", "electric_vehicle", "industrial"]
+    evidenceRequired:
+      - "claims.battery.placed_on_union_market"
+      - "claims.battery.category"
+
+  - id: "battery.art1.5.a"
+    articleRef: "Article 1"
+    paragraphRef: "Art 1(5)(a)"
+    title: "Military and essential security equipment batteries are excluded"
+    obligationType: "scope_exclusion"
+    encodable: true
+    checkType: "presence"
+    applicability:
+      all:
+        - field: "claims.battery.exclusion_reason"
+          op: "=="
+          value: "military_or_security"
+    evidenceRequired:
+      - "claims.battery.exclusion_reason"
+
+  - id: "battery.art3.1.9"
+    articleRef: "Article 3"
+    paragraphRef: "Art 3(1)(9)"
+    title: "Portable battery category is consistent with weight and use profile"
+    obligationType: "definition_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "portable"
+    conditions:
+      all:
+        - field: "claims.battery.weight_kg"
+          op: "<="
+          value: 5
+        - field: "claims.battery.intended_for_industrial_use"
+          op: "=="
+          value: false
+    evidenceRequired:
+      - "claims.battery.category"
+      - "claims.battery.weight_kg"
+      - "claims.battery.intended_for_industrial_use"
+
+  - id: "battery.art3.1.11"
+    articleRef: "Article 3"
+    paragraphRef: "Art 3(1)(11)"
+    title: "LMT battery category is consistent with weight threshold"
+    obligationType: "definition_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "lmt"
+    conditions:
+      all:
+        - field: "claims.battery.weight_kg"
+          op: "<="
+          value: 25
+    evidenceRequired:
+      - "claims.battery.category"
+      - "claims.battery.weight_kg"
+
+  - id: "battery.art3.1.12"
+    articleRef: "Article 3"
+    paragraphRef: "Art 3(1)(12)"
+    title: "SLI battery category is supported by starter-lighting-ignition design evidence"
+    obligationType: "definition_gate"
+    encodable: true
+    checkType: "boolean"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "sli"
+    evidenceRequired:
+      - "claims.battery.is_sli_design"
+
+  - id: "battery.art3.1.13"
+    articleRef: "Article 3"
+    paragraphRef: "Art 3(1)(13)"
+    title: "Industrial battery category is supported by industrial intent or weight"
+    obligationType: "definition_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "industrial"
+    conditions:
+      any:
+        - field: "claims.battery.intended_for_industrial_use"
+          op: "=="
+          value: true
+        - field: "claims.battery.weight_kg"
+          op: ">"
+          value: 5
+    evidenceRequired:
+      - "claims.battery.category"
+      - "claims.battery.intended_for_industrial_use"
+      - "claims.battery.weight_kg"
+
+  - id: "battery.art3.1.14"
+    articleRef: "Article 3"
+    paragraphRef: "Art 3(1)(14)"
+    title: "Electric vehicle battery category is supported by traction-vehicle evidence"
+    obligationType: "definition_gate"
+    encodable: true
+    checkType: "threshold"
+    applicability:
+      all:
+        - field: "claims.battery.category"
+          op: "=="
+          value: "electric_vehicle"
+    conditions:
+      any:
+        - all:
+            - field: "claims.battery.vehicle_class"
+              op: "in"
+              value: ["m", "n", "o"]
+        - all:
+            - field: "claims.battery.vehicle_class"
+              op: "=="
+              value: "l"
+            - field: "claims.battery.weight_kg"
+              op: ">"
+              value: 25
+    evidenceRequired:
+      - "claims.battery.category"
+      - "claims.battery.vehicle_class"
+      - "claims.battery.weight_kg"

@@ -1,0 +1,100 @@
+{
+  "id": "urn:uuid:real-vc-1775170223658-20",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-03-28T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "Module assembly",
+    "batch": "REAL-BATCH-020",
+    "quantity": 1,
+    "previousCredential": "QmbnrFgrWWMsWNeAr84szfisSiKj8zp8JMg2u8AuMMemxa",
+    "componentCredentials": [
+      "QmbnrFgrWWMsWNeAr84szfisSiKj8zp8JMg2u8AuMMemxa"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-mod-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-mod-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_module"
+    ],
+    "operationTags": [
+      "downstream",
+      "assembly",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 48.8,
+      "longitude": 9.2
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Module assembly on renewable grid, scope-3 partial",
+    "climateClaim": "Science-based target validated",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x4e128b0e4e62187eefc649148fc9c55fb571f78fb1ab2dddbc98ffbd96b7d213\",\"proof\":\"0x5a9015ae931bd7944cefed2f95630350ec079ed967d0023c30c4226e20ca3b64c058f71fcbb1a881c63ba9a2342f943b5522120c5bd2a7d56f5c97c3d759307c52133d00d5010b23259b351eab881e76dc5bab08f5c093d746e43b26c436494d80dfdca39ff77dbdb5f8798949adfb8b73c9d5ec37a8f55d42d3725af961db3da62ec660980b4af207b54607c0592b4b2acd45c7c161cbdc1a74847ebfd7aa0e04c81d58680e30aa84355313f2a5332ba55ac774c5762b1813b5040539972b0a1642cf69f1c6950e7daf4485f6cc11e22caf86ef9714945052d0bfde3290510ae42ba1135542b3e5f5c77d56b0baaf4929928952ffeb7be11dbb74c99f86937beaf65b87174410041e5eb0b8d7c6e654bf86a99727bb0ffecbe94f696e6a13722003c44567536c126527b16bfc4bb1edf5abb41a61727af1488f91de08ce22586a85f028bfe0cc76456106cc80b9c1d3a8c0f109be4a330047e15fcc115fa87c529ce6acbd78c7652ac7a55c25068139f6eeefe7d0e3b1cf95f10e66ea73443a4605b0ee657791a4c2d0ecea4d95db7ab8b310d3311bac7481215cc35b52e256f095b19be175c2a6f964ec6884cb9ac056a7aa53cbffb53bdf410a44140e410170c4d0fab02a169337b3cbe1056fff12fe882468cce889cba23780a79da73c6a084d9989519df262acbe829e08f0e3b8f2eb4006fb682e544e6af8480cc60b39201f14c04fc7a8812496f962d1224fdb9ca71948a68ca9db72471d3c35aa091fa8b3b73d468bdd9f80751d74a97e8effbee5d4f590d98ce700c9b799d590c307e0080044f16f7d89cacc30d58c0a59b3e32b9a698884dbb4add35f500a0ca06d2a4716c3890a0327d6aa14d455d0cc7408140a124727d471a701d3d5ef8e120f849225508bb1ef3171cfe300d16cbe97f97ce81d09e1f22693389d59377b140f\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x0562c429f7abc4851b90f498e9d0fce07f2da7fafee324474d9aebbc7f15b3bf\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x4e128b0e4e62187eefc649148fc9c55fb571f78fb1ab2dddbc98ffbd96b7d213",
+      "proof": "0x5a9015ae931bd7944cefed2f95630350ec079ed967d0023c30c4226e20ca3b64c058f71fcbb1a881c63ba9a2342f943b5522120c5bd2a7d56f5c97c3d759307c52133d00d5010b23259b351eab881e76dc5bab08f5c093d746e43b26c436494d80dfdca39ff77dbdb5f8798949adfb8b73c9d5ec37a8f55d42d3725af961db3da62ec660980b4af207b54607c0592b4b2acd45c7c161cbdc1a74847ebfd7aa0e04c81d58680e30aa84355313f2a5332ba55ac774c5762b1813b5040539972b0a1642cf69f1c6950e7daf4485f6cc11e22caf86ef9714945052d0bfde3290510ae42ba1135542b3e5f5c77d56b0baaf4929928952ffeb7be11dbb74c99f86937beaf65b87174410041e5eb0b8d7c6e654bf86a99727bb0ffecbe94f696e6a13722003c44567536c126527b16bfc4bb1edf5abb41a61727af1488f91de08ce22586a85f028bfe0cc76456106cc80b9c1d3a8c0f109be4a330047e15fcc115fa87c529ce6acbd78c7652ac7a55c25068139f6eeefe7d0e3b1cf95f10e66ea73443a4605b0ee657791a4c2d0ecea4d95db7ab8b310d3311bac7481215cc35b52e256f095b19be175c2a6f964ec6884cb9ac056a7aa53cbffb53bdf410a44140e410170c4d0fab02a169337b3cbe1056fff12fe882468cce889cba23780a79da73c6a084d9989519df262acbe829e08f0e3b8f2eb4006fb682e544e6af8480cc60b39201f14c04fc7a8812496f962d1224fdb9ca71948a68ca9db72471d3c35aa091fa8b3b73d468bdd9f80751d74a97e8effbee5d4f590d98ce700c9b799d590c307e0080044f16f7d89cacc30d58c0a59b3e32b9a698884dbb4add35f500a0ca06d2a4716c3890a0327d6aa14d455d0cc7408140a124727d471a701d3d5ef8e120f849225508bb1ef3171cfe300d16cbe97f97ce81d09e1f22693389d59377b140f",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x0562c429f7abc4851b90f498e9d0fce07f2da7fafee324474d9aebbc7f15b3bf"
+    },
+    "productId": "181",
+    "productContract": "0x417d86C0f01A35F2f3CA12C4FDF04F2CE5BceB52",
+    "chainId": "11155111",
+    "claims": {
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    },
+    "governanceEvents": [
+      {
+        "anomalyId": "M1",
+        "category": "governance_transition",
+        "reviewRequired": true,
+        "transferDate": "2026-03-16",
+        "reviewEntity": "BMWi Legal Archive GmbH",
+        "note": "Module assembly VC routed into OEM legal archive during post-close documentation review."
+      }
+    ]
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-28T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf#controller",
+      "role": "seller",
+      "payloadHash": "0xa6c0c84b654b14c88613fd872a8f07a079d383dda560eea0c70119ca151e61ba",
+      "jws": "0x1b17732d63f533189e443101b61b6686dd5f69b57195c17041329f2ce0a3387f663a1810cb96eb15f6c09a7f073a0a877d5806a9f37fda9c9266302747fdbabd1c"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "urn:uuid:real-vc-1775161539565-5",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xea2929ff3eb537a0f5c9d73563b8d0ed442c1f61",
+    "name": "Harjavalta Nickel Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x1470d85d534cfc0e97dba62aa3eff8370a906355",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "issuanceDate": "2026-03-13T20:25:35.390Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x1470d85d534cfc0e97dba62aa3eff8370a906355",
+    "productName": "Nickel sulfate refinery",
+    "batch": "REAL-BATCH-005",
+    "quantity": 1,
+    "previousCredential": "QmcxZtViKsdqUeAvBsDsbBpH5WJFF7W1JtDwZ7cZ93m5po",
+    "componentCredentials": [
+      "QmcxZtViKsdqUeAvBsDsbBpH5WJFF7W1JtDwZ7cZ93m5po"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-ni-ref-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-ni-ref-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "The Nickel Mark",
+        "issuer": "Nickel Institute",
+        "certificateCid": "bafy-cert-ni-ref-nickmark",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ni-ref-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.5,
+      "longitude": 25.3
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Nordic grid, <50g CO2/kWh",
+    "climateClaim": "Net-zero refinery 2035",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xcea59a76806fa1b16fe27cc3fe988baf6fc48ecb80e45b857be6f31f25ba6e1b\",\"proof\":\"0xe289232f6e004609ead60afe6ad27e3bf9cdc42ebb1dec20df817a71634ff4494842305ea877bc61cb243bf4a3b2b4640f28976f705a1e5e22c1bebf73897a41c6800e24ad3c6ba34096d6be03017083344e8c8da35070ebe7cd4a93e79cf621206d8046638ccb3e456656b764238b0957a729f9abe184ce123fbac5c9dca41dbd28bbcfb616d43e9aa4623c0e464c37cdf0d6ed819a2ef98a67ecb99b3d170410702a97156428a9dae52a3ae8304be5cefa1dbc21ef2fd8f3b271db2f2b8208f672c86d0ed71758a1158b2d7372fd9b4a1b47a089fb0307d232c1237202070faca8c788925846e0bb4a9507f5f932265adc23dd9a62538648a99c9f711d8d604477bed2b5ed43407e2d27074e9cbbf5372c3fa4c2c06c714378aeac9b2f3d75362f4cf65b246420bb322aa3d0dbbdd84cf1a794eb9f7d9d8c6acb0558f12c3e345744d8a7e865513252cfb03d1a071145c72d353e9cb73ed8a6faefe39b3a3a9cdac2bf0de9e69f60a87d600eb87e852bd397e087ad95e94a0cb4133d5e087fe2eed23db331fe0319b2e498f8e48c2299cad49f92d98b0cfd04ea147635ba33d218dff82c547eaa307d8c383694f77e140ba7c0c634668a3db106baaaaf2d38f4279e8f5f84a49591ec3d177a4c071228e0a1324846fd2ce7e0c559b07c5407e61cc0b93e26a12115086b991aee7fca8328e139f1d240e3b3c1031c51e52e260ec1bcd7cb03bb0278b8228e246fa1de028c2a01f5c06d47846c1cdc78626d384c8ab3df3e76b2c96ac1345feca7bd556c90b24d76dc93934ae05bea5be9174a2cfdf848042091866d0ad4aa6d2163e08d949643fc3a2aba7d52d720da82d2107f97e7096bd9d4b9e0ca76d2402bdf5235eb8c956be3467fb381553b4010a909f39d6ad16e5738c5c6643cca6f0f858f402ee3ec6978892b96981a92f77a8108\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x24a78ed880a3520de9269b49f6d3159715b04494146235ea05d70ba3110d4548\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xcea59a76806fa1b16fe27cc3fe988baf6fc48ecb80e45b857be6f31f25ba6e1b",
+      "proof": "0xe289232f6e004609ead60afe6ad27e3bf9cdc42ebb1dec20df817a71634ff4494842305ea877bc61cb243bf4a3b2b4640f28976f705a1e5e22c1bebf73897a41c6800e24ad3c6ba34096d6be03017083344e8c8da35070ebe7cd4a93e79cf621206d8046638ccb3e456656b764238b0957a729f9abe184ce123fbac5c9dca41dbd28bbcfb616d43e9aa4623c0e464c37cdf0d6ed819a2ef98a67ecb99b3d170410702a97156428a9dae52a3ae8304be5cefa1dbc21ef2fd8f3b271db2f2b8208f672c86d0ed71758a1158b2d7372fd9b4a1b47a089fb0307d232c1237202070faca8c788925846e0bb4a9507f5f932265adc23dd9a62538648a99c9f711d8d604477bed2b5ed43407e2d27074e9cbbf5372c3fa4c2c06c714378aeac9b2f3d75362f4cf65b246420bb322aa3d0dbbdd84cf1a794eb9f7d9d8c6acb0558f12c3e345744d8a7e865513252cfb03d1a071145c72d353e9cb73ed8a6faefe39b3a3a9cdac2bf0de9e69f60a87d600eb87e852bd397e087ad95e94a0cb4133d5e087fe2eed23db331fe0319b2e498f8e48c2299cad49f92d98b0cfd04ea147635ba33d218dff82c547eaa307d8c383694f77e140ba7c0c634668a3db106baaaaf2d38f4279e8f5f84a49591ec3d177a4c071228e0a1324846fd2ce7e0c559b07c5407e61cc0b93e26a12115086b991aee7fca8328e139f1d240e3b3c1031c51e52e260ec1bcd7cb03bb0278b8228e246fa1de028c2a01f5c06d47846c1cdc78626d384c8ab3df3e76b2c96ac1345feca7bd556c90b24d76dc93934ae05bea5be9174a2cfdf848042091866d0ad4aa6d2163e08d949643fc3a2aba7d52d720da82d2107f97e7096bd9d4b9e0ca76d2402bdf5235eb8c956be3467fb381553b4010a909f39d6ad16e5738c5c6643cca6f0f858f402ee3ec6978892b96981a92f77a8108",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x24a78ed880a3520de9269b49f6d3159715b04494146235ea05d70ba3110d4548"
+    },
+    "productId": "99",
+    "productContract": "0x992c2378E6172EBD877E056AE2eE1E533F385285",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-13T20:25:35.390Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xea2929ff3eb537a0f5c9d73563b8d0ed442c1f61#controller",
+      "role": "seller",
+      "payloadHash": "0x53bb78056626a2f25fe487a861dbde6135b46046dddbb6013cad992415c6984a",
+      "jws": "0x21c67ad94d77771a93d24d3895c0272ebd080e49106f8e766bed7e1704de92bd595b595dc00d64d0f039323998d02f5eb8f35c530c5ed167ccea8cbd6b0e509d1b"
+    }
+  ]
+}

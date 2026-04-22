@@ -1,0 +1,96 @@
+{
+  "id": "urn:uuid:real-vc-1776811668607-7",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xb21071eec12257c3a33f168d657bb6bc4dfe0e10",
+    "name": "Freeport Cobalt Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "issuanceDate": "2026-04-03T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "productName": "Cobalt sulfate refinery",
+    "batch": "REAL-BATCH-007",
+    "quantity": 1,
+    "previousCredential": "QmZRcDyDXy39N2A9ChG67fcKJZN4SK4dh3MsE3XNBpN77X",
+    "componentCredentials": [
+      "QmZRcDyDXy39N2A9ChG67fcKJZN4SK4dh3MsE3XNBpN77X"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-co-ref-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-co-ref-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-co-ref-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "cobalt"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.2,
+      "longitude": 24.7
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Nordic refinery, <30g CO2/kWh",
+    "climateClaim": "SBTi-aligned refinery operations",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xd4709e3ccdcaeedfc41d730e37a802e1e0984426385de747a9ebfcb1ecdc9823\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xd4709e3ccdcaeedfc41d730e37a802e1e0984426385de747a9ebfcb1ecdc9823",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "359",
+    "productContract": "0x896Df78Cc4b28c51CEb37642b6177a1E05E32e11",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-03T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xb21071eec12257c3a33f168d657bb6bc4dfe0e10#controller",
+      "role": "seller",
+      "payloadHash": "0x6e30961495e4d7a32094946a8292db14a5c2353c715af08c98b6d53ba0e1eed2",
+      "jws": "0x5c7bf74f79b464a9b63f52cfbbedd765c46801360c8e53d17bbe82e55af149711a04509ea28c0350491459f4d183311298b3ef1bcd669c7cab31be1aa240f6f31c"
+    }
+  ]
+}

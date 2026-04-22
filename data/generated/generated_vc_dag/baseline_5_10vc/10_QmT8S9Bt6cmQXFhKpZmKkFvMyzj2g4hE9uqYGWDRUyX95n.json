@@ -1,0 +1,209 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776212894695-10",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x089ca12f3515d165a89cf3d0142f743d60df26c5",
+    "name": "EuroCell Mobility Battery Systems GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x601cec42226fdaddb8a006e292d5d3691e939b43",
+    "name": "EuroCell Mobility Battery Systems GmbH"
+  },
+  "issuanceDate": "2026-04-15T00:28:05.491Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x601cec42226fdaddb8a006e292d5d3691e939b43",
+    "productName": "EV battery pack assembly and battery passport dossier",
+    "batch": "BLUEPRINT-BATCH-010",
+    "quantity": 1,
+    "previousCredential": "QmTuAr6n4FmunzEkaTjEjGwVgrSiUbgNACfEZHhffCcKYt",
+    "componentCredentials": [
+      "QmTuAr6n4FmunzEkaTjEjGwVgrSiUbgNACfEZHhffCcKYt"
+    ],
+    "certificateCredential": {
+      "name": "CE",
+      "cid": "bafy-cert-10-primary"
+    },
+    "certifications": [
+      {
+        "name": "CE",
+        "issuer": "CE",
+        "certificateCid": "bafy-cert-10-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "UN 38.3",
+        "issuer": "UN 38.3",
+        "certificateCid": "bafy-cert-10-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO 14001",
+        "certificateCid": "bafy-cert-10-3",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack",
+      "ev_battery",
+      "battery_passport"
+    ],
+    "operationTags": [
+      "downstream",
+      "assembly",
+      "battery_passport",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 48.1351,
+      "longitude": 11.582
+    },
+    "energySource": "grid_renewable_mix",
+    "emissionsClaim": "EV battery pack assembly and battery passport dossier environmental record maintained by EuroCell Mobility Battery Systems GmbH.",
+    "climateClaim": "EV battery pack assembly and battery passport dossier climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x56fc4b64da845454482eb5ba744a223c58ed700383e2a1800210ca370cead244\",\"proof\":\"0x5aee5a05260807e8b62b4c4c475c4059b60955490632eb89b0a2429c2d6fdc72206c6883e05aa5c7b0bb16a7a5401c64616254250ede859203dff9d4f270f73dc6238b0b721f5bea3857af9e629f6a3463589c4328efaf10d2ff794e95e0384c5435f68bc60bd1ed32e2f0b7a62f449cc60ded67111bc5f24066c1294e7f5c0ee6aaa8f327027af0e395f055ae3d7ab64297628628a2c3bd242370bced47240f2e0ac90f8940ec59a7775ceec73d8cc0dc4fbcb0586d2b50e3ef4671db52290abf87455bdce158b4c5f22d2fe35c4ef46d721a53454255f6e4093a5fcf7e100d14cfc894940e13f3fdc8a1033155ca7ce63b7afcc07c927934bcc160f0079a4dfca2d1ec5f25a1f6e44195780182b93fd901c22a2a948cafac752a22e08a6d10ec1ec428a2163f20a69cd95f99dfcce38c7018462d8628bc38e3b8db1c14132d984ffcf9c61bdd187fedf2ff9f1eb5d14ebc0f7c7c7f2bf0b159746dac6057779642580ca6a13639cbd7d97f5a1a2a72064a1d2396f6190ba37029e96b6a077f0a61279413e19fa8dfea5bd2b6dac5aa0a96cbebab17ad70c29c5b6d618b505e86486c026cd3ab11f18c680a2119c3a10c4d8df1cf78de4e3518994467cee310caf0094f9af9770c7e7b56729c2e392990dcc02d6e633fcb4f8e0fd3aa2cb16d9a127d7a2c8e7d28d4a53ba481439f228c679bba488929bedee4dcc83e77ba6b6834a58bb2e74a56475f28e526649bf23f62f2d2e353fcd43e446662c2aa475ca0eed5b43a9a842e3767d9b8db53c2d2f2bfcdf9d24806f81f0c5398bbdc7d4a6c8d5ae1947e200cd07503746ef80bb36c9a795e35532b3888174a649be21d19e2544b402b88559060dd5257c5ca8f45d03e1827a52e6d6a94fcb30a26d28d0f2521a04c0bbd231be91a25601ecebabf33ca4d3cee4a3654bef727fcd401c60f\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xaa39371b5902b4f8c42246b4fd825e009574e45a103d719f70aec80f0b319d64\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x56fc4b64da845454482eb5ba744a223c58ed700383e2a1800210ca370cead244",
+      "proof": "0x5aee5a05260807e8b62b4c4c475c4059b60955490632eb89b0a2429c2d6fdc72206c6883e05aa5c7b0bb16a7a5401c64616254250ede859203dff9d4f270f73dc6238b0b721f5bea3857af9e629f6a3463589c4328efaf10d2ff794e95e0384c5435f68bc60bd1ed32e2f0b7a62f449cc60ded67111bc5f24066c1294e7f5c0ee6aaa8f327027af0e395f055ae3d7ab64297628628a2c3bd242370bced47240f2e0ac90f8940ec59a7775ceec73d8cc0dc4fbcb0586d2b50e3ef4671db52290abf87455bdce158b4c5f22d2fe35c4ef46d721a53454255f6e4093a5fcf7e100d14cfc894940e13f3fdc8a1033155ca7ce63b7afcc07c927934bcc160f0079a4dfca2d1ec5f25a1f6e44195780182b93fd901c22a2a948cafac752a22e08a6d10ec1ec428a2163f20a69cd95f99dfcce38c7018462d8628bc38e3b8db1c14132d984ffcf9c61bdd187fedf2ff9f1eb5d14ebc0f7c7c7f2bf0b159746dac6057779642580ca6a13639cbd7d97f5a1a2a72064a1d2396f6190ba37029e96b6a077f0a61279413e19fa8dfea5bd2b6dac5aa0a96cbebab17ad70c29c5b6d618b505e86486c026cd3ab11f18c680a2119c3a10c4d8df1cf78de4e3518994467cee310caf0094f9af9770c7e7b56729c2e392990dcc02d6e633fcb4f8e0fd3aa2cb16d9a127d7a2c8e7d28d4a53ba481439f228c679bba488929bedee4dcc83e77ba6b6834a58bb2e74a56475f28e526649bf23f62f2d2e353fcd43e446662c2aa475ca0eed5b43a9a842e3767d9b8db53c2d2f2bfcdf9d24806f81f0c5398bbdc7d4a6c8d5ae1947e200cd07503746ef80bb36c9a795e35532b3888174a649be21d19e2544b402b88559060dd5257c5ca8f45d03e1827a52e6d6a94fcb30a26d28d0f2521a04c0bbd231be91a25601ecebabf33ca4d3cee4a3654bef727fcd401c60f",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xaa39371b5902b4f8c42246b4fd825e009574e45a103d719f70aec80f0b319d64"
+    },
+    "productId": "362",
+    "productContract": "0xE97D152d6de8cDEC5398C0e390f920bcD842B829",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "battery": {
+        "category": "EV",
+        "subcategory": "traction_battery",
+        "weight_kg": 468,
+        "capacity_kwh": 74,
+        "placed_on_union_market": true,
+        "status": "new",
+        "operator_role": "manufacturer",
+        "is_rechargeable": true,
+        "vehicle_class": "M1",
+        "label_present": true,
+        "capacity_label_present": true,
+        "separate_collection_symbol_present": true,
+        "qr_code_present": true,
+        "instructions_present": true,
+        "safety_information_present": true,
+        "technical_documentation_exists": true,
+        "eu_declaration_of_conformity_exists": true,
+        "ce_mark_present": true,
+        "conformity_module": "B+C",
+        "batch_or_serial_present": true,
+        "manufacturer_identity_present": true,
+        "producer_registered": true,
+        "battery_passport_exists": true,
+        "battery_passport_identifier": "BP-ECM-2027-10VC-0001",
+        "battery_passport_public_fields_present": true,
+        "bms_annex_vii_access_enabled": true,
+        "annex_i_restrictions_compliant": true,
+        "carbon_footprint_declaration_exists": true,
+        "carbon_footprint_label_present": true,
+        "carbon_footprint_within_max_threshold": true,
+        "contains_recycled_content_regulated_materials": true,
+        "contains_cobalt": true,
+        "contains_lead": false,
+        "contains_lithium": true,
+        "contains_nickel": true,
+        "recycled_content_documentation_exists": true,
+        "recycled_content_cobalt_pct": 17,
+        "recycled_content_lead_pct": 0,
+        "recycled_content_lithium_pct": 8,
+        "recycled_content_nickel_pct": 13,
+        "performance_durability_document_exists": true,
+        "technical_doc_annex_iv_explanation_exists": true,
+        "industrial_performance_minimum_compliant": true,
+        "stationary_storage_safe_for_normal_operation": true,
+        "stationary_storage_safety_tests_passed": true
+      },
+      "passport_publication_complete": true,
+      "pack_end_of_line_validation_passed": true,
+      "after_sales_traceability_enabled": true
+    },
+    "company": {
+      "name": "EuroCell Mobility Battery Systems GmbH",
+      "country": "Germany",
+      "operator_role": "manufacturer",
+      "employee_count": 4200,
+      "net_turnover_eur": 1450000000,
+      "csddd_in_scope": true,
+      "due_diligence_policy_exists": true,
+      "due_diligence_policy_public": true,
+      "due_diligence_annex_x_aligned": true,
+      "management_responsibility_assigned": true,
+      "record_retention_years": 8,
+      "traceability_system_exists": true,
+      "supplier_contract_flowdown": true,
+      "grievance_mechanism_exists": true,
+      "risk_assessment_exists": true,
+      "risk_management_plan_exists": true,
+      "top_management_reporting_exists": true,
+      "third_party_verification_report_exists": true,
+      "approval_decision_exists": true,
+      "audit_report_exists": true,
+      "downstream_information_shared": true,
+      "public_due_diligence_report_exists": true,
+      "public_due_diligence_statement": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    },
+    "group": {
+      "name": "EuroCell Mobility Group SE",
+      "ultimate_parent_country": "Germany",
+      "group_employee_count": 18200,
+      "group_net_turnover_eur": 7400000000,
+      "group_due_diligence_program": true,
+      "group_transition_plan_exists": true,
+      "group_supplier_code_exists": true,
+      "group_grievance_channel_exists": true,
+      "group_public_sustainability_reporting": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-15T00:28:05.491Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x089ca12f3515d165a89cf3d0142f743d60df26c5#controller",
+      "role": "seller",
+      "payloadHash": "0x6ff4f015e013052b6d560823f06fa9c33ce0fe6786f486ba96f1d39770a05a8f",
+      "jws": "0x84e141f31d0856109e0fc68e34634dcc9155e682fac9a77c0742fa987ec9dd201e3ead0a78feda3fedfd4efe7d98b32145fe62734854e53609894529286583c61c"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517135416-24",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x068512b22ff902837c0f5f84a0b5ea922e69c826",
+    "name": "EuroLoop Battery Recycling NV"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "name": "Autovolt Deutschland AG"
+  },
+  "issuanceDate": "2026-04-05T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xee5aaa3be568934b4f58378ca03bf1215e672748",
+    "productName": "EV battery recycling batch EBR-2026-04",
+    "batch": "EBR-2026-04",
+    "quantity": 1,
+    "previousCredential": "QmP6y9tcXRnMTHNDq7dDRXihHrkceTBCD5fnFgtKXq649V",
+    "componentCredentials": [
+      "QmP6y9tcXRnMTHNDq7dDRXihHrkceTBCD5fnFgtKXq649V"
+    ],
+    "certificateCredential": {
+      "name": "Permitted Facility Licence",
+      "cid": "bafy-case1-permitted-facility-license"
+    },
+    "certifications": [
+      {
+        "name": "Permitted Facility Licence",
+        "issuer": "Regional Authority",
+        "certificateCid": "bafy-case1-permitted-facility-license"
+      }
+    ],
+    "location": {
+      "country": "Belgium",
+      "countryCode": "BE",
+      "latitude": 50.8,
+      "longitude": 4.4
+    },
+    "facilityRole": "recycler",
+    "materialTags": [
+      "battery_recycling",
+      "lithium",
+      "nickel",
+      "cobalt"
+    ],
+    "operationTags": [
+      "downstream",
+      "recycling",
+      "end_of_life"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "industrial",
+        "subcategory": "traction",
+        "weight_kg": 10,
+        "capacity_kwh": 5,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "waste",
+        "has_external_storage": false,
+        "operator_role": "recycler",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "waste_batteries_not_disposed_or_energy_recovered": true,
+        "all_received_waste_batteries_accepted": true,
+        "all_received_waste_batteries_sent_to_reuse_repurpose_or_recycling": true,
+        "recycling_chemistry": "lithium_based",
+        "recycling_efficiency_input_mass_kg": 1000,
+        "recycling_efficiency_output_mass_kg": 620,
+        "recovery_target_material": "lithium",
+        "recovered_material_input_mass_kg": 100,
+        "recovered_material_output_mass_kg": 70,
+        "exports_waste_batteries": true,
+        "waste_battery_shipment_compliant": true,
+        "export_treatment_equivalent_conditions_evidence": true,
+        "treatment_recycler_reporting_complete": true,
+        "reports_submitted_within_six_months": true
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x6e198fbef3b8594b14e0be68657cab2f9aae47ae0e9326f21f59c5a32c310c41\",\"proof\":\"0x28542db5f6f4cdbc40b930883ddcdfef767c2c8103d355c1e2af80ecc32d6331d639c70c83bf9d6f8b95cecb53dbc80c923024bca37364c19acd805ce9a4273f58e7f70a84a62cc398a5d256cef4a06a9bda74c911501aab77c388a99cf6496efecd5e5c2ff28ebfc44ae5871666bada65d05c27170970b8452d79feff27603f1ce72cd5fabfa8dad47c46c3f1fe62e4f27517e0d5e284a89da9cf84fa909b07830d6a1cf8bbb2570eb8ebdec8b1b2cc63d2d895b717f49146e9220892ac7d0fbbfbd689855e2692f7fb5063547c3173b96a528b35aaf56e3d325c3ad2c8670e4c74161d46be755a4ca759d179293d305c78d1827e3f13342f5e7bcf18c728614c509fea675a05a2a7b43e4491f6e82c99763175c7a405370280cda9bc1c69725029c390179084ebec6af0f3739d57fc9b1dbe9cd0974e832aad6fc4dd9cfb1ebedc166216c7551ab745599e6d4ebe640509a8032247937ccfc2a8522afc1b3f62ddcf1c3883599c205c08e0d37adc72e1ef1f1e97fdac5e84567d04ce486331366eb204fa252ad8f50215ffd249c17f12ee18d7dc652235b4a3f66cfee3c43c025f0408553e79123eb92c6ff81b3a999a41a118b908bb49c1b9f86697a9b15bd85637d98e2a0ce452d55ce7bf91af6df06958e90a53fa10ecd8edc752f46f099a2edb9b69c3f57a23cb9ed0614b1eaae6cc8c7bc924d7fdab0d1929995c5448545f105f67fa3aa40b2591f3372b078d9e90e56102f6158343a83243be41db5c72b882d647765e9ce788ad23951412dfad77b276a315477760c41e3096dcaf0b102d077bbd74a62d5ab433d1a8d29a448969ad3798763f4923811adadef42d739551390e722978f699750f227c1e45943be1fbb7e810f8ac990d9b350a9abc024f0be563be8f833ba195e9bc6dac1e99bc99e8d0afcc9fb0353baeb6aad2ca01\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x56e2c8fa260a0e3925ac16c1771408a59dd2372fc59d8639d11dc2eeab40e097\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x6e198fbef3b8594b14e0be68657cab2f9aae47ae0e9326f21f59c5a32c310c41",
+      "proof": "0x28542db5f6f4cdbc40b930883ddcdfef767c2c8103d355c1e2af80ecc32d6331d639c70c83bf9d6f8b95cecb53dbc80c923024bca37364c19acd805ce9a4273f58e7f70a84a62cc398a5d256cef4a06a9bda74c911501aab77c388a99cf6496efecd5e5c2ff28ebfc44ae5871666bada65d05c27170970b8452d79feff27603f1ce72cd5fabfa8dad47c46c3f1fe62e4f27517e0d5e284a89da9cf84fa909b07830d6a1cf8bbb2570eb8ebdec8b1b2cc63d2d895b717f49146e9220892ac7d0fbbfbd689855e2692f7fb5063547c3173b96a528b35aaf56e3d325c3ad2c8670e4c74161d46be755a4ca759d179293d305c78d1827e3f13342f5e7bcf18c728614c509fea675a05a2a7b43e4491f6e82c99763175c7a405370280cda9bc1c69725029c390179084ebec6af0f3739d57fc9b1dbe9cd0974e832aad6fc4dd9cfb1ebedc166216c7551ab745599e6d4ebe640509a8032247937ccfc2a8522afc1b3f62ddcf1c3883599c205c08e0d37adc72e1ef1f1e97fdac5e84567d04ce486331366eb204fa252ad8f50215ffd249c17f12ee18d7dc652235b4a3f66cfee3c43c025f0408553e79123eb92c6ff81b3a999a41a118b908bb49c1b9f86697a9b15bd85637d98e2a0ce452d55ce7bf91af6df06958e90a53fa10ecd8edc752f46f099a2edb9b69c3f57a23cb9ed0614b1eaae6cc8c7bc924d7fdab0d1929995c5448545f105f67fa3aa40b2591f3372b078d9e90e56102f6158343a83243be41db5c72b882d647765e9ce788ad23951412dfad77b276a315477760c41e3096dcaf0b102d077bbd74a62d5ab433d1a8d29a448969ad3798763f4923811adadef42d739551390e722978f699750f227c1e45943be1fbb7e810f8ac990d9b350a9abc024f0be563be8f833ba195e9bc6dac1e99bc99e8d0afcc9fb0353baeb6aad2ca01",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x56e2c8fa260a0e3925ac16c1771408a59dd2372fc59d8639d11dc2eeab40e097"
+    },
+    "productId": "210",
+    "productContract": "0x2Eb48A1703c6299c16745AA4Ef5C86f5Fd69e2D1",
+    "chainId": "11155111",
+    "companyName": "EuroLoop Battery Recycling NV",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 2400,
+      "net_turnover_eur_worldwide": 900000000,
+      "net_turnover_eur_union": 700000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "BE-CASE-0024",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 180000000
+    },
+    "group": {
+      "avg_employee_count": 7000,
+      "net_turnover_eur_worldwide": 2400000000,
+      "net_turnover_eur_union": 1800000000,
+      "net_turnover_eur_consolidated_last_financial_year": 900000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "EuroLoop Battery Recycling NV reports site-level emissions for EV battery recycling batch EBR-2026-04.",
+        "climateClaim": "EuroLoop Battery Recycling NV maintains transition-planning and operational decarbonisation evidence for recycler activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Belgium",
+        "facilityRole": "recycler",
+        "materialTags": [
+          "battery_recycling",
+          "lithium",
+          "nickel",
+          "cobalt"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "recycler",
+        "componentType": "battery_recycling",
+        "qualityStandards": [
+          "Permitted Facility Licence"
+        ],
+        "traceabilityArtifacts": [
+          "vc_24_recycler_belgium-material-balance-sheet",
+          "vc_24_recycler_belgium-shipment-record",
+          "vc_24_recycler_belgium-supplier-declaration"
+        ],
+        "serialisationScheme": "EBR-2026-04-SER",
+        "conformityReferences": [
+          "bafy-case1-permitted-facility-license"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "BE-EBR-2026-04",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "recycler should fail lithium-based recycling efficiency and lithium recovery thresholds"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "recycler node outside 3TG importer scope"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "end-of-life risk branch only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-05T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x068512b22ff902837c0f5f84a0b5ea922e69c826#controller",
+      "role": "issuer",
+      "payloadHash": "0x3b371555ec72f1519387f65331addb1bc14ee8a4ad889271b5cb2015d3971146",
+      "jws": "0x3ed4390b8901ff6afd784e8db7ad14f05cb44900ad1b502d5be5919b1d41988a7b8c1e714a94bcb4f0a4fb9276ac583f9e840b1a917a1ea67e4bb8c9f1210c3b1c"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776211874624-4",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x1489b08d9f56058de41a10ca30d113301473def6",
+    "name": "NordCell Sweden AB"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x9bbb47752b5165697a3c0db0139c58a595fe8af1",
+    "name": "HexaPack Mobility France SAS"
+  },
+  "issuanceDate": "2026-04-14T00:11:10.823Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x9bbb47752b5165697a3c0db0139c58a595fe8af1",
+    "productName": "Prismatic battery cell manufacturing batch",
+    "batch": "BLUEPRINT-BATCH-004",
+    "quantity": 1,
+    "previousCredential": "QmcF1sskdM7m3r7pSmG3GH3bZa3HsrqfRPku4b9NoSv8mt",
+    "componentCredentials": [
+      "QmcF1sskdM7m3r7pSmG3GH3bZa3HsrqfRPku4b9NoSv8mt"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-cert-04-primary"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO 9001",
+        "certificateCid": "bafy-cert-04-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO 14001",
+        "certificateCid": "bafy-cert-04-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "UN 38.3 Test Summary",
+        "issuer": "UN 38.3 Test Summary",
+        "certificateCid": "bafy-cert-04-3",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "cell_manufacturer",
+    "materialTags": [
+      "battery_cell",
+      "battery_component"
+    ],
+    "operationTags": [
+      "downstream",
+      "manufacturing",
+      "battery_component",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Sweden",
+      "countryCode": "SE",
+      "latitude": 59.3293,
+      "longitude": 18.0686
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Prismatic battery cell manufacturing batch environmental record maintained by NordCell Sweden AB.",
+    "climateClaim": "Prismatic battery cell manufacturing batch climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x9c48aee997c54139751df952a3d1bd98defb490405f5a063b099422de0ac2358\",\"proof\":\"0x16d7b847f139542bb95583a6a6db23ff921c033af400377f6ac6ee856037f4185cc0e23aa402b30fab23169ce5932fe3c95c20b5591cb0053a87007cf82c75322caf3551dc2f977fd06a5d597aafecc4f81e16190d292dbb738b2a172afc3569a61296deaeafa6b7f122ef7933ae23f63c5370b5a4f1118bca9954c3a052dc24576e475c91cabb1b2956215c4bf724127b1fabe645a207bb5542ef10fa7c4203d134e615fd2a3089ee9b6497eca4e4597aa70492c84f2ed440623eb8107f0e0e7803cca977c3feaff2bd0e5aa6b3e0d9480f88787fbce650422539ef995cb605e460706bd37964e1b90d213eb4f7b31684d3bffba8394478ac4d66786eee213c20f85cf212a7e0f0aaee57ee071056faf599bf781586dd43a56aa61fd10c7b730acc17b68756839610859ebafa4d019f9ccdc0161de5e2b5acc36e68905c48190cbdd13e1522e97a4345046dbd7c44dc1edb3d8a07c909ec84c727daf616e369446d97507423e7aff7d775d64b65b00a15e4699a53a9b47fdfa40ab6ab7d6d3feef699dcba1626f4e5f2ae7b577958c794cfd69134e198f4571d0ebc1fe207584c314d1cd33215357a2e1535c1cb26f4f0bb5eacb4ba869d4a70c850ad66f81a3026920b3416c4271f194828be3569d13f49c041b56d6024e25e034acefa503a387efb346dd5b5d0a7b1eff17474c714cf0021973045c314348ed5175e2f292354b500c69bd8d88af074eda0e3183bb743e7884094934ea8590579e41ff15126585049c715f20cf82cd8f884ed0fc35d5f6c3115c6aea63fe0fb60cb1a79fc4690eea25c36a3750bd63229d32c3940e02d248a71e8a99675021978a74f0c621189aa06440971735cc87878ce6ed3d979acdec2e6bcbba03a83677078b627cb0b724311412be0410c1fee93970400b2ad8f750f3bf6358441eee5dbaa9a142109\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x90235169f422f4dc9f8ca2fe27ab0d74eff3e7b7a77251ec40be1fa32aeb10b4\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x9c48aee997c54139751df952a3d1bd98defb490405f5a063b099422de0ac2358",
+      "proof": "0x16d7b847f139542bb95583a6a6db23ff921c033af400377f6ac6ee856037f4185cc0e23aa402b30fab23169ce5932fe3c95c20b5591cb0053a87007cf82c75322caf3551dc2f977fd06a5d597aafecc4f81e16190d292dbb738b2a172afc3569a61296deaeafa6b7f122ef7933ae23f63c5370b5a4f1118bca9954c3a052dc24576e475c91cabb1b2956215c4bf724127b1fabe645a207bb5542ef10fa7c4203d134e615fd2a3089ee9b6497eca4e4597aa70492c84f2ed440623eb8107f0e0e7803cca977c3feaff2bd0e5aa6b3e0d9480f88787fbce650422539ef995cb605e460706bd37964e1b90d213eb4f7b31684d3bffba8394478ac4d66786eee213c20f85cf212a7e0f0aaee57ee071056faf599bf781586dd43a56aa61fd10c7b730acc17b68756839610859ebafa4d019f9ccdc0161de5e2b5acc36e68905c48190cbdd13e1522e97a4345046dbd7c44dc1edb3d8a07c909ec84c727daf616e369446d97507423e7aff7d775d64b65b00a15e4699a53a9b47fdfa40ab6ab7d6d3feef699dcba1626f4e5f2ae7b577958c794cfd69134e198f4571d0ebc1fe207584c314d1cd33215357a2e1535c1cb26f4f0bb5eacb4ba869d4a70c850ad66f81a3026920b3416c4271f194828be3569d13f49c041b56d6024e25e034acefa503a387efb346dd5b5d0a7b1eff17474c714cf0021973045c314348ed5175e2f292354b500c69bd8d88af074eda0e3183bb743e7884094934ea8590579e41ff15126585049c715f20cf82cd8f884ed0fc35d5f6c3115c6aea63fe0fb60cb1a79fc4690eea25c36a3750bd63229d32c3940e02d248a71e8a99675021978a74f0c621189aa06440971735cc87878ce6ed3d979acdec2e6bcbba03a83677078b627cb0b724311412be0410c1fee93970400b2ad8f750f3bf6358441eee5dbaa9a142109",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x90235169f422f4dc9f8ca2fe27ab0d74eff3e7b7a77251ec40be1fa32aeb10b4"
+    },
+    "productId": "350",
+    "productContract": "0x330fC149D64996ce206B9Cbe999715d8D3B6E6F2",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "battery": {
+        "cell_format": "prismatic",
+        "chemistry": "NMC811",
+        "quality_management_system_certified": true,
+        "statistical_process_control_active": true,
+        "traceability_lot_control_exists": true,
+        "safety_test_summary_exists": true,
+        "cycle_life_test_program_exists": true,
+        "transport_test_program_exists": true
+      },
+      "formation_yield_pct": 94.8,
+      "final_eol_screening_passed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-14T00:11:10.823Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x1489b08d9f56058de41a10ca30d113301473def6#controller",
+      "role": "seller",
+      "payloadHash": "0x3638d3de9ccfaafcce3bdbeee1265e802fc3db94356aa047d0475d92e44242f4",
+      "jws": "0xd541cd5ee00cb1a69be1f1bd4d537bc9520b30ca8c552783a3e90822ab6c1b0926a61f15b2d0f46d3941506690babfcb4489e47df8de71dc245afb9a9d2b3e4d1c"
+    }
+  ]
+}

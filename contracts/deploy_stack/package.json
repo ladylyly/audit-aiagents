@@ -1,0 +1,17 @@
+{
+  "name": "supply-chain-contract-deploy-stack",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "deploy:sepolia": "truffle migrate --network sepolia --f 2 --to 2",
+    "deploy:sepolia:reset": "truffle migrate --network sepolia --reset"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "truffle": "^5.11.5"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "urn:uuid:thesis-batteryreg-1776210514550-09",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisBatteryRegulationCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x9527a43c4291ffbee10012a901e82be47e4a39e3",
+    "name": "Nordic Copper Foils AB"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x60dbb1fb374a0827bdfda1a93342656f15432062",
+    "name": "Pannon Cell Systems Zrt."
+  },
+  "issuanceDate": "2026-04-03T23:48:28.121Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x60dbb1fb374a0827bdfda1a93342656f15432062",
+    "productName": "Battery copper foil reels lot NCF-2026-09",
+    "batch": "NCF-2026-09",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Sweden",
+      "countryCode": "SE",
+      "latitude": 57.7,
+      "longitude": 11.9
+    },
+    "facilityRole": "processor",
+    "materialTags": [
+      "copper"
+    ],
+    "operationTags": [
+      "midstream",
+      "foil_rolling",
+      "battery_component"
+    ],
+    "claims": {},
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x52fd5022a4bb3bb7cdcb85f4105cb9a44cf3e3ffab4a2ab90505111934f53156\",\"proof\":\"0x967300f538dfe1b0f595a05e0b15a2bd7cac85af9372b3027b4d9ba9620eab4d3612da4f22b9e9a3781716079ea3889559acaacf96f099b0bdee191584f0e071085e97fc67a1a194beef6004d1f8cc53a10ce6e232ef7585d1913ff278390f392a3ccdf21748cc256f7fa48fb0562a0b23dfc8e2b245e393eff2fd5aeb365866452dfecb88829ca23a9f7e66560aac15e68a482da97fb30fccef74ccc26e2d0df8d81bebaabd9f78f94f3fc4a81f2e43b62e3c31b5d865f31ea0479ff04df606190fff9fa5bdaaac380c3ecc283a2cc1f4fb14f0424acd138e680efd632ef900402558a4cfd2d2d0c268cfc265ad9f4fee6098a722f6fe94f3237e558efefc274a6d50b21e593d18900fc45f434a091cb1b306956199970f90671baf48f34d50b8937204b16b8c8dd73cc97cc783e2334f337eb31911fd709ba4ecd6b052573e2e2ec72ac9c54619ca8440655ea15f08b4288197f9f02a6c869e7a9e02a204623e3823dc510ff408f5ae18bc935a3a3e2b4ee89e32d5f1d8e5c5b28b68826248401b4ef647e68ffe5d4c34497da5dc613040d35b15a7cc0747ff52d2805b41713cd9ffbc5fc823371b23940bde57e37078d4aa6c522a2373c1d0d2438005691fb6be408823b9593948c2097966b779eddfed01dc41d5c5a0db378c15e1d06624423c07c093bb32fb62c42734fa5293cb4737b4c16ae5ddedb65cdbf8dd6e5a1b464d640ebfbda905c11f4b5ceeca0fb974254c57839496c0be3559a5ab466e786447798ee638478bf229224b0d23ecd6e960468002ed87f6f0e06bff68b3ca351a0b0f4a212da7fc464bfe391e351f8014564e1351c3b3e5fe66cfc9e5adbf3718586eacb2b8d615819ee10e9b1d236991f5083200c972a830840af2e7497707d30beeff01894d8b72923795a3888a59a08eebdf5bcc718ad460968ac36bbb0f\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x19de3a6fbc728a49f101e8d67d98f4971ed43ed3cb954b40823357e25acd9271\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x52fd5022a4bb3bb7cdcb85f4105cb9a44cf3e3ffab4a2ab90505111934f53156",
+      "proof": "0x967300f538dfe1b0f595a05e0b15a2bd7cac85af9372b3027b4d9ba9620eab4d3612da4f22b9e9a3781716079ea3889559acaacf96f099b0bdee191584f0e071085e97fc67a1a194beef6004d1f8cc53a10ce6e232ef7585d1913ff278390f392a3ccdf21748cc256f7fa48fb0562a0b23dfc8e2b245e393eff2fd5aeb365866452dfecb88829ca23a9f7e66560aac15e68a482da97fb30fccef74ccc26e2d0df8d81bebaabd9f78f94f3fc4a81f2e43b62e3c31b5d865f31ea0479ff04df606190fff9fa5bdaaac380c3ecc283a2cc1f4fb14f0424acd138e680efd632ef900402558a4cfd2d2d0c268cfc265ad9f4fee6098a722f6fe94f3237e558efefc274a6d50b21e593d18900fc45f434a091cb1b306956199970f90671baf48f34d50b8937204b16b8c8dd73cc97cc783e2334f337eb31911fd709ba4ecd6b052573e2e2ec72ac9c54619ca8440655ea15f08b4288197f9f02a6c869e7a9e02a204623e3823dc510ff408f5ae18bc935a3a3e2b4ee89e32d5f1d8e5c5b28b68826248401b4ef647e68ffe5d4c34497da5dc613040d35b15a7cc0747ff52d2805b41713cd9ffbc5fc823371b23940bde57e37078d4aa6c522a2373c1d0d2438005691fb6be408823b9593948c2097966b779eddfed01dc41d5c5a0db378c15e1d06624423c07c093bb32fb62c42734fa5293cb4737b4c16ae5ddedb65cdbf8dd6e5a1b464d640ebfbda905c11f4b5ceeca0fb974254c57839496c0be3559a5ab466e786447798ee638478bf229224b0d23ecd6e960468002ed87f6f0e06bff68b3ca351a0b0f4a212da7fc464bfe391e351f8014564e1351c3b3e5fe66cfc9e5adbf3718586eacb2b8d615819ee10e9b1d236991f5083200c972a830840af2e7497707d30beeff01894d8b72923795a3888a59a08eebdf5bcc718ad460968ac36bbb0f",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x19de3a6fbc728a49f101e8d67d98f4971ed43ed3cb954b40823357e25acd9271"
+    },
+    "productId": "335",
+    "productContract": "0xf97eFDA73dcC5fd1C8bEE2E784eFc13F77476774",
+    "chainId": "11155111",
+    "companyName": "Nordic Copper Foils AB",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 150000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "SE-BATREG-0009",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 220000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "hydro_and_grid_mix",
+        "emissionsClaim": "Nordic Copper Foils AB reports site-level emissions and energy-source disclosures for Battery copper foil reels lot NCF-2026-09.",
+        "climateClaim": "Nordic Copper Foils AB maintains climate transition and emissions reduction evidence for processor operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Sweden",
+        "facilityRole": "processor",
+        "materialTags": [
+          "copper"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "processor",
+        "componentType": "copper",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_09_copper_foil_sweden-material-balance-sheet",
+          "vc_09_copper_foil_sweden-shipment-record",
+          "vc_09_copper_foil_sweden-supplier-declaration"
+        ],
+        "serialisationScheme": "NCF-2026-09-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "road_and_container",
+        "customsReference": "SE-NCF-2026-09",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "component input without battery-on-market claims"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "copper is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_control_node",
+        "reason": "clean supplier used as comparison baseline"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-03T23:48:28.121Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x9527a43c4291ffbee10012a901e82be47e4a39e3#controller",
+      "role": "issuer",
+      "payloadHash": "0xc11937db620d99bf3ace4fe9fd7172fe4a71bdf215b121b2185aa7fca8593e9c",
+      "jws": "0x7449af3252b7ffcdaa8ada62504f911b612efb9e5c2214a4479568e19994acad1679644049048d06866c42d8ccdd8c0e1fbf527918b3ccb07424b71e4bb555e11c"
+    }
+  ]
+}

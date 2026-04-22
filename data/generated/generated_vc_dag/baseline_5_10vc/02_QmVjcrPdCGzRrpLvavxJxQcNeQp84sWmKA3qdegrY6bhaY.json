@@ -1,0 +1,114 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776212887251-2",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x29813bc37288c262ada3eb1b6af144043088d9a4",
+    "name": "BelNickel Chemicals Belgium NV"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x1d26fee664fa896532c76123a5a1b087e16e4797",
+    "name": "RheinCath Active Materials GmbH"
+  },
+  "issuanceDate": "2026-04-07T00:28:05.491Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x1d26fee664fa896532c76123a5a1b087e16e4797",
+    "productName": "Battery-grade nickel sulfate refining batch",
+    "batch": "BLUEPRINT-BATCH-002",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-02-primary"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO 14001",
+        "certificateCid": "bafy-cert-02-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "The Nickel Mark",
+        "issuer": "The Nickel Mark",
+        "certificateCid": "bafy-cert-02-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "nickel",
+      "battery_material"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "chemical_processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Belgium",
+      "countryCode": "BE",
+      "latitude": 51.2194,
+      "longitude": 4.4025
+    },
+    "energySource": "wind",
+    "emissionsClaim": "Battery-grade nickel sulfate refining batch environmental record maintained by BelNickel Chemicals Belgium NV.",
+    "climateClaim": "Battery-grade nickel sulfate refining batch climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x06735f25ebc5ae32c651f53e549fccf51b1652bcbb98a8fd294daafcd650991d\",\"proof\":\"0xdca8eefa579398fff32394b59a3603b19c9cb8ce68883dda09bc246e9914fc246c42152984639dab2e098c6eea1a796ca2fe221dbc2a124fc6f61342c7a69764aca9acdcb44da46062c52c5f383698e923c40920b617016bdb38745a84374f4d00db9800c196e703767d38356a72ba86028cf473e9f16c98a165fd47a9f2bf732663a34b086abdf1370355ec0a85ef61c818168e9235575cebe540e7ec36e20f789785c573eba7e28caee5bec0762833511d936ee8d3d81e3fa0d649c2f8b00569d3c2c98f1d6c03784b0b5f545404e49b17eed496498343b14176dfbc65790f869c77ea8e16da4bf7b251d8e172a724dafb03bde5d6d718aa9c215d35d0cd2cb45df7f07bcf7b5835bd6072e55ceca47cda316d8b6cab0f7393e298349a6709c41dbd2db295d2cdf68e0d23b2c5c44ba4e3c07fff6a8c18b741be37a4249043e8a889e67dfd033b01db5d8035e22658a65c07eda8e0af038514e83f6e102b459afc325ab1119c3e9edf6c706ae21da6b847186dde67f0bbefc9266c257d606b8e8de7668f1ccf890386373832c8925736b25f78c258f2eefd97686d7a87853c4aa7c5545f9d5de369ae5634f2465996e1cef7e42bd873e3067a93df784f977f3a63ca5e9d8c52a423d6f3f60bdd341774cf96134ea840b91001250f22978f5816d28675ebba0a7339a88752a1c77af964a75cd913f73f5c6a96d4dccb80bb5d44e45b9b4a7d93416237922d1696a80b77a62aa46cade3071b63bd1961ddd544900c04e1f456b557ca3ed177548e1a13fcd3fbe610c0dff73f7b23b47448a4686a1a57ccf60c904828d1b0d26c6d14d8445e9e874b1e6a985a070a1e1e7d1e64d59118f545ec2e77f7d9c878584cf25c73938c02a2e9cd64c54206dc94c5a30f3db7425f5a3cf1f75e95e4fb94e9df738e07ff3cc302348bbb4c50dc76c13504\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x812c20f8ee340df12f8b6c551bd78ff8324ed6680fdf9a79a5cb97870e2f1955\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x06735f25ebc5ae32c651f53e549fccf51b1652bcbb98a8fd294daafcd650991d",
+      "proof": "0xdca8eefa579398fff32394b59a3603b19c9cb8ce68883dda09bc246e9914fc246c42152984639dab2e098c6eea1a796ca2fe221dbc2a124fc6f61342c7a69764aca9acdcb44da46062c52c5f383698e923c40920b617016bdb38745a84374f4d00db9800c196e703767d38356a72ba86028cf473e9f16c98a165fd47a9f2bf732663a34b086abdf1370355ec0a85ef61c818168e9235575cebe540e7ec36e20f789785c573eba7e28caee5bec0762833511d936ee8d3d81e3fa0d649c2f8b00569d3c2c98f1d6c03784b0b5f545404e49b17eed496498343b14176dfbc65790f869c77ea8e16da4bf7b251d8e172a724dafb03bde5d6d718aa9c215d35d0cd2cb45df7f07bcf7b5835bd6072e55ceca47cda316d8b6cab0f7393e298349a6709c41dbd2db295d2cdf68e0d23b2c5c44ba4e3c07fff6a8c18b741be37a4249043e8a889e67dfd033b01db5d8035e22658a65c07eda8e0af038514e83f6e102b459afc325ab1119c3e9edf6c706ae21da6b847186dde67f0bbefc9266c257d606b8e8de7668f1ccf890386373832c8925736b25f78c258f2eefd97686d7a87853c4aa7c5545f9d5de369ae5634f2465996e1cef7e42bd873e3067a93df784f977f3a63ca5e9d8c52a423d6f3f60bdd341774cf96134ea840b91001250f22978f5816d28675ebba0a7339a88752a1c77af964a75cd913f73f5c6a96d4dccb80bb5d44e45b9b4a7d93416237922d1696a80b77a62aa46cade3071b63bd1961ddd544900c04e1f456b557ca3ed177548e1a13fcd3fbe610c0dff73f7b23b47448a4686a1a57ccf60c904828d1b0d26c6d14d8445e9e874b1e6a985a070a1e1e7d1e64d59118f545ec2e77f7d9c878584cf25c73938c02a2e9cd64c54206dc94c5a30f3db7425f5a3cf1f75e95e4fb94e9df738e07ff3cc302348bbb4c50dc76c13504",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x812c20f8ee340df12f8b6c551bd78ff8324ed6680fdf9a79a5cb97870e2f1955"
+    },
+    "productId": "353",
+    "productContract": "0x9A3A35f324703dDE37673131E72c83eB1Ff2B68E",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "supplier_assessment_complete": true,
+      "trace_metal_control_program": true,
+      "wastewater_monitoring_active": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-07T00:28:05.491Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x29813bc37288c262ada3eb1b6af144043088d9a4#controller",
+      "role": "seller",
+      "payloadHash": "0xa98137e134fdf1fef9a2516979f4f1e33090aed4eef8bc3cdbbe70451d71ca89",
+      "jws": "0x52957e289daba300d668dc88d2b82ecf48e48f5cf531565c2177d57337aa81de48f8e96e2b28e349d8be72b4e585d8014612d3dc3d2f8f09e9f26b5a0fc314131c"
+    }
+  ]
+}

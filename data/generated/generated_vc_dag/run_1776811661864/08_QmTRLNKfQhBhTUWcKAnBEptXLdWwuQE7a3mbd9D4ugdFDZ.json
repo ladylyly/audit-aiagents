@@ -1,0 +1,94 @@
+{
+  "id": "urn:uuid:real-vc-1776811669627-8",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x00936c83717978fbd05f6671218240d9ae852d59",
+    "name": "Mason Graphite Canada Inc"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x00936c83717978fbd05f6671218240d9ae852d59",
+    "name": "Mason Graphite Canada Inc"
+  },
+  "issuanceDate": "2026-04-04T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x00936c83717978fbd05f6671218240d9ae852d59",
+    "productName": "Natural graphite mining",
+    "batch": "REAL-BATCH-008",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-gr-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-gr-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-gr-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "graphite"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Canada",
+      "countryCode": "CA",
+      "latitude": 46.5,
+      "longitude": -75.5
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Quebec hydro grid, monitored extraction",
+    "climateClaim": "Carbon-neutral mine cert in progress",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x906c378bcb6015ddecea2fa98815b572aa8e536fee24301173d9342909b76c02\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x906c378bcb6015ddecea2fa98815b572aa8e536fee24301173d9342909b76c02",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "360",
+    "productContract": "0x61910Cd3D1D2A38507169eC9391DdcB688EFC7b4",
+    "chainId": "11155111",
+    "claims": {
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-04T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x00936c83717978fbd05f6671218240d9ae852d59#controller",
+      "role": "seller",
+      "payloadHash": "0xcfc90e819ec3f2f93403f0fca25bb2d96749f5e630a03d3e4f601c24a754f3cd",
+      "jws": "0x0eda9d00d72c066a4096804e09aae5c1a1da78468cf1fcc3089352ee6c9561952cc96d778948e88dd77dee506a668c6e09d938c66ad4909e479709623365d4181c"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776212893891-9",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x089ca12f3515d165a89cf3d0142f743d60df26c5",
+    "name": "HexaPack Mobility France SAS"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x571c3d3fa8dd9c27d7742e001c91509e4b8887c0",
+    "name": "EuroCell Mobility Battery Systems GmbH"
+  },
+  "issuanceDate": "2026-04-14T00:28:05.491Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x571c3d3fa8dd9c27d7742e001c91509e4b8887c0",
+    "productName": "Battery module assembly and validation lot",
+    "batch": "BLUEPRINT-BATCH-009",
+    "quantity": 1,
+    "previousCredential": "QmUc13yx27GWD6cx34vHVNWbCxgPuMyhHwy8HVmeXWVUoY",
+    "componentCredentials": [
+      "QmUc13yx27GWD6cx34vHVNWbCxgPuMyhHwy8HVmeXWVUoY"
+    ],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-cert-09-primary"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO 9001",
+        "certificateCid": "bafy-cert-09-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "IEC 62619",
+        "issuer": "IEC 62619",
+        "certificateCid": "bafy-cert-09-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "assembler",
+    "materialTags": [
+      "battery_module",
+      "battery_component"
+    ],
+    "operationTags": [
+      "downstream",
+      "assembly",
+      "battery_component",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": 45.764,
+      "longitude": 4.8357
+    },
+    "energySource": "nuclear_renewable_mix",
+    "emissionsClaim": "Battery module assembly and validation lot environmental record maintained by HexaPack Mobility France SAS.",
+    "climateClaim": "Battery module assembly and validation lot climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x265e6fdaa8a4aaab3a7dd0b71ae0c4b570729659db0018514966209d225ebf18\",\"proof\":\"0xc00e02fdd19ad34a76c3c047e60ed0ce1d6a9c82553f403fc9192d434664fb66462e3ae5d0c5ea5620f20ca02d641f16166e317fc3a6856e40e93282bcb54e43fc0e5695e4888cbdfc9315ab1f5f06e1eb45fb8c9e7bdf84d77f3075305fdc2f2a2b6bef557bd79fcbb69b1731f67feaf7269da3325a9867a3ffc295ad630140eda1cb9818f9a616246ef7378bc2d9eb47c59961bce260dea075cb5c97ba0a04f6b66dc7cece573536c16d0d584a9bc9a95de01e965080aa3d496d258c8f5d0005470df28362e3799800e60b3e9ef9a5cb734fc959fc081165ddf364a92f4e0d0040ecf25e61fa8a191303fe8c3739254a8b23a0e60ab61cdbed0aad726fb3726082e52a7ce5a2a6948b161bf035eb22b1da951e636b714351e8e5518967bc7b96cc1d1f5d57e2a075741f6d883c404b19866d8a98bd0d5b5a08f3577c05cc2ddcd3a47cac4b137bdcd06759ba57c07fedcbc56e892d8a7eb1a2cec3a3c4212c90add8c300f6baffa27d42b24ea3a4a0d4df0cd99ffa7163d6c26553e203401f82755a4116308162f6ba5b431a7af29a4dd38351f8b561eb29e98ce1e78e237f7433f14c57bae46620e02cfe38cc256c429baa5a23d2280436a769389810c304ea97bde5b628d45cf310369e4c07a82bf35218a72c597505f1a6f56d55c0c814bee2a6035da4d351eb2816595b309c721ea258be84779637c078f0dc94845e4b3c7bc29a93490bbdae2cc17641bb384fac4a03590ba4d627d3c825073d0d3c5018e361151cd6a98d99a63a146dabd2c209827a1b2f726034b2575109c53fcf53f056113ff6a38b26cbb6e9c471a73786511595f132d3f820426edd85f6c8176a0276eac65e26d2d875dac6b65261640f3ec4f55ca5ffafbcba9062312196f60ee561f609e2f09672fa7fdcb59724cefbb5680aa1a902fc43181462456a4b9e0d\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x16bf914b49e516ac4457361eb93557888fc541eb1bd1ad83a6981e1cd96e8116\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x265e6fdaa8a4aaab3a7dd0b71ae0c4b570729659db0018514966209d225ebf18",
+      "proof": "0xc00e02fdd19ad34a76c3c047e60ed0ce1d6a9c82553f403fc9192d434664fb66462e3ae5d0c5ea5620f20ca02d641f16166e317fc3a6856e40e93282bcb54e43fc0e5695e4888cbdfc9315ab1f5f06e1eb45fb8c9e7bdf84d77f3075305fdc2f2a2b6bef557bd79fcbb69b1731f67feaf7269da3325a9867a3ffc295ad630140eda1cb9818f9a616246ef7378bc2d9eb47c59961bce260dea075cb5c97ba0a04f6b66dc7cece573536c16d0d584a9bc9a95de01e965080aa3d496d258c8f5d0005470df28362e3799800e60b3e9ef9a5cb734fc959fc081165ddf364a92f4e0d0040ecf25e61fa8a191303fe8c3739254a8b23a0e60ab61cdbed0aad726fb3726082e52a7ce5a2a6948b161bf035eb22b1da951e636b714351e8e5518967bc7b96cc1d1f5d57e2a075741f6d883c404b19866d8a98bd0d5b5a08f3577c05cc2ddcd3a47cac4b137bdcd06759ba57c07fedcbc56e892d8a7eb1a2cec3a3c4212c90add8c300f6baffa27d42b24ea3a4a0d4df0cd99ffa7163d6c26553e203401f82755a4116308162f6ba5b431a7af29a4dd38351f8b561eb29e98ce1e78e237f7433f14c57bae46620e02cfe38cc256c429baa5a23d2280436a769389810c304ea97bde5b628d45cf310369e4c07a82bf35218a72c597505f1a6f56d55c0c814bee2a6035da4d351eb2816595b309c721ea258be84779637c078f0dc94845e4b3c7bc29a93490bbdae2cc17641bb384fac4a03590ba4d627d3c825073d0d3c5018e361151cd6a98d99a63a146dabd2c209827a1b2f726034b2575109c53fcf53f056113ff6a38b26cbb6e9c471a73786511595f132d3f820426edd85f6c8176a0276eac65e26d2d875dac6b65261640f3ec4f55ca5ffafbcba9062312196f60ee561f609e2f09672fa7fdcb59724cefbb5680aa1a902fc43181462456a4b9e0d",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x16bf914b49e516ac4457361eb93557888fc541eb1bd1ad83a6981e1cd96e8116"
+    },
+    "productId": "361",
+    "productContract": "0x5F1BcD25314d69E764864de017691895cBFFFd7E",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "battery": {
+        "module_traceability_complete": true,
+        "torque_control_program_active": true,
+        "electrical_safety_screening_passed": true,
+        "thermal_interface_application_verified": true
+      },
+      "module_hipot_test_passed": true,
+      "module_balancing_validation_complete": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-14T00:28:05.491Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x089ca12f3515d165a89cf3d0142f743d60df26c5#controller",
+      "role": "seller",
+      "payloadHash": "0x2155f9496445f90c2fbb82ac7e695e8d788f967e76a10ebd7711f06cd67241c1",
+      "jws": "0x649bb8c3fe444e7693c7d353b45d5ea629f99a84876e62d7878e39169daf279531b67cb48dd8fc8b9ff7503ff06b2873b2057926b2e641b31dd7207fa7d1e9e71c"
+    }
+  ]
+}

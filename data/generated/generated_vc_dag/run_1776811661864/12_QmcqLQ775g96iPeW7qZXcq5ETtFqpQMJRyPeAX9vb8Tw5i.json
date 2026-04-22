@@ -1,0 +1,90 @@
+{
+  "id": "urn:uuid:real-vc-1776811673207-12",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x87bd5e0dc1bdacc6b42391229fb549ae513c911c",
+    "name": "EPCOS Capacitors GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-04-08T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "productName": "Tantalum capacitor manufacturer",
+    "batch": "REAL-BATCH-012",
+    "quantity": 1,
+    "previousCredential": "QmSbqzhenELodMFxvQZHwL12sJfWmYEBtRYrzAyau7hq1J",
+    "componentCredentials": [
+      "QmSbqzhenELodMFxvQZHwL12sJfWmYEBtRYrzAyau7hq1J"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-ta-cap-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ta-cap-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "tantalum",
+      "battery_component"
+    ],
+    "operationTags": [
+      "downstream",
+      "battery_component",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 51.3,
+      "longitude": 12.4
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "German green tariff, scope-2 <50g CO2/kWh",
+    "climateClaim": "ISO 50001 energy management",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x60890cb5fc62f1c4b582c009f862a6e52a60410aeaae0daf30492ed08fc04f40\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x60890cb5fc62f1c4b582c009f862a6e52a60410aeaae0daf30492ed08fc04f40",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "364",
+    "productContract": "0xB81DC6d2bbB7c65003C6974D8d5Ddb31802ff627",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-08T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x87bd5e0dc1bdacc6b42391229fb549ae513c911c#controller",
+      "role": "seller",
+      "payloadHash": "0xecd83d783c19aff8a1ba0e380b3956c8cd16c20e7616df1a302441b15c2bbe39",
+      "jws": "0x63d599ba758875df5f150cf6f1a5b23ee7f84e4e565b89e3af7ee18cd95107e769391b1809c219e41e0a80be26cbc7fdda846a2ff434ae7156d775bb64f9e46c1b"
+    }
+  ]
+}

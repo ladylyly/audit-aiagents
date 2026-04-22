@@ -1,0 +1,90 @@
+{
+  "id": "urn:uuid:real-vc-1776811682932-23",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-04-19T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "Pack ESG audit attestation",
+    "batch": "REAL-BATCH-023",
+    "quantity": 1,
+    "previousCredential": "QmehbCv8pCQCrEmyPYHn924AA8XEC6yTYaKtrpmZ1xFoHR",
+    "componentCredentials": [
+      "QmehbCv8pCQCrEmyPYHn924AA8XEC6yTYaKtrpmZ1xFoHR"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-esg-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-esg-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack"
+    ],
+    "operationTags": [
+      "downstream",
+      "quality_assurance",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 50.1,
+      "longitude": 8.7
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Third-party verified scope-1+2+3",
+    "climateClaim": "CDP A-list supplier",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x1233143bd694f1809a4cd7c9abf736bc2322fd573439b09c86fc690285074407\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x1233143bd694f1809a4cd7c9abf736bc2322fd573439b09c86fc690285074407",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "375",
+    "productContract": "0xa3f766B0B5Fa49d2C811aeaF8e4F79D9A8a0C9f9",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-19T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf#controller",
+      "role": "seller",
+      "payloadHash": "0xf5f08a94e61f65738e3455e2f933292cf953b141e02a5fe28e3cb90b3e98ccb9",
+      "jws": "0xe0dd6c9aa81b5dbb7a5a5f8d141c01b2a1360b00f931a0ee20fb160dbfb3dbe70aab152183cc0ce5c9e7edb3ff741121b66f3df3df2d1267e79eecd83e55d39b1c"
+    }
+  ]
+}

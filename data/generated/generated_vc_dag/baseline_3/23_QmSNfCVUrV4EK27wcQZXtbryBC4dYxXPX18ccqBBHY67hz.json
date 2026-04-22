@@ -1,0 +1,91 @@
+{
+  "id": "urn:uuid:real-vc-1776202379749-23",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-04-12T21:32:26.901Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "Pack ESG audit attestation",
+    "batch": "REAL-BATCH-023",
+    "quantity": 1,
+    "previousCredential": "QmQR5xgHvpspxbFKnosA8wYp1VVKqhgSnFNT1yDMeLV1H3",
+    "componentCredentials": [
+      "QmQR5xgHvpspxbFKnosA8wYp1VVKqhgSnFNT1yDMeLV1H3"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-esg-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-esg-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack"
+    ],
+    "operationTags": [
+      "downstream",
+      "quality_assurance",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 50.1,
+      "longitude": 8.7
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Third-party verified scope-1+2+3",
+    "climateClaim": "CDP A-list supplier",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x0209ad777cd12f9871ce9aab440ae135dc99112ce89444b921b47d6373b8fa0d\",\"proof\":\"0x1ec3209cb428f2c711368344c4eb130a8336ae8437a21a397221277ec16f8c1f98a21facd836b28d143264e1684f7d385c003b456b37777810896956204d16667e523c2d81a8373dd5c48c358834078b2a249a3c71b6c0b215ded1f9781ab665a4aa6fd8e4d65d29246b139e27d4442d5d35e8b137b946d404d56ae5f66412449dff2542fbf0cbf8baed4fe38deb603c2994f35a9dac2825819e0e614e80360ddd18131e7582de57042b24b81e89240a847060887b67088d5d92a16aa4822c09ac6dbbcb640076c7c6d72d85b4ea6cb906fcc1b0f947556480339bb68cfdf80566935bd66f2ba92254c83fc71aed6fffbd3d34db0716656f91fd629854a45363f21c147fc9a053bbe97d680e63f766a5d8381564f93c130ff1c643758cbfd252cec59689dee840f501970d37c7c3158e3ac7683b1e015ab1a212f2625117af1b04e7185fd0fcc9f171b501953dee855ae63ece26b6362a216bd0cc7f4a9cae57e4cdcf65f63557fecb059bb05d08c3dacff4abce58fac300240cfe629b05b7031a8331d5fa42589f18deeaca9d30e9487154b3297a3dbdfb984a539592eed4205c327de2a3811c24969e9af698a08f24c028d8110011a24928a4d080e1b1616108665e4781ad8d23d26b580368e2ad63f917bf59e4904ede8ad0d0ba2fe855192a7d74c68660b49d33c97e3088b3c8421d3ba9b22833790162e54afb10404d1898c064da4666052fd3cca46efc44589ccdbec61db23405b1e51a76811e8d84340e165b9a2aaddb68cf80b652a01ce25dcf95d44d93877f60f9f82c2b8967980710760c428f27749e8d9aa5a79993c81fda32b68df7ace75498f9db49f1522560b50a4fa0bac4f4a8e6dc43368a428045c315b60bf3236386f73417e42e66be0e8bbb598a04850cc85761c5a381fcee1ab50e5de7dfe686955725ccea9e98860a\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xe42ee3d0c9de5546248de7df759a29d60aba59fabea4b8720ee8514c8537f528\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x0209ad777cd12f9871ce9aab440ae135dc99112ce89444b921b47d6373b8fa0d",
+      "proof": "0x1ec3209cb428f2c711368344c4eb130a8336ae8437a21a397221277ec16f8c1f98a21facd836b28d143264e1684f7d385c003b456b37777810896956204d16667e523c2d81a8373dd5c48c358834078b2a249a3c71b6c0b215ded1f9781ab665a4aa6fd8e4d65d29246b139e27d4442d5d35e8b137b946d404d56ae5f66412449dff2542fbf0cbf8baed4fe38deb603c2994f35a9dac2825819e0e614e80360ddd18131e7582de57042b24b81e89240a847060887b67088d5d92a16aa4822c09ac6dbbcb640076c7c6d72d85b4ea6cb906fcc1b0f947556480339bb68cfdf80566935bd66f2ba92254c83fc71aed6fffbd3d34db0716656f91fd629854a45363f21c147fc9a053bbe97d680e63f766a5d8381564f93c130ff1c643758cbfd252cec59689dee840f501970d37c7c3158e3ac7683b1e015ab1a212f2625117af1b04e7185fd0fcc9f171b501953dee855ae63ece26b6362a216bd0cc7f4a9cae57e4cdcf65f63557fecb059bb05d08c3dacff4abce58fac300240cfe629b05b7031a8331d5fa42589f18deeaca9d30e9487154b3297a3dbdfb984a539592eed4205c327de2a3811c24969e9af698a08f24c028d8110011a24928a4d080e1b1616108665e4781ad8d23d26b580368e2ad63f917bf59e4904ede8ad0d0ba2fe855192a7d74c68660b49d33c97e3088b3c8421d3ba9b22833790162e54afb10404d1898c064da4666052fd3cca46efc44589ccdbec61db23405b1e51a76811e8d84340e165b9a2aaddb68cf80b652a01ce25dcf95d44d93877f60f9f82c2b8967980710760c428f27749e8d9aa5a79993c81fda32b68df7ace75498f9db49f1522560b50a4fa0bac4f4a8e6dc43368a428045c315b60bf3236386f73417e42e66be0e8bbb598a04850cc85761c5a381fcee1ab50e5de7dfe686955725ccea9e98860a",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xe42ee3d0c9de5546248de7df759a29d60aba59fabea4b8720ee8514c8537f528"
+    },
+    "productId": "284",
+    "productContract": "0xaE819bFEB00bFcB695d5af7299513b8E013Cb8A7",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-12T21:32:26.901Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf#controller",
+      "role": "seller",
+      "payloadHash": "0x2f936d80708da6bbd4bd4e4df3ab752b2c69700ca31a7249a141df7161032776",
+      "jws": "0x8c06095bb0f47c1e4f4c27ece66f1a821964a550b916d24c799ed9b7747ec63743051211c735d179d108c91e5d2024c91c7d9ce703d038b509289a3b4146dc6b1b"
+    }
+  ]
+}

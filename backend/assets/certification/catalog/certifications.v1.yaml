@@ -1,0 +1,108 @@
+catalog:
+  id: certification_catalog
+  version: v1
+certifications:
+  - id: irma
+    displayName: IRMA
+    missingStatus: fail
+    scopeMismatchStatus: fail
+    aliases:
+      - IRMA
+      - Initiative for Responsible Mining Assurance
+    applicableFacilityRoles:
+      - mine
+    applicableMaterialTags: []
+    applicableOperationTags: []
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name
+  - id: rmap_rmi_esg_2025
+    displayName: RMAP + RMI ESG 2025
+    missingStatus: fail
+    scopeMismatchStatus: fail
+    aliases:
+      - RMAP
+      - RMAP plus RMI ESG 2025
+      - RMAP plus RMI's 2025 ESG modules
+      - RMI ESG 2025
+    applicableFacilityRoles:
+      - smelter
+      - refiner
+      - processor
+    applicableMaterialTags: []
+    applicableOperationTags: []
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name
+  - id: nickel_mark
+    displayName: The Nickel Mark
+    missingStatus: fail
+    scopeMismatchStatus: warning
+    aliases:
+      - The Nickel Mark
+      - Nickel Mark
+    applicableFacilityRoles: []
+    applicableMaterialTags:
+      - nickel
+    applicableOperationTags:
+      - upstream
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name
+  - id: copper_mark
+    displayName: The Copper Mark
+    missingStatus: fail
+    scopeMismatchStatus: warning
+    aliases:
+      - The Copper Mark
+      - Copper Mark
+    applicableFacilityRoles: []
+    applicableMaterialTags:
+      - copper
+    applicableOperationTags: []
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name
+  - id: asi
+    displayName: ASI
+    missingStatus: fail
+    scopeMismatchStatus: warning
+    aliases:
+      - ASI
+      - Aluminium Stewardship Initiative
+      - Aluminum Stewardship Initiative
+    applicableFacilityRoles: []
+    applicableMaterialTags:
+      - aluminum
+    applicableOperationTags:
+      - battery_component
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name
+  - id: sa8000
+    displayName: SA8000
+    missingStatus: fail
+    scopeMismatchStatus: fail
+    aliases:
+      - SA8000
+    applicableFacilityRoles: []
+    applicableMaterialTags: []
+    applicableOperationTags:
+      - social_risk_heavy
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name
+  - id: iso_14001
+    displayName: ISO 14001
+    missingStatus: fail
+    scopeMismatchStatus: warning
+    aliases:
+      - ISO 14001
+      - ISO14001
+    applicableFacilityRoles: []
+    applicableMaterialTags: []
+    applicableOperationTags:
+      - environmental_system
+    evidencePaths:
+      - credentialSubject.certifications[*].name
+      - credentialSubject.certificateCredential.name

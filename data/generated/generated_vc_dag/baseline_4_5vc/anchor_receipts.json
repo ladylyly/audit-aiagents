@@ -1,0 +1,59 @@
+{
+  "anchoredAt": "2026-04-15T00:13:27.852Z",
+  "rootCid": "QmTzUsrV1djigGovmQNRjvic4ABqhHBiYV4TPTJMgxN4ah",
+  "manifestPath": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/generated_vc_dag/blueprint_case_1776211870822/manifest.json",
+  "deployerAddress": "0x3a1Fd07b575a007d4DC0EFa895596E6F31bF7aCf",
+  "issuerAddress": "0x158cC718425606Cb0F34fbCB06AF4B674A259CE5",
+  "entries": [
+    {
+      "cid": "QmeFh4Bi2wHUCMbitPUzXDResX34f7pJJc67yEUcLmfn9u",
+      "productContract": "0x605aaBfCA317f4d63542b4715f26c19bb42DDdEB",
+      "productId": "347",
+      "expectedVcHash": "0x342519ef3cc1ac19ca8cbf523fcbee996b86f639ad78f8dbbc26d91e2d639a14",
+      "actualVcHash": "0x342519ef3cc1ac19ca8cbf523fcbee996b86f639ad78f8dbbc26d91e2d639a14",
+      "anchored": true,
+      "paymentTxHash": "0xc97bc58f0f497f5064bd9d751f76b46bb16af27afbe4722fccc71cb3dd05ae9e",
+      "confirmTxHash": "0x90b4d9cfd3b57575fe9ad53acd50fff1c06589373aa0212ba85996085e4dfcc6"
+    },
+    {
+      "cid": "QmVL1LKNqyA9tyygsmzRvUvRBJEyFDoSLvCug2uNaU9B1a",
+      "productContract": "0xFC0AD4bc24ebab7cD2787D691F9519b2074E8fe4",
+      "productId": "348",
+      "expectedVcHash": "0x3b72f3a971f257ba9dd2032f09a580385c279953c7dfa93013cb59f7e2ed17e8",
+      "actualVcHash": "0x3b72f3a971f257ba9dd2032f09a580385c279953c7dfa93013cb59f7e2ed17e8",
+      "anchored": true,
+      "paymentTxHash": "0x8ff619afa60c7497bbd5f61fc06891892a62bce67c4b1d4a010486b4a4c01e7b",
+      "confirmTxHash": "0xa1199df03ce7fdf568fb3c6cdb3982b63ebd12498520f2badc290d9453f02a8d"
+    },
+    {
+      "cid": "QmcF1sskdM7m3r7pSmG3GH3bZa3HsrqfRPku4b9NoSv8mt",
+      "productContract": "0x51f4108F51Dc58F65E1b402Cce1b09b119980cCe",
+      "productId": "349",
+      "expectedVcHash": "0xc55ba79c4e329533ac9303dd2a1d589a7c281da3fb61da4096677976a2274d04",
+      "actualVcHash": "0xc55ba79c4e329533ac9303dd2a1d589a7c281da3fb61da4096677976a2274d04",
+      "anchored": true,
+      "paymentTxHash": "0xf89b4b652e5301425e1c42617f75c52e86e40425c6b4ea417a29eba79c856b42",
+      "confirmTxHash": "0xad7af589aa4421306dc0cc47f9d9871aa6a38adfaee6b39e47c63f398636c658"
+    },
+    {
+      "cid": "QmavdSo7eaE7W9ipSg2oboGiLm5QsvK85k446gXkrjx6yX",
+      "productContract": "0x330fC149D64996ce206B9Cbe999715d8D3B6E6F2",
+      "productId": "350",
+      "expectedVcHash": "0xa170e4bf7a6b41c758606c124db40621696b992e765610b40bf2bd0647caafcd",
+      "actualVcHash": "0xa170e4bf7a6b41c758606c124db40621696b992e765610b40bf2bd0647caafcd",
+      "anchored": true,
+      "paymentTxHash": "0x9ea93a8664c2e6492b2a6dd95c9de85ae4dc5a396cfcaf23db28c0055c312276",
+      "confirmTxHash": "0x191307032741eb85a19e74c2da9b9b3b30e88fd7361bcf737fd5b843a53b80c8"
+    },
+    {
+      "cid": "QmTzUsrV1djigGovmQNRjvic4ABqhHBiYV4TPTJMgxN4ah",
+      "productContract": "0x1dd845944e0E72438c4B337cE5E7F745E2aA0BfE",
+      "productId": "351",
+      "expectedVcHash": "0xd4acab0e7812cbe81995ae1539d5fd262cba285a64aab992af72c3855e329e93",
+      "actualVcHash": "0xd4acab0e7812cbe81995ae1539d5fd262cba285a64aab992af72c3855e329e93",
+      "anchored": true,
+      "paymentTxHash": "0xc2b4c48d1ed88ff68c440f9699d410ee792aa701539a24385e4dcc0b2c0b654a",
+      "confirmTxHash": "0xbd9912b31ee503a69f9dbaf8029844acb73f02ed1a1eab0bf8c962c7bb1416b5"
+    }
+  ]
+}

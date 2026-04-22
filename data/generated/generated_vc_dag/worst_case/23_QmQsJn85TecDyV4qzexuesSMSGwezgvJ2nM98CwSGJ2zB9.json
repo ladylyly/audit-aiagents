@@ -1,0 +1,98 @@
+{
+  "id": "urn:uuid:wc-vc-1774876640409-23",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-03-30T13:17:20.409Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "Pack ESG audit attestation",
+    "batch": "WC-BATCH-023",
+    "quantity": 1,
+    "previousCredential": "QmdFhs62awfLw7hBdghPXBW3Vq1YN1fELaJssDzVWDtSyg",
+    "componentCredentials": [
+      "QmdFhs62awfLw7hBdghPXBW3Vq1YN1fELaJssDzVWDtSyg"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-esg-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-esg-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "SA8000",
+        "issuer": "SAI",
+        "certificateCid": "bafy-cert-esg-sa8000",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack"
+    ],
+    "operationTags": [
+      "downstream",
+      "quality_assurance",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 50.1,
+      "longitude": 8.7
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Third-party verified scope-1+2+3",
+    "climateClaim": "CDP A-list supplier",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x1ccf7d05111718a57c05c8ea130bd914b6879ff16eebfbf1ecce9252e7157332\",\"proof\":\"0xce38ed3219cf0ff356e36432136ca610af2fbf84a9cd4f6818bda570d549ff488a5fd3ab1d2305187eb4fee33443aa66a3473e9cb6475788c2d803ec8b117f03ea886a3aaa30199d378c63ea3069261fd171278df9d26c44d2943fbd62530c43ec55b08bfd329242e72cc9480a76860a24095d1f7130599d0737bf4078513f7d4da3618277bcb89363c66dcdd06f1a0b3de77599dfbce5705460ee47da22b40bc706e5797e17acfccb99278d256213d4fcb9039afe6544517439409c143f190f609f616a3aa193c3e2ecd2e6c1417d54b8403dd4966222200fd0929225e6f5016446906c18b2d1d8bb8875804b1ab982d077ce181b3b1fb34efa1b9186a1570c72fcd691d0998f8893d48058a1d4801ad40cc39149a03041a145a4b6e782856ce412229d2b8f0faae566dbe962f50aac5b3c500d8a386fdb1861d8355ff6f31468ef5afadf6c43e69e950a14650655672a3655c4fbf4f6042e9a307faeb1ad7ffa03b7464985a7d8b88c70916819ae0dd75bf60d52ee32285a1eb76f34fc3e4c56e1c7da60856b524964878f2e86c336907b3804f5fc347dded90476f2f744419c5418851d6c130169192062bb25eeba0c0191451764f5872eed09f4ef6a1b07fc98a15dd2d98d8fe58b257580b251fa66d9caa7c0b8116971e0285129bdc070843db2a025ac6ac5f9aafd1a5d66771b1055ccdd05e6e8aee7ea8bca6c2d641c7cb751084a6b0ce339c9e3ee66f51851b0717182f3a417bb09c54a93cf7fc97a5cc3f00154387f567d65796dc5062f28a4d581f345ae6c15c1621f6f4177a84d86908bc046c1af464698226031f83aaaf013467809a9081ac12b11cfa5f5000e928b17d5c28c7c26a5f78797e2fd9cce75cf7900396c055760c39f1483f4390908892c6c9017f34aa62a02d073d9e8cedc63c8dde767a1242213e13238557009\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xaa172ca40ff6d7791938a96e3098b45a126f86b75934ebb3ad38485204f67246\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x1ccf7d05111718a57c05c8ea130bd914b6879ff16eebfbf1ecce9252e7157332",
+      "proof": "0xce38ed3219cf0ff356e36432136ca610af2fbf84a9cd4f6818bda570d549ff488a5fd3ab1d2305187eb4fee33443aa66a3473e9cb6475788c2d803ec8b117f03ea886a3aaa30199d378c63ea3069261fd171278df9d26c44d2943fbd62530c43ec55b08bfd329242e72cc9480a76860a24095d1f7130599d0737bf4078513f7d4da3618277bcb89363c66dcdd06f1a0b3de77599dfbce5705460ee47da22b40bc706e5797e17acfccb99278d256213d4fcb9039afe6544517439409c143f190f609f616a3aa193c3e2ecd2e6c1417d54b8403dd4966222200fd0929225e6f5016446906c18b2d1d8bb8875804b1ab982d077ce181b3b1fb34efa1b9186a1570c72fcd691d0998f8893d48058a1d4801ad40cc39149a03041a145a4b6e782856ce412229d2b8f0faae566dbe962f50aac5b3c500d8a386fdb1861d8355ff6f31468ef5afadf6c43e69e950a14650655672a3655c4fbf4f6042e9a307faeb1ad7ffa03b7464985a7d8b88c70916819ae0dd75bf60d52ee32285a1eb76f34fc3e4c56e1c7da60856b524964878f2e86c336907b3804f5fc347dded90476f2f744419c5418851d6c130169192062bb25eeba0c0191451764f5872eed09f4ef6a1b07fc98a15dd2d98d8fe58b257580b251fa66d9caa7c0b8116971e0285129bdc070843db2a025ac6ac5f9aafd1a5d66771b1055ccdd05e6e8aee7ea8bca6c2d641c7cb751084a6b0ce339c9e3ee66f51851b0717182f3a417bb09c54a93cf7fc97a5cc3f00154387f567d65796dc5062f28a4d581f345ae6c15c1621f6f4177a84d86908bc046c1af464698226031f83aaaf013467809a9081ac12b11cfa5f5000e928b17d5c28c7c26a5f78797e2fd9cce75cf7900396c055760c39f1483f4390908892c6c9017f34aa62a02d073d9e8cedc63c8dde767a1242213e13238557009",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xaa172ca40ff6d7791938a96e3098b45a126f86b75934ebb3ad38485204f67246"
+    },
+    "productId": "120",
+    "productContract": "0x363F1e4860d068684792c8521E84441a832775D3",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-30T13:17:20.409Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf#controller",
+      "role": "seller",
+      "payloadHash": "0xe61db3f4f65c7a077fc599992526a870e69dff13c37caa13b75b0b4a20182d4b",
+      "jws": "0x9d1e7a929763158d981ed0b7963d21a29dc0fdc0e19f68dadf3999091bc7989e72620999eb78d1eff34fae0b5a1122d6e356c53fbad49f8c2b8b4bf8f539e5a51b"
+    }
+  ]
+}

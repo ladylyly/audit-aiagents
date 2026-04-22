@@ -1,0 +1,150 @@
+{
+  "id": "urn:uuid:thesis-dense20-1776205071839-01",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisDenseComplianceCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x96d78c13bd2e803de645e7c1cdf661b53b42e4ab",
+    "name": "Lualaba Cobalt Cooperative SARL"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xae9deb2928e2eb2d6c9c7b21348979f7c2e0addf",
+    "name": "Baltic Cobalt Refining OÜ"
+  },
+  "issuanceDate": "2026-03-26T22:17:51.791Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xae9deb2928e2eb2d6c9c7b21348979f7c2e0addf",
+    "productName": "Cobalt hydroxide concentrate lot LCC-2026-01",
+    "batch": "LCC-2026-01",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Democratic Republic of the Congo",
+      "countryCode": "CD",
+      "latitude": -10.7,
+      "longitude": 26.8
+    },
+    "facilityRole": "mine",
+    "materialTags": [
+      "cobalt"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "high_risk",
+      "human_rights_sensitive"
+    ],
+    "claims": {},
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x0c48253aec6435d0e09ccee89324adc42c7cfaec17fc7a52d61fbe5c67adc864\",\"proof\":\"0xee2341b9c972fde7e1c4413b417e9f85a8c93688a6892b6a1ad1edce86e3ac278479a53f7f607ac5be70a664728919703dd14ab7b84222c005a0f406c386996d8c99ec22ef628b60d99165a14e9a241b148f75e7b416bd89a4e046c552f7861b323e23888b7500b8cb3aca4741413dcdc04e143f81615adf15008d869c660737899815c1173b3d6429b77c1ca628c2e58d0a99f50cc5cd01b5e17bba794187083be4516a0f7d0b6a792f03fe2fa1002d866b1e3109c87db4fe4e5155be7ce301497e539f84e9c330125dde825e8fe589349cca67788bf11152fc9c7ad244ef089c007b54fab88ad40f492f12d854de0057dd72f5bd64eb08088accb56e3a11424ae75c4eb6300fdf6a483c722649154c025d88fe7a5a1dd81de57d66a0b20671a87a3084dd639410429d2078331cffefa9258597e24b35f8215c326100a1d5346ed1198b2d57c51adcc62e67b08c75d9edf5f048abbe54b811725eb0888539393c8d818256c18fab54786389280a6854b2978c6fb814e5e328940e1d1e2a9612aae9310c3add6290c8b9e867a206fab884fd407cfd2bfe574d35feddb4da784d344e16e152c9770c9e3b7c9f7fd338ca618ced3e83a181e62c0fac94f48ebf0bba11f97921118a7bd65a4aa1cb6fe1955b82053863af74668b572ee31ce00932d0afe22d0ec851905bdd89f2b13b35041a954365e0e591f5696dda2acc546d732e34fbc8df1661c9379c4902ed9c174e5886f304ed98e1ae06765fe3ffe42d4f624d790abd4a8bded7a02aa58c1ea750ad2b84b0a2000cea72a675dead7a9d4b3ede3ea0f6786918ed3e791c36249276206be0594dc724898c7d1b91bcf0f73be30fa6f938a738f0788a40852e36a55959c95da34e8a71d6227a480eae9c660b0ba4cea4ba524b57dc7a3c1d78ba6beb78e6ec8c1c3eb6ec594c1676a8302c04\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xae2198430bc518f373866c0d34e8c9ef178daeafb6211b9417b321f2c5c8d4c5\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x0c48253aec6435d0e09ccee89324adc42c7cfaec17fc7a52d61fbe5c67adc864",
+      "proof": "0xee2341b9c972fde7e1c4413b417e9f85a8c93688a6892b6a1ad1edce86e3ac278479a53f7f607ac5be70a664728919703dd14ab7b84222c005a0f406c386996d8c99ec22ef628b60d99165a14e9a241b148f75e7b416bd89a4e046c552f7861b323e23888b7500b8cb3aca4741413dcdc04e143f81615adf15008d869c660737899815c1173b3d6429b77c1ca628c2e58d0a99f50cc5cd01b5e17bba794187083be4516a0f7d0b6a792f03fe2fa1002d866b1e3109c87db4fe4e5155be7ce301497e539f84e9c330125dde825e8fe589349cca67788bf11152fc9c7ad244ef089c007b54fab88ad40f492f12d854de0057dd72f5bd64eb08088accb56e3a11424ae75c4eb6300fdf6a483c722649154c025d88fe7a5a1dd81de57d66a0b20671a87a3084dd639410429d2078331cffefa9258597e24b35f8215c326100a1d5346ed1198b2d57c51adcc62e67b08c75d9edf5f048abbe54b811725eb0888539393c8d818256c18fab54786389280a6854b2978c6fb814e5e328940e1d1e2a9612aae9310c3add6290c8b9e867a206fab884fd407cfd2bfe574d35feddb4da784d344e16e152c9770c9e3b7c9f7fd338ca618ced3e83a181e62c0fac94f48ebf0bba11f97921118a7bd65a4aa1cb6fe1955b82053863af74668b572ee31ce00932d0afe22d0ec851905bdd89f2b13b35041a954365e0e591f5696dda2acc546d732e34fbc8df1661c9379c4902ed9c174e5886f304ed98e1ae06765fe3ffe42d4f624d790abd4a8bded7a02aa58c1ea750ad2b84b0a2000cea72a675dead7a9d4b3ede3ea0f6786918ed3e791c36249276206be0594dc724898c7d1b91bcf0f73be30fa6f938a738f0788a40852e36a55959c95da34e8a71d6227a480eae9c660b0ba4cea4ba524b57dc7a3c1d78ba6beb78e6ec8c1c3eb6ec594c1676a8302c04",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xae2198430bc518f373866c0d34e8c9ef178daeafb6211b9417b321f2c5c8d4c5"
+    },
+    "productId": "287",
+    "productContract": "0xCBaECbD913d279f617fded7594de94A3190a1921",
+    "chainId": "11155111",
+    "companyName": "Lualaba Cobalt Cooperative SARL",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 65000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "CD-DENSE20-0001",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 92000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "diesel_and_grid_mix",
+        "emissionsClaim": "Lualaba Cobalt Cooperative SARL reports site-level emissions and energy-source disclosures for Cobalt hydroxide concentrate lot LCC-2026-01.",
+        "climateClaim": "",
+        "environmentalRiskSignals": [
+          "mine_tailings_management",
+          "local_water_contamination"
+        ],
+        "socialRiskSignals": [
+          "child_labor_allegations",
+          "artisanal_mining_interface"
+        ],
+        "governanceRiskSignals": [
+          "security_force_interaction",
+          "licence_transparency_gap"
+        ],
+        "countryOfOperation": "Democratic Republic of the Congo",
+        "facilityRole": "mine",
+        "materialTags": [
+          "cobalt"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "mine",
+        "componentType": "cobalt",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_01_cobalt_mine_drc-material-balance-sheet",
+          "vc_01_cobalt_mine_drc-shipment-record",
+          "vc_01_cobalt_mine_drc-supplier-declaration"
+        ],
+        "serialisationScheme": "LCC-2026-01-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "bulk_freight",
+        "customsReference": "CD-LCC-2026-01",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "raw material source, no battery placed on market"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "cobalt is outside Regulation (EU) 2017/821 scope"
+      },
+      "csddd": {
+        "status": "supporting_risk_signal",
+        "reason": "upstream source risk should appear in root due-diligence narrative, not as direct graph-level rule evidence"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-26T22:17:51.791Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x96d78c13bd2e803de645e7c1cdf661b53b42e4ab#controller",
+      "role": "issuer",
+      "payloadHash": "0xe4814b32a0c29149f061cfa7d017e587a5928c52bf34752134d2a75c03cda696",
+      "jws": "0xe1b0ff2da09acae4974608f482a6ef0ca46f9e73013acc26f3b7b9dd33707b951cf073860dea99a3089f228f300c4aa40452685b58aefe1374bcc57b0a3ec4711b"
+    }
+  ]
+}

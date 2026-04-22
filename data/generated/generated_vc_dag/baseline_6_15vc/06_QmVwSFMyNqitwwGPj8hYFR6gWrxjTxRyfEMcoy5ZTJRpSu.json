@@ -1,0 +1,113 @@
+{
+  "id": "urn:uuid:blueprint-vc-1776223990996-6",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x39f431165a31476f8d599b069e23a67c70eec93c",
+    "name": "SafeSeparator Germany GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xf3180a02734de5e50fae8e54a53cec91317eed33",
+    "name": "NordCell Sweden AB"
+  },
+  "issuanceDate": "2026-04-06T03:33:05.379Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xf3180a02734de5e50fae8e54a53cec91317eed33",
+    "productName": "Separator film roll batch",
+    "batch": "BLUEPRINT-BATCH-006",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "ISO 9001",
+      "cid": "bafy-cert-06-primary"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "issuer": "ISO 9001",
+        "certificateCid": "bafy-cert-06-1",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO 14001",
+        "certificateCid": "bafy-cert-06-2",
+        "validFrom": "2025-01-01",
+        "validUntil": "2027-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "separator",
+      "battery_component"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "battery_component",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 50.9375,
+      "longitude": 6.9603
+    },
+    "energySource": "grid_renewable_mix",
+    "emissionsClaim": "Separator film roll batch environmental record maintained by SafeSeparator Germany GmbH.",
+    "climateClaim": "Separator film roll batch climate disclosure submitted.",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xc2051e0cf7331e18d515994f7e4bc7cb518b4f746ee32e7f6d0e3126de26ea79\",\"proof\":\"0x1c53ecc235f2845a7f3620a13517e2f222e6c72e7d739c7cfca05f04272fb116b0618516db1019775d5d4231d1f78112fd7a75d846a07d1c67369fa0e88a860a1c582cd8b8479734e67770d75ea7a4ac8e46bd307ad7cc1d480aeede454f1536f20cba9d1a15e4f3ade12c0cb6fafb63ff68f429b6c3e2c81894c63aaa0ae008bf3ea3c55b6b0fe021df44cae377a7cdb8ade7116db2f6729aafd4948ac0c50d85739c5b2f5ee11d99623290f2dffa1ac1ec30f82b6521958ae3aaa8764bd8093c54e336f9afc43a5e0bd20c16413b5b3ea1d21cd74026be29d7137f3cc47002161a50fe310f9056da4265ca0c2934aa4b5674c59e37973cd06cbb62cf7c3c73ee6e0816e0c58d8109afc3870ba331ed5c7ecf99bdb65b979ffb2eeb110daa4df6fd2cf6678d960899c6c7cb6c28ac324e05574b01125a45ed2072a4ab0966536ab11f338976d348255beb63de2e34b96c7b84e1095090bf637924044c967f452a63876072519ac2fe04f2329cea8a47d894417d2a1e4b0a2f95e546c5089c78224e74fd9570cbd8f174fef42053a96fdc078bb91abba5dcea7475d64ac277083e9c8654e97abb4eb589b69c2080961cf694734f847ccc679d99ed9f38997f3f4a7c6d1f60154b4bf1ce48ca5397e9b98596a3b3a3bc1e14c80590c33c0e3c2e880ffdd63f0b3287423bfd5b39bb32a4933c7f53f900735735ebc8f5bd6fa935ee09c2d3a36b44251642baa6c56dd65ff5eb50b817024fad76574bfd65b833531886bbb43a812db432d2bf160b64c239c0190fddf7a4e021c0e5cc7b712bb86948c9d2dfdbdba39562cd46ecfd41f67371cf21266c40d09d9e2e828dd6d41e66027e7ffe511f2b0f585adf9a844118730f52468f1407e9208a205e969809fd055673b90921060c7a06f13958e975848f7d87b56cfe2906407e1879a285940902\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xb51419b5911d9ed0bbbee9631e65de6d08db6d5296971c515b4bba21792ba802\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xc2051e0cf7331e18d515994f7e4bc7cb518b4f746ee32e7f6d0e3126de26ea79",
+      "proof": "0x1c53ecc235f2845a7f3620a13517e2f222e6c72e7d739c7cfca05f04272fb116b0618516db1019775d5d4231d1f78112fd7a75d846a07d1c67369fa0e88a860a1c582cd8b8479734e67770d75ea7a4ac8e46bd307ad7cc1d480aeede454f1536f20cba9d1a15e4f3ade12c0cb6fafb63ff68f429b6c3e2c81894c63aaa0ae008bf3ea3c55b6b0fe021df44cae377a7cdb8ade7116db2f6729aafd4948ac0c50d85739c5b2f5ee11d99623290f2dffa1ac1ec30f82b6521958ae3aaa8764bd8093c54e336f9afc43a5e0bd20c16413b5b3ea1d21cd74026be29d7137f3cc47002161a50fe310f9056da4265ca0c2934aa4b5674c59e37973cd06cbb62cf7c3c73ee6e0816e0c58d8109afc3870ba331ed5c7ecf99bdb65b979ffb2eeb110daa4df6fd2cf6678d960899c6c7cb6c28ac324e05574b01125a45ed2072a4ab0966536ab11f338976d348255beb63de2e34b96c7b84e1095090bf637924044c967f452a63876072519ac2fe04f2329cea8a47d894417d2a1e4b0a2f95e546c5089c78224e74fd9570cbd8f174fef42053a96fdc078bb91abba5dcea7475d64ac277083e9c8654e97abb4eb589b69c2080961cf694734f847ccc679d99ed9f38997f3f4a7c6d1f60154b4bf1ce48ca5397e9b98596a3b3a3bc1e14c80590c33c0e3c2e880ffdd63f0b3287423bfd5b39bb32a4933c7f53f900735735ebc8f5bd6fa935ee09c2d3a36b44251642baa6c56dd65ff5eb50b817024fad76574bfd65b833531886bbb43a812db432d2bf160b64c239c0190fddf7a4e021c0e5cc7b712bb86948c9d2dfdbdba39562cd46ecfd41f67371cf21266c40d09d9e2e828dd6d41e66027e7ffe511f2b0f585adf9a844118730f52468f1407e9208a205e969809fd055673b90921060c7a06f13958e975848f7d87b56cfe2906407e1879a285940902",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xb51419b5911d9ed0bbbee9631e65de6d08db6d5296971c515b4bba21792ba802"
+    },
+    "productId": "368",
+    "productContract": "0x60Aed76f5D1B899d3BA06D883DC1C654F8678Bae",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "porosity_verification_complete": true,
+      "thermal_shrinkage_test_passed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-06T03:33:05.379Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x39f431165a31476f8d599b069e23a67c70eec93c#controller",
+      "role": "seller",
+      "payloadHash": "0x059c0035b4c23d5640b5b958cbe248931a13a1f29be64beac20ddc462e2f87b6",
+      "jws": "0x4bde9e9ec00495753c04e26ac0a50ae7ab0379866610b5a514460c3a47add4c1338ff4353907b03e2bdf5361b67098a7ca15332759ceab264585e1a41e1c24891b"
+    }
+  ]
+}

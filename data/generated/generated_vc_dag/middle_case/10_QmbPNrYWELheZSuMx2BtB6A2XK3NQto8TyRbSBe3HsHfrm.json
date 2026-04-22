@@ -1,0 +1,112 @@
+{
+  "id": "urn:uuid:real-vc-1775170216975-10",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x814c64d86114627b2401ddb6fb5fa8bfa06170f0",
+    "name": "RWI Tantalum Rwanda"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x5e3bfa55c0f134b0dc9304791b43e38ac8599ec3",
+    "name": "Taniobis GmbH"
+  },
+  "issuanceDate": "2026-03-18T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x5e3bfa55c0f134b0dc9304791b43e38ac8599ec3",
+    "productName": "Tantalum mine",
+    "batch": "REAL-BATCH-010",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-ta-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-ta-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "SA8000",
+        "issuer": "SAI",
+        "certificateCid": "bafy-cert-ta-mine-sa8000",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ta-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "tantalum"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "social_risk_heavy",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Rwanda",
+      "countryCode": "RW",
+      "latitude": -1.9,
+      "longitude": 29.9
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "ITRI-RMAP audited mine, scope-1 monitored",
+    "climateClaim": "Scope-1 tracking active",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x1aa13cd6af8208f9d682052172202910d8f79d111e4bf6d9f9f6f590e7bdc116\",\"proof\":\"0x2eeafb5c33363a5c9073a8554448ea85caf53ce4e92e1713ec70100defb3ee23943e389be7229d9d3964aa18fef377632ff33dd5d50dc201e8896f99098c5048785645e3ac24b2b064fc24683a38d82c64c1c88615be11934bff4ee97fee895e303af9bc5fcbd52c45ed140fcdee8e8ceb9419cbe28f197896db24e4fddf7465f11239f239cf205b0b5269776d63b78040aaff533511f40f48dc8e7132861305f74601d0b6c6d705fb9d463150be4a78429715f53c96d90a080d73881c09d205af2894a8d54880445ea461cd78e51e8e3b0cf4f7a21b311651ad96a1b3a2e30e3ae0e0680ceb9ccbceb1bf99fd2a1e389666e630d51a746a8123f70efb3a3d1edc66a68f5d9a8b2114d343494f7279837c5971aee3d8ef566559d86698229f0c003aa07a6feb54c97a5b08b72e0d7113f6352de8f534d51665a009894ea6106cd2bfaa8e1f8998d960869d5ea052b978a023780cf7b811937aa254683609132c9ea8322eb649f23cc30f7be36a59df614feddf1c53cc7b5d9420d6ec2dfe57767a503d28692db1a61fba88ab88dc4035394c06402ec47b85e5cecfd9d7ca304582284dc29b83164757a981486c7e5daa5f809f68c4249cdf115bedc8d1d2690144848a7adc56fdfc85833f5a82464d143cbbf4e7d9c0f7da7c344f6d8b93156ec84926b8707ea453809d06221c2d67ee3ba2bf217df2071e57597bd2f1ccfc26faf040ade2be36e856abd3216d051b567e8952857542b9bab21340bfa3c0b8540ccd407c6a87205f0f743a8a08cf7070ffabb005b7e24bc0073093599b164522d02490af24bd9a7b89421fca3a4936c993b58c1c776fb39ae9457e45981ca81a1959ef25ceb6cdb5c67df0f85d594503ccc2be7c0c210b4c1e7de1c37fbbe50959a698fb3fe086f055a1f3164725e70e4a63bd894572e58e08fcfeb6047d430b\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x0b7f9dbdb78cb251eb8e8b0ed4e965c65ef3bdb183eb4a453f5af07d8c7e4d9b\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x1aa13cd6af8208f9d682052172202910d8f79d111e4bf6d9f9f6f590e7bdc116",
+      "proof": "0x2eeafb5c33363a5c9073a8554448ea85caf53ce4e92e1713ec70100defb3ee23943e389be7229d9d3964aa18fef377632ff33dd5d50dc201e8896f99098c5048785645e3ac24b2b064fc24683a38d82c64c1c88615be11934bff4ee97fee895e303af9bc5fcbd52c45ed140fcdee8e8ceb9419cbe28f197896db24e4fddf7465f11239f239cf205b0b5269776d63b78040aaff533511f40f48dc8e7132861305f74601d0b6c6d705fb9d463150be4a78429715f53c96d90a080d73881c09d205af2894a8d54880445ea461cd78e51e8e3b0cf4f7a21b311651ad96a1b3a2e30e3ae0e0680ceb9ccbceb1bf99fd2a1e389666e630d51a746a8123f70efb3a3d1edc66a68f5d9a8b2114d343494f7279837c5971aee3d8ef566559d86698229f0c003aa07a6feb54c97a5b08b72e0d7113f6352de8f534d51665a009894ea6106cd2bfaa8e1f8998d960869d5ea052b978a023780cf7b811937aa254683609132c9ea8322eb649f23cc30f7be36a59df614feddf1c53cc7b5d9420d6ec2dfe57767a503d28692db1a61fba88ab88dc4035394c06402ec47b85e5cecfd9d7ca304582284dc29b83164757a981486c7e5daa5f809f68c4249cdf115bedc8d1d2690144848a7adc56fdfc85833f5a82464d143cbbf4e7d9c0f7da7c344f6d8b93156ec84926b8707ea453809d06221c2d67ee3ba2bf217df2071e57597bd2f1ccfc26faf040ade2be36e856abd3216d051b567e8952857542b9bab21340bfa3c0b8540ccd407c6a87205f0f743a8a08cf7070ffabb005b7e24bc0073093599b164522d02490af24bd9a7b89421fca3a4936c993b58c1c776fb39ae9457e45981ca81a1959ef25ceb6cdb5c67df0f85d594503ccc2be7c0c210b4c1e7de1c37fbbe50959a698fb3fe086f055a1f3164725e70e4a63bd894572e58e08fcfeb6047d430b",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x0b7f9dbdb78cb251eb8e8b0ed4e965c65ef3bdb183eb4a453f5af07d8c7e4d9b"
+    },
+    "productId": "171",
+    "productContract": "0x30786D39b70466cdAe2b6b201Cc16cc46f436376",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "conflict_minerals": {
+        "origin_country": "RW",
+        "third_party_audit_exists": true,
+        "audit_scope_complete": true,
+        "audit_independence_confirmed": true,
+        "traceability_system_exists": true,
+        "chain_of_custody_records": true,
+        "risk_assessment_exists": true
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-18T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x814c64d86114627b2401ddb6fb5fa8bfa06170f0#controller",
+      "role": "seller",
+      "payloadHash": "0x40e2fbe3d182f3615877a93b96c7cad38a51d05841d592d693c924f20fc4f0fb",
+      "jws": "0xfb737df7248141101c4b3e9f325076a86bbcb77f5722748d338c35747fa38cac4e6bc4a098cb6a5c12694b954cd2588b68b03c3c2ee91b86ae3a6eb4b817a8de1b"
+    }
+  ]
+}

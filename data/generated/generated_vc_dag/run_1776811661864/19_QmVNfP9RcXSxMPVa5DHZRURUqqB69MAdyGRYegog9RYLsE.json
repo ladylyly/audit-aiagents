@@ -1,0 +1,89 @@
+{
+  "id": "urn:uuid:real-vc-1776811679629-19",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29",
+    "name": "ACC Cell GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "name": "VARTA Battery Pack GmbH"
+  },
+  "issuanceDate": "2026-04-15T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x3a1fd07b575a007d4dc0efa895596e6f31bf7acf",
+    "productName": "Cell QA and testing",
+    "batch": "REAL-BATCH-019",
+    "quantity": 1,
+    "previousCredential": "QmYiNbrdUD7qqe8hhuH3EYgGMZBe1JWRF2JMSDAaJ7MZ9S",
+    "componentCredentials": [
+      "QmYiNbrdUD7qqe8hhuH3EYgGMZBe1JWRF2JMSDAaJ7MZ9S"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-cell-qa-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-cell-qa-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_cell"
+    ],
+    "operationTags": [
+      "downstream",
+      "quality_assurance",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 52.5,
+      "longitude": 13.4
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Zero-waste QA facility, scope-2 certified",
+    "climateClaim": "ISO 14064 third-party verified",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x84e7a0da0f4aed564445d87555b7c7d49ebe20750c3470d75462a6675ecefe48\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x84e7a0da0f4aed564445d87555b7c7d49ebe20750c3470d75462a6675ecefe48",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "371",
+    "productContract": "0x14EEC305DCa5Cd55bE54d23bae14229AB4e6920B",
+    "chainId": "11155111",
+    "claims": {
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-15T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x9a71bcecccf9b26757b6cdd3db2312fcaeb2fe29#controller",
+      "role": "seller",
+      "payloadHash": "0x711101087ba2785f6c91b456ccf9afeffd357158691e744d54004ff5fa7b968b",
+      "jws": "0x4d608d8d13a5a3ac7e9c11af06f1b21eea3ffbb20010c3367ca4d9c461875ef47c7024cee658ace08a7c3149733b78b31d2b3cf5de378d146971cfbe88d73e831b"
+    }
+  ]
+}

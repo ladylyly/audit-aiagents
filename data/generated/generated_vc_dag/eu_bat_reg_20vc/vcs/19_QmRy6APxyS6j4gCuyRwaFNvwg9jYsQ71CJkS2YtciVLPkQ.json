@@ -1,0 +1,176 @@
+{
+  "id": "urn:uuid:thesis-batteryreg-1776210520966-19",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisBatteryRegulationCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x60dbb1fb374a0827bdfda1a93342656f15432062",
+    "name": "Pannon Cell Systems Zrt."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x00f26fed2afd460dabac7ea9807592ed3421c00d",
+    "name": "Bohemia Battery Modules a.s."
+  },
+  "issuanceDate": "2026-04-13T23:48:28.121Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x00f26fed2afd460dabac7ea9807592ed3421c00d",
+    "productName": "NMC pouch cells lot PCS-2026-31",
+    "batch": "PCS-2026-31",
+    "quantity": 1,
+    "previousCredential": "QmQtvMkLaYiNyzAf6Syug8KuWqThgxPnF4bn2zhgsSGojz",
+    "componentCredentials": [
+      "QmQtvMkLaYiNyzAf6Syug8KuWqThgxPnF4bn2zhgsSGojz",
+      "QmaU5qc4uau48gK4mREB9mxYx471AKHDGKZQU2dGjcmruQ",
+      "QmZ5CwvTAFwKMSWQN2d7CiTdfUgn3MjtMWWUSp56GZf4An"
+    ],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Hungary",
+      "countryCode": "HU",
+      "latitude": 47.5,
+      "longitude": 19
+    },
+    "facilityRole": "cell_manufacturer",
+    "materialTags": [
+      "battery_cell",
+      "cathode",
+      "graphite",
+      "copper"
+    ],
+    "operationTags": [
+      "downstream",
+      "cell_manufacturing"
+    ],
+    "claims": {
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "operator_role": "manufacturer",
+        "placed_on_union_market": false,
+        "carbon_footprint_declaration_exists": true,
+        "carbon_footprint_label_present": true,
+        "carbon_footprint_within_max_threshold": false,
+        "contains_recycled_content_regulated_materials": true,
+        "contains_cobalt": true,
+        "contains_lithium": true,
+        "contains_nickel": true,
+        "recycled_content_documentation_exists": true,
+        "recycled_content_cobalt_pct": 19,
+        "recycled_content_lithium_pct": 8,
+        "recycled_content_nickel_pct": 11,
+        "performance_durability_document_exists": true,
+        "technical_doc_annex_iv_explanation_exists": true,
+        "batch_or_serial_present": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x98d6f0be2956e141f88a3bfe8fa8aa2156a9352e4c15b1e7b84aad132ff5f573\",\"proof\":\"0xb8772d78c91ec90501352bf4a9ff59be1d97bcb57fed2c788cf549e67e7f745a924db03b5749fd827a8cadbadd1307d088d52517680bb06d09761af6c67d6866b8701286ba4629dc4046e8e0e46f75919dd3a246e2522194625a2663d7e2864fec52eae06e7670918eb55f7291fe18ba3de438969b5a1f1ab379842ba4ce597069a4e2b4794af4a20774c5d77f5cd9767b39b07a55b5e1317bb9741062b6ca0f1b88516c4b2411dac94c8337f964d0b717f0654f44c6f998fe36e93be082370fe4e351dc8b91730636ee9b4ad511524f7cfdc72eb5fd65578f4cad77f98db80eda1de8f1701c7d728f19ac7265f41e69cc1190738bad3431694588be33569b3b9889937dba79062f05b575a624b8c78b41fbefb593384a6dd051fce4190f61692c72169c55df573e97122f5a96e403f9ff4a5b50accec576fb6b6c4d57447079188646423238557012a8a8abccc71190a1b742e351a63e7dde12ce8b71b9f33ca2bc4830f0dbd18aecd6b498a781c37fc924c0c763a31e24749e7071ed1f9717b60a982e99f2ada9f10a4c9964beb204ccd103785d993c481659243bfe2db043c8107848f8f13e239cab626c28d96191156f870d1d5f9959b53a45c82b2724297022b75aed3c434c894d0f220141c53e8a368049902f651fb7c1bbf596fe285bec1048abbc9f9b3bd800c177176efebb889b32928f7d85290003480f40d4df232839a6f2b6f600710330f3c3466be2a995a7a7e55fe744a2a4b94e9bfc8ac03c6e6ed371cb14d7813bf01f0e6615b9fa9ac7e98a024618053efb55fccb56800e76de19a0cff82cca6146dc0565835031dc4b6d2f0b51c0cb62cbab5bed23735607130a731a99a78c8eee16724c47c556dd1f580d2e09174dbf0bba6dc31b38087a2b0539d2625579dfdc7f118495efb261a0807cca738b256aca9a7400c9e103\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x7cac4363ec19c48332b0bc4ca57bbc1e500eba1a5803c8729da3941ef52a8f75\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x98d6f0be2956e141f88a3bfe8fa8aa2156a9352e4c15b1e7b84aad132ff5f573",
+      "proof": "0xb8772d78c91ec90501352bf4a9ff59be1d97bcb57fed2c788cf549e67e7f745a924db03b5749fd827a8cadbadd1307d088d52517680bb06d09761af6c67d6866b8701286ba4629dc4046e8e0e46f75919dd3a246e2522194625a2663d7e2864fec52eae06e7670918eb55f7291fe18ba3de438969b5a1f1ab379842ba4ce597069a4e2b4794af4a20774c5d77f5cd9767b39b07a55b5e1317bb9741062b6ca0f1b88516c4b2411dac94c8337f964d0b717f0654f44c6f998fe36e93be082370fe4e351dc8b91730636ee9b4ad511524f7cfdc72eb5fd65578f4cad77f98db80eda1de8f1701c7d728f19ac7265f41e69cc1190738bad3431694588be33569b3b9889937dba79062f05b575a624b8c78b41fbefb593384a6dd051fce4190f61692c72169c55df573e97122f5a96e403f9ff4a5b50accec576fb6b6c4d57447079188646423238557012a8a8abccc71190a1b742e351a63e7dde12ce8b71b9f33ca2bc4830f0dbd18aecd6b498a781c37fc924c0c763a31e24749e7071ed1f9717b60a982e99f2ada9f10a4c9964beb204ccd103785d993c481659243bfe2db043c8107848f8f13e239cab626c28d96191156f870d1d5f9959b53a45c82b2724297022b75aed3c434c894d0f220141c53e8a368049902f651fb7c1bbf596fe285bec1048abbc9f9b3bd800c177176efebb889b32928f7d85290003480f40d4df232839a6f2b6f600710330f3c3466be2a995a7a7e55fe744a2a4b94e9bfc8ac03c6e6ed371cb14d7813bf01f0e6615b9fa9ac7e98a024618053efb55fccb56800e76de19a0cff82cca6146dc0565835031dc4b6d2f0b51c0cb62cbab5bed23735607130a731a99a78c8eee16724c47c556dd1f580d2e09174dbf0bba6dc31b38087a2b0539d2625579dfdc7f118495efb261a0807cca738b256aca9a7400c9e103",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x7cac4363ec19c48332b0bc4ca57bbc1e500eba1a5803c8729da3941ef52a8f75"
+    },
+    "productId": "345",
+    "productContract": "0xf834AD7A8a90275036B97EF67ca035F10803d9f4",
+    "chainId": "11155111",
+    "companyName": "Pannon Cell Systems Zrt.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 780000000,
+      "net_turnover_eur_union": 590000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "HU-BATREG-0019",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 190000000
+    },
+    "group": {
+      "avg_employee_count": 7600,
+      "net_turnover_eur_worldwide": 2420000000,
+      "net_turnover_eur_union": 1830000000,
+      "net_turnover_eur_consolidated_last_financial_year": 940000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Pannon Cell Systems Zrt. reports site-level emissions and energy-source disclosures for NMC pouch cells lot PCS-2026-31.",
+        "climateClaim": "Pannon Cell Systems Zrt. maintains climate transition and emissions reduction evidence for cell_manufacturer operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Hungary",
+        "facilityRole": "cell_manufacturer",
+        "materialTags": [
+          "battery_cell",
+          "cathode",
+          "graphite",
+          "copper"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "cell_manufacturer",
+        "componentType": "battery_cell",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_19_cell_manufacturer_hungary-material-balance-sheet",
+          "vc_19_cell_manufacturer_hungary-shipment-record",
+          "vc_19_cell_manufacturer_hungary-supplier-declaration"
+        ],
+        "serialisationScheme": "PCS-2026-31-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "HU-PCS-2026-31",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "recycled lithium content intentionally below threshold for future-date runs"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "no direct 3TG importer role on cell node"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "cell-stage contribution only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-13T23:48:28.121Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x60dbb1fb374a0827bdfda1a93342656f15432062#controller",
+      "role": "issuer",
+      "payloadHash": "0x99d4dd99d6f8fd9febc6040d636e974d88413765e22cc656364a5d20f772428b",
+      "jws": "0x47dce9bceceac84b56d65f510e1ff076b184425fec465b895475ae723a8d1461694ec4fd5d0517d820149d92d30a3e1c25cae9ab6438f99303c99311746dbcf31b"
+    }
+  ]
+}

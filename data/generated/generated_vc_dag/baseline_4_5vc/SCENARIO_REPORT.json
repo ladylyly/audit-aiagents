@@ -1,0 +1,13 @@
+{
+  "scenario": "blueprint_case",
+  "runId": "blueprint_case_1776211870822",
+  "rootIndex": 5,
+  "rootCid": "QmTzUsrV1djigGovmQNRjvic4ABqhHBiYV4TPTJMgxN4ah",
+  "blueprintPath": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/sepolia_5vc_blueprint_2026-04-14.json",
+  "signatureFailuresPlannedOn": [],
+  "targetEsgBreakdown": {
+    "environmental": "positive",
+    "social": "positive_non_blocking",
+    "governance": "positive"
+  }
+}

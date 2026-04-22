@@ -1,0 +1,242 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517105683-02",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x555d069387df8c561228881b529c441ab037a378",
+    "name": "Baltic Cobalt Refining OÜ"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xc4c0cbf90fadb6b88c0b5372f87eeb2911b2748d",
+    "name": "Antwerp Precursor Materials NV"
+  },
+  "issuanceDate": "2026-03-14T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xc4c0cbf90fadb6b88c0b5372f87eeb2911b2748d",
+    "productName": "Battery-grade cobalt sulfate lot BCR-2026-04",
+    "batch": "BCR-2026-04",
+    "quantity": 1,
+    "previousCredential": "QmNouvj5UqiHrCvtntQQxm8WhpCS6NFDQUJkc4N21gqWtr",
+    "componentCredentials": [
+      "QmNouvj5UqiHrCvtntQQxm8WhpCS6NFDQUJkc4N21gqWtr"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-case1-cert-cobalt-refinery-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-case1-cert-cobalt-refinery-rmap"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-case1-cert-cobalt-refinery-iso14001"
+      }
+    ],
+    "location": {
+      "country": "Estonia",
+      "countryCode": "EE",
+      "latitude": 59.4,
+      "longitude": 24.8
+    },
+    "facilityRole": "refiner",
+    "materialTags": [
+      "cobalt"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "chemical_processing"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "weight_kg": 10,
+        "capacity_kwh": 5,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "manufacturer",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": false,
+        "third_party_verification_report_exists": false,
+        "public_due_diligence_report_exists": false
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xaeb94ffcb0dfe28dc3d9de7a4c75a0a00720a2d29f15f8b2a1c15c792b514215\",\"proof\":\"0xeed29742a9c21613cb3ea93bdc10ea3f614f1f613d9173e48eb30ae4812da74544e35da1ac5030107d336fd9f33ccf1a737a29678f3642f645d3d9a03c110b793a4aa3ced7e451b9b382698ac00e8d6e3c5c1d7dffb0316c58f1cb13e020b256f0368ee164b73e278e56c3e27ca89fca5ea1c691d1df13185a9c78cf6add0215951fddf4fbccff674104cc4a3f861bef8a55bf9ffa02e4eed0dfcf494413dc0d694be665bf3e428052ca9995eb4931f45fb49b1c84bec8b80ae6b64c91a4ed0df91e6b624624014d9b259f82d425e004010ea9ad537d89d68ff4f41adbba2e0ef257ecd1ce77db658b1e04044255053b80b63be5a4f9fa7dd1dca43a5bbe7e01ec99157ee7185f83af65a0065a8f4c8d98c6f62b529bec6a31d0165921338a0592968e0c5365b31da4a72c04b2c3777f13ff154182bd32f73d4f68d442bcd2352e0e5e507ca5ee536b7fb0434cefe87f7e07a9e605f30bf8a8836d7aae49b75668e95123ab634fb8b70c65d25d01c54a7d4bf45a651bebc09546177f39baf116e63b74ebeb0e45eedd9f05d93501eb995291ffdbaeb2549de3fa6123e912357444bf683f5799cd382b190f46ec42340bf3565852d338a7e7fb1720f8a7c7b25c5ed4ae6cfa692a8d43ffa78f59fb1c5da2efa15514b3dd7a50de3f63b897aa1c20f43e99d9bbbad1fa516b998c6996fd366586e6863e5c219d047a01e8f9850814d396efb39d885e7dc48132208101848e80f43e1523390b6c4ddc82e7a14715e4f30d64d2e944ef0255f0374292424aa22b6305ec13f77a82da8980572abb1a6a8e20fe0455860e315f996811d121f4fba55d3503837dbb059949bc01d0c142d7bf69aa7b9ccb84b849622ad9612bb61bdc104be9bfbd50cfe7d92118a6870a2828bf84762eeec00e1a7a6e8a6ccd92c4351e2c37d0e4ae2d46866204751c03\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xf5e6a8e4a0a05be280f79aab2f5a870a6ff2de3f46f364764abfc570c55beed6\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xaeb94ffcb0dfe28dc3d9de7a4c75a0a00720a2d29f15f8b2a1c15c792b514215",
+      "proof": "0xeed29742a9c21613cb3ea93bdc10ea3f614f1f613d9173e48eb30ae4812da74544e35da1ac5030107d336fd9f33ccf1a737a29678f3642f645d3d9a03c110b793a4aa3ced7e451b9b382698ac00e8d6e3c5c1d7dffb0316c58f1cb13e020b256f0368ee164b73e278e56c3e27ca89fca5ea1c691d1df13185a9c78cf6add0215951fddf4fbccff674104cc4a3f861bef8a55bf9ffa02e4eed0dfcf494413dc0d694be665bf3e428052ca9995eb4931f45fb49b1c84bec8b80ae6b64c91a4ed0df91e6b624624014d9b259f82d425e004010ea9ad537d89d68ff4f41adbba2e0ef257ecd1ce77db658b1e04044255053b80b63be5a4f9fa7dd1dca43a5bbe7e01ec99157ee7185f83af65a0065a8f4c8d98c6f62b529bec6a31d0165921338a0592968e0c5365b31da4a72c04b2c3777f13ff154182bd32f73d4f68d442bcd2352e0e5e507ca5ee536b7fb0434cefe87f7e07a9e605f30bf8a8836d7aae49b75668e95123ab634fb8b70c65d25d01c54a7d4bf45a651bebc09546177f39baf116e63b74ebeb0e45eedd9f05d93501eb995291ffdbaeb2549de3fa6123e912357444bf683f5799cd382b190f46ec42340bf3565852d338a7e7fb1720f8a7c7b25c5ed4ae6cfa692a8d43ffa78f59fb1c5da2efa15514b3dd7a50de3f63b897aa1c20f43e99d9bbbad1fa516b998c6996fd366586e6863e5c219d047a01e8f9850814d396efb39d885e7dc48132208101848e80f43e1523390b6c4ddc82e7a14715e4f30d64d2e944ef0255f0374292424aa22b6305ec13f77a82da8980572abb1a6a8e20fe0455860e315f996811d121f4fba55d3503837dbb059949bc01d0c142d7bf69aa7b9ccb84b849622ad9612bb61bdc104be9bfbd50cfe7d92118a6870a2828bf84762eeec00e1a7a6e8a6ccd92c4351e2c37d0e4ae2d46866204751c03",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xf5e6a8e4a0a05be280f79aab2f5a870a6ff2de3f46f364764abfc570c55beed6"
+    },
+    "productId": "188",
+    "productContract": "0x6550449Ba7ae697239EAF50983042e47DC8ebFB2",
+    "chainId": "11155111",
+    "companyName": "Baltic Cobalt Refining OÜ",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 900,
+      "net_turnover_eur_worldwide": 220000000,
+      "net_turnover_eur_union": 140000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "EE-CASE-0002",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 70000000
+    },
+    "group": {
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 380000000,
+      "net_turnover_eur_union": 200000000,
+      "net_turnover_eur_consolidated_last_financial_year": 120000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "grid_mix",
+        "emissionsClaim": "Baltic Cobalt Refining OÜ reports site-level emissions for Battery-grade cobalt sulfate lot BCR-2026-04.",
+        "climateClaim": "Baltic Cobalt Refining OÜ maintains transition-planning and operational decarbonisation evidence for refiner activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Estonia",
+        "facilityRole": "refiner",
+        "materialTags": [
+          "cobalt"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "refiner",
+        "componentType": "cobalt",
+        "qualityStandards": [
+          "RMAP",
+          "ISO 14001"
+        ],
+        "traceabilityArtifacts": [
+          "vc_02_cobalt_refinery_estonia-material-balance-sheet",
+          "vc_02_cobalt_refinery_estonia-shipment-record",
+          "vc_02_cobalt_refinery_estonia-supplier-declaration"
+        ],
+        "serialisationScheme": "BCR-2026-04-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-cobalt-refinery-rmap",
+          "bafy-case1-cert-cobalt-refinery-iso14001"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "EE-BCR-2026-04",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "battery due-diligence-style evidence intentionally incomplete on cobalt refining branch"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "cobalt is outside 3TG scope"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "not intended to drive current graph-level CSDDD rule outcomes directly"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-14T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x555d069387df8c561228881b529c441ab037a378#controller",
+      "role": "issuer",
+      "payloadHash": "0xfd2b126144020633471d1e56d981e4dd1e4f7e0133a2f9a0f10108e0b09c40ab",
+      "jws": "0x168f1f5c25bcc9fabe22caf462287e1095778174e687b58539c1d318e12aeb976f9ea7ed9b1bf07887832fd99c679d4202441ebed8f092652487c2ca9b454c531c"
+    }
+  ]
+}

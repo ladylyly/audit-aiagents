@@ -1,0 +1,157 @@
+{
+  "id": "urn:uuid:thesis-batteryreg-1776210515879-11",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisBatteryRegulationCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xfa52dfe44c1ec1f65f8e1d99b26b838dc3e4b1a8",
+    "name": "Great Lakes Tantalum Processing Ltd"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xbce1424a63ca8b113f01abc10844a2d08b6eafe4",
+    "name": "Wolfram Precision Terminals GmbH"
+  },
+  "issuanceDate": "2026-04-05T23:48:28.121Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xbce1424a63ca8b113f01abc10844a2d08b6eafe4",
+    "productName": "Tantalum powder lot GLT-2026-01",
+    "batch": "GLT-2026-01",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Rwanda",
+      "countryCode": "RW",
+      "latitude": -1.9,
+      "longitude": 30.1
+    },
+    "facilityRole": "processor",
+    "materialTags": [
+      "tantalum"
+    ],
+    "operationTags": [
+      "upstream",
+      "processing",
+      "3tg"
+    ],
+    "claims": {
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "tantalum",
+        "cn_code": "8103",
+        "annex_i_threshold_exceeded": true,
+        "material_form": "metal",
+        "origin_country": "Rwanda",
+        "compliance_documentation_exists": true,
+        "recognised_scheme_used": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xd8b3ca33f5c2035fce976488448e1dc218b25c09eb97a32a57ec8349c161974f\",\"proof\":\"0x58c22d34f57bc20186467b0689fad3cf5ad5735d72e7483a39e48b38e294814fa67e7f9288cd6f2dc767c120a9598a79422608dd0d56609350ce79bbf0831e073882ad26dbe0f77829962da50c90da85d26cfc079af5bfda0d89ba606a08be301a1b44d9ac0cba21f719eaef5e5df74c4ab571404183af9a58bbd73c06d3395267a6363f8691c954a1c462d77ac21405e38ed59b19ff5cb52546d2420191550cb507bfe102c84fc38d45694f44f4e9e232b499966432d7da93ec91c1808cb5058721938a64a7f1093aece41f1f057e6b63b57e6845508cd0588ca40043085b0f46086771deba0fa82bf941c7a48e0356d9cbbb4b048e27faffead0f5f721e04fb20d0883cfc54b5402f6e7b5b2c7ff899caa95af1bc701d384b0caa1c4ca206808cc479c8df004731db796aabe40700fd3846b7c5507d9fbb76ea8f5297f2a11e8e8ebe22b03bdf57f9b9c42f5f0b8fa78ee0dcce1421c1d6ed97cc3e1bea734cad1a2f27f06ed9488b874d35849d3141d7a5183550892299e9bc51293fbcb5e7230902e038696efbf609bac250d6240efb42c838c523909ea90fd18827be9713033bdf940cef7264e117124063feca95c63bc2f75c1d5398adf58ae33ef8b7ba2a25b0b23514dac18b910031989ac7ee5fc2ada96db50b5fba436bd4e101901aab9a208ce69045ca458d7d7b95306b31c4e2ed3261bb6d5819af4f6cf81de3042887281dd65549a2eef6cc7c57be3f0e4e597f36b6c196d42f413db55784615c6a352099eb29213de896edfa683f332c858fcfdef0f6b15ba93478e2201416ba433e4a69db9a2c1e8ab635f44a1bb0e40a876ba7fa888fd13c013d57e2fdc1dbc09ed257920dd4a7a243c2398709f214596a0ec40a46d295602bb859b0e4000183802442f8b5e7e88df3b185a8b89b7658ed403072e08e3971a29dccc83fb02\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x52e5c26337e7d4bf07599343997678b72631814d7332605c072b7b78956e1d48\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xd8b3ca33f5c2035fce976488448e1dc218b25c09eb97a32a57ec8349c161974f",
+      "proof": "0x58c22d34f57bc20186467b0689fad3cf5ad5735d72e7483a39e48b38e294814fa67e7f9288cd6f2dc767c120a9598a79422608dd0d56609350ce79bbf0831e073882ad26dbe0f77829962da50c90da85d26cfc079af5bfda0d89ba606a08be301a1b44d9ac0cba21f719eaef5e5df74c4ab571404183af9a58bbd73c06d3395267a6363f8691c954a1c462d77ac21405e38ed59b19ff5cb52546d2420191550cb507bfe102c84fc38d45694f44f4e9e232b499966432d7da93ec91c1808cb5058721938a64a7f1093aece41f1f057e6b63b57e6845508cd0588ca40043085b0f46086771deba0fa82bf941c7a48e0356d9cbbb4b048e27faffead0f5f721e04fb20d0883cfc54b5402f6e7b5b2c7ff899caa95af1bc701d384b0caa1c4ca206808cc479c8df004731db796aabe40700fd3846b7c5507d9fbb76ea8f5297f2a11e8e8ebe22b03bdf57f9b9c42f5f0b8fa78ee0dcce1421c1d6ed97cc3e1bea734cad1a2f27f06ed9488b874d35849d3141d7a5183550892299e9bc51293fbcb5e7230902e038696efbf609bac250d6240efb42c838c523909ea90fd18827be9713033bdf940cef7264e117124063feca95c63bc2f75c1d5398adf58ae33ef8b7ba2a25b0b23514dac18b910031989ac7ee5fc2ada96db50b5fba436bd4e101901aab9a208ce69045ca458d7d7b95306b31c4e2ed3261bb6d5819af4f6cf81de3042887281dd65549a2eef6cc7c57be3f0e4e597f36b6c196d42f413db55784615c6a352099eb29213de896edfa683f332c858fcfdef0f6b15ba93478e2201416ba433e4a69db9a2c1e8ab635f44a1bb0e40a876ba7fa888fd13c013d57e2fdc1dbc09ed257920dd4a7a243c2398709f214596a0ec40a46d295602bb859b0e4000183802442f8b5e7e88df3b185a8b89b7658ed403072e08e3971a29dccc83fb02",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x52e5c26337e7d4bf07599343997678b72631814d7332605c072b7b78956e1d48"
+    },
+    "productId": "337",
+    "productContract": "0x00C0f088f4b5EfB615efB7A2252CB28D7468a784",
+    "chainId": "11155111",
+    "companyName": "Great Lakes Tantalum Processing Ltd",
+    "company": {
+      "establishment": "third_country",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 65000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "RW-BATREG-0011",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 92000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "diesel_and_grid_mix",
+        "emissionsClaim": "Great Lakes Tantalum Processing Ltd reports site-level emissions and energy-source disclosures for Tantalum powder lot GLT-2026-01.",
+        "climateClaim": "Great Lakes Tantalum Processing Ltd maintains climate transition and emissions reduction evidence for processor operations.",
+        "environmentalRiskSignals": [
+          "mine_sedimentation_control"
+        ],
+        "socialRiskSignals": [
+          "conflict_adjacent_supply_area"
+        ],
+        "governanceRiskSignals": [
+          "export_document_reliance"
+        ],
+        "countryOfOperation": "Rwanda",
+        "facilityRole": "processor",
+        "materialTags": [
+          "tantalum"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "processor",
+        "componentType": "tantalum",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_11_tantalum_processor_rwanda-material-balance-sheet",
+          "vc_11_tantalum_processor_rwanda-shipment-record",
+          "vc_11_tantalum_processor_rwanda-supplier-declaration"
+        ],
+        "serialisationScheme": "GLT-2026-01-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "EXW",
+        "shippingMode": "road_and_container",
+        "customsReference": "RW-GLT-2026-01",
+        "euMarketRelevant": false
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "not_applicable",
+        "reason": "electronics mineral precursor only"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "outside Union importer role"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "3TG provenance branch support only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-05T23:48:28.121Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xfa52dfe44c1ec1f65f8e1d99b26b838dc3e4b1a8#controller",
+      "role": "issuer",
+      "payloadHash": "0x0fe2dfdbf15e697ef273125d550c8651719928016fd85fa1873c7a27fa96656d",
+      "jws": "0x09ac869aa1e9dcec18bd126f89113332b596c4d3a28d91604e31c085237039cf4dfe7603176aa9a16b80e23ed3a755395c618f092ae17615c49f962cc19fed9a1c"
+    }
+  ]
+}

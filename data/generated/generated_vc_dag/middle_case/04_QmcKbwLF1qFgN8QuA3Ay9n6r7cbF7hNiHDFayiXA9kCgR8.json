@@ -1,0 +1,102 @@
+{
+  "id": "urn:uuid:real-vc-1775170212123-4",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xb48822359f015102a703be0ee620a3e72217cf1c",
+    "name": "Western Areas Nickel Ltd"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x398ed925ed9b09f59cd7f3b8f788d901826957ff",
+    "name": "Harjavalta Nickel Oy"
+  },
+  "issuanceDate": "2026-03-12T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x398ed925ed9b09f59cd7f3b8f788d901826957ff",
+    "productName": "Nickel mine",
+    "batch": "REAL-BATCH-004",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-ni-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-ni-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "The Nickel Mark",
+        "issuer": "Nickel Institute",
+        "certificateCid": "bafy-cert-ni-mine-nickmark",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ni-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Australia",
+      "countryCode": "AU",
+      "latitude": -31.5,
+      "longitude": 121.8
+    },
+    "energySource": "solar",
+    "emissionsClaim": "WA solar-hybrid mine, scope-1+2 disclosed",
+    "climateClaim": "Paris-aligned mine decarbonisation roadmap",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x8ae01bb94601034b9e15f4a669e2fd994cc2ce5669df401b4429480cc426897d\",\"proof\":\"0x94480e4ed9d5153946b53338db2162423c047edece70062b440d83824c5ec00302a385451c87188072029e08eb7aad7ee125d82987cc2d67b37dd73a533a201e5ab147f6a39bba3ddf06a0aaec454535d3dc98cdcd90267ed5bc1e9d316a615cf2d5286198161085956843267f4c4a2ff3cb3b843ef07fdf5ffe332fb4601c0fb6e91b261d8b9555090b5dd715c87c45f9daf04256c48166ab62d1cc7313b40b23f2582e92d7811d9f3bb901de096325e1a23b952dae3e70a60f281c8beef603f6cd5f7f8330fbc23974be19aed8be16d4e1f937a90e4a0358145eacb4b6be0bc6d3669709a218c5748959eae4448a5b6df9c6f67307e5ceb199a9dad094ef665aae2d85700ce1ade5094bd32015cdfbbc22f442a3d8eaff7131c8eee57d68680a2765af78439d7de1781059bda7cdb6890824e7c55ff0968888c14ca7869e14887680e0b9e09e92677bd33b5d916abc73931d4005f9a3cb60968955fd22441efc3bfe538dd87c03b3662999ae1bfbccffc90ab824889b9191d3200f5cace554bc234825cb9e3be0922e088a8858dda7f45d6a2796fb43beb684e208e63b746fb4f81262a83348537c4dcf171593a586cf41f0384b2b532a42bc9e492870d66afeba2de1e162a9c68e8f71f0974bb5d1c9a92eb048e7b871fd1dc5f8d4a11b65707c37a316f56272f4463aa8b3329521d4298c833e4c2b747d2563f51cd7973b7ec4cc07eb6a3ddcc3d2a77e01c78baf20a1d1197192cb5c6a91141fb795e00950edb98858b3818ed3895d61ea6f751ee30a77309d706b0e665f7319950d204b2494fe248a153039c7fbbda8cb750e29d2dc6ada8cbfe7d6699da0e326b72933a2f747657dd5a9072f24804220ae22fca7d438053bd0da00db37ab6f0b3fe206a646315c8d4182961b500ac3d8545619961d365f21f9180548d2d35853245304\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xa10639f147411f37d21834942bc5742f854e4cac79288c84c0c01a9f50ad2712\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x8ae01bb94601034b9e15f4a669e2fd994cc2ce5669df401b4429480cc426897d",
+      "proof": "0x94480e4ed9d5153946b53338db2162423c047edece70062b440d83824c5ec00302a385451c87188072029e08eb7aad7ee125d82987cc2d67b37dd73a533a201e5ab147f6a39bba3ddf06a0aaec454535d3dc98cdcd90267ed5bc1e9d316a615cf2d5286198161085956843267f4c4a2ff3cb3b843ef07fdf5ffe332fb4601c0fb6e91b261d8b9555090b5dd715c87c45f9daf04256c48166ab62d1cc7313b40b23f2582e92d7811d9f3bb901de096325e1a23b952dae3e70a60f281c8beef603f6cd5f7f8330fbc23974be19aed8be16d4e1f937a90e4a0358145eacb4b6be0bc6d3669709a218c5748959eae4448a5b6df9c6f67307e5ceb199a9dad094ef665aae2d85700ce1ade5094bd32015cdfbbc22f442a3d8eaff7131c8eee57d68680a2765af78439d7de1781059bda7cdb6890824e7c55ff0968888c14ca7869e14887680e0b9e09e92677bd33b5d916abc73931d4005f9a3cb60968955fd22441efc3bfe538dd87c03b3662999ae1bfbccffc90ab824889b9191d3200f5cace554bc234825cb9e3be0922e088a8858dda7f45d6a2796fb43beb684e208e63b746fb4f81262a83348537c4dcf171593a586cf41f0384b2b532a42bc9e492870d66afeba2de1e162a9c68e8f71f0974bb5d1c9a92eb048e7b871fd1dc5f8d4a11b65707c37a316f56272f4463aa8b3329521d4298c833e4c2b747d2563f51cd7973b7ec4cc07eb6a3ddcc3d2a77e01c78baf20a1d1197192cb5c6a91141fb795e00950edb98858b3818ed3895d61ea6f751ee30a77309d706b0e665f7319950d204b2494fe248a153039c7fbbda8cb750e29d2dc6ada8cbfe7d6699da0e326b72933a2f747657dd5a9072f24804220ae22fca7d438053bd0da00db37ab6f0b3fe206a646315c8d4182961b500ac3d8545619961d365f21f9180548d2d35853245304",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xa10639f147411f37d21834942bc5742f854e4cac79288c84c0c01a9f50ad2712"
+    },
+    "productId": "165",
+    "productContract": "0x4fC3C5423EB13daf5Bf1C7EE907Db1F24475418D",
+    "chainId": "11155111",
+    "claims": {
+      "remediation_process": true,
+      "complaint_channel_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-12T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xb48822359f015102a703be0ee620a3e72217cf1c#controller",
+      "role": "seller",
+      "payloadHash": "0xa7b50c20670f75ca0bafc0d0657701e5ec77289b323e861d3dab56e764c7cedb",
+      "jws": "0x302a0ce8fda5e7730b8646de23085b464c81e392311f7546532e7bb3d5a4ce7804db4ef519517750c12c581a8af3c52a6db5bb3205e4be7fffcd22c66c3541fe1c"
+    }
+  ]
+}

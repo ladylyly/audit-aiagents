@@ -1,0 +1,170 @@
+{
+  "id": "urn:uuid:thesis-dense20-1776205096452-17",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisDenseComplianceCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x1da7e59a441baeefd903871bedc602b44ab6b931",
+    "name": "Antwerp Precursor Materials NV"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x08cfc2174d4467f301cc5c220c9cb8cf7a18360a",
+    "name": "Nordic Cathode Active Materials Oy"
+  },
+  "issuanceDate": "2026-04-11T22:17:51.791Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x08cfc2174d4467f301cc5c220c9cb8cf7a18360a",
+    "productName": "NMC precursor slurry lot APM-2026-18",
+    "batch": "APM-2026-18",
+    "quantity": 1,
+    "previousCredential": "QmV4cMCjqqKsucJiYuN8kamxaSTgBZYJhhuxKhn8sTPqLN",
+    "componentCredentials": [
+      "QmV4cMCjqqKsucJiYuN8kamxaSTgBZYJhhuxKhn8sTPqLN",
+      "QmdxbBgokzRjUZt7fgGuj76MLCTPXVfMcSkS91rW9LTjei",
+      "QmXoXF4J6gvby6qbzC1795W8pD2TYb59U9ZFhuBNUmXecm"
+    ],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "Belgium",
+      "countryCode": "BE",
+      "latitude": 51.2,
+      "longitude": 4.4
+    },
+    "facilityRole": "processor",
+    "materialTags": [
+      "cobalt",
+      "nickel",
+      "lithium",
+      "battery_precursor"
+    ],
+    "operationTags": [
+      "midstream",
+      "precursor_manufacturing"
+    ],
+    "claims": {
+      "battery": {
+        "operator_role": "manufacturer",
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": false,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": true,
+        "third_party_verification_report_exists": true,
+        "public_due_diligence_report_exists": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x048cfd5f3d7731090bf9beed8688bbcf42e552ada07902c804bb52ea864a7c43\",\"proof\":\"0xd89d16c1f66c5249afd37a9d678beeec8e3d69df594d1a97972af766742365642eec5b8e3d45d0329bced5b245dd534f69641a13611bf0578b5d3f5d51f3fd200e7ef013318dad5a26111ddfc917d502cf44ed012c544f6a816bb0329a50320e6842dc9295619ea49fea472757814aec41a341a424af6d26ae8a767a6ad8fb0486031509db92eed881ee25e8a25c42bb4c2126fbfb6d7afc9f429d505d9cbf03f11819ca38a7de5eb08df169ec05db2954868b1ce6b48830cf5cc88aa46bcc0ecdbca4f9194a66a83eb6b2bd414ba5b0a33eac7855aecf521749f99ad28cb20230dc9753d708d92103f4130bfdf1c6882420b3f476b18645e14a49d246ac27673aeb06879034e1e783d6b86dc099067d6acbaa145d6da38bf13f57fa2f301f6bd2fff7312c2f7cc74b6420b9585821b554b82499061aa37e82a0a2a98eb881095c02f81a97b502cc3ef02618125af3fc1129d0856495ab24096731071e72a137b87a8dd998c08d8f919bbd3cd5bdcc9ae545a976fa9a09a25a368be72a3a9113923e095eb08502f70c342320a332c51f79d58163889c2aa74b12aba622a6a50d82977872cb8fd60a660a0311205cbd3d108fe7beb6719e8ea414de463c9c605386125d74fab9a060350b4d5047c006aa02e943bbbcd7ec5578f56c0b5f8e161312b23727f64d671cacbc61a5b5d629756a6a91006dd683ff8c1d9410e28ac132b8973c3252c62a912a4fd25561a78bf7bb8f75ba16a840ef8fc9f4c48822cc28a4e2e6f476854c6288fad87394a63b667d9d62dee04cff58845fbeb246323366269a95dc99e4e111850b9446a8a281e359c4a42cb1a8acbeff997fcd9a86e462619dcbc14f1236ea8751fd419b0d6c95f55ef189a8fbe91ad78f69914b1df50b8898c13793589d6ed62171c98d69357c28d760d0b8ebcd5c9bcf06687bedca07\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x6e3e0b2027f7c6fb81fec85f1161ef0351daa69c4359ba24b452cfe79c239751\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x048cfd5f3d7731090bf9beed8688bbcf42e552ada07902c804bb52ea864a7c43",
+      "proof": "0xd89d16c1f66c5249afd37a9d678beeec8e3d69df594d1a97972af766742365642eec5b8e3d45d0329bced5b245dd534f69641a13611bf0578b5d3f5d51f3fd200e7ef013318dad5a26111ddfc917d502cf44ed012c544f6a816bb0329a50320e6842dc9295619ea49fea472757814aec41a341a424af6d26ae8a767a6ad8fb0486031509db92eed881ee25e8a25c42bb4c2126fbfb6d7afc9f429d505d9cbf03f11819ca38a7de5eb08df169ec05db2954868b1ce6b48830cf5cc88aa46bcc0ecdbca4f9194a66a83eb6b2bd414ba5b0a33eac7855aecf521749f99ad28cb20230dc9753d708d92103f4130bfdf1c6882420b3f476b18645e14a49d246ac27673aeb06879034e1e783d6b86dc099067d6acbaa145d6da38bf13f57fa2f301f6bd2fff7312c2f7cc74b6420b9585821b554b82499061aa37e82a0a2a98eb881095c02f81a97b502cc3ef02618125af3fc1129d0856495ab24096731071e72a137b87a8dd998c08d8f919bbd3cd5bdcc9ae545a976fa9a09a25a368be72a3a9113923e095eb08502f70c342320a332c51f79d58163889c2aa74b12aba622a6a50d82977872cb8fd60a660a0311205cbd3d108fe7beb6719e8ea414de463c9c605386125d74fab9a060350b4d5047c006aa02e943bbbcd7ec5578f56c0b5f8e161312b23727f64d671cacbc61a5b5d629756a6a91006dd683ff8c1d9410e28ac132b8973c3252c62a912a4fd25561a78bf7bb8f75ba16a840ef8fc9f4c48822cc28a4e2e6f476854c6288fad87394a63b667d9d62dee04cff58845fbeb246323366269a95dc99e4e111850b9446a8a281e359c4a42cb1a8acbeff997fcd9a86e462619dcbc14f1236ea8751fd419b0d6c95f55ef189a8fbe91ad78f69914b1df50b8898c13793589d6ed62171c98d69357c28d760d0b8ebcd5c9bcf06687bedca07",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x6e3e0b2027f7c6fb81fec85f1161ef0351daa69c4359ba24b452cfe79c239751"
+    },
+    "productId": "303",
+    "productContract": "0x4fB978633F6BDf62F7166b5A23986094D11F3a22",
+    "chainId": "11155111",
+    "companyName": "Antwerp Precursor Materials NV",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 1800,
+      "net_turnover_eur_worldwide": 780000000,
+      "net_turnover_eur_union": 590000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "BE-DENSE20-0017",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 190000000
+    },
+    "group": {
+      "avg_employee_count": 7600,
+      "net_turnover_eur_worldwide": 2420000000,
+      "net_turnover_eur_union": 1830000000,
+      "net_turnover_eur_consolidated_last_financial_year": 940000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Antwerp Precursor Materials NV reports site-level emissions and energy-source disclosures for NMC precursor slurry lot APM-2026-18.",
+        "climateClaim": "Antwerp Precursor Materials NV maintains climate transition and emissions reduction evidence for processor operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Belgium",
+        "facilityRole": "processor",
+        "materialTags": [
+          "cobalt",
+          "nickel",
+          "lithium",
+          "battery_precursor"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "processor",
+        "componentType": "cobalt",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_17_precursor_plant_belgium-material-balance-sheet",
+          "vc_17_precursor_plant_belgium-shipment-record",
+          "vc_17_precursor_plant_belgium-supplier-declaration"
+        ],
+        "serialisationScheme": "APM-2026-18-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "BE-APM-2026-18",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "supplier-flowdown control intentionally false"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "no 3TG importer role on precursor node"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "battery due-diligence branch only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-11T22:17:51.791Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x1da7e59a441baeefd903871bedc602b44ab6b931#controller",
+      "role": "issuer",
+      "payloadHash": "0xd50a5b84d38a70858dbde3345d749b3e4adb60caab84a277506a8d75cf13bba9",
+      "jws": "0xab193fdbf062cf1ea99b300bb9e350e108cb5ad5752b92d57f1095144751e22f58601f50d3383c52d2b4b2fbd9e6bdd3017b01cd05ec9a909cc6fe36e60e27271c"
+    }
+  ]
+}

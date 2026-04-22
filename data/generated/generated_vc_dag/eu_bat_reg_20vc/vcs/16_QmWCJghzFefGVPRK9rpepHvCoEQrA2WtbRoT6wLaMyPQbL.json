@@ -1,0 +1,166 @@
+{
+  "id": "urn:uuid:thesis-batteryreg-1776210519055-16",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "ThesisBatteryRegulationCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xffb5da3e8b4b59bf9e9369d03b5ab11c30f004a8",
+    "name": "Lyon Battery Controls SAS"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x00f26fed2afd460dabac7ea9807592ed3421c00d",
+    "name": "Bohemia Battery Modules a.s."
+  },
+  "issuanceDate": "2026-04-10T23:48:28.121Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x00f26fed2afd460dabac7ea9807592ed3421c00d",
+    "productName": "Battery management system units lot LBC-2026-03",
+    "batch": "LBC-2026-03",
+    "quantity": 1,
+    "previousCredential": "QmctTbU8T15fAEnDSbUS3CiuFw4du679fWaAfrg7zTx5oc",
+    "componentCredentials": [
+      "QmctTbU8T15fAEnDSbUS3CiuFw4du679fWaAfrg7zTx5oc"
+    ],
+    "certificateCredential": {
+      "name": "",
+      "cid": ""
+    },
+    "certifications": [],
+    "location": {
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": 45.7,
+      "longitude": 4.8
+    },
+    "facilityRole": "electronics_supplier",
+    "materialTags": [
+      "bms",
+      "electronics"
+    ],
+    "operationTags": [
+      "midstream",
+      "electronics",
+      "battery_control"
+    ],
+    "claims": {
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "status": "component",
+        "operator_role": "component_supplier",
+        "placed_on_union_market": true,
+        "technical_documentation_exists": true,
+        "eu_declaration_of_conformity_exists": false,
+        "ce_mark_present": false,
+        "batch_or_serial_present": true,
+        "manufacturer_identity_present": true,
+        "traceability_system_exists": true,
+        "instructions_present": true,
+        "safety_information_present": true
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x2c61086261e4c2bb0efbe9fb0b9a666d3b45a65736b92f9b13290c8a86a81947\",\"proof\":\"0x966f4fad1a107b5a468c4a9f3e1e776aa63bfacb71c155b02a939cff7833206f9250868926d8a20c232c865118e1a653fbd530d1e6c8e7d7aaab43ee1495d35f66f5dc22abd02a0e5c8e653f738f907be11f2dbbfe1e1aaca852165fd820b4280c52baa9e06080a8714917b08fe0212eeaf9c72762f350ab6d8b13687a2b700a85b27813bb3027b48e5531b167b5aa9806c394194de969287412814a54530a021403414191a66c7b965b79142e86e41859c180297aa1e0372e816b709dea980d1847970ac49a3d842d081aec11de0efe73b06c65b92fc8c75ab2c2dca46e780510535e6d9fea586ef27706b361741f4b3b9d48f0676f557e7c8ae40b97061209283e712b57318b7119b353c56f2a652c40ccd5fb93bbe68e3569741c7633f75f62356295485bd9c998867e77268151f89f848ff5bdda69fa4cc3819db475bc273ca83ce322f6f029ea66fd74feb7cacb5749cfa8eb854adb78977cd5f1a8083e60783086414f0393cca1b6dc6fd0d2698643162653ba72f015944e202ed23749728adc603dfd881400f870e6dd30892fa850eef181246578a12d56b7c7dfa17070b257a27378ddb68fdd24d13139f76460aeda16f0d0b1d8502e094a762c2b0db4f83e097f9c88f2f39beac3e4a5b75426f1bde1562a6d1264e8877b7997af3dda4589432900a21fec51733962551da44d2cdfa8af2ed74bf01839287d1f2e72a87f7e408e6df55fc4ea625517d8bad0a312c29055f052258b7dab17975e1e36745cf85bdbbf4aae277e4f9841a2bf233c6d5530f224cded1302b0fcd3ad37058a776093445f4f003935adf93f94751b8a6a21066945028ddd5668981b18b44e38f264a7579cb42127bb20079fe8a97c3ba2b3a8394be26765f03becdec1de0d6e1ee0d3e9742adced15ba415045291006694976abcc7a16c6d05d05c99b3101\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x699e284b4e4d7855142a654f11ef193237a72d3ad4b84bd098a7aebfcc29582d\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x2c61086261e4c2bb0efbe9fb0b9a666d3b45a65736b92f9b13290c8a86a81947",
+      "proof": "0x966f4fad1a107b5a468c4a9f3e1e776aa63bfacb71c155b02a939cff7833206f9250868926d8a20c232c865118e1a653fbd530d1e6c8e7d7aaab43ee1495d35f66f5dc22abd02a0e5c8e653f738f907be11f2dbbfe1e1aaca852165fd820b4280c52baa9e06080a8714917b08fe0212eeaf9c72762f350ab6d8b13687a2b700a85b27813bb3027b48e5531b167b5aa9806c394194de969287412814a54530a021403414191a66c7b965b79142e86e41859c180297aa1e0372e816b709dea980d1847970ac49a3d842d081aec11de0efe73b06c65b92fc8c75ab2c2dca46e780510535e6d9fea586ef27706b361741f4b3b9d48f0676f557e7c8ae40b97061209283e712b57318b7119b353c56f2a652c40ccd5fb93bbe68e3569741c7633f75f62356295485bd9c998867e77268151f89f848ff5bdda69fa4cc3819db475bc273ca83ce322f6f029ea66fd74feb7cacb5749cfa8eb854adb78977cd5f1a8083e60783086414f0393cca1b6dc6fd0d2698643162653ba72f015944e202ed23749728adc603dfd881400f870e6dd30892fa850eef181246578a12d56b7c7dfa17070b257a27378ddb68fdd24d13139f76460aeda16f0d0b1d8502e094a762c2b0db4f83e097f9c88f2f39beac3e4a5b75426f1bde1562a6d1264e8877b7997af3dda4589432900a21fec51733962551da44d2cdfa8af2ed74bf01839287d1f2e72a87f7e408e6df55fc4ea625517d8bad0a312c29055f052258b7dab17975e1e36745cf85bdbbf4aae277e4f9841a2bf233c6d5530f224cded1302b0fcd3ad37058a776093445f4f003935adf93f94751b8a6a21066945028ddd5668981b18b44e38f264a7579cb42127bb20079fe8a97c3ba2b3a8394be26765f03becdec1de0d6e1ee0d3e9742adced15ba415045291006694976abcc7a16c6d05d05c99b3101",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x699e284b4e4d7855142a654f11ef193237a72d3ad4b84bd098a7aebfcc29582d"
+    },
+    "productId": "342",
+    "productContract": "0x05772985674833b6F4b3E5eA4fF03EED10C298a5",
+    "chainId": "11155111",
+    "companyName": "Lyon Battery Controls SAS",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 950,
+      "net_turnover_eur_worldwide": 240000000,
+      "net_turnover_eur_union": 150000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "FR-BATREG-0016",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 78000000
+    },
+    "group": {
+      "avg_employee_count": 2100,
+      "net_turnover_eur_worldwide": 410000000,
+      "net_turnover_eur_union": 220000000,
+      "net_turnover_eur_consolidated_last_financial_year": 135000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Lyon Battery Controls SAS reports site-level emissions and energy-source disclosures for Battery management system units lot LBC-2026-03.",
+        "climateClaim": "Lyon Battery Controls SAS maintains climate transition and emissions reduction evidence for electronics_supplier operations.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "France",
+        "facilityRole": "electronics_supplier",
+        "materialTags": [
+          "bms",
+          "electronics"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "electronics_supplier",
+        "componentType": "bms",
+        "qualityStandards": [],
+        "traceabilityArtifacts": [
+          "vc_16_bms_supplier_france-material-balance-sheet",
+          "vc_16_bms_supplier_france-shipment-record",
+          "vc_16_bms_supplier_france-supplier-declaration"
+        ],
+        "serialisationScheme": "LBC-2026-03-SER",
+        "conformityReferences": []
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "FR-LBC-2026-03",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "Annex VII BMS access intentionally disabled"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "3TG checks are concentrated on importer nodes 14 and 13"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "battery branch support only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-10T23:48:28.121Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xffb5da3e8b4b59bf9e9369d03b5ab11c30f004a8#controller",
+      "role": "issuer",
+      "payloadHash": "0x633775af8cff6d0cb06558d8b0684acb9ca1085e20f321ab72f6a6f8f3deb420",
+      "jws": "0x243183d48b195afe25edcf6ccdb837548b5db97f1098f01c9b4ac99c141d27026c862e45da436b9e58d73c5230920ee44525c88570523be8ddab129dd455adac1c"
+    }
+  ]
+}

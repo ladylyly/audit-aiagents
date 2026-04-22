@@ -1,0 +1,96 @@
+{
+  "id": "urn:uuid:real-vc-1776811666849-5",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x673baa1a921c5e5178b5bf26cf978a3f0d8be87e",
+    "name": "Harjavalta Nickel Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "issuanceDate": "2026-04-01T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "productName": "Nickel sulfate refinery",
+    "batch": "REAL-BATCH-005",
+    "quantity": 1,
+    "previousCredential": "QmViK3ZfnmXScuKrX2JhNQvWAFbGJ4iTuUx8sStGwE1VyA",
+    "componentCredentials": [
+      "QmViK3ZfnmXScuKrX2JhNQvWAFbGJ4iTuUx8sStGwE1VyA"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-ni-ref-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-ni-ref-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-ni-ref-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "refiner",
+    "materialTags": [
+      "nickel"
+    ],
+    "operationTags": [
+      "midstream",
+      "refining",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.5,
+      "longitude": 25.3
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Nordic grid, <50g CO2/kWh",
+    "climateClaim": "Net-zero refinery 2035",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x06e200448cada9225e9d0fe06145a030aad12015abf0cd57421634145e5a724c\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x06e200448cada9225e9d0fe06145a030aad12015abf0cd57421634145e5a724c",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "357",
+    "productContract": "0x1b123CF037eA75fe1b42bb05B633dC9b4516e03a",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-01T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x673baa1a921c5e5178b5bf26cf978a3f0d8be87e#controller",
+      "role": "seller",
+      "payloadHash": "0xd047da026d61e704d21d745352b2c46a99276a011cfec8a15cf748e83341617c",
+      "jws": "0x3fac0e640ada1adb2d683827e6a8a6cffb6e9ceecc5ae0716ace1355954c09ba3a1bf8100ce24405adb8283e13a0cd2bbafe36e39b26fa0ad592700094af76031c"
+    }
+  ]
+}

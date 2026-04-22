@@ -1,0 +1,99 @@
+{
+  "id": "urn:uuid:real-vc-1775164865524-13",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xa8587f869fccd88133ed94aacd5aeede595d3e4f",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xa8587f869fccd88133ed94aacd5aeede595d3e4f",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "issuanceDate": "2026-03-21T21:20:55.529Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xa8587f869fccd88133ed94aacd5aeede595d3e4f",
+    "productName": "Cathode precursor pCAM",
+    "batch": "REAL-BATCH-013",
+    "quantity": 1,
+    "previousCredential": "QmdfE4u4Xko918Sy8wx2wEuiy6fnXv9mboG7hmWNgn27df",
+    "componentCredentials": [
+      "QmdfE4u4Xko918Sy8wx2wEuiy6fnXv9mboG7hmWNgn27df",
+      "QmYwX9Ac2LDvbD9fmPaWKRkoc3vJ3M37tCz7Gmo6JJ2SGr",
+      "QmQriMUYptruzyxsCBj4P4r1ZBNhFx8twewcSpxGDjk6Pk"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-pcam-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-pcam-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-pcam-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_precursor"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.6,
+      "longitude": 27.2
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Precursor hydromet processing, Nordic grid",
+    "climateClaim": "Scope-1+2+3 measured",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x24fdda4659c0eb219871cc731b8af5d8e9d890e78295723257bb8e8cf685344a\",\"proof\":\"0xc89451703c91d4759bf1890d1dd0a78062d7060e930a7157ab442df4e1563e46c044924e520c25db88fc5d6380edf0eaea2afca1103c7db1b001c844cd13fc41c4cad6292f291819e217a7505e32a3ba30116785227a5ba0cb529a492bb5183cbe789fc83deac62719e20116b2ed632f29bb70976573b1194c085e194885df6802735d08a8bf1993dee4126b1a6e16f1bb56e46e5f62f215c6447a353ad01b0160f29363d99f59d26189f0a8c1d1f174df359c6bfa367bd920dfe94929d94807c8cf91c344881bbb948cdfcc3412aa00bdd8206f59d3d2cf4ad2a423faaea304bc1dc21108f392535c3058db01b47dbcce88d9a437137a7fcaf158583899c43e0c07dfd39eecb4d45bc9f90bc1af011250f49925bf4e8db949025ed668eb6b4e1aa177edd2a64286a4bb4819df7439cc70a60066d27be0dfbccb6c716f6a851a781417edbef66d3104a351aebb350a749839475be350a85712370d0eac378b2c06353f1a105daea2c950a038a2e98ae0d2b468aed9b12426b0ff1e72c3deba1c5ab08b618a0061baa401e9b667666bacdf7c60c075eb41630e58545100b5442a3c11867309f2b1a28ea7b3809f38c5f1808b6f3c3b0c525dc552eb92a4948675b031d94dc08976c6c0f9fa3156b5ee560dc5f153a290c04aae1856156cf41743ae74c52213311aad48ffa29a2369c5c284094aec9ae0acfefcc5e1cee55f59730221919c7d71e64c2c09e756bc88adb81dbd72f1b94ba47ce05236abd4312d74044200901736edb591ce59e7f8460c97012750eda068e8ec3e990809d3bcf3310844a491dcb42d6528516c2684a619bc3b2e26cdcb092fc283d6b414fdad9744b7054869ab9fcc5c4c86db1bac2173fbbce71fa60458a1c90d4f807106f9d209ed2cb62d88728a75d5b74b23982e10a6169495e34e17f63c0633de73f4f08708\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x84db5bdce957b70e567b69a6f17ad06c94b46a8e6bfe94ccdbd60032d0115f57\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x24fdda4659c0eb219871cc731b8af5d8e9d890e78295723257bb8e8cf685344a",
+      "proof": "0xc89451703c91d4759bf1890d1dd0a78062d7060e930a7157ab442df4e1563e46c044924e520c25db88fc5d6380edf0eaea2afca1103c7db1b001c844cd13fc41c4cad6292f291819e217a7505e32a3ba30116785227a5ba0cb529a492bb5183cbe789fc83deac62719e20116b2ed632f29bb70976573b1194c085e194885df6802735d08a8bf1993dee4126b1a6e16f1bb56e46e5f62f215c6447a353ad01b0160f29363d99f59d26189f0a8c1d1f174df359c6bfa367bd920dfe94929d94807c8cf91c344881bbb948cdfcc3412aa00bdd8206f59d3d2cf4ad2a423faaea304bc1dc21108f392535c3058db01b47dbcce88d9a437137a7fcaf158583899c43e0c07dfd39eecb4d45bc9f90bc1af011250f49925bf4e8db949025ed668eb6b4e1aa177edd2a64286a4bb4819df7439cc70a60066d27be0dfbccb6c716f6a851a781417edbef66d3104a351aebb350a749839475be350a85712370d0eac378b2c06353f1a105daea2c950a038a2e98ae0d2b468aed9b12426b0ff1e72c3deba1c5ab08b618a0061baa401e9b667666bacdf7c60c075eb41630e58545100b5442a3c11867309f2b1a28ea7b3809f38c5f1808b6f3c3b0c525dc552eb92a4948675b031d94dc08976c6c0f9fa3156b5ee560dc5f153a290c04aae1856156cf41743ae74c52213311aad48ffa29a2369c5c284094aec9ae0acfefcc5e1cee55f59730221919c7d71e64c2c09e756bc88adb81dbd72f1b94ba47ce05236abd4312d74044200901736edb591ce59e7f8460c97012750eda068e8ec3e990809d3bcf3310844a491dcb42d6528516c2684a619bc3b2e26cdcb092fc283d6b414fdad9744b7054869ab9fcc5c4c86db1bac2173fbbce71fa60458a1c90d4f807106f9d209ed2cb62d88728a75d5b74b23982e10a6169495e34e17f63c0633de73f4f08708",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x84db5bdce957b70e567b69a6f17ad06c94b46a8e6bfe94ccdbd60032d0115f57"
+    },
+    "productId": "149",
+    "productContract": "0x304AEb1aD1a69dae31E8350bfe5F7b423A4FECB2",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-21T21:20:55.529Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xa8587f869fccd88133ed94aacd5aeede595d3e4f#controller",
+      "role": "seller",
+      "payloadHash": "0xc4882aaaa5fee6355d72b1408e430666d2d036bc3006782c965167b440b09613",
+      "jws": "0x9eed921a7d2775ea865afd06cbf805e04f91deff24be21351eb4b0f9753ae3420da6d49fb60909b46636307473eb4cdf8b87911fb2dd99f9f2d5030c5aff03b51c"
+    }
+  ]
+}

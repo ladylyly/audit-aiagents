@@ -1,0 +1,485 @@
+{
+  "runId": "thesis_batteryreg_1776210508085",
+  "scenario": "thesis_batteryreg_case",
+  "specPath": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/backend/tests/compliance/fixtures/compliance_agent_test_case/spec.json",
+  "rootCid": "QmR9zxARzK4GfQKsJpLp1RW86NCJusSDGJoycuL8NtQ7et",
+  "rootNodeId": "vc_20_module_assembler_czechia",
+  "nodeCount": 20,
+  "edgeCount": 18,
+  "chainId": 11155111,
+  "zkpCommitmentsFile": "/Users/lydiamussenbrock/Documents/sandbox/automating-supplychain-aiagent/data/generated/latest_zkp_commitments.json",
+  "createdAt": "2026-04-14T23:48:42.333Z",
+  "wallets": [
+    {
+      "nodeId": "vc_01_cobalt_mine_drc",
+      "companyName": "Lualaba Cobalt Cooperative SARL",
+      "issuerAddress": "0xb6BE9C685499d50f3abb928065c417c63DC122a0",
+      "holderAddress": "0xEf66cC793573594220ddb5cd74cB5ECC9d33774F"
+    },
+    {
+      "nodeId": "vc_02_cobalt_refinery_estonia",
+      "companyName": "Baltic Cobalt Refining OÜ",
+      "issuerAddress": "0xEf66cC793573594220ddb5cd74cB5ECC9d33774F",
+      "holderAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046"
+    },
+    {
+      "nodeId": "vc_03_nickel_mine_indonesia",
+      "companyName": "Sulawesi Nickel Resources Tbk",
+      "issuerAddress": "0xBDf94d3f2ECbcA1F01b157842A4027e35F833790",
+      "holderAddress": "0xEdc095611426CB8d80Fb32f9bEBc753FeE033d98"
+    },
+    {
+      "nodeId": "vc_04_nickel_refinery_poland",
+      "companyName": "Baltic Nickel Sulfate Sp. z o.o.",
+      "issuerAddress": "0xEdc095611426CB8d80Fb32f9bEBc753FeE033d98",
+      "holderAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046"
+    },
+    {
+      "nodeId": "vc_05_lithium_brine_chile",
+      "companyName": "Salar Verde Lithium S.A.",
+      "issuerAddress": "0x0ED285c381457D80bF33c2a93bdd388572f79A54",
+      "holderAddress": "0xCd976118086972CCD6398d61e4bDa65bc7126914"
+    },
+    {
+      "nodeId": "vc_06_lithium_refinery_spain",
+      "companyName": "Iberia Lithium Hydroxide S.L.",
+      "issuerAddress": "0xCd976118086972CCD6398d61e4bDa65bc7126914",
+      "holderAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046"
+    },
+    {
+      "nodeId": "vc_07_graphite_mine_mozambique",
+      "companyName": "Cabo Graphite Extractives Lda",
+      "issuerAddress": "0x7aeB55CF12fF00Aa71E6630B602faC1cc28b53Ab",
+      "holderAddress": "0xB7958dCE7678Da43F3999A43D5Ad437aF9873Ac0"
+    },
+    {
+      "nodeId": "vc_08_graphite_processor_portugal",
+      "companyName": "Atlantic Graphite Processing S.A.",
+      "issuerAddress": "0xB7958dCE7678Da43F3999A43D5Ad437aF9873Ac0",
+      "holderAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062"
+    },
+    {
+      "nodeId": "vc_09_copper_foil_sweden",
+      "companyName": "Nordic Copper Foils AB",
+      "issuerAddress": "0x9527A43c4291Ffbee10012A901e82be47E4a39E3",
+      "holderAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062"
+    },
+    {
+      "nodeId": "vc_10_aluminum_housing_austria",
+      "companyName": "Alpin Battery Enclosures GmbH",
+      "issuerAddress": "0x0D25552f5adDB555758b6a53affBb600B2e5DF2C",
+      "holderAddress": "0x0D25552f5adDB555758b6a53affBb600B2e5DF2C"
+    },
+    {
+      "nodeId": "vc_11_tantalum_processor_rwanda",
+      "companyName": "Great Lakes Tantalum Processing Ltd",
+      "issuerAddress": "0xFa52DFe44c1eC1f65F8E1d99B26b838Dc3E4b1a8",
+      "holderAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4"
+    },
+    {
+      "nodeId": "vc_12_tin_smelter_malaysia",
+      "companyName": "Penang Tin Metals Berhad",
+      "issuerAddress": "0x07d2eA588D62eE45C0Ce9b16CE36b38B19366Af8",
+      "holderAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4"
+    },
+    {
+      "nodeId": "vc_13_gold_refiner_uae",
+      "companyName": "Desert Gold Refining LLC",
+      "issuerAddress": "0xCDbb1DD3271a095980DeB914227964Fdab5C6434",
+      "holderAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4"
+    },
+    {
+      "nodeId": "vc_14_tungsten_terminals_germany",
+      "companyName": "Wolfram Precision Terminals GmbH",
+      "issuerAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4",
+      "holderAddress": "0xaEC516247973cb6742ECb81616ED763719ee8AcA"
+    },
+    {
+      "nodeId": "vc_15_electronics_board_italy",
+      "companyName": "Torino Power Electronics S.p.A.",
+      "issuerAddress": "0xaEC516247973cb6742ECb81616ED763719ee8AcA",
+      "holderAddress": "0xFFb5DA3E8b4B59BF9e9369D03B5Ab11c30F004a8"
+    },
+    {
+      "nodeId": "vc_16_bms_supplier_france",
+      "companyName": "Lyon Battery Controls SAS",
+      "issuerAddress": "0xFFb5DA3E8b4B59BF9e9369D03B5Ab11c30F004a8",
+      "holderAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d"
+    },
+    {
+      "nodeId": "vc_17_precursor_plant_belgium",
+      "companyName": "Antwerp Precursor Materials NV",
+      "issuerAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046",
+      "holderAddress": "0xB9d62CCb78EFCa590de2Af21210E1E2259460B94"
+    },
+    {
+      "nodeId": "vc_18_cathode_plant_finland",
+      "companyName": "Nordic Cathode Active Materials Oy",
+      "issuerAddress": "0xB9d62CCb78EFCa590de2Af21210E1E2259460B94",
+      "holderAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062"
+    },
+    {
+      "nodeId": "vc_19_cell_manufacturer_hungary",
+      "companyName": "Pannon Cell Systems Zrt.",
+      "issuerAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062",
+      "holderAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d"
+    },
+    {
+      "nodeId": "vc_20_module_assembler_czechia",
+      "companyName": "Bohemia Battery Modules a.s.",
+      "issuerAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d",
+      "holderAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d"
+    }
+  ],
+  "records": [
+    {
+      "index": 0,
+      "nodeId": "vc_01_cobalt_mine_drc",
+      "chunkName": "Cobalt hydroxide concentrate lot LCC-2026-01",
+      "cid": "QmRdChpa82auk8cKQpxPhG2dVGgXwpELvcLRKJaZXPT5A5",
+      "productContract": "0x5a59E2Fc0919c3c18D7B11c87234cA0977a4b628",
+      "productId": "327",
+      "priceCommitment": "0x0c48253aec6435d0e09ccee89324adc42c7cfaec17fc7a52d61fbe5c67adc864",
+      "zkpCommitment": "0x0c48253aec6435d0e09ccee89324adc42c7cfaec17fc7a52d61fbe5c67adc864",
+      "issuerAddress": "0xb6BE9C685499d50f3abb928065c417c63DC122a0",
+      "issuerName": "Lualaba Cobalt Cooperative SARL",
+      "holderAddress": "0xEf66cC793573594220ddb5cd74cB5ECC9d33774F",
+      "holderName": "Baltic Cobalt Refining OÜ",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-26T23:48:28.121Z"
+    },
+    {
+      "index": 1,
+      "nodeId": "vc_02_cobalt_refinery_estonia",
+      "chunkName": "Battery-grade cobalt sulfate lot BCR-2026-04",
+      "cid": "QmP6459dTTBbh5FvTpg8iKvPQ7invAYjfJi4uNTg4QCppa",
+      "productContract": "0x1208baC85fF0d9A2aFe6bF07d662875C93ea700e",
+      "productId": "328",
+      "priceCommitment": "0xaeb94ffcb0dfe28dc3d9de7a4c75a0a00720a2d29f15f8b2a1c15c792b514215",
+      "zkpCommitment": "0xaeb94ffcb0dfe28dc3d9de7a4c75a0a00720a2d29f15f8b2a1c15c792b514215",
+      "issuerAddress": "0xEf66cC793573594220ddb5cd74cB5ECC9d33774F",
+      "issuerName": "Baltic Cobalt Refining OÜ",
+      "holderAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046",
+      "holderName": "Antwerp Precursor Materials NV",
+      "componentCredentials": [
+        "QmRdChpa82auk8cKQpxPhG2dVGgXwpELvcLRKJaZXPT5A5"
+      ],
+      "uploadedAt": "2026-03-27T23:48:28.121Z"
+    },
+    {
+      "index": 2,
+      "nodeId": "vc_03_nickel_mine_indonesia",
+      "chunkName": "Nickel mixed hydroxide precipitate feed lot SNR-2026-02",
+      "cid": "QmfJb4nYb8kbUCQvJpsLG8e8Qvz9zrokcbd2bPq1U4BhBS",
+      "productContract": "0xC97cd46E33DD4e318B1Ac2bf2f4524BdA1D09613",
+      "productId": "329",
+      "priceCommitment": "0x488b8b05038ffdf0d9139e922ff6bba23c65871323a4bf52cdfc4074bc42b971",
+      "zkpCommitment": "0x488b8b05038ffdf0d9139e922ff6bba23c65871323a4bf52cdfc4074bc42b971",
+      "issuerAddress": "0xBDf94d3f2ECbcA1F01b157842A4027e35F833790",
+      "issuerName": "Sulawesi Nickel Resources Tbk",
+      "holderAddress": "0xEdc095611426CB8d80Fb32f9bEBc753FeE033d98",
+      "holderName": "Baltic Nickel Sulfate Sp. z o.o.",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-28T23:48:28.121Z"
+    },
+    {
+      "index": 3,
+      "nodeId": "vc_04_nickel_refinery_poland",
+      "chunkName": "Battery-grade nickel sulfate lot BNS-2026-07",
+      "cid": "QmZLWvwEfB2CqYW5VL1JKVefT9GX7ncEZJZTJZT117zHsD",
+      "productContract": "0x4Eea0886bCCfcE4D0015F9c4706722671dE58646",
+      "productId": "330",
+      "priceCommitment": "0x6263f17d04e38488edafd80f86749c438855b0e4a9ee450aff1eebc08c5db53e",
+      "zkpCommitment": "0x6263f17d04e38488edafd80f86749c438855b0e4a9ee450aff1eebc08c5db53e",
+      "issuerAddress": "0xEdc095611426CB8d80Fb32f9bEBc753FeE033d98",
+      "issuerName": "Baltic Nickel Sulfate Sp. z o.o.",
+      "holderAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046",
+      "holderName": "Antwerp Precursor Materials NV",
+      "componentCredentials": [
+        "QmfJb4nYb8kbUCQvJpsLG8e8Qvz9zrokcbd2bPq1U4BhBS"
+      ],
+      "uploadedAt": "2026-03-29T23:48:28.121Z"
+    },
+    {
+      "index": 4,
+      "nodeId": "vc_05_lithium_brine_chile",
+      "chunkName": "Lithium carbonate precursor brine lot SVL-2026-03",
+      "cid": "QmWyXgqWcQbLS69vMKsT3XnwRTLpKiZuuPKKxgFTCv2u1T",
+      "productContract": "0xe7e91Ad223EE2d700d171Fe426cb7cdBb56c7A5d",
+      "productId": "331",
+      "priceCommitment": "0xae909ed19f42df221df6aa384042080c461464c756e73c863671d46c0aef860f",
+      "zkpCommitment": "0xae909ed19f42df221df6aa384042080c461464c756e73c863671d46c0aef860f",
+      "issuerAddress": "0x0ED285c381457D80bF33c2a93bdd388572f79A54",
+      "issuerName": "Salar Verde Lithium S.A.",
+      "holderAddress": "0xCd976118086972CCD6398d61e4bDa65bc7126914",
+      "holderName": "Iberia Lithium Hydroxide S.L.",
+      "componentCredentials": [],
+      "uploadedAt": "2026-03-30T23:48:28.121Z"
+    },
+    {
+      "index": 5,
+      "nodeId": "vc_06_lithium_refinery_spain",
+      "chunkName": "Battery-grade lithium hydroxide lot ILH-2026-11",
+      "cid": "QmU2R7LFgLcrAaWypM6ca2nvxKSxE2datzkVKzpjdSFLvx",
+      "productContract": "0x032aaa9E7e5451C0330Ae98D710675bfd4a2d364",
+      "productId": "332",
+      "priceCommitment": "0xea990d65b33e804ca1af554659ea7a06fa1ddffdb802a2906fdf3f65d66b1f05",
+      "zkpCommitment": "0xea990d65b33e804ca1af554659ea7a06fa1ddffdb802a2906fdf3f65d66b1f05",
+      "issuerAddress": "0xCd976118086972CCD6398d61e4bDa65bc7126914",
+      "issuerName": "Iberia Lithium Hydroxide S.L.",
+      "holderAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046",
+      "holderName": "Antwerp Precursor Materials NV",
+      "componentCredentials": [
+        "QmWyXgqWcQbLS69vMKsT3XnwRTLpKiZuuPKKxgFTCv2u1T"
+      ],
+      "uploadedAt": "2026-03-31T23:48:28.121Z"
+    },
+    {
+      "index": 6,
+      "nodeId": "vc_07_graphite_mine_mozambique",
+      "chunkName": "Natural graphite concentrate lot CGE-2026-08",
+      "cid": "QmYUz4TjZt7hHs8AyVti8CSpn9rqEAzehdz6MvozgpHBz9",
+      "productContract": "0x9Ad5cD64de1Ca08af01563B14d5E0dbFc78849d8",
+      "productId": "333",
+      "priceCommitment": "0x2a39af9385574c63e8b6f2f59f51ca4445a1821d5a7588df47b6642a32532964",
+      "zkpCommitment": "0x2a39af9385574c63e8b6f2f59f51ca4445a1821d5a7588df47b6642a32532964",
+      "issuerAddress": "0x7aeB55CF12fF00Aa71E6630B602faC1cc28b53Ab",
+      "issuerName": "Cabo Graphite Extractives Lda",
+      "holderAddress": "0xB7958dCE7678Da43F3999A43D5Ad437aF9873Ac0",
+      "holderName": "Atlantic Graphite Processing S.A.",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-01T23:48:28.121Z"
+    },
+    {
+      "index": 7,
+      "nodeId": "vc_08_graphite_processor_portugal",
+      "chunkName": "Purified spherical graphite lot AGP-2026-10",
+      "cid": "QmaU5qc4uau48gK4mREB9mxYx471AKHDGKZQU2dGjcmruQ",
+      "productContract": "0x92Ca6a4191b1fF34D62223E8B806a98b5F6D5ad2",
+      "productId": "334",
+      "priceCommitment": "0x02a7e50e19af6e8564a897f5afff8ec208efef73dff0fa51991b186bc404b61d",
+      "zkpCommitment": "0x02a7e50e19af6e8564a897f5afff8ec208efef73dff0fa51991b186bc404b61d",
+      "issuerAddress": "0xB7958dCE7678Da43F3999A43D5Ad437aF9873Ac0",
+      "issuerName": "Atlantic Graphite Processing S.A.",
+      "holderAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062",
+      "holderName": "Pannon Cell Systems Zrt.",
+      "componentCredentials": [
+        "QmYUz4TjZt7hHs8AyVti8CSpn9rqEAzehdz6MvozgpHBz9"
+      ],
+      "uploadedAt": "2026-04-02T23:48:28.121Z"
+    },
+    {
+      "index": 8,
+      "nodeId": "vc_09_copper_foil_sweden",
+      "chunkName": "Battery copper foil reels lot NCF-2026-09",
+      "cid": "QmZ5CwvTAFwKMSWQN2d7CiTdfUgn3MjtMWWUSp56GZf4An",
+      "productContract": "0xf97eFDA73dcC5fd1C8bEE2E784eFc13F77476774",
+      "productId": "335",
+      "priceCommitment": "0x52fd5022a4bb3bb7cdcb85f4105cb9a44cf3e3ffab4a2ab90505111934f53156",
+      "zkpCommitment": "0x52fd5022a4bb3bb7cdcb85f4105cb9a44cf3e3ffab4a2ab90505111934f53156",
+      "issuerAddress": "0x9527A43c4291Ffbee10012A901e82be47E4a39E3",
+      "issuerName": "Nordic Copper Foils AB",
+      "holderAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062",
+      "holderName": "Pannon Cell Systems Zrt.",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-03T23:48:28.121Z"
+    },
+    {
+      "index": 9,
+      "nodeId": "vc_10_aluminum_housing_austria",
+      "chunkName": "EV pack aluminum housings lot ABE-2026-06",
+      "cid": "QmSB1Y116EyVx5xNqTpsacebZ1bZvMFq5g1z8WhhZh3oYA",
+      "productContract": "0x78B13FB6443c8379031B56Ed3969A03389147dBD",
+      "productId": "336",
+      "priceCommitment": "0x00b5d4488c968184bc5edcb3a7ccfc5be5b9c36cd45a07b2d7d5d5b97ac20245",
+      "zkpCommitment": "0x00b5d4488c968184bc5edcb3a7ccfc5be5b9c36cd45a07b2d7d5d5b97ac20245",
+      "issuerAddress": "0x0D25552f5adDB555758b6a53affBb600B2e5DF2C",
+      "issuerName": "Alpin Battery Enclosures GmbH",
+      "holderAddress": "0x0D25552f5adDB555758b6a53affBb600B2e5DF2C",
+      "holderName": "Alpin Battery Enclosures GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-04T23:48:28.121Z"
+    },
+    {
+      "index": 10,
+      "nodeId": "vc_11_tantalum_processor_rwanda",
+      "chunkName": "Tantalum powder lot GLT-2026-01",
+      "cid": "QmQgEiyAr4mjSP4LQcVK288QQLLiKTee3qy3q4GnuaemT6",
+      "productContract": "0x00C0f088f4b5EfB615efB7A2252CB28D7468a784",
+      "productId": "337",
+      "priceCommitment": "0xd8b3ca33f5c2035fce976488448e1dc218b25c09eb97a32a57ec8349c161974f",
+      "zkpCommitment": "0xd8b3ca33f5c2035fce976488448e1dc218b25c09eb97a32a57ec8349c161974f",
+      "issuerAddress": "0xFa52DFe44c1eC1f65F8E1d99B26b838Dc3E4b1a8",
+      "issuerName": "Great Lakes Tantalum Processing Ltd",
+      "holderAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4",
+      "holderName": "Wolfram Precision Terminals GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-05T23:48:28.121Z"
+    },
+    {
+      "index": 11,
+      "nodeId": "vc_12_tin_smelter_malaysia",
+      "chunkName": "Refined tin solder feed lot PTM-2026-14",
+      "cid": "QmaNzqBNFm8FGrtBL8eU5LgqdezZHtu2EcuXxnU2M8X6dE",
+      "productContract": "0x9b90f28037079DB149d0D07Bda8803953D1F55Cc",
+      "productId": "338",
+      "priceCommitment": "0xf0ac2a4c90a275ac4acc9124bded2cd460a63991c14cd57f453295b31cfabb07",
+      "zkpCommitment": "0xf0ac2a4c90a275ac4acc9124bded2cd460a63991c14cd57f453295b31cfabb07",
+      "issuerAddress": "0x07d2eA588D62eE45C0Ce9b16CE36b38B19366Af8",
+      "issuerName": "Penang Tin Metals Berhad",
+      "holderAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4",
+      "holderName": "Wolfram Precision Terminals GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-06T23:48:28.121Z"
+    },
+    {
+      "index": 12,
+      "nodeId": "vc_13_gold_refiner_uae",
+      "chunkName": "Gold plating granulate lot DGR-2026-05",
+      "cid": "QmNisBHbyuw7kN3p46hUa6g3GRR4xwrBoa7boiW9piXDUe",
+      "productContract": "0xb6cfAb31b13759DcA9E783e40a4a08500Ca45605",
+      "productId": "339",
+      "priceCommitment": "0x9a4054999587600949fb07166ec8c442ce55d86ba92d7a901ac86f69b556592c",
+      "zkpCommitment": "0x9a4054999587600949fb07166ec8c442ce55d86ba92d7a901ac86f69b556592c",
+      "issuerAddress": "0xCDbb1DD3271a095980DeB914227964Fdab5C6434",
+      "issuerName": "Desert Gold Refining LLC",
+      "holderAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4",
+      "holderName": "Wolfram Precision Terminals GmbH",
+      "componentCredentials": [],
+      "uploadedAt": "2026-04-07T23:48:28.121Z"
+    },
+    {
+      "index": 13,
+      "nodeId": "vc_14_tungsten_terminals_germany",
+      "chunkName": "Tungsten-plated high-current terminals lot WPT-2026-12",
+      "cid": "QmP9NpVdjKapJm2Fevru7izT1GS12rEGwBjnPevGxbL46X",
+      "productContract": "0x1b0A906e49F7eaCBA4F6aB37f1A7208bd8b5F3c6",
+      "productId": "340",
+      "priceCommitment": "0xd475389ab870f012ea1d106ce46b2ab2f2c2374dd2e1ab2d62a459ab2a764647",
+      "zkpCommitment": "0xd475389ab870f012ea1d106ce46b2ab2f2c2374dd2e1ab2d62a459ab2a764647",
+      "issuerAddress": "0xbCE1424A63ca8B113F01aBC10844A2D08B6EaFe4",
+      "issuerName": "Wolfram Precision Terminals GmbH",
+      "holderAddress": "0xaEC516247973cb6742ECb81616ED763719ee8AcA",
+      "holderName": "Torino Power Electronics S.p.A.",
+      "componentCredentials": [
+        "QmQgEiyAr4mjSP4LQcVK288QQLLiKTee3qy3q4GnuaemT6",
+        "QmaNzqBNFm8FGrtBL8eU5LgqdezZHtu2EcuXxnU2M8X6dE",
+        "QmNisBHbyuw7kN3p46hUa6g3GRR4xwrBoa7boiW9piXDUe"
+      ],
+      "uploadedAt": "2026-04-08T23:48:28.121Z"
+    },
+    {
+      "index": 14,
+      "nodeId": "vc_15_electronics_board_italy",
+      "chunkName": "Battery control board assemblies lot TPE-2026-16",
+      "cid": "QmctTbU8T15fAEnDSbUS3CiuFw4du679fWaAfrg7zTx5oc",
+      "productContract": "0xe9a60A0e7C008f9a659a740439F4F929d74E2Cb2",
+      "productId": "341",
+      "priceCommitment": "0x70862d7b8a4f0544183a443ea9378576aff6775705dde86ebfafe8d88c7c3f44",
+      "zkpCommitment": "0x70862d7b8a4f0544183a443ea9378576aff6775705dde86ebfafe8d88c7c3f44",
+      "issuerAddress": "0xaEC516247973cb6742ECb81616ED763719ee8AcA",
+      "issuerName": "Torino Power Electronics S.p.A.",
+      "holderAddress": "0xFFb5DA3E8b4B59BF9e9369D03B5Ab11c30F004a8",
+      "holderName": "Lyon Battery Controls SAS",
+      "componentCredentials": [
+        "QmP9NpVdjKapJm2Fevru7izT1GS12rEGwBjnPevGxbL46X"
+      ],
+      "uploadedAt": "2026-04-09T23:48:28.121Z"
+    },
+    {
+      "index": 15,
+      "nodeId": "vc_16_bms_supplier_france",
+      "chunkName": "Battery management system units lot LBC-2026-03",
+      "cid": "QmWCJghzFefGVPRK9rpepHvCoEQrA2WtbRoT6wLaMyPQbL",
+      "productContract": "0x05772985674833b6F4b3E5eA4fF03EED10C298a5",
+      "productId": "342",
+      "priceCommitment": "0x2c61086261e4c2bb0efbe9fb0b9a666d3b45a65736b92f9b13290c8a86a81947",
+      "zkpCommitment": "0x2c61086261e4c2bb0efbe9fb0b9a666d3b45a65736b92f9b13290c8a86a81947",
+      "issuerAddress": "0xFFb5DA3E8b4B59BF9e9369D03B5Ab11c30F004a8",
+      "issuerName": "Lyon Battery Controls SAS",
+      "holderAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d",
+      "holderName": "Bohemia Battery Modules a.s.",
+      "componentCredentials": [
+        "QmctTbU8T15fAEnDSbUS3CiuFw4du679fWaAfrg7zTx5oc"
+      ],
+      "uploadedAt": "2026-04-10T23:48:28.121Z"
+    },
+    {
+      "index": 16,
+      "nodeId": "vc_17_precursor_plant_belgium",
+      "chunkName": "NMC precursor slurry lot APM-2026-18",
+      "cid": "QmS3zL2nHYeWD1Tio4H1gJsiPB1svkHVPMzYKv7xqBUaow",
+      "productContract": "0x741Fcb0A5c6373c915F11b8Aec80C7BD52191Aaa",
+      "productId": "343",
+      "priceCommitment": "0x048cfd5f3d7731090bf9beed8688bbcf42e552ada07902c804bb52ea864a7c43",
+      "zkpCommitment": "0x048cfd5f3d7731090bf9beed8688bbcf42e552ada07902c804bb52ea864a7c43",
+      "issuerAddress": "0x7a8A51224224085F79702E10BFc57Cd70455c046",
+      "issuerName": "Antwerp Precursor Materials NV",
+      "holderAddress": "0xB9d62CCb78EFCa590de2Af21210E1E2259460B94",
+      "holderName": "Nordic Cathode Active Materials Oy",
+      "componentCredentials": [
+        "QmP6459dTTBbh5FvTpg8iKvPQ7invAYjfJi4uNTg4QCppa",
+        "QmZLWvwEfB2CqYW5VL1JKVefT9GX7ncEZJZTJZT117zHsD",
+        "QmU2R7LFgLcrAaWypM6ca2nvxKSxE2datzkVKzpjdSFLvx"
+      ],
+      "uploadedAt": "2026-04-11T23:48:28.121Z"
+    },
+    {
+      "index": 17,
+      "nodeId": "vc_18_cathode_plant_finland",
+      "chunkName": "NMC cathode active material lot NCAM-2026-22",
+      "cid": "QmQtvMkLaYiNyzAf6Syug8KuWqThgxPnF4bn2zhgsSGojz",
+      "productContract": "0xc4819A06e2F8c0Bf8EaBEfBf1D095Cfcd7ad29C1",
+      "productId": "344",
+      "priceCommitment": "0x989e8669a7f2bdc6c16c3b992bd4f01fd91074aa623d42bc6d9e6b394b76240a",
+      "zkpCommitment": "0x989e8669a7f2bdc6c16c3b992bd4f01fd91074aa623d42bc6d9e6b394b76240a",
+      "issuerAddress": "0xB9d62CCb78EFCa590de2Af21210E1E2259460B94",
+      "issuerName": "Nordic Cathode Active Materials Oy",
+      "holderAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062",
+      "holderName": "Pannon Cell Systems Zrt.",
+      "componentCredentials": [
+        "QmS3zL2nHYeWD1Tio4H1gJsiPB1svkHVPMzYKv7xqBUaow"
+      ],
+      "uploadedAt": "2026-04-12T23:48:28.121Z"
+    },
+    {
+      "index": 18,
+      "nodeId": "vc_19_cell_manufacturer_hungary",
+      "chunkName": "NMC pouch cells lot PCS-2026-31",
+      "cid": "QmRy6APxyS6j4gCuyRwaFNvwg9jYsQ71CJkS2YtciVLPkQ",
+      "productContract": "0xf834AD7A8a90275036B97EF67ca035F10803d9f4",
+      "productId": "345",
+      "priceCommitment": "0x98d6f0be2956e141f88a3bfe8fa8aa2156a9352e4c15b1e7b84aad132ff5f573",
+      "zkpCommitment": "0x98d6f0be2956e141f88a3bfe8fa8aa2156a9352e4c15b1e7b84aad132ff5f573",
+      "issuerAddress": "0x60dBb1Fb374A0827bDFDa1A93342656F15432062",
+      "issuerName": "Pannon Cell Systems Zrt.",
+      "holderAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d",
+      "holderName": "Bohemia Battery Modules a.s.",
+      "componentCredentials": [
+        "QmQtvMkLaYiNyzAf6Syug8KuWqThgxPnF4bn2zhgsSGojz",
+        "QmaU5qc4uau48gK4mREB9mxYx471AKHDGKZQU2dGjcmruQ",
+        "QmZ5CwvTAFwKMSWQN2d7CiTdfUgn3MjtMWWUSp56GZf4An"
+      ],
+      "uploadedAt": "2026-04-13T23:48:28.121Z"
+    },
+    {
+      "index": 19,
+      "nodeId": "vc_20_module_assembler_czechia",
+      "chunkName": "EV battery module passport lot BATREG-2026-01",
+      "cid": "QmR9zxARzK4GfQKsJpLp1RW86NCJusSDGJoycuL8NtQ7et",
+      "productContract": "0xA66f319fD9F7b62C133B1cf395260F59328b9B61",
+      "productId": "346",
+      "priceCommitment": "0xf6d50d437814512f45b148a8336267b3878b2963181d648514db84504d26fa5c",
+      "zkpCommitment": "0xf6d50d437814512f45b148a8336267b3878b2963181d648514db84504d26fa5c",
+      "issuerAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d",
+      "issuerName": "Bohemia Battery Modules a.s.",
+      "holderAddress": "0x00F26fed2Afd460DabAC7ea9807592eD3421C00d",
+      "holderName": "Bohemia Battery Modules a.s.",
+      "componentCredentials": [
+        "QmRy6APxyS6j4gCuyRwaFNvwg9jYsQ71CJkS2YtciVLPkQ",
+        "QmWCJghzFefGVPRK9rpepHvCoEQrA2WtbRoT6wLaMyPQbL"
+      ],
+      "uploadedAt": "2026-04-14T23:48:28.121Z"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+schemaVersion: "1.0"
+framework:
+  id: "esrs_esg_v1"
+  version: "1.0.0"
+  citation: "CSRD / ESRS impact-materiality ESG scoring"
+thresholds:
+  compliant: 0.85
+  review_required: 0.55
+weights:
+  environmental: 1.0
+  social: 1.0
+  governance: 1.0
+certificationSignals:
+  environmental:
+    - iso_14001
+    - asi
+    - the_copper_mark
+    - the_nickel_mark
+  social:
+    - irma
+    - rmap
+    - rmap_plus_rmi_esg_2025
+    - rmi_esg_2025
+    - sa8000
+  governance:
+    - irma
+    - rmap
+    - rmap_plus_rmi_esg_2025
+    - iso_14001
+    - sa8000
+rules:
+  - id: "E1-001"
+    pillar: "E"
+    title: "Carbon or emissions claim disclosed"
+    description: "Environmental transparency requires some emissions, energy, or climate-related claim in the VC."
+    penalty: 0.20
+    flag: "e1_missing_carbon_claim"
+  - id: "E1-003"
+    pillar: "E"
+    title: "High-risk energy source disclosed"
+    description: "Coal-heavy energy sources materially reduce environmental confidence."
+    penalty: 0.30
+    flag: "e1_high_risk_energy_source"
+  - id: "E1-002"
+    pillar: "E"
+    title: "Environmental certification signal present"
+    description: "Environmental certification mention slightly improves environmental confidence."
+    reward: 0.10
+    flag: "e1_environmental_cert_signal"
+  - id: "S2-001"
+    pillar: "S"
+    title: "Worker-related certification signal"
+    description: "Worker-related certification evidence improves social confidence."
+    reward: 0.10
+    flag: "s2_worker_cert_signal"
+  - id: "S2-002"
+    pillar: "S"
+    title: "Material baseline risk"
+    description: "Risk-heavy materials increase scrutiny in social scoring."
+    materialPenalty:
+      cobalt: 0.20
+      lithium: 0.15
+      nickel: 0.08
+      graphite: 0.08
+      manganese: 0.06
+    flag: "s2_material_risk"
+  - id: "S2-003"
+    pillar: "S"
+    title: "Social certification signal present"
+    description: "Relevant certification mentions can modestly improve social confidence."
+    reward: 0.10
+    flag: "s2_social_cert_signal"
+  - id: "S3-001"
+    pillar: "S"
+    title: "Country risk fallback modifier"
+    description: "When only country-level evidence exists, apply a moderate social/community modifier."
+    penaltyScale: 0.20
+    flag: "s3_country_risk_modifier"
+  - id: "G1-001"
+    pillar: "G"
+    title: "Missing location opacity penalty"
+    description: "No location evidence reduces governance transparency."
+    penalty: 0.20
+    flag: "g1_missing_location"
+  - id: "G1-002"
+    pillar: "G"
+    title: "Supplier DID transparency"
+    description: "Resolvable DID-like issuer and holder identifiers improve transparency."
+    penalty: 0.10
+    flag: "g1_missing_supplier_did"
+  - id: "G1-003"
+    pillar: "G"
+    title: "Provenance graph opacity"
+    description: "Missing graph continuity or sparse graph metadata penalizes governance."
+    penalty: 0.20
+    flag: "g1_graph_opacity"
+  - id: "G1-004"
+    pillar: "G"
+    title: "Certification disclosure transparency"
+    description: "Disclosed certification mentions modestly improve governance transparency."
+    reward: 0.08
+    flag: "g1_certification_disclosed"

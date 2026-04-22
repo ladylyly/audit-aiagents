@@ -1,0 +1,118 @@
+{
+  "id": "urn:uuid:real-vc-1774876634931-25",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-03-30T13:17:14.931Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "EU battery passport",
+    "batch": "REAL-BATCH-025",
+    "quantity": 1,
+    "previousCredential": "QmZqFwRvPaBgZPMgVoZsAi5J5bw1pre87jsRwyggdBTG3H",
+    "componentCredentials": [
+      "QmZqFwRvPaBgZPMgVoZsAi5J5bw1pre87jsRwyggdBTG3H"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-root-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-root-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack",
+      "ev_battery"
+    ],
+    "operationTags": [
+      "downstream",
+      "oem_final"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 52.5,
+      "longitude": 13.4
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Full chain LCA completed",
+    "climateClaim": "CSRD climate transition plan published",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0xa219487a9adb7fd4de49319ec43ee491b55894157f13e55407588a14a7252247\",\"proof\":\"0xc42df056917fe217ee0cf9d4c52d49647d756c5ddd3f9c918c1f601e736bd0259cce05f8dd7bef8aef4be5283238df21668fcefdfe2455c4bdd402f5b0514420ce22cf74c383d4757d761d959eaf33e3a4979ac17a6a37d7ad498ee19820d94d048a83f082515bf8b1561d738791c53ba0c3a69f58890d0f4a476ea5fc38e97f8a65b3bfbe5adb9052b4e76f938d78bfe252ec77369310259dc8ee3f1752ce009146f087e5e47294048df25ee352f15de6ed9088d9fb5505d7867edc9b4bfc016d881011a2e0f63f9c81b4bdbfdad8e5b2933c15840982acf8d89de2a46c390e7093ed2b8a5d80bc9fdc250021fd2758b9c82c0e651d4785c1a837afa098bd5b3e5e0393961cad9cf537c0e09af9c0896e163935d10e616bb5277d8b7620244c3420956b7618342fc87ecfad690bc6dbe84dea9a07d97a2887744868ae10515234234b9d07952e06298bf261638786c2dbef9ec3f1f649251089f395e63338285e1ab1e8fffbe2af51adf8c616dceb9ffb7932f9f35b9434cc10b5ebeba16403f03962e97e97df0aa350937dd05b26b3de68e54a19f9ab85dff2504760ef3b0400771e0c83fccc630b0e3215532c65aa452e7a554ee69dd540bc1978899017665c1cec08d0c38b985fdae8d3fa13fb833ab3040794ae919bfeeeb49d55b9eb6f8cb332b3ef8654f9a25dca6a0b14dcb5f695baa7fcd87d586d0ecc760b447548b2cd42a1385fc4ac6fb1662c1fff71c1ef06a3c08ef92761fc8cf54cb0fe1012ec5170d988ef7b5a4c5109936077246b619bfca06505e249175094ca0b011e3b0c04b5b0bae704e9c349463535dfabaa2580afef87be334bbd4b9fceeb957611efb7922a22d64155701c0c7e38a718dcb21f00731fc218b8df92d8309e034a0985fc4cd9fe6eabf48dc2bec2924278cccb88dd6dfc1fe970faf4aeb52d919a04\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xaa5b8d98448050e4a87ce84e0036ac5303f5274dc3eda3a0170ded16118ac34b\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0xa219487a9adb7fd4de49319ec43ee491b55894157f13e55407588a14a7252247",
+      "proof": "0xc42df056917fe217ee0cf9d4c52d49647d756c5ddd3f9c918c1f601e736bd0259cce05f8dd7bef8aef4be5283238df21668fcefdfe2455c4bdd402f5b0514420ce22cf74c383d4757d761d959eaf33e3a4979ac17a6a37d7ad498ee19820d94d048a83f082515bf8b1561d738791c53ba0c3a69f58890d0f4a476ea5fc38e97f8a65b3bfbe5adb9052b4e76f938d78bfe252ec77369310259dc8ee3f1752ce009146f087e5e47294048df25ee352f15de6ed9088d9fb5505d7867edc9b4bfc016d881011a2e0f63f9c81b4bdbfdad8e5b2933c15840982acf8d89de2a46c390e7093ed2b8a5d80bc9fdc250021fd2758b9c82c0e651d4785c1a837afa098bd5b3e5e0393961cad9cf537c0e09af9c0896e163935d10e616bb5277d8b7620244c3420956b7618342fc87ecfad690bc6dbe84dea9a07d97a2887744868ae10515234234b9d07952e06298bf261638786c2dbef9ec3f1f649251089f395e63338285e1ab1e8fffbe2af51adf8c616dceb9ffb7932f9f35b9434cc10b5ebeba16403f03962e97e97df0aa350937dd05b26b3de68e54a19f9ab85dff2504760ef3b0400771e0c83fccc630b0e3215532c65aa452e7a554ee69dd540bc1978899017665c1cec08d0c38b985fdae8d3fa13fb833ab3040794ae919bfeeeb49d55b9eb6f8cb332b3ef8654f9a25dca6a0b14dcb5f695baa7fcd87d586d0ecc760b447548b2cd42a1385fc4ac6fb1662c1fff71c1ef06a3c08ef92761fc8cf54cb0fe1012ec5170d988ef7b5a4c5109936077246b619bfca06505e249175094ca0b011e3b0c04b5b0bae704e9c349463535dfabaa2580afef87be334bbd4b9fceeb957611efb7922a22d64155701c0c7e38a718dcb21f00731fc218b8df92d8309e034a0985fc4cd9fe6eabf48dc2bec2924278cccb88dd6dfc1fe970faf4aeb52d919a04",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xaa5b8d98448050e4a87ce84e0036ac5303f5274dc3eda3a0170ded16118ac34b"
+    },
+    "productId": "122",
+    "productContract": "0x205D18743eD6D3681148bb91640bb49Ac0D24F04",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12
+    },
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 5000,
+      "net_turnover_eur_worldwide": 1200000000,
+      "net_turnover_eur_union": 900000000,
+      "is_ultimate_parent": true,
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0
+    },
+    "group": {
+      "avg_employee_count": 12000,
+      "net_turnover_eur_worldwide": 3500000000,
+      "net_turnover_eur_union": 2800000000
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-30T13:17:14.931Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5#controller",
+      "role": "seller",
+      "payloadHash": "0xe5d6a553652c06751ecf523da477c5fb0e3f96e937c927ac7665ea831067e3b9",
+      "jws": "0x1a6634cc6200896f8811ba2c1a3a293c0e520de4fc8ebafe6989c9a709194f800d173d94ec20999a10921603f8cbad7b450ad8e65c9aedb1e9aca3498b88d02b1c"
+    }
+  ]
+}

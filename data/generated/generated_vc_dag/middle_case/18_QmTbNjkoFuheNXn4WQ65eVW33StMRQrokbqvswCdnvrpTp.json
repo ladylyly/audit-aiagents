@@ -1,0 +1,105 @@
+{
+  "id": "urn:uuid:real-vc-1775170222298-18",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xfcda2ee9fe5e7a21187970d77e656f01b96e9a22",
+    "name": "ACC Cell GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xb72e4e7da198e0b41168ae823f8184a04c85526e",
+    "name": "Solvay Electrolyte DE GmbH"
+  },
+  "issuanceDate": "2026-03-26T22:50:09.432Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xb72e4e7da198e0b41168ae823f8184a04c85526e",
+    "productName": "Cell manufacturing",
+    "batch": "REAL-BATCH-018",
+    "quantity": 1,
+    "previousCredential": "QmT7nYZRsN6UQwVuv9ddcr6jGHDUTtvZsZnX2AJAPoh5KJ",
+    "componentCredentials": [
+      "QmT7nYZRsN6UQwVuv9ddcr6jGHDUTtvZsZnX2AJAPoh5KJ",
+      "QmciwScWaMLx7gh26VNW5Nv4fNqbnJ79SRYKS1Km3XLtXW",
+      "QmYVuvddZ3EiJQ4z9c1za12xGTsKXyAcZFpqtnHTAURuh2",
+      "QmSzPbt13c5GYeTttLYAPEK31LdziEpPPBGcAaaWJTzeuD",
+      "QmcdPgdimKRqgnazXDVKJGKq9TLvjRQ1AWE35s9HzMKb7H"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-cell-mfg-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-cell-mfg-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_cell",
+      "lithium_ion"
+    ],
+    "operationTags": [
+      "downstream",
+      "manufacturing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 52.4,
+      "longitude": 13.4
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Gigafactory on renewable PPA, scope-1+2 disclosed",
+    "climateClaim": "EU Battery Regulation DPP-ready",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x74f61509432baeef689a08bb5fd943b55e8fc57171ab38ebfc5c59c07b480028\",\"proof\":\"0x2eb65aee3e5194eaf236dc27decbcbd1b23a76178ec29b5c5aa193b6caab187b78303011a3991f754c8db09d8c8765892a9967fd003b920e84018519f933e53ae6c024025366691d4ced88c0c98b4cb73385234c6896126c925cc9b7196813415a5159b45188e485bd9d356abddd8ec46d05888fb3fef8ae7a77f609e1d95b79b496f4a255da21d6116ddbc5d5fd41e37d121eb379126a4d39bcfa91042ed60f0e7782247f751348e61e32516e895462c25166d05f50b41d04676a8206ea83086fbb31be5c257fad536ac113f87d9064012d09f2bdaed2184e73639f41d60707caccfd34b7802e8b741e6875a227bf318eb8c8990367d6202ca05da84dfae0169cca7d76f7e369670906558ba55740a891da538608708626da1465417d30756886666666e0df42c258da126c8cf8a96d0ad2760bc28879de50631104ef37e426a6bba9feb84c343e9d9dff923da6cb28ee3b971a1cb4100cd2841335517eeb48924b768be0e80f74653849a083925b3e3ab7dffbb5aca4f3b176c30c258b5c6bc65f57c2c27cb1efd95f96505331cac626343ba35f12f8c187e744111f3e741b244afa33b455f31ebd14330c421e2eecfebdceba1e8f21eed56bab899002093dfe938b0200f6e7b90b431516473abe38291e3b29a8ced3f1e883335121cd680360b0e0f02d4fa0c9551ff21158172b281f7c5ae101e5f5ca078c20d25f77c1599e6049e002b7b0b1b3d2eb1bea9e102201ef9136897a91fc85ee6041fdf24e4f76d0ccf16fc5ee9eddc904a15f3c5d3f77af4433c6fb7a82bb554a574b6239129cd74fda091a64da645453a4b1649f6b2564ecc2bc4cf455bc1583771af5343ecbdf315e8ba08316533058daefa20f30a1306256f3c8516d57ba1ea79282320644f1686987a7835743ef10d066db0b981c286b4f4753de769d3051dc8b710b00\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0xfb4ac469b5d267623253d2582c3cfb233513f97158bc2bf75dfcb130ef309d80\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x74f61509432baeef689a08bb5fd943b55e8fc57171ab38ebfc5c59c07b480028",
+      "proof": "0x2eb65aee3e5194eaf236dc27decbcbd1b23a76178ec29b5c5aa193b6caab187b78303011a3991f754c8db09d8c8765892a9967fd003b920e84018519f933e53ae6c024025366691d4ced88c0c98b4cb73385234c6896126c925cc9b7196813415a5159b45188e485bd9d356abddd8ec46d05888fb3fef8ae7a77f609e1d95b79b496f4a255da21d6116ddbc5d5fd41e37d121eb379126a4d39bcfa91042ed60f0e7782247f751348e61e32516e895462c25166d05f50b41d04676a8206ea83086fbb31be5c257fad536ac113f87d9064012d09f2bdaed2184e73639f41d60707caccfd34b7802e8b741e6875a227bf318eb8c8990367d6202ca05da84dfae0169cca7d76f7e369670906558ba55740a891da538608708626da1465417d30756886666666e0df42c258da126c8cf8a96d0ad2760bc28879de50631104ef37e426a6bba9feb84c343e9d9dff923da6cb28ee3b971a1cb4100cd2841335517eeb48924b768be0e80f74653849a083925b3e3ab7dffbb5aca4f3b176c30c258b5c6bc65f57c2c27cb1efd95f96505331cac626343ba35f12f8c187e744111f3e741b244afa33b455f31ebd14330c421e2eecfebdceba1e8f21eed56bab899002093dfe938b0200f6e7b90b431516473abe38291e3b29a8ced3f1e883335121cd680360b0e0f02d4fa0c9551ff21158172b281f7c5ae101e5f5ca078c20d25f77c1599e6049e002b7b0b1b3d2eb1bea9e102201ef9136897a91fc85ee6041fdf24e4f76d0ccf16fc5ee9eddc904a15f3c5d3f77af4433c6fb7a82bb554a574b6239129cd74fda091a64da645453a4b1649f6b2564ecc2bc4cf455bc1583771af5343ecbdf315e8ba08316533058daefa20f30a1306256f3c8516d57ba1ea79282320644f1686987a7835743ef10d066db0b981c286b4f4753de769d3051dc8b710b00",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0xfb4ac469b5d267623253d2582c3cfb233513f97158bc2bf75dfcb130ef309d80"
+    },
+    "productId": "179",
+    "productContract": "0x7c7D84Ab1436202691dFe88505248876e4126E32",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true
+    },
+    "governanceEvents": [
+      {
+        "anomalyId": "M0",
+        "category": "governance_transition",
+        "reviewRequired": true,
+        "transferDate": "2026-03-14",
+        "reviewEntity": "ACC Transition Services GmbH",
+        "note": "Cell manufacturing VC retained by ACC transition-services affiliate after legal-entity carve-out."
+      }
+    ]
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-26T22:50:09.432Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xfcda2ee9fe5e7a21187970d77e656f01b96e9a22#controller",
+      "role": "seller",
+      "payloadHash": "0x9e6a058b7ed56ed3abcf75b1b8531dcf61ef7f2213ac8cbb39cc100e6333620a",
+      "jws": "0x4f5f8d47d0fe66d430c5588e4c803d37e543fe565c0f2498c8a49cee3b0daf6d44586a0145ce33d713e9efff5bbcc17fdc57516f78e62b556c7f7674ee4755541b"
+    }
+  ]
+}

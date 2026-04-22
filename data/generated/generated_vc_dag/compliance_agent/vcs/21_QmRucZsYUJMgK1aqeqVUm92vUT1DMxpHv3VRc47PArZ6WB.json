@@ -1,0 +1,276 @@
+{
+  "id": "urn:uuid:compliance-agent-test-1775517129643-21",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential",
+    "SupplyChainComplianceTestCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0xc9e3fb106642ef439fa70b3295ff0d269f5296c4",
+    "name": "Vistula Traction Pack Systems Sp. z o.o."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x625d8e01ed2ffa38a0bfea53e57bfa6e3ddcf8fb",
+    "name": "Iberia Battery Imports S.L."
+  },
+  "issuanceDate": "2026-04-02T23:11:43.499Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x625d8e01ed2ffa38a0bfea53e57bfa6e3ddcf8fb",
+    "productName": "EV traction battery packs lot VTP-2026-24",
+    "batch": "VTP-2026-24",
+    "quantity": 1,
+    "previousCredential": "QmXx9NfE3a546dRt113drJMif1ytQAtVvegToVf66WZ2DQ",
+    "componentCredentials": [
+      "QmXx9NfE3a546dRt113drJMif1ytQAtVvegToVf66WZ2DQ",
+      "QmSiqmQB7ZnCm5XcPvKrydKAc2TjszfL5atSHgrsNyjXS7"
+    ],
+    "certificateCredential": {
+      "name": "IATF 16949",
+      "cid": "bafy-case1-cert-pack-iatf16949"
+    },
+    "certifications": [
+      {
+        "name": "IATF 16949",
+        "issuer": "IATF",
+        "certificateCid": "bafy-case1-cert-pack-iatf16949"
+      }
+    ],
+    "location": {
+      "country": "Poland",
+      "countryCode": "PL",
+      "latitude": 52.2,
+      "longitude": 21
+    },
+    "facilityRole": "battery_pack_manufacturer",
+    "materialTags": [
+      "battery_pack",
+      "battery_module",
+      "battery_housing"
+    ],
+    "operationTags": [
+      "downstream",
+      "pack_assembly",
+      "battery_market_readiness"
+    ],
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "policy_due_diligence_approach": true,
+      "code_of_conduct_exists": true,
+      "due_diligence_integration": true,
+      "due_diligence_integration_process": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prioritisation_methodology": true,
+      "prioritisation_severity_likelihood": true,
+      "in_depth_assessment": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "preventive_investments": true,
+      "collaboration_measures": true,
+      "corrective_action_plan": true,
+      "minimisation_measures": true,
+      "remediation_process": true,
+      "stakeholder_engagement": true,
+      "complaint_channel_exists": true,
+      "complaint_procedure_documented": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "public_statement_publication_delay_months": 3,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12,
+      "esap_submission_completed": true,
+      "esap_machine_readable_format": true,
+      "esap_metadata_complete": true,
+      "authorised_representative_designated": false,
+      "authorised_representative_mandate": false,
+      "authorised_representative_contact_details": false,
+      "authorised_representative_notification_completed": false,
+      "business_plan_modifications": true,
+      "policy_review_interval_months": 12,
+      "sme_support_measures": true,
+      "battery": {
+        "category": "electric_vehicle",
+        "subcategory": "traction",
+        "weight_kg": 430,
+        "capacity_kwh": 74,
+        "market_event": "placing_on_market",
+        "placed_on_union_market": true,
+        "exclusion_reason": "none",
+        "status": "new",
+        "has_external_storage": false,
+        "operator_role": "manufacturer",
+        "is_rechargeable": true,
+        "intended_for_industrial_use": false,
+        "vehicle_class": "m",
+        "is_sli_design": false,
+        "annex_i_restrictions_compliant": true,
+        "label_present": true,
+        "separate_collection_symbol_present": true,
+        "qr_code_present": true,
+        "instructions_present": true,
+        "safety_information_present": true,
+        "technical_documentation_exists": true,
+        "eu_declaration_of_conformity_exists": false,
+        "ce_mark_present": true,
+        "conformity_module": "module_d1",
+        "batch_or_serial_present": true,
+        "manufacturer_identity_present": true,
+        "battery_passport_exists": true,
+        "battery_passport_identifier": "case1-pack-passport-001",
+        "battery_passport_public_fields_present": true,
+        "bms_annex_vii_access_enabled": false,
+        "carbon_footprint_declaration_exists": true,
+        "carbon_footprint_label_present": false,
+        "carbon_footprint_within_max_threshold": false,
+        "contains_recycled_content_regulated_materials": true,
+        "contains_cobalt": true,
+        "contains_lead": false,
+        "contains_lithium": true,
+        "contains_nickel": true,
+        "recycled_content_documentation_exists": true,
+        "recycled_content_cobalt_pct": 28,
+        "recycled_content_lithium_pct": 4,
+        "recycled_content_nickel_pct": 14,
+        "performance_durability_document_exists": true,
+        "technical_doc_annex_iv_explanation_exists": true,
+        "due_diligence_policy_exists": true,
+        "due_diligence_policy_public": true,
+        "due_diligence_annex_x_aligned": true,
+        "management_responsibility_assigned": true,
+        "record_retention_years": 10,
+        "traceability_system_exists": true,
+        "supplier_contract_flowdown": true,
+        "grievance_mechanism_exists": true,
+        "risk_assessment_exists": true,
+        "risk_management_plan_exists": true,
+        "top_management_reporting_exists": true,
+        "third_party_verification_report_exists": false,
+        "approval_decision_exists": true,
+        "audit_report_exists": true,
+        "downstream_information_shared": true,
+        "public_due_diligence_report_exists": false,
+        "producer_registered": true
+      },
+      "conflict_minerals": {
+        "union_importer": false,
+        "material_type": "outside_scope_material",
+        "cn_code": "n/a",
+        "annex_i_threshold_exceeded": false,
+        "material_form": "component",
+        "origin_country": "unknown",
+        "compliance_documentation_exists": false,
+        "recognised_scheme_used": false
+      }
+    },
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x4a53e28043e5aeef0d3abb5d8910d70c7d338c5b0f8e18a626546c0d1d732f06\",\"proof\":\"0x2e062162a9290f22601b6e5856a8c4a49444556564e830f98899b2bac483176dc24d86f2839741a0292979ac755f44e6795be91f649d7571240e4cdadfb83d648ad1e3b144c7f5c8999c90d484c9901652f4ac0e543f95713a92c73ddc48d232dc8c522be6ba4021a55c5b4aedfb0d69f40f1a258ee4ca38261baf469033a9570fd560a2684f3bf8bc9214ad0ec973e792a310593f10b1ab737530c2cae14c00f17e8d27855392d50a6c317c517379a7de9e3df7b7578fc7bb79914b20810e0cfd210d9ebc199faeef2086e6003d13503ad0cbcad6ce11afa33fd7679079d70b60cbc0757ccfca9e175ce1729b1aa12db598ddc48e6621869b985cebeea9b51e86cb5db70a56f9c5381b2fc16588bbc98969520b6af8d48932a296ef2835211826a3ab116f2d59b591579c4cde9ca066034a77597d56bd3f4c3e8a7481994e2626ad74a72ef596a4079390185f9e04c3fe935be0710f96b9d905f7e6d0bde147bc830c7e2e397fea910cd843c607c510f57ccde1519f4a2364581561a863e03866f143270e55d3be41210b5dd531641cd7c46ed6c90592739fa94475a92b830a8e76bd61eb5a86a66eed61572612d6e335f2dd40be1984ab53bd7be274f35768944217ac1ec09a2f19e10a53e37ae8d19e2255a44c85d21878a3a09d53d7d36720eff6bcc3bb0b818708de08429fa6fd5402606e35ebc3afa8e8d6151d7d50465e2c974d767c3d7e60b8739ba9f440d0bb01995b46d258b16e74078b94acb26d8ea40e7442a7267485caa0ab86725fa36744bcfd147e8f2ac7c0f61dfadfeb58849bada3bb1f1eb0b91019d5020f5f07ca2a49f69504587fbf3cc9f6a4230f21b1b651b997f1ae02b127ed4dfb1bf04a699d2bfcec153242254406e1c7f0f705ecc9f54b408975ed2f291945cd1d990d20d9f4fa0bd73c85329b1ef6470b9301\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x9acd619d52a995cdbf1284c1eb43bccfbeb4f7b28c3338c00fff4bb402d6c6e7\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x4a53e28043e5aeef0d3abb5d8910d70c7d338c5b0f8e18a626546c0d1d732f06",
+      "proof": "0x2e062162a9290f22601b6e5856a8c4a49444556564e830f98899b2bac483176dc24d86f2839741a0292979ac755f44e6795be91f649d7571240e4cdadfb83d648ad1e3b144c7f5c8999c90d484c9901652f4ac0e543f95713a92c73ddc48d232dc8c522be6ba4021a55c5b4aedfb0d69f40f1a258ee4ca38261baf469033a9570fd560a2684f3bf8bc9214ad0ec973e792a310593f10b1ab737530c2cae14c00f17e8d27855392d50a6c317c517379a7de9e3df7b7578fc7bb79914b20810e0cfd210d9ebc199faeef2086e6003d13503ad0cbcad6ce11afa33fd7679079d70b60cbc0757ccfca9e175ce1729b1aa12db598ddc48e6621869b985cebeea9b51e86cb5db70a56f9c5381b2fc16588bbc98969520b6af8d48932a296ef2835211826a3ab116f2d59b591579c4cde9ca066034a77597d56bd3f4c3e8a7481994e2626ad74a72ef596a4079390185f9e04c3fe935be0710f96b9d905f7e6d0bde147bc830c7e2e397fea910cd843c607c510f57ccde1519f4a2364581561a863e03866f143270e55d3be41210b5dd531641cd7c46ed6c90592739fa94475a92b830a8e76bd61eb5a86a66eed61572612d6e335f2dd40be1984ab53bd7be274f35768944217ac1ec09a2f19e10a53e37ae8d19e2255a44c85d21878a3a09d53d7d36720eff6bcc3bb0b818708de08429fa6fd5402606e35ebc3afa8e8d6151d7d50465e2c974d767c3d7e60b8739ba9f440d0bb01995b46d258b16e74078b94acb26d8ea40e7442a7267485caa0ab86725fa36744bcfd147e8f2ac7c0f61dfadfeb58849bada3bb1f1eb0b91019d5020f5f07ca2a49f69504587fbf3cc9f6a4230f21b1b651b997f1ae02b127ed4dfb1bf04a699d2bfcec153242254406e1c7f0f705ecc9f54b408975ed2f291945cd1d990d20d9f4fa0bd73c85329b1ef6470b9301",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x9acd619d52a995cdbf1284c1eb43bccfbeb4f7b28c3338c00fff4bb402d6c6e7"
+    },
+    "productId": "207",
+    "productContract": "0x3aB79d9316342c394C132E931B56b5Abb921bf3A",
+    "chainId": "11155111",
+    "companyName": "Vistula Traction Pack Systems Sp. z o.o.",
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 2400,
+      "net_turnover_eur_worldwide": 900000000,
+      "net_turnover_eur_union": 700000000,
+      "is_ultimate_parent": false,
+      "legal_entity_identifier": "PL-CASE-0021",
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0,
+      "net_turnover_eur_last_financial_year": 180000000
+    },
+    "group": {
+      "avg_employee_count": 7000,
+      "net_turnover_eur_worldwide": 2400000000,
+      "net_turnover_eur_union": 1800000000,
+      "net_turnover_eur_consolidated_last_financial_year": 900000000
+    },
+    "supportProfiles": {
+      "esgProfile": {
+        "energySource": "eu_grid_with_ppa",
+        "emissionsClaim": "Vistula Traction Pack Systems Sp. z o.o. reports site-level emissions for EV traction battery packs lot VTP-2026-24.",
+        "climateClaim": "Vistula Traction Pack Systems Sp. z o.o. maintains transition-planning and operational decarbonisation evidence for battery_pack_manufacturer activities.",
+        "environmentalRiskSignals": [
+          "standard_industrial_environmental_control"
+        ],
+        "socialRiskSignals": [
+          "routine_workforce_management"
+        ],
+        "governanceRiskSignals": [
+          "standard_commercial_governance"
+        ],
+        "countryOfOperation": "Poland",
+        "facilityRole": "battery_pack_manufacturer",
+        "materialTags": [
+          "battery_pack",
+          "battery_module",
+          "battery_housing"
+        ]
+      },
+      "technicalProfile": {
+        "processStage": "battery_pack_manufacturer",
+        "componentType": "battery_pack",
+        "qualityStandards": [
+          "IATF 16949"
+        ],
+        "traceabilityArtifacts": [
+          "vc_21_battery_pack_manufacturer_poland-material-balance-sheet",
+          "vc_21_battery_pack_manufacturer_poland-shipment-record",
+          "vc_21_battery_pack_manufacturer_poland-supplier-declaration"
+        ],
+        "serialisationScheme": "VTP-2026-24-SER",
+        "conformityReferences": [
+          "bafy-case1-cert-pack-iatf16949"
+        ]
+      },
+      "tradeProfile": {
+        "incoterm": "DAP",
+        "shippingMode": "road_and_container",
+        "customsReference": "PL-VTP-2026-24",
+        "euMarketRelevant": true
+      }
+    },
+    "expectedEvaluation": {
+      "battery": {
+        "status": "fail",
+        "reason": "manufacturer node should fail declaration, BMS access, footprint, recycled lithium, and due-diligence disclosure checks"
+      },
+      "conflict_minerals": {
+        "status": "not_applicable",
+        "reason": "no direct 3TG importer claim on battery manufacturer node"
+      },
+      "csddd": {
+        "status": "supporting_supply_chain_signal",
+        "reason": "battery manufacturer evidence supports root narrative only"
+      }
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-02T23:11:43.499Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0xc9e3fb106642ef439fa70b3295ff0d269f5296c4#controller",
+      "role": "issuer",
+      "payloadHash": "0xeca540c00e343e27402c5b4f7785a17fddb497e1d8efbdc337557fae87e340a4",
+      "jws": "0x865380b3c2a7ec54cb7756898be5c8476b4c2bd13710bff72eb520f999a9cfa06ea30315515c0f98484ad43469721decbbe71d137826bdc462976aa4ee2fdaa51b"
+    }
+  ]
+}

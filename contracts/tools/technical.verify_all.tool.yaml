@@ -1,0 +1,70 @@
+version: 1
+tool_id: technical.verify_all@v1
+description: "Run deterministic technical verification (steps 1–6) for a root VC CID."
+category: technical
+entity: VerificationReport
+operation: verify_all
+side_effect: read
+risk_level: low
+requires_approval: false
+idempotent: true
+supports_dry_run: true
+
+input_schema:
+  type: object
+  required: [rootCid]
+  properties:
+    rootCid:
+      type: string
+      description: "Root VC CID (final VC)."
+    options:
+      type: object
+      properties:
+        rpcUrl:
+          type: string
+          description: "Ethereum JSON-RPC URL for on-chain anchor verification."
+        contractAddress:
+          type: string
+          description: "Optional verifyingContract binding for EIP-712."
+        maxNodes:
+          type: integer
+          minimum: 1
+          default: 50
+        zkp:
+          type: object
+          properties:
+            enabled:
+              type: boolean
+              default: true
+            backendMode:
+              type: string
+              enum: [cli]
+              default: cli
+            cliPath:
+              type: string
+              description: "Path to zkp-cli binary (if not using default)."
+
+output_schema:
+  type: object
+  properties:
+    success:
+      type: boolean
+    failures:
+      type: array
+      items:
+        type: object
+    claims:
+      type: array
+      items:
+        type: object
+    evidence:
+      type: object
+
+errors:
+  - code: MISSING_ROOT
+    message: "rootCid is required"
+    http_status: 400
+  - code: IPFS_FETCH_FAILED
+    message: "Failed to fetch one or more VC CIDs"
+    http_status: 502
+

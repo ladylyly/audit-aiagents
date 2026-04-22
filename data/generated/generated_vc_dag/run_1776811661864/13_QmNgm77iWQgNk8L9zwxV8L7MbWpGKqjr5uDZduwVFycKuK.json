@@ -1,0 +1,98 @@
+{
+  "id": "urn:uuid:real-vc-1776811674137-13",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "name": "Umicore Battery Materials Oy"
+  },
+  "issuanceDate": "2026-04-09T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2",
+    "productName": "Cathode precursor pCAM",
+    "batch": "REAL-BATCH-013",
+    "quantity": 1,
+    "previousCredential": "QmUFMjzsJU7g2ufyg2gfdgSbsGmYEAeqeosCAbiw815EWK",
+    "componentCredentials": [
+      "QmUFMjzsJU7g2ufyg2gfdgSbsGmYEAeqeosCAbiw815EWK",
+      "QmbgnsAxTZinc3nUUmiusZvAMhqSusKtBeCWoRSEjdooij",
+      "QmQodnHuV7KpczeHAgddLLqHfTsRCytyFxBc5BZD79rkBc"
+    ],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-pcam-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-pcam-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-pcam-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_precursor"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Finland",
+      "countryCode": "FI",
+      "latitude": 60.6,
+      "longitude": 27.2
+    },
+    "energySource": "hydro",
+    "emissionsClaim": "Precursor hydromet processing, Nordic grid",
+    "climateClaim": "Scope-1+2+3 measured",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x8a49769e76706296acdfc512b8bc738cefba9912f5073fb4bb1e9691f0aae110\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x8a49769e76706296acdfc512b8bc738cefba9912f5073fb4bb1e9691f0aae110",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "365",
+    "productContract": "0x62451885831eE303ae08D544C12e5AE5130a8f70",
+    "chainId": "11155111",
+    "claims": {
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-09T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x230b448a27d5d3c480997325168fe680ef5e1df2#controller",
+      "role": "seller",
+      "payloadHash": "0xbb03f746aa8f25ff0bc9861d74e8c383e1f1071e32ff157a7072ce87ef90805e",
+      "jws": "0xdee1792961027d25747789ff6bd70bf31675cc8bc550c6a87332d3b4922e0fe80ae1902c0e9f900723218d240b651578327671eaad3910f0764f507c1d09c2f31b"
+    }
+  ]
+}

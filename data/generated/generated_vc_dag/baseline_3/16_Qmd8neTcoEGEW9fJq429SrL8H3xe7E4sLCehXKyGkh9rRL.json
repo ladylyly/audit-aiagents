@@ -1,0 +1,95 @@
+{
+  "id": "urn:uuid:real-vc-1776202369309-16",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x7516b20b71625232f88b44516115bc8198a0af29",
+    "name": "Sumitomo Electric Separator"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0xa7fbde485ae5ecf1d380529ee8fb9e2b563f13b2",
+    "name": "ACC Cell GmbH"
+  },
+  "issuanceDate": "2026-04-05T21:32:26.901Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0xa7fbde485ae5ecf1d380529ee8fb9e2b563f13b2",
+    "productName": "Separator film supplier",
+    "batch": "REAL-BATCH-016",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "RMAP",
+      "cid": "bafy-cert-sep-rmap"
+    },
+    "certifications": [
+      {
+        "name": "RMAP",
+        "issuer": "RMI",
+        "certificateCid": "bafy-cert-sep-rmap",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-sep-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "processor",
+    "materialTags": [
+      "battery_component"
+    ],
+    "operationTags": [
+      "midstream",
+      "processing",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Japan",
+      "countryCode": "JP",
+      "latitude": 34.7,
+      "longitude": 135.5
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Ceramic-coated separator, scope-2 tracked",
+    "climateClaim": "J-Credit participating",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x2c61086261e4c2bb0efbe9fb0b9a666d3b45a65736b92f9b13290c8a86a81947\",\"proof\":\"0x966f4fad1a107b5a468c4a9f3e1e776aa63bfacb71c155b02a939cff7833206f9250868926d8a20c232c865118e1a653fbd530d1e6c8e7d7aaab43ee1495d35f66f5dc22abd02a0e5c8e653f738f907be11f2dbbfe1e1aaca852165fd820b4280c52baa9e06080a8714917b08fe0212eeaf9c72762f350ab6d8b13687a2b700a85b27813bb3027b48e5531b167b5aa9806c394194de969287412814a54530a021403414191a66c7b965b79142e86e41859c180297aa1e0372e816b709dea980d1847970ac49a3d842d081aec11de0efe73b06c65b92fc8c75ab2c2dca46e780510535e6d9fea586ef27706b361741f4b3b9d48f0676f557e7c8ae40b97061209283e712b57318b7119b353c56f2a652c40ccd5fb93bbe68e3569741c7633f75f62356295485bd9c998867e77268151f89f848ff5bdda69fa4cc3819db475bc273ca83ce322f6f029ea66fd74feb7cacb5749cfa8eb854adb78977cd5f1a8083e60783086414f0393cca1b6dc6fd0d2698643162653ba72f015944e202ed23749728adc603dfd881400f870e6dd30892fa850eef181246578a12d56b7c7dfa17070b257a27378ddb68fdd24d13139f76460aeda16f0d0b1d8502e094a762c2b0db4f83e097f9c88f2f39beac3e4a5b75426f1bde1562a6d1264e8877b7997af3dda4589432900a21fec51733962551da44d2cdfa8af2ed74bf01839287d1f2e72a87f7e408e6df55fc4ea625517d8bad0a312c29055f052258b7dab17975e1e36745cf85bdbbf4aae277e4f9841a2bf233c6d5530f224cded1302b0fcd3ad37058a776093445f4f003935adf93f94751b8a6a21066945028ddd5668981b18b44e38f264a7579cb42127bb20079fe8a97c3ba2b3a8394be26765f03becdec1de0d6e1ee0d3e9742adced15ba415045291006694976abcc7a16c6d05d05c99b3101\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\",\"bindingTag\":\"0x699e284b4e4d7855142a654f11ef193237a72d3ad4b84bd098a7aebfcc29582d\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x2c61086261e4c2bb0efbe9fb0b9a666d3b45a65736b92f9b13290c8a86a81947",
+      "proof": "0x966f4fad1a107b5a468c4a9f3e1e776aa63bfacb71c155b02a939cff7833206f9250868926d8a20c232c865118e1a653fbd530d1e6c8e7d7aaab43ee1495d35f66f5dc22abd02a0e5c8e653f738f907be11f2dbbfe1e1aaca852165fd820b4280c52baa9e06080a8714917b08fe0212eeaf9c72762f350ab6d8b13687a2b700a85b27813bb3027b48e5531b167b5aa9806c394194de969287412814a54530a021403414191a66c7b965b79142e86e41859c180297aa1e0372e816b709dea980d1847970ac49a3d842d081aec11de0efe73b06c65b92fc8c75ab2c2dca46e780510535e6d9fea586ef27706b361741f4b3b9d48f0676f557e7c8ae40b97061209283e712b57318b7119b353c56f2a652c40ccd5fb93bbe68e3569741c7633f75f62356295485bd9c998867e77268151f89f848ff5bdda69fa4cc3819db475bc273ca83ce322f6f029ea66fd74feb7cacb5749cfa8eb854adb78977cd5f1a8083e60783086414f0393cca1b6dc6fd0d2698643162653ba72f015944e202ed23749728adc603dfd881400f870e6dd30892fa850eef181246578a12d56b7c7dfa17070b257a27378ddb68fdd24d13139f76460aeda16f0d0b1d8502e094a762c2b0db4f83e097f9c88f2f39beac3e4a5b75426f1bde1562a6d1264e8877b7997af3dda4589432900a21fec51733962551da44d2cdfa8af2ed74bf01839287d1f2e72a87f7e408e6df55fc4ea625517d8bad0a312c29055f052258b7dab17975e1e36745cf85bdbbf4aae277e4f9841a2bf233c6d5530f224cded1302b0fcd3ad37058a776093445f4f003935adf93f94751b8a6a21066945028ddd5668981b18b44e38f264a7579cb42127bb20079fe8a97c3ba2b3a8394be26765f03becdec1de0d6e1ee0d3e9742adced15ba415045291006694976abcc7a16c6d05d05c99b3101",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1",
+      "bindingTag": "0x699e284b4e4d7855142a654f11ef193237a72d3ad4b84bd098a7aebfcc29582d"
+    },
+    "productId": "277",
+    "productContract": "0xcB8e59025b1A28435AD89bA888c65ce73Bb8BFE5",
+    "chainId": "11155111",
+    "claims": {
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-05T21:32:26.901Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x7516b20b71625232f88b44516115bc8198a0af29#controller",
+      "role": "seller",
+      "payloadHash": "0x320a6557c33822f132e51b48545fd14abdc854b2a18e0db2fc03dca205546065",
+      "jws": "0xbb647cee22cb7fd1effc14ecec4c60faf351ff2156728d1d8b9d5485ce41869f1d8dc07b1d8f19671b311055f01e76c21377bf36eb52abc838950dc63700d9761c"
+    }
+  ]
+}

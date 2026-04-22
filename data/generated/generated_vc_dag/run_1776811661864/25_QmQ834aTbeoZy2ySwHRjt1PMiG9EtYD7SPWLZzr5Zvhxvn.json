@@ -1,0 +1,118 @@
+{
+  "id": "urn:uuid:real-vc-1776811684670-25",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "name": "BMWi Battery OEM GmbH"
+  },
+  "issuanceDate": "2026-04-21T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5",
+    "productName": "EU battery passport",
+    "batch": "REAL-BATCH-025",
+    "quantity": 1,
+    "previousCredential": "QmSLV7S8tYKUemjSYKSvMXKybqeVu2UGPqie2trvtaHZs8",
+    "componentCredentials": [
+      "QmSLV7S8tYKUemjSYKSvMXKybqeVu2UGPqie2trvtaHZs8"
+    ],
+    "certificateCredential": {
+      "name": "ISO 14001",
+      "cid": "bafy-cert-root-iso14001"
+    },
+    "certifications": [
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-root-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "manufacturer",
+    "materialTags": [
+      "battery_pack",
+      "ev_battery"
+    ],
+    "operationTags": [
+      "downstream",
+      "oem_final",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": 52.5,
+      "longitude": 13.4
+    },
+    "energySource": "renewable",
+    "emissionsClaim": "Full chain LCA completed",
+    "climateClaim": "CSRD climate transition plan published",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x62af4d7bc505c0bade9b7424667f3aa7479c58d7fed4aa7503fc3899ac114d17\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x62af4d7bc505c0bade9b7424667f3aa7479c58d7fed4aa7503fc3899ac114d17",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "377",
+    "productContract": "0x5ABA4A9D61DF74FC9Bf93ACbD6c9363D7C6D927f",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true,
+      "impact_identification_process": true,
+      "supply_chain_mapping_completed": true,
+      "prevention_action_plan": true,
+      "contractual_assurances_obtained": true,
+      "remediation_process": true,
+      "complaint_channel_exists": true,
+      "monitoring_frequency_months": 12,
+      "public_due_diligence_statement": true,
+      "climate_transition_plan_exists": true,
+      "climate_transition_targets_defined": true,
+      "climate_transition_actions_defined": true,
+      "climate_transition_investments_defined": true,
+      "climate_transition_governance_defined": true,
+      "climate_transition_review_interval_months": 12
+    },
+    "company": {
+      "establishment": "eu_member_state",
+      "avg_employee_count": 5000,
+      "net_turnover_eur_worldwide": 1200000000,
+      "net_turnover_eur_union": 900000000,
+      "is_ultimate_parent": true,
+      "franchise_royalties_eur": 0,
+      "franchise_royalties_eur_union": 0
+    },
+    "group": {
+      "avg_employee_count": 12000,
+      "net_turnover_eur_worldwide": 3500000000,
+      "net_turnover_eur_union": 2800000000
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-04-21T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x158cc718425606cb0f34fbcb06af4b674a259ce5#controller",
+      "role": "seller",
+      "payloadHash": "0x5c066f08a05cda3a1a8ef80eea790d32d7a85050e86193c193f7127b199df059",
+      "jws": "0x0e1b64d9688eb0165a45ca146bbb8e5308050c29b711531ebc2ebf0d40847c22731068df8d6e3da82c1d5006bd7977be9db09de23444e3dd77c9e285d99769a41b"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:uuid:real-vc-1776811661882-1",
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "BatteryPassportCredential"
+  ],
+  "schemaVersion": "1.0",
+  "issuer": {
+    "id": "did:ethr:11155111:0x32d34b89010840e3701b550051aa152c791e454e",
+    "name": "SQM Chile Lithium S.A."
+  },
+  "holder": {
+    "id": "did:ethr:11155111:0x32d34b89010840e3701b550051aa152c791e454e",
+    "name": "SQM Chile Lithium S.A."
+  },
+  "issuanceDate": "2026-03-28T22:47:41.873Z",
+  "credentialSubject": {
+    "id": "did:ethr:11155111:0x32d34b89010840e3701b550051aa152c791e454e",
+    "productName": "Lithium brine extraction",
+    "batch": "REAL-BATCH-001",
+    "quantity": 1,
+    "previousCredential": "",
+    "componentCredentials": [],
+    "certificateCredential": {
+      "name": "IRMA",
+      "cid": "bafy-cert-li-mine-irma"
+    },
+    "certifications": [
+      {
+        "name": "IRMA",
+        "issuer": "IRMA",
+        "certificateCid": "bafy-cert-li-mine-irma",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      },
+      {
+        "name": "ISO 14001",
+        "issuer": "ISO",
+        "certificateCid": "bafy-cert-li-mine-iso14001",
+        "validFrom": "2025-01-01",
+        "validUntil": "2026-12-31"
+      }
+    ],
+    "facilityRole": "mine",
+    "materialTags": [
+      "lithium"
+    ],
+    "operationTags": [
+      "upstream",
+      "extraction",
+      "environmental_system"
+    ],
+    "location": {
+      "country": "Chile",
+      "countryCode": "CL",
+      "latitude": -22.9,
+      "longitude": -68.2
+    },
+    "energySource": "solar",
+    "emissionsClaim": "Atacama solar-powered extraction, scope-1 monitored",
+    "climateClaim": "Net-zero extraction target 2030",
+    "sellerRailgunAddress": "",
+    "price": "{\"protocol\":\"bulletproofs-pedersen\",\"version\":\"1.0\",\"commitment\":\"0x9a112734289d2b9049626aafd27d6dc692e4e21ec16fb5555935f349e1ece84d\",\"proof\":\"placeholder-proof\",\"encoding\":\"hex\",\"proofType\":\"zkRangeProof-v1\"}",
+    "priceCommitment": {
+      "protocol": "bulletproofs-pedersen",
+      "version": "1.0",
+      "commitment": "0x9a112734289d2b9049626aafd27d6dc692e4e21ec16fb5555935f349e1ece84d",
+      "proof": "placeholder-proof",
+      "encoding": "hex",
+      "proofType": "zkRangeProof-v1"
+    },
+    "productId": "352",
+    "productContract": "0x612A7C9e612BD09a3b81F6E0d4bA7b8A15544DDB",
+    "chainId": "11155111",
+    "claims": {
+      "due_diligence_policy_exists": true,
+      "code_of_conduct_exists": true
+    }
+  },
+  "proof": [
+    {
+      "type": "EcdsaSecp256k1Signature2019",
+      "created": "2026-03-28T22:47:41.873Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:11155111:0x32d34b89010840e3701b550051aa152c791e454e#controller",
+      "role": "seller",
+      "payloadHash": "0xf71eaa54dafbb216e0af644b1c048b9600226578f8cf13ee922b738c415ff7d5",
+      "jws": "0xafde02ec82ec112757d48fc62d29f1abe71cd8cb048e0800c275cb4cb237e87e1b0cb0a131a63856ca98c7bf94cac6c2f73566dfb103f610567f96761e58ad3a1c"
+    }
+  ]
+}
