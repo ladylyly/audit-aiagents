@@ -44,8 +44,11 @@ Important fields for running the implementation:
 - `CHAIN_ID`
 - `PINATA_JWT`
 - `PINATA_GATEWAY`
-- `PRODUCT_IMPLEMENTATION_ADDRESS`
-- `PRODUCT_FACTORY_ADDRESS`
+
+OpenAI key usage:
+- `OPENAI_API_KEY` is required. It is the primary key used by the backend LLM client for orchestration, report Q&A, explanation generation, and domain summaries.
+- `OPENAI_API_KEY_SUMMARY` is optional. It is only used for executive-summary generation and falls back to `OPENAI_API_KEY` if left empty.
+- If you do not need a separate key for executive summaries, set only `OPENAI_API_KEY` and leave `OPENAI_API_KEY_SUMMARY` blank.
 
 For `PINATA_GATEWAY`:
 - if you have your own dedicated Pinata gateway, use that
@@ -64,6 +67,8 @@ PINATA_GATEWAY=https://gateway.pinata.cloud
 Additional fields needed for generating a new test case:
 - `DEPLOYER_PRIVATE_KEY`
 - `ISSUER_PRIVATE_KEY`
+- `PRODUCT_IMPLEMENTATION_ADDRESS`
+- `PRODUCT_FACTORY_ADDRESS`
 
 ## 3) Start the implementation
 ```bash
@@ -84,14 +89,14 @@ After the frontend opens, paste a root VC CID into the input field.
 
 Recommended test cases:
 
-- `baseline_5_10vc` — medium-sized baseline with 10 VCs
-```text
-QmT8S9Bt6cmQXFhKpZmKkFvMyzj2g4hE9uqYGWDRUyX95n
-```
-
 - `best_case` — expected high-quality reference case
 ```text
 QmZ5VLpJ81NMY6pa8L8WF4qhiaLCpPeVTeG329kBCy5Lih
+```
+
+- `baseline_5_10vc` — medium-sized baseline with 10 VCs
+```text
+QmT8S9Bt6cmQXFhKpZmKkFvMyzj2g4hE9uqYGWDRUyX95n
 ```
 
 - `middle_case` — mixed findings and partial compliance
